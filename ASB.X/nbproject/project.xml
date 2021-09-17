@@ -6,9 +6,9 @@
             <name>ASB</name>
             <creation-uuid>5248f8b3-3c85-4ea1-8d3b-7892cef1f3d7</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions/>
+            <c-extensions>c</c-extensions>
             <cpp-extensions/>
-            <header-extensions/>
+            <header-extensions>h</header-extensions>
             <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
