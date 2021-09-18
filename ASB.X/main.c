@@ -56,7 +56,7 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
+    //INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -68,16 +68,16 @@ void main(void)
         MOSFET1_Toggle();
         MOSFET2_Toggle();
         DELAY_milliseconds(1000);
-        
+        Nop();
         //PWM1
-        PWM1_16BIT_SetSlice1Output2DutyCycleRegister(0xAA);   //66% duty cycle
+        /*PWM1_16BIT_SetSlice1Output2DutyCycleRegister(0xAA);   //66% duty cycle
         PWM1_16BIT_LoadBufferRegisters();
         PWM1_16BIT_Enable();
         
         //PWM2
         PWM2_16BIT_SetSlice1Output2DutyCycleRegister(0xAA);   //66% duty cycle
         PWM2_16BIT_LoadBufferRegisters();
-        PWM2_16BIT_Enable();
+        PWM2_16BIT_Enable();*/
     }
 }
 /**
