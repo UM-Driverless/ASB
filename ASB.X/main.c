@@ -67,6 +67,7 @@ void main(void)
         LED_Toggle();
         MOSFET1_Toggle();
         MOSFET2_Toggle();
+        EBSLEDACT_Toggle();
         DELAY_milliseconds(1000);
         Nop();
         //PWM1

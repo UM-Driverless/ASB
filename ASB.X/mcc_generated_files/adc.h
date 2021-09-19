@@ -71,7 +71,7 @@ typedef uint16_t adc_result_t;
  */
 typedef enum
 {
-    PICHDRPRES1 =  0x0,
+    channel_ANA0 =  0x0,
     channel_ANA1 =  0x1,
     channel_ANB0 =  0x8,
     channel_ANC3 =  0x13,
