@@ -42,6 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "MESSAGES.h"
 
 /*
                          Main application
@@ -56,7 +57,7 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -70,6 +71,7 @@ void main(void)
         EBSLEDACT_Toggle();
         DELAY_milliseconds(1000);
         Nop();
+        CANWriteMessage ( 0x158, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 );
         //PWM1
         /*PWM1_16BIT_SetSlice1Output2DutyCycleRegister(0xAA);   //66% duty cycle
         PWM1_16BIT_LoadBufferRegisters();

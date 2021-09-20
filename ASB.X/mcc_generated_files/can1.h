@@ -55,6 +55,13 @@
 #include <stdint.h>
 #include "can_types.h"
 
+// Transmit FIFO's Custom Name
+#define CAN1_TX_TXQ TXQ
+
+typedef enum 
+{
+    TXQ = 0
+} CAN1_TX_FIFO_CHANNELS;
 
 
 /**
@@ -174,6 +181,64 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
 CAN_OP_MODES CAN1_OperationModeGet(void);
 
 
+/**
+  @Summary
+    Writes a message object to the CAN TX FIFO.
+
+  @Description
+    This routine writes a message object to the CAN TX FIFO.
+
+  @Preconditions
+    CAN1_Initialize function should be called before calling this function. 
+    The transfer status should be checked to see if transmitter is not full 
+    before calling this function.
+
+  @Param
+    fifoChannel - CAN TX priority FIFO selection
+    txCanMsg     - pointer to the message object
+
+  @Returns
+    CAN Transmit message status.
+    CAN_TX_MSG_REQUEST_SUCCESS - Transmit message object successfully placed into transmit FIFO
+    CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR - Transmit message object DLC size is more than transmit FIFO configured DLC size
+    CAN_TX_MSG_REQUEST_BRS_ERROR - Transmit FIFO configured has Non BRS mode and CAN TX Message object has BRS enabled
+    CAN_TX_MSG_REQUEST_FIFO_FULL - Transmit FIFO Full
+
+  @Example
+    <code>
+    #define CAN_TX_BUFF  "TEMPERATURE SENSOR ON"
+    
+    void main(void) 
+    {
+        CAN_MSG_OBJ msg;
+        uint8_t data[32] = CAN_TX_BUFF;
+        
+        SYSTEM_Initialize();
+        
+        if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
+        {
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            {
+                msg.msgId = 0x1FFFF;
+                msg.field.formatType = CAN_FD_FORMAT;
+                msg.field.brs = CAN_NON_BRS_MODE;
+                msg.field.frameType = CAN_FRAME_DATA;
+                msg.field.idType = CAN_FRAME_EXT;
+                msg.field.dlc = DLC_32;
+                msg.data = data;
+            
+                if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(CAN1_TX_FIFO1) & CAN_TX_FIFO_AVAILABLE))
+                {
+                    CAN1_Transmit(CAN1_TX_FIFO1, &msg);
+                }
+            }
+        }
+
+        while(1);
+    }
+    </code>
+*/
+CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
 
 /**
   @Summary
@@ -602,6 +667,59 @@ bool CAN1_IsRxErrorActive(void);
 */
 void CAN1_Sleep(void);
 
+/**
+  @Summary
+    CAN transmitter FIFO status.
+
+  @Description
+    This returns the CAN transmitter FIFO status.
+
+  @Preconditions
+    CAN1_Initialize function should be called before calling this function.
+
+  @Param
+    fifoChannel - CAN TX priority FIFO selection
+
+  @Returns
+    CAN Transmit FIFO status.
+    CAN_TX_FIFO_FULL         - CAN Transmit FIFO is full
+    CAN_TX_FIFO_AVAILABLE     - CAN Transmit FIFO message space is available
+
+  @Example
+    <code>
+    #define CAN_TX_BUFF  "TEMPERATURE SENSOR ON"
+    
+    void main(void) 
+    {
+        CAN_MSG_OBJ msg;
+        uint8_t data[32] = CAN_TX_BUFF;
+        
+        SYSTEM_Initialize();
+
+        if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
+        {    
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            {
+                msg.msgId = 0x1FFFF;
+                msg.field.formatType = CAN_FD_FORMAT;
+                msg.field.brs = CAN_NON_BRS_MODE;
+                msg.field.frameType = CAN_FRAME_DATA;
+                msg.field.idType = CAN_FRAME_EXT;
+                msg.field.dlc = DLC_32;
+                msg.data = data;
+            
+                if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(CAN1_TX_FIFO1) & CAN_TX_FIFO_AVAILABLE))
+                {
+                    CAN1_Transmit(CAN1_TX_FIFO1, &msg);
+                }
+            }
+        }
+        
+        while(1);
+    }
+    </code>
+*/
+CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
 
 
 /**
@@ -1035,6 +1153,50 @@ void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
     </code>
 */
 void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
+
+/**
+  @Summary
+    Sets the Disable TXQ Interrupt interrupt handler.
+
+  @Description
+    This routine sets the Disable TXQ Interrupt interrupt handler for TXQ.
+
+  @Param
+    Address of the callback routine.
+
+  @Returns
+    None
+ 
+  @Example
+    <code>
+    volatile CAN_MSG_OBJ gMsg;
+    
+    void CustomTXQHandler(void)
+    {
+        CAN1_Transmit(CAN1_TX_FIFO1, &gMsg);
+    }
+
+    void main(void)
+    {
+        uint8_t data[8] = {0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48};
+        gMsg.msgId = 0x1FFFF;
+        gMsg.field.formatType = CAN_FD_FORMAT;
+        gMsg.field.brs = CAN_NON_BRS_MODE;
+        gMsg.field.frameType = CAN_FRAME_DATA;
+        gMsg.field.idType = CAN_FRAME_EXT;
+        gMsg.field.dlc = DLC_8;
+        gMsg.data = data;
+        
+        SYSTEM_Initialize();
+        CAN1_SetTXQnullHandler(&CustomTXQHandler);
+        
+        INTERRUPT_GlobalInterruptEnable();
+
+        while(1);
+    }
+    </code>
+*/
+void CAN1_SetTXQnullHandler(void (*handler)(void));
 
 
 void CAN1_ISR(void);
