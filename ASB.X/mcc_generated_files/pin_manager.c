@@ -119,6 +119,11 @@ void PIN_MANAGER_Initialize(void)
     RC1PPS = 0x1A;   //RC1->PWM2_16BIT:PWM21;    
     CANRXPPS = 0x0B;   //RB3->CAN1:CANRX;    
     RB4PPS = 0x46;   //RB4->CAN1:CANTX;    
+    
+    //INICIALIZACION PIN STBY CAN
+    STBY_SetDigitalOutput();
+    STBY_SetHigh();
+    
 }
   
 void PIN_MANAGER_IOC(void)

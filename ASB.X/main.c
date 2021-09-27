@@ -58,6 +58,8 @@ void main(void)
 
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
+    STBY_SetDigitalOutput();
+    STBY_SetHigh();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -65,11 +67,11 @@ void main(void)
     while (1)
     {
         // Add your application code
-        LED_Toggle();
+        /*LED_Toggle();
         MOSFET1_Toggle();
         MOSFET2_Toggle();
         EBSLEDACT_Toggle();
-        DELAY_milliseconds(1000);
+        DELAY_milliseconds(1000);*/
         Nop();
         CANWriteMessage ( 0x158, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 );
         //PWM1

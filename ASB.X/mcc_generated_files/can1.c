@@ -82,42 +82,12 @@ struct CAN_FIFOREG
 static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
 static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
 
-static void (*CAN1_InvalidMessageHandler)(void);
-static void (*CAN1_BusWakeUpActivityHandler)(void);
-static void (*CAN1_BusErrorHandler)(void);
-static void (*CAN1_ModeChangeHandler)(void);
-static void (*CAN1_SystemErrorHandler)(void);
-static void (*CAN1_TxAttemptHandler)(void);
-
-static void DefaultInvalidMessageHandler(void)
-{
-}
-
-static void DefaultBusWakeUpActivityHandler(void)
-{
-}
-
-static void DefaultBusErrorHandler(void)
-{
-}
-
-static void DefaultModeChangeHandler(void)
-{
-}
-
-static void DefaultSystemErrorHandler(void)
-{
-}
-
-static void DefaultTxAttemptHandler(void)
-{
-}
 
 
 static void CAN1_TX_FIFO_Configuration(void)
 {
-    // TXATIE enabled; TXQEIE disabled; TXQNIE disabled; 
-    C1TXQCONL = 0x10;
+    // TXATIE disabled; TXQEIE disabled; TXQNIE disabled; 
+    C1TXQCONL = 0x00;
     
     // FRESET enabled; UINC disabled; 
     C1TXQCONH = 0x04;
@@ -146,30 +116,6 @@ static void CAN1_BitRateConfiguration(void)
     
 }
 
-static void CAN1_ErrorNotificationInterruptEnable(void)
-{
-    CAN1_SetInvalidMessageInterruptHandler(DefaultInvalidMessageHandler);
-    CAN1_SetBusWakeUpActivityInterruptHandler(DefaultBusWakeUpActivityHandler);
-    CAN1_SetBusErrorInterruptHandler(DefaultBusErrorHandler);
-    CAN1_SetModeChangeInterruptHandler(DefaultModeChangeHandler);
-    CAN1_SetSystemErrorInterruptHandler(DefaultSystemErrorHandler);
-    CAN1_SetTxAttemptInterruptHandler(DefaultTxAttemptHandler);
-    PIR0bits.CANIF = 0;
-    
-    // MODIF disabled; TBCIF disabled; 
-    C1INTL = 0x00;
-    
-    // IVMIF disabled; WAKIF disabled; CERRIF disabled; SERRIF disabled; 
-    C1INTH = 0x00;
-    
-    // TEFIE disabled; MODIE enabled; TBCIE disabled; RXIE disabled; TXIE disabled; 
-    C1INTU = 0x08;
-    
-    // IVMIE enabled; WAKIE enabled; CERRIE enabled; SERRIE enabled; RXOVIE enabled; TXATIE enabled; 
-    C1INTT = 0xFC;
-    
-    PIE0bits.CANIE = 1;
-}
 
 void CAN1_Initialize(void)
 {
@@ -192,7 +138,6 @@ void CAN1_Initialize(void)
 
         CAN1_BitRateConfiguration();
         CAN1_TX_FIFO_Configuration();
-        CAN1_ErrorNotificationInterruptEnable();
         CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);    
     }
 }
@@ -208,7 +153,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
     {
         C1CONTbits.REQOP = requestMode;
         
-        while (C1CONUbits.OPMOD != requestMode)
+        /*while (C1CONUbits.OPMOD != requestMode)
         {
             //This condition is avoiding the system error case endless loop
             if (1 == C1INTHbits.SERRIF)
@@ -216,7 +161,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
                 status = CAN_OP_MODE_SYS_ERROR_OCCURED;
                 break;
             }
-        }
+        }*/
     }
     else
     {
@@ -389,79 +334,6 @@ void CAN1_Sleep(void)
     CAN1_OperationModeSet(CAN_DISABLE_MODE);
 }
 
-void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
-{
-    CAN1_InvalidMessageHandler = handler;
-}
-
-void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
-{
-    CAN1_BusWakeUpActivityHandler = handler;
-}
-
-void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
-{
-    CAN1_BusErrorHandler = handler;
-}
-
-void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
-{
-    CAN1_ModeChangeHandler = handler;
-}
-
-void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
-{
-    CAN1_SystemErrorHandler = handler;
-}
-
-void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
-{
-    CAN1_TxAttemptHandler = handler;
-}
-
-void CAN1_ISR(void)
-{
-    if (1 == C1INTHbits.IVMIF)
-    {
-        CAN1_InvalidMessageHandler();
-        C1INTHbits.IVMIF = 0;
-    }
-    
-    if (1 == C1INTHbits.WAKIF)
-    {
-        CAN1_BusWakeUpActivityHandler();
-        C1INTHbits.WAKIF = 0;
-    }
-    
-    if (1 == C1INTHbits.CERRIF)
-    {
-        CAN1_BusErrorHandler();
-        C1INTHbits.CERRIF = 0;
-    }
-    
-    if (1 == C1INTLbits.MODIF)
-    {
-        CAN1_ModeChangeHandler();
-        C1INTLbits.MODIF = 0;
-    }
-    
-    if (1 == C1INTHbits.SERRIF)
-    {
-        CAN1_SystemErrorHandler();
-        C1INTHbits.SERRIF = 0;
-    }
-    
-    if (1 == C1INTHbits.TXATIF)
-    {
-        CAN1_TxAttemptHandler();
-        if (1 == C1TXQSTALbits.TXATIF)
-        {
-            C1TXQSTALbits.TXATIF = 0;
-        }
-    }
-    
-    PIR0bits.CANIF = 0;
-}
 
 
 

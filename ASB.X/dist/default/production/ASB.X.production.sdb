@@ -21,7 +21,7 @@ channel_DAC1 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"179 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
+"125 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
 [e E22356 . `uc
 CAN_OP_MODE_REQUEST_SUCCESS 0
 CAN_OP_MODE_REQUEST_FAIL 1
@@ -37,34 +37,34 @@ CAN_EXTERNAL_LOOPBACK_MODE 5
 CAN_NORMAL_2_0_MODE 6
 CAN_RESTRICTED_OPERATION_MODE 7
 ]
-"240
+"185
 [e E22361 . `uc
 CAN_TX_FIFO_FULL 0
 CAN_TX_FIFO_AVAILABLE 1
 ]
-"255
+"200
 [e E22328 . `uc
 CAN_FRAME_STD 0
 CAN_FRAME_EXT 1
 ]
-"280
+"225
 [e E22332 . `uc
 CAN_FRAME_DATA 0
 CAN_FRAME_RTR 1
 ]
-"286
+"231
 [e E22340 . `uc
 CAN_TX_MSG_REQUEST_SUCCESS 0
 CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
 CAN_TX_MSG_REQUEST_BRS_ERROR 2
 CAN_TX_MSG_REQUEST_FIFO_FULL 3
 ]
-"292
+"237
 [e E22324 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
 ]
-"297
+"242
 [e E22365 . `uc
 DLC_0 0
 DLC_1 1
@@ -87,7 +87,7 @@ DLC_64 15
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
 ]
-"315
+"260
 [e E22383 . `uc
 TXQ 0
 ]
@@ -249,62 +249,32 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _ADC_DefaultContext1Threshold_ISR ADC_DefaultContext1Threshold_ISR `(v  1 s 1 ADC_DefaultContext1Threshold_ISR ]
 "446
 [v _ADC_DefaultActiveClockTuning_ISR ADC_DefaultActiveClockTuning_ISR `(v  1 s 1 ADC_DefaultActiveClockTuning_ISR ]
-"92 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
-[v _DefaultInvalidMessageHandler DefaultInvalidMessageHandler `(v  1 s 1 DefaultInvalidMessageHandler ]
-"96
-[v _DefaultBusWakeUpActivityHandler DefaultBusWakeUpActivityHandler `(v  1 s 1 DefaultBusWakeUpActivityHandler ]
-"100
-[v _DefaultBusErrorHandler DefaultBusErrorHandler `(v  1 s 1 DefaultBusErrorHandler ]
-"104
-[v _DefaultModeChangeHandler DefaultModeChangeHandler `(v  1 s 1 DefaultModeChangeHandler ]
-"108
-[v _DefaultSystemErrorHandler DefaultSystemErrorHandler `(v  1 s 1 DefaultSystemErrorHandler ]
-"112
-[v _DefaultTxAttemptHandler DefaultTxAttemptHandler `(v  1 s 1 DefaultTxAttemptHandler ]
-"117
+"87 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
 [v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
-"133
+"103
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
-"149
-[v _CAN1_ErrorNotificationInterruptEnable CAN1_ErrorNotificationInterruptEnable `(v  1 s 1 CAN1_ErrorNotificationInterruptEnable ]
-"174
+"120
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
-"200
+"145
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
-"229
+"174
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
-"235
+"180
 [v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
-"240
+"185
 [v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
-"245
+"190
 [v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
-"286
+"231
 [v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
-"315
+"260
 [v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
-"337
+"282
 [v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
-"354
+"299
 [v _CAN1_IsRxErrorPassive CAN1_IsRxErrorPassive `(a  1 e 1 0 ]
-"369
+"314
 [v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
-"392
-[v _CAN1_SetInvalidMessageInterruptHandler CAN1_SetInvalidMessageInterruptHandler `(v  1 e 1 0 ]
-"397
-[v _CAN1_SetBusWakeUpActivityInterruptHandler CAN1_SetBusWakeUpActivityInterruptHandler `(v  1 e 1 0 ]
-"402
-[v _CAN1_SetBusErrorInterruptHandler CAN1_SetBusErrorInterruptHandler `(v  1 e 1 0 ]
-"407
-[v _CAN1_SetModeChangeInterruptHandler CAN1_SetModeChangeInterruptHandler `(v  1 e 1 0 ]
-"412
-[v _CAN1_SetSystemErrorInterruptHandler CAN1_SetSystemErrorInterruptHandler `(v  1 e 1 0 ]
-"417
-[v _CAN1_SetTxAttemptInterruptHandler CAN1_SetTxAttemptInterruptHandler `(v  1 e 1 0 ]
-"422
-[v _CAN1_ISR CAN1_ISR `(v  1 e 1 0 ]
-"38 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/delay.c
-[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
 "32 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/ext_int.c
 [v _INT0_ISR INT0_ISR `(v  1 e 1 0 ]
 "41
@@ -323,7 +293,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "66
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"80
+"84
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
@@ -399,30 +369,18 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "12 E:\UMOTORSPORT\ASB\ASB.X\MESSAGES.c
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
-[s S1376 . 1 `uc 1 idType 1 0 :1:0 
+[s S1303 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
 "22 E:\UMOTORSPORT\ASB\ASB.X/MESSAGES.h
-[u S1382 . 1 `uc 1 msgfields 1 0 `S1376 1 . 1 0 ]
-[s S1385 . 7 `ul 1 msgId 4 0 `S1382 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v _msg msg `S1385  1 e 7 0 ]
+[u S1309 . 1 `uc 1 msgfields 1 0 `S1303 1 . 1 0 ]
+[s S1312 . 7 `ul 1 msgId 4 0 `S1309 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v _msg msg `S1312  1 e 7 0 ]
 "23
 [v _CANDATAdata CANDATAdata `[32]uc  1 e 32 0 ]
-[s S1082 . 1 `uc 1 SWIF 1 0 :1:0 
-`uc 1 HLVDIF 1 0 :1:1 
-`uc 1 OSFIF 1 0 :1:2 
-`uc 1 CSWIF 1 0 :1:3 
-`uc 1 TU16AIF 1 0 :1:4 
-`uc 1 CLC1IF 1 0 :1:5 
-`uc 1 CANIF 1 0 :1:6 
-`uc 1 IOCIF 1 0 :1:7 
-]
-"506 C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h
-[u S1091 . 1 `S1082 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES1091  1 e 1 @1198 ]
 [s S35 . 1 `uc 1 INT0IF 1 0 :1:0 
 `uc 1 ZCDIF 1 0 :1:1 
 `uc 1 ADIF 1 0 :1:2 
@@ -432,10 +390,10 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 SMT1PRAIF 1 0 :1:6 
 `uc 1 SMT1PWAIF 1 0 :1:7 
 ]
-"568
+"568 C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h
 [u S44 . 1 `S35 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES44  1 e 1 @1199 ]
-[s S408 . 1 `uc 1 ADTIF 1 0 :1:0 
+[s S466 . 1 `uc 1 ADTIF 1 0 :1:0 
 `uc 1 ADCH2IF 1 0 :1:1 
 `uc 1 ADCH3IF 1 0 :1:2 
 `uc 1 ADCH4IF 1 0 :1:3 
@@ -445,11 +403,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 DMA1AIF 1 0 :1:7 
 ]
 "633
-[s S417 . 1 `uc 1 ADCH1IF 1 0 :1:0 
+[s S475 . 1 `uc 1 ADCH1IF 1 0 :1:0 
 ]
-[u S419 . 1 `S408 1 . 1 0 `S417 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES419  1 e 1 @1200 ]
-[s S1011 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+[u S477 . 1 `S466 1 . 1 0 `S475 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES477  1 e 1 @1200 ]
+[s S1070 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
 `uc 1 SPI1TXIF 1 0 :1:1 
 `uc 1 SPI1IF 1 0 :1:2 
 `uc 1 TMR2IF 1 0 :1:3 
@@ -459,9 +417,9 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "700
-[u S1020 . 1 `S1011 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES1020  1 e 1 @1201 ]
-[s S195 . 1 `uc 1 U1RXIF 1 0 :1:0 
+[u S1079 . 1 `S1070 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1079  1 e 1 @1201 ]
+[s S253 . 1 `uc 1 U1RXIF 1 0 :1:0 
 `uc 1 U1TXIF 1 0 :1:1 
 `uc 1 U1EIF 1 0 :1:2 
 `uc 1 U1IF 1 0 :1:3 
@@ -471,9 +429,9 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 PWM1IF 1 0 :1:7 
 ]
 "762
-[u S204 . 1 `S195 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES204  1 e 1 @1202 ]
-[s S1714 . 1 `uc 1 SPI2RXIF 1 0 :1:0 
+[u S262 . 1 `S253 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES262  1 e 1 @1202 ]
+[s S1547 . 1 `uc 1 SPI2RXIF 1 0 :1:0 
 `uc 1 SPI2TXIF 1 0 :1:1 
 `uc 1 SPI2IF 1 0 :1:2 
 `uc 1 TU16BIF 1 0 :1:3 
@@ -483,8 +441,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 PWM2IF 1 0 :1:7 
 ]
 "824
-[u S1723 . 1 `S1714 1 . 1 0 ]
-[v _PIR5bits PIR5bits `VES1723  1 e 1 @1203 ]
+[u S1556 . 1 `S1547 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES1556  1 e 1 @1203 ]
 "1339
 [v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
 "1405
@@ -493,23 +451,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD2 PMD2 `VEuc  1 e 1 @98 ]
 "1474
 [v _LATA LATA `VEuc  1 e 1 @1214 ]
-[s S2501 . 1 `uc 1 LATA0 1 0 :1:0 
-`uc 1 LATA1 1 0 :1:1 
-`uc 1 LATA2 1 0 :1:2 
-`uc 1 LATA3 1 0 :1:3 
-`uc 1 LATA4 1 0 :1:4 
-`uc 1 LATA5 1 0 :1:5 
-`uc 1 LATA6 1 0 :1:6 
-`uc 1 LATA7 1 0 :1:7 
-]
-"1491
-[u S2510 . 1 `S2501 1 . 1 0 ]
-[v _LATAbits LATAbits `VES2510  1 e 1 @1214 ]
 "1514
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
 [v _LATB LATB `VEuc  1 e 1 @1215 ]
-[s S2522 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S197 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -519,24 +465,12 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "1553
-[u S2531 . 1 `S2522 1 . 1 0 ]
-[v _LATBbits LATBbits `VES2531  1 e 1 @1215 ]
+[u S206 . 1 `S197 1 . 1 0 ]
+[v _LATBbits LATBbits `VES206  1 e 1 @1215 ]
 "1565
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
-[s S2543 . 1 `uc 1 LATC0 1 0 :1:0 
-`uc 1 LATC1 1 0 :1:1 
-`uc 1 LATC2 1 0 :1:2 
-`uc 1 LATC3 1 0 :1:3 
-`uc 1 LATC4 1 0 :1:4 
-`uc 1 LATC5 1 0 :1:5 
-`uc 1 LATC6 1 0 :1:6 
-`uc 1 LATC7 1 0 :1:7 
-]
-"1615
-[u S2552 . 1 `S2543 1 . 1 0 ]
-[v _LATCbits LATCbits `VES2552  1 e 1 @1216 ]
 "1621
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1660
@@ -545,6 +479,18 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
 "1722
 [v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+[s S176 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1739
+[u S185 . 1 `S176 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES185  1 e 1 @1223 ]
 "1740
 [v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
 "1784
@@ -581,7 +527,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1CONL C1CONL `VEuc  1 e 1 @256 ]
 "9014
 [v _C1CONH C1CONH `VEuc  1 e 1 @257 ]
-[s S1242 . 1 `uc 1 WAKFIL 1 0 :1:0 
+[s S1169 . 1 `uc 1 WAKFIL 1 0 :1:0 
 `uc 1 WFT 1 0 :2:1 
 `uc 1 BUSY 1 0 :1:3 
 `uc 1 BRSDIS 1 0 :1:4 
@@ -590,15 +536,15 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 ON 1 0 :1:7 
 ]
 "9035
-[s S1250 . 1 `uc 1 . 1 0 :1:0 
+[s S1177 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 WFT0 1 0 :1:1 
 `uc 1 WFT1 1 0 :1:2 
 ]
-[u S1254 . 1 `S1242 1 . 1 0 `S1250 1 . 1 0 ]
-[v _C1CONHbits C1CONHbits `VES1254  1 e 1 @257 ]
+[u S1181 . 1 `S1169 1 . 1 0 `S1177 1 . 1 0 ]
+[v _C1CONHbits C1CONHbits `VES1181  1 e 1 @257 ]
 "9085
 [v _C1CONU C1CONU `VEuc  1 e 1 @258 ]
-[s S1345 . 1 `uc 1 RTXAT 1 0 :1:0 
+[s S1272 . 1 `uc 1 RTXAT 1 0 :1:0 
 `uc 1 ESIGM 1 0 :1:1 
 `uc 1 SERR2LOM 1 0 :1:2 
 `uc 1 STEF 1 0 :1:3 
@@ -606,19 +552,19 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 OPMOD 1 0 :3:5 
 ]
 "9106
-[s S1352 . 1 `uc 1 . 1 0 :5:0 
+[s S1279 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 OPMOD0 1 0 :1:5 
 `uc 1 OPMOD1 1 0 :1:6 
 `uc 1 OPMOD2 1 0 :1:7 
 ]
-[u S1357 . 1 `S1345 1 . 1 0 `S1352 1 . 1 0 ]
-[v _C1CONUbits C1CONUbits `VES1357  1 e 1 @258 ]
-[s S1296 . 1 `uc 1 REQOP 1 0 :3:0 
+[u S1284 . 1 `S1272 1 . 1 0 `S1279 1 . 1 0 ]
+[v _C1CONUbits C1CONUbits `VES1284  1 e 1 @258 ]
+[s S1223 . 1 `uc 1 REQOP 1 0 :3:0 
 `uc 1 ABAT 1 0 :1:3 
 `uc 1 TXBWS 1 0 :4:4 
 ]
 "9178
-[s S1300 . 1 `uc 1 REQOP0 1 0 :1:0 
+[s S1227 . 1 `uc 1 REQOP0 1 0 :1:0 
 `uc 1 REQOP1 1 0 :1:1 
 `uc 1 REQOP2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -627,8 +573,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TXBWS2 1 0 :1:6 
 `uc 1 TXBWS3 1 0 :1:7 
 ]
-[u S1309 . 1 `S1296 1 . 1 0 `S1300 1 . 1 0 ]
-[v _C1CONTbits C1CONTbits `VES1309  1 e 1 @259 ]
+[u S1236 . 1 `S1223 1 . 1 0 `S1227 1 . 1 0 ]
+[v _C1CONTbits C1CONTbits `VES1236  1 e 1 @259 ]
 "9233
 [v _C1NBTCFGL C1NBTCFGL `VEuc  1 e 1 @260 ]
 "9297
@@ -637,20 +583,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1NBTCFGU C1NBTCFGU `VEuc  1 e 1 @262 ]
 "9431
 [v _C1NBTCFGT C1NBTCFGT `VEuc  1 e 1 @263 ]
-"10407
-[v _C1INTL C1INTL `VEuc  1 e 1 @284 ]
-[s S1480 . 1 `uc 1 TXIF 1 0 :1:0 
-`uc 1 RXIF 1 0 :1:1 
-`uc 1 TBCIF 1 0 :1:2 
-`uc 1 MODIF 1 0 :1:3 
-`uc 1 TEFIF 1 0 :1:4 
-]
-"10421
-[u S1486 . 1 `S1480 1 . 1 0 ]
-[v _C1INTLbits C1INTLbits `VES1486  1 e 1 @284 ]
-"10451
-[v _C1INTH C1INTH `VEuc  1 e 1 @285 ]
-[s S1326 . 1 `uc 1 . 1 0 :2:0 
+[s S1253 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIF 1 0 :1:2 
 `uc 1 RXOVIF 1 0 :1:3 
 `uc 1 SERRIF 1 0 :1:4 
@@ -659,13 +592,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 IVMIF 1 0 :1:7 
 ]
 "10467
-[u S1334 . 1 `S1326 1 . 1 0 ]
-[v _C1INTHbits C1INTHbits `VES1334  1 e 1 @285 ]
-"10502
-[v _C1INTU C1INTU `VEuc  1 e 1 @286 ]
-"10546
-[v _C1INTT C1INTT `VEuc  1 e 1 @287 ]
-[s S1449 . 1 `uc 1 . 1 0 :2:0 
+[u S1261 . 1 `S1253 1 . 1 0 ]
+[v _C1INTHbits C1INTHbits `VES1261  1 e 1 @285 ]
+"10548
+[v _PLLR PLLR `VEb  1 e 0 @1424 ]
+[s S1376 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIE 1 0 :1:2 
 `uc 1 RXOVIE 1 0 :1:3 
 `uc 1 SERRIE 1 0 :1:4 
@@ -674,9 +605,9 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 IVMIE 1 0 :1:7 
 ]
 "10562
-[u S1457 . 1 `S1449 1 . 1 0 ]
-[v _C1INTTbits C1INTTbits `VES1457  1 e 1 @287 ]
-[s S1432 . 1 `uc 1 EWARN 1 0 :1:0 
+[u S1384 . 1 `S1376 1 . 1 0 ]
+[v _C1INTTbits C1INTTbits `VES1384  1 e 1 @287 ]
+[s S1359 . 1 `uc 1 EWARN 1 0 :1:0 
 `uc 1 RXWARN 1 0 :1:1 
 `uc 1 TXWARN 1 0 :1:2 
 `uc 1 RXBP 1 0 :1:3 
@@ -684,8 +615,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TXBO 1 0 :1:5 
 ]
 "12179
-[u S1439 . 1 `S1432 1 . 1 0 ]
-[v _C1TRECUbits C1TRECUbits `VES1439  1 e 1 @310 ]
+[u S1366 . 1 `S1359 1 . 1 0 ]
+[v _C1TRECUbits C1TRECUbits `VES1366  1 e 1 @310 ]
 "13232
 [v _C1FIFOBA C1FIFOBA `VEul  1 e 4 @332 ]
 "13519
@@ -696,18 +627,6 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1TXQCONU C1TXQCONU `VEuc  1 e 1 @338 ]
 "13662
 [v _C1TXQCONT C1TXQCONT `VEuc  1 e 1 @339 ]
-[s S1495 . 1 `uc 1 TXQNIF 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 TXQEIF 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 TXATIF 1 0 :1:4 
-`uc 1 TXERR 1 0 :1:5 
-`uc 1 TXLARB 1 0 :1:6 
-`uc 1 TXABT 1 0 :1:7 
-]
-"13755
-[u S1504 . 1 `S1495 1 . 1 0 ]
-[v _C1TXQSTALbits C1TXQSTALbits `VES1504  1 e 1 @340 ]
 "24366
 [v _RB4PPS RB4PPS `VEuc  1 e 1 @525 ]
 "24566
@@ -726,31 +645,31 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
 "38942
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
-[s S2403 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S2236 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "38970
-[s S2409 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S2242 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "38970
-[s S2415 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S2248 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "38970
-[u S2421 . 1 `S2403 1 . 1 0 `S2409 1 . 1 0 `S2415 1 . 1 0 ]
+[u S2254 . 1 `S2236 1 . 1 0 `S2242 1 . 1 0 `S2248 1 . 1 0 ]
 "38970
 "38970
-[v _T0CON0bits T0CON0bits `VES2421  1 e 1 @794 ]
+[v _T0CON0bits T0CON0bits `VES2254  1 e 1 @794 ]
 "39040
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
 "39182
@@ -759,14 +678,14 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR1H TMR1H `VEuc  1 e 1 @797 ]
 "39322
 [v _T1CON T1CON `VEuc  1 e 1 @798 ]
-[s S1922 . 1 `uc 1 ON 1 0 :1:0 
+[s S1755 . 1 `uc 1 ON 1 0 :1:0 
 `uc 1 RD16 1 0 :1:1 
 `uc 1 NOT_SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 CKPS 1 0 :2:4 
 ]
 "39358
-[s S1928 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S1761 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 T1RD16 1 0 :1:1 
 `uc 1 NOT_T1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -774,22 +693,22 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
 "39358
-[s S1935 . 1 `uc 1 . 1 0 :4:0 
+[s S1768 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 CKPS0 1 0 :1:4 
 `uc 1 CKPS1 1 0 :1:5 
 ]
 "39358
-[s S1939 . 1 `uc 1 . 1 0 :1:0 
+[s S1772 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD161 1 0 :1:1 
 ]
 "39358
-[u S1942 . 1 `S1922 1 . 1 0 `S1928 1 . 1 0 `S1935 1 . 1 0 `S1939 1 . 1 0 ]
+[u S1775 . 1 `S1755 1 . 1 0 `S1761 1 . 1 0 `S1768 1 . 1 0 `S1772 1 . 1 0 ]
 "39358
 "39358
-[v _T1CONbits T1CONbits `VES1942  1 e 1 @798 ]
+[v _T1CONbits T1CONbits `VES1775  1 e 1 @798 ]
 "39512
 [v _T1GCON T1GCON `VEuc  1 e 1 @799 ]
-[s S1968 . 1 `uc 1 . 1 0 :2:0 
+[s S1801 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GVAL 1 0 :1:2 
 `uc 1 GGO 1 0 :1:3 
 `uc 1 GSPM 1 0 :1:4 
@@ -798,7 +717,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 GE 1 0 :1:7 
 ]
 "39550
-[s S1976 . 1 `uc 1 . 1 0 :2:0 
+[s S1809 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -807,18 +726,18 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 T1GE 1 0 :1:7 
 ]
 "39550
-[s S1984 . 1 `uc 1 . 1 0 :3:0 
+[s S1817 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_DONE 1 0 :1:3 
 ]
 "39550
-[s S1987 . 1 `uc 1 . 1 0 :3:0 
+[s S1820 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T1DONE 1 0 :1:3 
 ]
 "39550
-[u S1990 . 1 `S1968 1 . 1 0 `S1976 1 . 1 0 `S1984 1 . 1 0 `S1987 1 . 1 0 ]
+[u S1823 . 1 `S1801 1 . 1 0 `S1809 1 . 1 0 `S1817 1 . 1 0 `S1820 1 . 1 0 ]
 "39550
 "39550
-[v _T1GCONbits T1GCONbits `VES1990  1 e 1 @799 ]
+[v _T1GCONbits T1GCONbits `VES1823  1 e 1 @799 ]
 "39726
 [v _T1GATE T1GATE `VEuc  1 e 1 @800 ]
 "39892
@@ -833,17 +752,17 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PR2 PR2 `VEuc  1 e 1 @803 ]
 "40134
 [v _T2CON T2CON `VEuc  1 e 1 @804 ]
-[s S2253 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S2086 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "40170
-[s S2257 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S2090 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
 "40170
-[s S2261 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S2094 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -852,7 +771,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
 "40170
-[s S2269 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S2102 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -862,90 +781,90 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TMR2ON 1 0 :1:7 
 ]
 "40170
-[u S2278 . 1 `S2253 1 . 1 0 `S2257 1 . 1 0 `S2261 1 . 1 0 `S2269 1 . 1 0 ]
+[u S2111 . 1 `S2086 1 . 1 0 `S2090 1 . 1 0 `S2094 1 . 1 0 `S2102 1 . 1 0 ]
 "40170
 "40170
-[v _T2CONbits T2CONbits `VES2278  1 e 1 @804 ]
+[v _T2CONbits T2CONbits `VES2111  1 e 1 @804 ]
 "40280
 [v _T2HLT T2HLT `VEuc  1 e 1 @805 ]
-[s S2127 . 1 `uc 1 MODE 1 0 :5:0 
+[s S1960 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "40313
-[s S2132 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1965 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
 "40313
-[s S2138 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S1971 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CKSYNC 1 0 :1:5 
 `uc 1 T2CKPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
 "40313
-[s S2143 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S1976 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
 "40313
-[u S2149 . 1 `S2127 1 . 1 0 `S2132 1 . 1 0 `S2138 1 . 1 0 `S2143 1 . 1 0 ]
+[u S1982 . 1 `S1960 1 . 1 0 `S1965 1 . 1 0 `S1971 1 . 1 0 `S1976 1 . 1 0 ]
 "40313
 "40313
-[v _T2HLTbits T2HLTbits `VES2149  1 e 1 @805 ]
+[v _T2HLTbits T2HLTbits `VES1982  1 e 1 @805 ]
 "40408
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @806 ]
 "40566
 [v _T2RST T2RST `VEuc  1 e 1 @807 ]
-[s S2215 . 1 `uc 1 RSEL 1 0 :5:0 
+[s S2048 . 1 `uc 1 RSEL 1 0 :5:0 
 ]
 "40593
-[s S2217 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S2050 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 `uc 1 RSEL4 1 0 :1:4 
 ]
 "40593
-[s S2223 . 1 `uc 1 T2RSEL 1 0 :5:0 
+[s S2056 . 1 `uc 1 T2RSEL 1 0 :5:0 
 ]
 "40593
-[s S2225 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S2058 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 `uc 1 T2RSEL4 1 0 :1:4 
 ]
 "40593
-[u S2231 . 1 `S2215 1 . 1 0 `S2217 1 . 1 0 `S2223 1 . 1 0 `S2225 1 . 1 0 ]
+[u S2064 . 1 `S2048 1 . 1 0 `S2050 1 . 1 0 `S2056 1 . 1 0 `S2058 1 . 1 0 ]
 "40593
 "40593
-[v _T2RSTbits T2RSTbits `VES2231  1 e 1 @807 ]
+[v _T2RSTbits T2RSTbits `VES2064  1 e 1 @807 ]
 "54261
 [v _ADCP ADCP `VEuc  1 e 1 @984 ]
-[s S767 . 1 `uc 1 CPRDY 1 0 :1:0 
+[s S825 . 1 `uc 1 CPRDY 1 0 :1:0 
 `uc 1 . 1 0 :6:1 
 `uc 1 ON 1 0 :1:7 
 ]
 "54326
-[s S771 . 1 `uc 1 ADCPRDY 1 0 :1:0 
+[s S829 . 1 `uc 1 ADCPRDY 1 0 :1:0 
 `uc 1 . 1 0 :6:1 
 `uc 1 CPON 1 0 :1:7 
 ]
 "54326
-[s S775 . 1 `uc 1 . 1 0 :7:0 
+[s S833 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 ADCPON 1 0 :1:7 
 ]
 "54326
-[u S778 . 1 `S767 1 . 1 0 `S771 1 . 1 0 `S775 1 . 1 0 ]
+[u S836 . 1 `S825 1 . 1 0 `S829 1 . 1 0 `S833 1 . 1 0 ]
 "54326
 "54326
-[v _ADCPbits ADCPbits `VES778  1 e 1 @984 ]
+[v _ADCPbits ADCPbits `VES836  1 e 1 @984 ]
 "54363
 [v _ADLTHL ADLTHL `VEuc  1 e 1 @985 ]
 "54491
@@ -998,7 +917,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _ADPREH ADPREH `VEuc  1 e 1 @1010 ]
 "57330
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @1011 ]
-[s S464 . 1 `uc 1 GO 1 0 :1:0 
+[s S522 . 1 `uc 1 GO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 FM 1 0 :2:2 
 `uc 1 CS 1 0 :1:4 
@@ -1007,7 +926,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 ON 1 0 :1:7 
 ]
 "57368
-[s S472 . 1 `uc 1 ADGO 1 0 :1:0 
+[s S530 . 1 `uc 1 ADGO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM 1 0 :2:2 
 `uc 1 ADCS 1 0 :1:4 
@@ -1016,52 +935,52 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 ADON 1 0 :1:7 
 ]
 "57368
-[s S480 . 1 `uc 1 DONE 1 0 :1:0 
+[s S538 . 1 `uc 1 DONE 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 FM0 1 0 :1:2 
 ]
 "57368
-[s S484 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+[s S542 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
 ]
 "57368
-[s S486 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+[s S544 . 1 `uc 1 GO_nDONE 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM0 1 0 :1:2 
 ]
 "57368
-[u S490 . 1 `S464 1 . 1 0 `S472 1 . 1 0 `S480 1 . 1 0 `S484 1 . 1 0 `S486 1 . 1 0 ]
+[u S548 . 1 `S522 1 . 1 0 `S530 1 . 1 0 `S538 1 . 1 0 `S542 1 . 1 0 `S544 1 . 1 0 ]
 "57368
 "57368
-[v _ADCON0bits ADCON0bits `VES490  1 e 1 @1011 ]
+[v _ADCON0bits ADCON0bits `VES548  1 e 1 @1011 ]
 "57458
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @1012 ]
-[s S739 . 1 `uc 1 DSEN 1 0 :1:0 
+[s S797 . 1 `uc 1 DSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 GPOL 1 0 :1:5 
 `uc 1 IPEN 1 0 :1:6 
 `uc 1 PPOL 1 0 :1:7 
 ]
 "57479
-[s S745 . 1 `uc 1 ADDSEN 1 0 :1:0 
+[s S803 . 1 `uc 1 ADDSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 ADGPOL 1 0 :1:5 
 `uc 1 ADIPEN 1 0 :1:6 
 `uc 1 ADPPOL 1 0 :1:7 
 ]
 "57479
-[u S751 . 1 `S739 1 . 1 0 `S745 1 . 1 0 ]
+[u S809 . 1 `S797 1 . 1 0 `S803 1 . 1 0 ]
 "57479
 "57479
-[v _ADCON1bits ADCON1bits `VES751  1 e 1 @1012 ]
+[v _ADCON1bits ADCON1bits `VES809  1 e 1 @1012 ]
 "57524
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @1013 ]
-[s S602 . 1 `uc 1 MODE 1 0 :3:0 
+[s S660 . 1 `uc 1 MODE 1 0 :3:0 
 `uc 1 ACLR 1 0 :1:3 
 `uc 1 CRS 1 0 :3:4 
 `uc 1 PSIS 1 0 :1:7 
 ]
 "57572
-[s S607 . 1 `uc 1 ADMD0 1 0 :1:0 
+[s S665 . 1 `uc 1 ADMD0 1 0 :1:0 
 `uc 1 ADMD1 1 0 :1:1 
 `uc 1 ADMD2 1 0 :1:2 
 `uc 1 ADACLR 1 0 :1:3 
@@ -1071,12 +990,12 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 ADPSIS 1 0 :1:7 
 ]
 "57572
-[s S616 . 1 `uc 1 ADMD 1 0 :3:0 
+[s S674 . 1 `uc 1 ADMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCRS 1 0 :3:4 
 ]
 "57572
-[s S620 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S678 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1085,29 +1004,29 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 CRS2 1 0 :1:6 
 ]
 "57572
-[s S628 . 1 `uc 1 MD 1 0 :3:0 
+[s S686 . 1 `uc 1 MD 1 0 :3:0 
 ]
 "57572
-[s S630 . 1 `uc 1 MD0 1 0 :1:0 
+[s S688 . 1 `uc 1 MD0 1 0 :1:0 
 `uc 1 MD1 1 0 :1:1 
 `uc 1 MD2 1 0 :1:2 
 ]
 "57572
-[s S634 . 1 `uc 1 ADMODE 1 0 :3:0 
+[s S692 . 1 `uc 1 ADMODE 1 0 :3:0 
 ]
 "57572
-[u S636 . 1 `S602 1 . 1 0 `S607 1 . 1 0 `S616 1 . 1 0 `S620 1 . 1 0 `S628 1 . 1 0 `S630 1 . 1 0 `S634 1 . 1 0 ]
+[u S694 . 1 `S660 1 . 1 0 `S665 1 . 1 0 `S674 1 . 1 0 `S678 1 . 1 0 `S686 1 . 1 0 `S688 1 . 1 0 `S692 1 . 1 0 ]
 "57572
 "57572
-[v _ADCON2bits ADCON2bits `VES636  1 e 1 @1013 ]
+[v _ADCON2bits ADCON2bits `VES694  1 e 1 @1013 ]
 "57702
 [v _ADCON3 ADCON3 `VEuc  1 e 1 @1014 ]
-[s S548 . 1 `uc 1 TMD 1 0 :3:0 
+[s S606 . 1 `uc 1 TMD 1 0 :3:0 
 `uc 1 SOI 1 0 :1:3 
 `uc 1 CALC 1 0 :3:4 
 ]
 "57737
-[s S552 . 1 `uc 1 ADTMD0 1 0 :1:0 
+[s S610 . 1 `uc 1 ADTMD0 1 0 :1:0 
 `uc 1 ADTMD1 1 0 :1:1 
 `uc 1 ADTMD2 1 0 :1:2 
 `uc 1 ADSOI 1 0 :1:3 
@@ -1116,12 +1035,12 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 ADCALC2 1 0 :1:6 
 ]
 "57737
-[s S560 . 1 `uc 1 ADTMD 1 0 :3:0 
+[s S618 . 1 `uc 1 ADTMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCALC 1 0 :3:4 
 ]
 "57737
-[s S564 . 1 `uc 1 TMD0 1 0 :1:0 
+[s S622 . 1 `uc 1 TMD0 1 0 :1:0 
 `uc 1 TMD1 1 0 :1:1 
 `uc 1 TMD2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1130,13 +1049,13 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 CALC2 1 0 :1:6 
 ]
 "57737
-[u S572 . 1 `S548 1 . 1 0 `S552 1 . 1 0 `S560 1 . 1 0 `S564 1 . 1 0 ]
+[u S630 . 1 `S606 1 . 1 0 `S610 1 . 1 0 `S618 1 . 1 0 `S622 1 . 1 0 ]
 "57737
 "57737
-[v _ADCON3bits ADCON3bits `VES572  1 e 1 @1014 ]
+[v _ADCON3bits ADCON3bits `VES630  1 e 1 @1014 ]
 "57832
 [v _ADSTAT ADSTAT `VEuc  1 e 1 @1015 ]
-[s S679 . 1 `uc 1 STAT 1 0 :3:0 
+[s S737 . 1 `uc 1 STAT 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 MATH 1 0 :1:4 
 `uc 1 LTHR 1 0 :1:5 
@@ -1144,7 +1063,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 OV 1 0 :1:7 
 ]
 "57867
-[s S686 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+[s S744 . 1 `uc 1 ADSTAT0 1 0 :1:0 
 `uc 1 ADSTAT1 1 0 :1:1 
 `uc 1 ADSTAT2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1154,20 +1073,20 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 ADAOV 1 0 :1:7 
 ]
 "57867
-[s S695 . 1 `uc 1 ADSTAT 1 0 :3:0 
+[s S753 . 1 `uc 1 ADSTAT 1 0 :3:0 
 `uc 1 . 1 0 :4:3 
 `uc 1 ADOV 1 0 :1:7 
 ]
 "57867
-[s S699 . 1 `uc 1 STAT0 1 0 :1:0 
+[s S757 . 1 `uc 1 STAT0 1 0 :1:0 
 `uc 1 STAT1 1 0 :1:1 
 `uc 1 STAT2 1 0 :1:2 
 ]
 "57867
-[u S703 . 1 `S679 1 . 1 0 `S686 1 . 1 0 `S695 1 . 1 0 `S699 1 . 1 0 ]
+[u S761 . 1 `S737 1 . 1 0 `S744 1 . 1 0 `S753 1 . 1 0 `S757 1 . 1 0 ]
 "57867
 "57867
-[v _ADSTATbits ADSTATbits `VES703  1 e 1 @1015 ]
+[v _ADSTATbits ADSTATbits `VES761  1 e 1 @1015 ]
 "57957
 [v _ADREF ADREF `VEuc  1 e 1 @1016 ]
 "58039
@@ -1178,15 +1097,15 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _ADCTX ADCTX `VEuc  1 e 1 @1019 ]
 "58317
 [v _ADCSEL1 ADCSEL1 `VEuc  1 e 1 @1020 ]
-[s S525 . 1 `uc 1 . 1 0 :6:0 
+[s S583 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 SSI 1 0 :1:6 
 `uc 1 CHEN 1 0 :1:7 
 ]
 "58329
-[u S529 . 1 `S525 1 . 1 0 ]
+[u S587 . 1 `S583 1 . 1 0 ]
 "58329
 "58329
-[v _ADCSEL1bits ADCSEL1bits `VES529  1 e 1 @1020 ]
+[v _ADCSEL1bits ADCSEL1bits `VES587  1 e 1 @1020 ]
 "58425
 [v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
 "58487
@@ -1237,37 +1156,37 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PWM1PIPOS PWM1PIPOS `VEuc  1 e 1 @1126 ]
 "63547
 [v _PWM1GIR PWM1GIR `VEuc  1 e 1 @1127 ]
-[s S216 . 1 `uc 1 S1P1IF 1 0 :1:0 
+[s S274 . 1 `uc 1 S1P1IF 1 0 :1:0 
 `uc 1 S1P2IF 1 0 :1:1 
 ]
 "63558
-[u S219 . 1 `S216 1 . 1 0 ]
+[u S277 . 1 `S274 1 . 1 0 ]
 "63558
 "63558
-[v _PWM1GIRbits PWM1GIRbits `VES219  1 e 1 @1127 ]
+[v _PWM1GIRbits PWM1GIRbits `VES277  1 e 1 @1127 ]
 "63573
 [v _PWM1GIE PWM1GIE `VEuc  1 e 1 @1128 ]
-[s S292 . 1 `uc 1 S1P1IE 1 0 :1:0 
+[s S350 . 1 `uc 1 S1P1IE 1 0 :1:0 
 `uc 1 S1P2IE 1 0 :1:1 
 ]
 "63584
-[u S295 . 1 `S292 1 . 1 0 ]
+[u S353 . 1 `S350 1 . 1 0 ]
 "63584
 "63584
-[v _PWM1GIEbits PWM1GIEbits `VES295  1 e 1 @1128 ]
+[v _PWM1GIEbits PWM1GIEbits `VES353  1 e 1 @1128 ]
 "63599
 [v _PWM1CON PWM1CON `VEuc  1 e 1 @1129 ]
-[s S277 . 1 `uc 1 ERSNOW 1 0 :1:0 
+[s S335 . 1 `uc 1 ERSNOW 1 0 :1:0 
 `uc 1 ERSPOL 1 0 :1:1 
 `uc 1 LD 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 EN 1 0 :1:7 
 ]
 "63613
-[u S283 . 1 `S277 1 . 1 0 ]
+[u S341 . 1 `S335 1 . 1 0 ]
 "63613
 "63613
-[v _PWM1CONbits PWM1CONbits `VES283  1 e 1 @1129 ]
+[v _PWM1CONbits PWM1CONbits `VES341  1 e 1 @1129 ]
 "63638
 [v _PWM1S1CFG PWM1S1CFG `VEuc  1 e 1 @1130 ]
 "63704
@@ -1296,17 +1215,17 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PWM2GIR PWM2GIR `VEuc  1 e 1 @1142 ]
 "63949
 "63949
-[v _PWM2GIRbits PWM2GIRbits `VES219  1 e 1 @1142 ]
+[v _PWM2GIRbits PWM2GIRbits `VES277  1 e 1 @1142 ]
 "63964
 [v _PWM2GIE PWM2GIE `VEuc  1 e 1 @1143 ]
 "63975
 "63975
-[v _PWM2GIEbits PWM2GIEbits `VES295  1 e 1 @1143 ]
+[v _PWM2GIEbits PWM2GIEbits `VES353  1 e 1 @1143 ]
 "63990
 [v _PWM2CON PWM2CON `VEuc  1 e 1 @1144 ]
 "64004
 "64004
-[v _PWM2CONbits PWM2CONbits `VES283  1 e 1 @1144 ]
+[v _PWM2CONbits PWM2CONbits `VES341  1 e 1 @1144 ]
 "64029
 [v _PWM2S1CFG PWM2S1CFG `VEuc  1 e 1 @1145 ]
 "64095
@@ -1317,20 +1236,6 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PWM2S1P2L PWM2S1P2L `VEuc  1 e 1 @1148 ]
 "64162
 [v _PWM2S1P2H PWM2S1P2H `VEuc  1 e 1 @1149 ]
-[s S1061 . 1 `uc 1 SWIE 1 0 :1:0 
-`uc 1 HLVDIE 1 0 :1:1 
-`uc 1 OSFIE 1 0 :1:2 
-`uc 1 CSWIE 1 0 :1:3 
-`uc 1 TU16AIE 1 0 :1:4 
-`uc 1 CLC1IE 1 0 :1:5 
-`uc 1 CANIE 1 0 :1:6 
-`uc 1 IOCIE 1 0 :1:7 
-]
-"65057
-[u S1070 . 1 `S1061 1 . 1 0 ]
-"65057
-"65057
-[v _PIE0bits PIE0bits `VES1070  1 e 1 @1182 ]
 [s S89 . 1 `uc 1 INT0IE 1 0 :1:0 
 `uc 1 ZCDIE 1 0 :1:1 
 `uc 1 ADIE 1 0 :1:2 
@@ -1345,7 +1250,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "65119
 "65119
 [v _PIE1bits PIE1bits `VES98  1 e 1 @1183 ]
-[s S990 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+[s S1049 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
 `uc 1 SPI1TXIE 1 0 :1:1 
 `uc 1 SPI1IE 1 0 :1:2 
 `uc 1 TMR2IE 1 0 :1:3 
@@ -1355,11 +1260,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TMR0IE 1 0 :1:7 
 ]
 "65251
-[u S999 . 1 `S990 1 . 1 0 ]
+[u S1058 . 1 `S1049 1 . 1 0 ]
 "65251
 "65251
-[v _PIE3bits PIE3bits `VES999  1 e 1 @1185 ]
-[s S225 . 1 `uc 1 U1RXIE 1 0 :1:0 
+[v _PIE3bits PIE3bits `VES1058  1 e 1 @1185 ]
+[s S283 . 1 `uc 1 U1RXIE 1 0 :1:0 
 `uc 1 U1TXIE 1 0 :1:1 
 `uc 1 U1EIE 1 0 :1:2 
 `uc 1 U1IE 1 0 :1:3 
@@ -1369,11 +1274,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 PWM1IE 1 0 :1:7 
 ]
 "65313
-[u S234 . 1 `S225 1 . 1 0 ]
+[u S292 . 1 `S283 1 . 1 0 ]
 "65313
 "65313
-[v _PIE4bits PIE4bits `VES234  1 e 1 @1186 ]
-[s S1744 . 1 `uc 1 SPI2RXIE 1 0 :1:0 
+[v _PIE4bits PIE4bits `VES292  1 e 1 @1186 ]
+[s S1577 . 1 `uc 1 SPI2RXIE 1 0 :1:0 
 `uc 1 SPI2TXIE 1 0 :1:1 
 `uc 1 SPI2IE 1 0 :1:2 
 `uc 1 TU16BIE 1 0 :1:3 
@@ -1383,10 +1288,10 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 PWM2IE 1 0 :1:7 
 ]
 "65375
-[u S1753 . 1 `S1744 1 . 1 0 ]
+[u S1586 . 1 `S1577 1 . 1 0 ]
 "65375
 "65375
-[v _PIE5bits PIE5bits `VES1753  1 e 1 @1187 ]
+[v _PIE5bits PIE5bits `VES1586  1 e 1 @1187 ]
 "56 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_ConversionComplete_ISR ADC_ConversionComplete_ISR `*.37(v  1 s 2 ADC_ConversionComplete_ISR ]
 "57
@@ -1395,18 +1300,6 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _ADC_ActiveClockTuning_ISR ADC_ActiveClockTuning_ISR `*.37(v  1 s 2 ADC_ActiveClockTuning_ISR ]
 "83 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
 [v _DLC_BYTES DLC_BYTES `C[9]uc  1 s 9 DLC_BYTES ]
-"85
-[v _CAN1_InvalidMessageHandler CAN1_InvalidMessageHandler `*.37(v  1 s 2 CAN1_InvalidMessageHandler ]
-"86
-[v _CAN1_BusWakeUpActivityHandler CAN1_BusWakeUpActivityHandler `*.37(v  1 s 2 CAN1_BusWakeUpActivityHandler ]
-"87
-[v _CAN1_BusErrorHandler CAN1_BusErrorHandler `*.37(v  1 s 2 CAN1_BusErrorHandler ]
-"88
-[v _CAN1_ModeChangeHandler CAN1_ModeChangeHandler `*.37(v  1 s 2 CAN1_ModeChangeHandler ]
-"89
-[v _CAN1_SystemErrorHandler CAN1_SystemErrorHandler `*.37(v  1 s 2 CAN1_SystemErrorHandler ]
-"90
-[v _CAN1_TxAttemptHandler CAN1_TxAttemptHandler `*.37(v  1 s 2 CAN1_TxAttemptHandler ]
 "30 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/ext_int.c
 [v _INT0_InterruptHandler INT0_InterruptHandler `*.37(v  1 e 2 0 ]
 "56 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
@@ -1432,7 +1325,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "50 E:\UMOTORSPORT\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"85
+"87
 } 0
 "50 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1518,20 +1411,20 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v PWM1_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
 "205
 } 0
-"80 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/mcc.c
+"84 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
-"100
+"104
 } 0
 "55 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"122
+"127
 } 0
 "66 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"78
+"82
 } 0
 "52 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
@@ -1549,61 +1442,20 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
 "52
 } 0
-"174 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
+"120 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
 {
-"198
+"143
 } 0
-"117
+"87
 [v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
 {
-"131
+"101
 } 0
-"149
-[v _CAN1_ErrorNotificationInterruptEnable CAN1_ErrorNotificationInterruptEnable `(v  1 s 1 CAN1_ErrorNotificationInterruptEnable ]
-{
-"172
-} 0
-"417
-[v _CAN1_SetTxAttemptInterruptHandler CAN1_SetTxAttemptInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetTxAttemptInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
-"420
-} 0
-"412
-[v _CAN1_SetSystemErrorInterruptHandler CAN1_SetSystemErrorInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetSystemErrorInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
-"415
-} 0
-"407
-[v _CAN1_SetModeChangeInterruptHandler CAN1_SetModeChangeInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetModeChangeInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
-"410
-} 0
-"392
-[v _CAN1_SetInvalidMessageInterruptHandler CAN1_SetInvalidMessageInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetInvalidMessageInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
-"395
-} 0
-"397
-[v _CAN1_SetBusWakeUpActivityInterruptHandler CAN1_SetBusWakeUpActivityInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetBusWakeUpActivityInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
-"400
-} 0
-"402
-[v _CAN1_SetBusErrorInterruptHandler CAN1_SetBusErrorInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetBusErrorInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
-"405
-} 0
-"133
+"103
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
 {
-"147
+"117
 } 0
 "65 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -1628,23 +1480,17 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
 "421
 } 0
-"38 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/delay.c
-[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
-{
-[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 2 ]
-"42
-} 0
 "12 E:\UMOTORSPORT\ASB\ASB.X\MESSAGES.c
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
 {
 "17
-[v CANWriteMessage@uiData4 uiData4 `ui  1 a 2 6 ]
+[v CANWriteMessage@uiData4 uiData4 `ui  1 a 2 51 ]
 "16
-[v CANWriteMessage@uiData3 uiData3 `ui  1 a 2 4 ]
+[v CANWriteMessage@uiData3 uiData3 `ui  1 a 2 49 ]
 "15
-[v CANWriteMessage@uiData2 uiData2 `ui  1 a 2 2 ]
+[v CANWriteMessage@uiData2 uiData2 `ui  1 a 2 47 ]
 "14
-[v CANWriteMessage@uiData1 uiData1 `ui  1 a 2 0 ]
+[v CANWriteMessage@uiData1 uiData1 `ui  1 a 2 45 ]
 "12
 [v CANWriteMessage@id id `ul  1 p 4 30 ]
 [v CANWriteMessage@dataLength dataLength `uc  1 p 1 34 ]
@@ -1658,139 +1504,139 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v CANWriteMessage@data8 data8 `uc  1 p 1 42 ]
 "57
 } 0
-"337 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
+"282 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
 [v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
 {
 [v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"339
+"284
 [v CAN1_TransmitFIFOStatusGet@status status `E22361  1 a 1 4 ]
-"337
+"282
 [v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"339
+"284
 [v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 5 ]
-"347
+"292
 } 0
-"315
+"260
 [v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
 {
 [v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"324
+"269
 [v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 27 ]
-"317
+"262
 [v CAN1_Transmit@status status `E22340  1 a 1 26 ]
-"315
+"260
 [v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-[s S1376 . 1 `uc 1 idType 1 0 :1:0 
+[s S1303 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-[u S1382 . 1 `uc 1 msgfields 1 0 `S1376 1 . 1 0 ]
-[s S1385 . 7 `ul 1 msgId 4 0 `S1382 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Transmit@txCanMsg txCanMsg `*.39S1385  1 p 2 24 ]
+[u S1309 . 1 `uc 1 msgfields 1 0 `S1303 1 . 1 0 ]
+[s S1312 . 7 `ul 1 msgId 4 0 `S1309 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v CAN1_Transmit@txCanMsg txCanMsg `*.39S1312  1 p 2 24 ]
 [v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 29 ]
-"335
+"280
 } 0
-"235
+"180
 [v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
 {
 [v isTxChannel@channel channel `uc  1 a 1 wreg ]
 [v isTxChannel@channel channel `uc  1 a 1 wreg ]
-"237
+"182
 [v isTxChannel@channel channel `uc  1 a 1 3 ]
-"238
+"183
 } 0
-"245
+"190
 [v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
 {
-"247
+"192
 [v WriteMessageToFifo@msgId msgId `ul  1 a 4 20 ]
-"248
+"193
 [v WriteMessageToFifo@status status `uc  1 a 1 19 ]
-"245
+"190
 [v WriteMessageToFifo@txFifoObj txFifoObj `*.39uc  1 p 2 13 ]
-[s S1376 . 1 `uc 1 idType 1 0 :1:0 
+[s S1303 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-[u S1382 . 1 `uc 1 msgfields 1 0 `S1376 1 . 1 0 ]
-[s S1385 . 7 `ul 1 msgId 4 0 `S1382 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v WriteMessageToFifo@txCanMsg txCanMsg `*.39S1385  1 p 2 15 ]
-"284
+[u S1309 . 1 `uc 1 msgfields 1 0 `S1303 1 . 1 0 ]
+[s S1312 . 7 `ul 1 msgId 4 0 `S1309 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v WriteMessageToFifo@txCanMsg txCanMsg `*.39S1312  1 p 2 15 ]
+"229
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
 "8
-[v memcpy@s s `*.39Cuc  1 a 2 11 ]
+[v memcpy@s s `*.39Cuc  1 a 2 10 ]
 "7
-[v memcpy@d d `*.39uc  1 a 2 9 ]
+[v memcpy@d d `*.39uc  1 a 2 8 ]
 "9
-[v memcpy@tmp tmp `uc  1 a 1 8 ]
+[v memcpy@tmp tmp `uc  1 a 1 12 ]
 "4
 [v memcpy@d1 d1 `*.39v  1 p 2 2 ]
 [v memcpy@s1 s1 `*.39Cv  1 p 2 4 ]
 [v memcpy@n n `ui  1 p 2 6 ]
 "18
 } 0
-"286 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
+"231 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
 [v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
 {
 [v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
-[s S1376 . 1 `uc 1 idType 1 0 :1:0 
+[s S1303 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"289
-[u S1382 . 1 `uc 1 msgfields 1 0 `S1376 1 . 1 0 ]
-[v ValidateTransmission@field field `S1382  1 a 1 10 ]
-"288
+"234
+[u S1309 . 1 `uc 1 msgfields 1 0 `S1303 1 . 1 0 ]
+[v ValidateTransmission@field field `S1309  1 a 1 10 ]
+"233
 [v ValidateTransmission@txMsgStatus txMsgStatus `E22340  1 a 1 9 ]
-"286
+"231
 [v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
-[s S1385 . 7 `ul 1 msgId 4 0 `S1382 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v ValidateTransmission@txCanMsg txCanMsg `*.39S1385  1 p 2 3 ]
-"288
+[s S1312 . 7 `ul 1 msgId 4 0 `S1309 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v ValidateTransmission@txCanMsg txCanMsg `*.39S1312  1 p 2 3 ]
+"233
 [v ValidateTransmission@validChannel validChannel `uc  1 a 1 8 ]
-"313
+"258
 } 0
-"240
+"185
 [v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
 {
 [v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
 [v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
-"242
+"187
 [v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 2 ]
-"243
+"188
 } 0
-"200
+"145
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
 {
 [v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
-"202
+"147
 [v CAN1_OperationModeSet@status status `E22356  1 a 1 3 ]
-"203
+"148
 [v CAN1_OperationModeSet@opMode opMode `E22346  1 a 1 2 ]
-"200
+"145
 [v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
-"202
+"147
 [v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 4 ]
-"227
+"172
 } 0
-"229
+"174
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
 {
-"232
+"177
 } 0
 "58 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"85
+"81
 } 0
 "165 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/tmr2.c
 [v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
@@ -1859,39 +1705,4 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "57
-} 0
-"422 E:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/can1.c
-[v _CAN1_ISR CAN1_ISR `(v  1 e 1 0 ]
-{
-"464
-} 0
-"112
-[v _DefaultTxAttemptHandler DefaultTxAttemptHandler `(v  1 s 1 DefaultTxAttemptHandler ]
-{
-"114
-} 0
-"108
-[v _DefaultSystemErrorHandler DefaultSystemErrorHandler `(v  1 s 1 DefaultSystemErrorHandler ]
-{
-"110
-} 0
-"104
-[v _DefaultModeChangeHandler DefaultModeChangeHandler `(v  1 s 1 DefaultModeChangeHandler ]
-{
-"106
-} 0
-"92
-[v _DefaultInvalidMessageHandler DefaultInvalidMessageHandler `(v  1 s 1 DefaultInvalidMessageHandler ]
-{
-"94
-} 0
-"96
-[v _DefaultBusWakeUpActivityHandler DefaultBusWakeUpActivityHandler `(v  1 s 1 DefaultBusWakeUpActivityHandler ]
-{
-"98
-} 0
-"100
-[v _DefaultBusErrorHandler DefaultBusErrorHandler `(v  1 s 1 DefaultBusErrorHandler ]
-{
-"102
 } 0

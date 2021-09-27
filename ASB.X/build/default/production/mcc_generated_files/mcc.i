@@ -38208,25 +38208,8 @@ _Bool CAN1_IsRxErrorActive(void);
 void CAN1_Sleep(void);
 # 722 "mcc_generated_files/can1.h"
 CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
-# 790 "mcc_generated_files/can1.h"
-void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
-# 847 "mcc_generated_files/can1.h"
-void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
-# 915 "mcc_generated_files/can1.h"
-void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
-# 966 "mcc_generated_files/can1.h"
-void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
-# 1035 "mcc_generated_files/can1.h"
-void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
-# 1103 "mcc_generated_files/can1.h"
-void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
-# 1155 "mcc_generated_files/can1.h"
-void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
-# 1199 "mcc_generated_files/can1.h"
+# 767 "mcc_generated_files/can1.h"
 void CAN1_SetTXQnullHandler(void (*handler)(void));
-
-
-void CAN1_ISR(void);
 # 61 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/delay.h" 1
@@ -38347,15 +38330,19 @@ void SYSTEM_Initialize(void)
 void OSCILLATOR_Initialize(void)
 {
 
-    OSCCON1 = 0x70;
+    OSCCON1 = 0x72;
 
     OSCCON3 = 0x00;
 
-    OSCEN = 0x00;
+    OSCEN = 0x01;
 
     OSCFRQ = 0x02;
 
     OSCTUNE = 0x00;
+
+    while(PLLR == 0)
+    {
+    }
 }
 
 void PMD_Initialize(void)

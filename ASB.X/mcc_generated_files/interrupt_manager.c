@@ -66,10 +66,6 @@ void __interrupt() INTERRUPT_InterruptManager (void)
     {
         INT0_ISR();
     }
-    else if(PIE0bits.CANIE == 1 && PIR0bits.CANIF == 1)
-    {
-        CAN1_ISR();
-    }
     else if(PIE3bits.TMR2IE == 1 && PIR3bits.TMR2IF == 1)
     {
         TMR2_ISR();
