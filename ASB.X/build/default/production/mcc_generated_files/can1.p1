@@ -81,17 +81,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9178
 [; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 9178: extern volatile C1CONTbits_t C1CONTbits __attribute__((address(0x103)));
 [v _C1CONTbits `VS428 ~T0 @X0 0 e@259 ]
-"10457
-[; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 10457:     struct {
-[s S497 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S497 . . TXATIF RXOVIF SERRIF CERRIF WAKIF IVMIF ]
-"10456
-[; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 10456: typedef union {
-[u S496 `S497 1 ]
-[n S496 . . ]
-"10467
-[; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 10467: extern volatile C1INTHbits_t C1INTHbits __attribute__((address(0x11D)));
-[v _C1INTHbits `VS496 ~T0 @X0 0 e@285 ]
 "9091
 [; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 9091:     struct {
 [s S426 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
@@ -163,6 +152,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12179
 [; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 12179: extern volatile C1TRECUbits_t C1TRECUbits __attribute__((address(0x136)));
 [v _C1TRECUbits `VS568 ~T0 @X0 0 e@310 ]
+"10457
+[; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 10457:     struct {
+[s S497 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S497 . . TXATIF RXOVIF SERRIF CERRIF WAKIF IVMIF ]
+"10456
+[; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 10456: typedef union {
+[u S496 `S497 1 ]
+[n S496 . . ]
+"10467
+[; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 10467: extern volatile C1INTHbits_t C1INTHbits __attribute__((address(0x11D)));
+[v _C1INTHbits `VS496 ~T0 @X0 0 e@285 ]
 "10552
 [; ;C:/Users/LUC/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 10552:     struct {
 [s S501 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -3837,41 +3837,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "154
 [; ;mcc_generated_files/can1.c: 154:         C1CONTbits.REQOP = requestMode;
 [e = . . _C1CONTbits 0 0 -> _requestMode `uc ]
-"156
-[; ;mcc_generated_files/can1.c: 156:         while (C1CONUbits.OPMOD != requestMode)
-[e $U 3187  ]
-[e :U 3188 ]
-"157
-[; ;mcc_generated_files/can1.c: 157:         {
-{
-"159
-[; ;mcc_generated_files/can1.c: 159:             if (1 == C1INTHbits.SERRIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 3 `i 3190  ]
-"160
-[; ;mcc_generated_files/can1.c: 160:             {
-{
-"161
-[; ;mcc_generated_files/can1.c: 161:                 status = CAN_OP_MODE_SYS_ERROR_OCCURED;
-[e = _status . `E22356 2 ]
-"162
-[; ;mcc_generated_files/can1.c: 162:                 break;
-[e $U 3189  ]
-"163
-[; ;mcc_generated_files/can1.c: 163:             }
-}
-[e :U 3190 ]
-"164
-[; ;mcc_generated_files/can1.c: 164:         }
-}
-[e :U 3187 ]
-"156
-[; ;mcc_generated_files/can1.c: 156:         while (C1CONUbits.OPMOD != requestMode)
-[e $ != -> . . _C1CONUbits 0 5 `ui -> _requestMode `ui 3188  ]
-[e :U 3189 ]
 "165
 [; ;mcc_generated_files/can1.c: 165:     }
 }
-[e $U 3191  ]
+[e $U 3187  ]
 "166
 [; ;mcc_generated_files/can1.c: 166:     else
 [e :U 3186 ]
@@ -3884,7 +3853,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "169
 [; ;mcc_generated_files/can1.c: 169:     }
 }
-[e :U 3191 ]
+[e :U 3187 ]
 "171
 [; ;mcc_generated_files/can1.c: 171:     return status;
 [e ) _status ]
@@ -3904,10 +3873,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "176
 [; ;mcc_generated_files/can1.c: 176:     return C1CONUbits.OPMOD;
 [e ) -> . . _C1CONUbits 0 5 `E22346 ]
-[e $UE 3192  ]
+[e $UE 3188  ]
 "177
 [; ;mcc_generated_files/can1.c: 177: }
-[e :UE 3192 ]
+[e :UE 3188 ]
 }
 "180
 [; ;mcc_generated_files/can1.c: 180: static _Bool isTxChannel(uint8_t channel)
@@ -3925,10 +3894,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "182
 [; ;mcc_generated_files/can1.c: 182:     return channel < 4u && (FIFO[channel].CONL & 0x80);
 [e ) -> -> && < -> _channel `ui -> 4 `ui != & -> . *U + _FIFO * -> _channel `ux -> -> # *U _FIFO `ui `ux 0 `i -> 128 `i -> 0 `i `i `a ]
-[e $UE 3193  ]
+[e $UE 3189  ]
 "183
 [; ;mcc_generated_files/can1.c: 183: }
-[e :UE 3193 ]
+[e :UE 3189 ]
 }
 "185
 [; ;mcc_generated_files/can1.c: 185: static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
@@ -3946,10 +3915,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "187
 [; ;mcc_generated_files/can1.c: 187:     return (FIFO[validChannel].STAL & 0x1);
 [e ) -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 4 `i -> 1 `i `E22361 ]
-[e $UE 3194  ]
+[e $UE 3190  ]
 "188
 [; ;mcc_generated_files/can1.c: 188: }
-[e :UE 3194 ]
+[e :UE 3190 ]
 }
 "190
 [; ;mcc_generated_files/can1.c: 190: static void WriteMessageToFifo(uint8_t *txFifoObj, CAN_MSG_OBJ *txCanMsg)
@@ -3978,7 +3947,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _payloadOffsetBytes -> + + + -> 4 `ui -> 1 `ui -> 1 `ui -> 2 `ui `uc ]
 "200
 [; ;mcc_generated_files/can1.c: 200:     if (CAN_FRAME_EXT == txCanMsg->field.idType)
-[e $ ! == -> . `E22328 1 `i -> . . . *U _txCanMsg 1 1 0 `i 3196  ]
+[e $ ! == -> . `E22328 1 `i -> . . . *U _txCanMsg 1 1 0 `i 3192  ]
 "201
 [; ;mcc_generated_files/can1.c: 201:     {
 {
@@ -4003,10 +3972,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "208
 [; ;mcc_generated_files/can1.c: 208:     }
 }
-[e $U 3197  ]
+[e $U 3193  ]
 "209
 [; ;mcc_generated_files/can1.c: 209:     else
-[e :U 3196 ]
+[e :U 3192 ]
 "210
 [; ;mcc_generated_files/can1.c: 210:     {
 {
@@ -4016,7 +3985,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "212
 [; ;mcc_generated_files/can1.c: 212:     }
 }
-[e :U 3197 ]
+[e :U 3193 ]
 "214
 [; ;mcc_generated_files/can1.c: 214:     txFifoObj[0] = msgId;
 [e = *U + _txFifoObj * -> -> 0 `i `x -> -> # *U _txFifoObj `i `x -> _msgId `uc ]
@@ -4046,7 +4015,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = *U + _txFifoObj * -> -> 4 `i `x -> -> # *U _txFifoObj `i `x _status ]
 "225
 [; ;mcc_generated_files/can1.c: 225:     if (CAN_FRAME_DATA == txCanMsg->field.frameType)
-[e $ ! == -> . `E22332 0 `i -> . . . *U _txCanMsg 1 1 1 `i 3198  ]
+[e $ ! == -> . `E22332 0 `i -> . . . *U _txCanMsg 1 1 1 `i 3194  ]
 "226
 [; ;mcc_generated_files/can1.c: 226:     {
 {
@@ -4056,10 +4025,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "228
 [; ;mcc_generated_files/can1.c: 228:     }
 }
-[e :U 3198 ]
+[e :U 3194 ]
 "229
 [; ;mcc_generated_files/can1.c: 229: }
-[e :UE 3195 ]
+[e :UE 3191 ]
 }
 "231
 [; ;mcc_generated_files/can1.c: 231: static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
@@ -4089,7 +4058,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _plsize -> -> 0 `i `uc ]
 "237
 [; ;mcc_generated_files/can1.c: 237:     if (CAN_BRS_MODE == field.brs && (CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
-[e $ ! && == -> . `E22324 1 `i -> . . _field 1 4 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3200  ]
+[e $ ! && == -> . `E22324 1 `i -> . . _field 1 4 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3196  ]
 "238
 [; ;mcc_generated_files/can1.c: 238:     {
 {
@@ -4099,10 +4068,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "240
 [; ;mcc_generated_files/can1.c: 240:     }
 }
-[e :U 3200 ]
+[e :U 3196 ]
 "242
 [; ;mcc_generated_files/can1.c: 242:     if (field.dlc > DLC_8 && (CAN_2_0_FORMAT == field.formatType || CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
-[e $ ! && > -> . . _field 1 2 `i -> . `E22365 8 `i || == -> . `E22336 0 `i -> . . _field 1 3 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3201  ]
+[e $ ! && > -> . . _field 1 2 `i -> . `E22365 8 `i || == -> . `E22336 0 `i -> . . _field 1 3 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3197  ]
 "243
 [; ;mcc_generated_files/can1.c: 243:     {
 {
@@ -4112,10 +4081,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "245
 [; ;mcc_generated_files/can1.c: 245:     }
 }
-[e :U 3201 ]
+[e :U 3197 ]
 "247
 [; ;mcc_generated_files/can1.c: 247:     if ((DLC_BYTES[(field.dlc)]) > ((DLC_BYTES[(8u + (plsize))])))
-[e $ ! > -> *U + &U _DLC_BYTES * -> . . _field 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `i -> *U + &U _DLC_BYTES * -> + -> 8 `ui -> _plsize `ui `ux -> -> # *U &U _DLC_BYTES `ui `ux `i 3202  ]
+[e $ ! > -> *U + &U _DLC_BYTES * -> . . _field 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `i -> *U + &U _DLC_BYTES * -> + -> 8 `ui -> _plsize `ui `ux -> -> # *U &U _DLC_BYTES `ui `ux `i 3198  ]
 "248
 [; ;mcc_generated_files/can1.c: 248:     {
 {
@@ -4125,10 +4094,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "250
 [; ;mcc_generated_files/can1.c: 250:     }
 }
-[e :U 3202 ]
+[e :U 3198 ]
 "252
 [; ;mcc_generated_files/can1.c: 252:     if (CAN_TX_FIFO_FULL == GetTxFifoStatus(validChannel))
-[e $ ! == -> . `E22361 0 `ui -> ( _GetTxFifoStatus (1 _validChannel `ui 3203  ]
+[e $ ! == -> . `E22361 0 `ui -> ( _GetTxFifoStatus (1 _validChannel `ui 3199  ]
 "253
 [; ;mcc_generated_files/can1.c: 253:     {
 {
@@ -4138,14 +4107,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "255
 [; ;mcc_generated_files/can1.c: 255:     }
 }
-[e :U 3203 ]
+[e :U 3199 ]
 "257
 [; ;mcc_generated_files/can1.c: 257:     return txMsgStatus;
 [e ) _txMsgStatus ]
-[e $UE 3199  ]
+[e $UE 3195  ]
 "258
 [; ;mcc_generated_files/can1.c: 258: }
-[e :UE 3199 ]
+[e :UE 3195 ]
 }
 "260
 [; ;mcc_generated_files/can1.c: 260: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
@@ -4167,7 +4136,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _status . `E22340 3 ]
 "264
 [; ;mcc_generated_files/can1.c: 264:     if (isTxChannel(fifoChannel))
-[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3205  ]
+[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3201  ]
 "265
 [; ;mcc_generated_files/can1.c: 265:     {
 {
@@ -4176,7 +4145,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _status ( _ValidateTransmission (2 , -> _fifoChannel `uc _txCanMsg ]
 "267
 [; ;mcc_generated_files/can1.c: 267:         if (CAN_TX_MSG_REQUEST_SUCCESS == status)
-[e $ ! == -> . `E22340 0 `ui -> _status `ui 3206  ]
+[e $ ! == -> . `E22340 0 `ui -> _status `ui 3202  ]
 "268
 [; ;mcc_generated_files/can1.c: 268:         {
 {
@@ -4186,7 +4155,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _txFifoObj -> . *U + _FIFO * -> _fifoChannel `x -> -> # *U _FIFO `i `x 8 `*uc ]
 "271
 [; ;mcc_generated_files/can1.c: 271:             if (txFifoObj != ((void*)0))
-[e $ ! != _txFifoObj -> -> -> 0 `i `*v `*uc 3207  ]
+[e $ ! != _txFifoObj -> -> -> 0 `i `*v `*uc 3203  ]
 "272
 [; ;mcc_generated_files/can1.c: 272:             {
 {
@@ -4199,22 +4168,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "275
 [; ;mcc_generated_files/can1.c: 275:             }
 }
-[e :U 3207 ]
+[e :U 3203 ]
 "276
 [; ;mcc_generated_files/can1.c: 276:         }
 }
-[e :U 3206 ]
+[e :U 3202 ]
 "277
 [; ;mcc_generated_files/can1.c: 277:     }
 }
-[e :U 3205 ]
+[e :U 3201 ]
 "279
 [; ;mcc_generated_files/can1.c: 279:     return status;
 [e ) _status ]
-[e $UE 3204  ]
+[e $UE 3200  ]
 "280
 [; ;mcc_generated_files/can1.c: 280: }
-[e :UE 3204 ]
+[e :UE 3200 ]
 }
 "282
 [; ;mcc_generated_files/can1.c: 282: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel)
@@ -4235,7 +4204,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _status . `E22361 0 ]
 "286
 [; ;mcc_generated_files/can1.c: 286:     if (isTxChannel(fifoChannel))
-[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3209  ]
+[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3205  ]
 "287
 [; ;mcc_generated_files/can1.c: 287:     {
 {
@@ -4245,14 +4214,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "289
 [; ;mcc_generated_files/can1.c: 289:     }
 }
-[e :U 3209 ]
+[e :U 3205 ]
 "291
 [; ;mcc_generated_files/can1.c: 291:     return status;
 [e ) _status ]
-[e $UE 3208  ]
+[e $UE 3204  ]
 "292
 [; ;mcc_generated_files/can1.c: 292: }
-[e :UE 3208 ]
+[e :UE 3204 ]
 }
 "294
 [; ;mcc_generated_files/can1.c: 294: _Bool CAN1_IsBusOff(void)
@@ -4265,10 +4234,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "296
 [; ;mcc_generated_files/can1.c: 296:     return C1TRECUbits.TXBO;
 [e ) -> . . _C1TRECUbits 0 5 `a ]
-[e $UE 3210  ]
+[e $UE 3206  ]
 "297
 [; ;mcc_generated_files/can1.c: 297: }
-[e :UE 3210 ]
+[e :UE 3206 ]
 }
 "299
 [; ;mcc_generated_files/can1.c: 299: _Bool CAN1_IsRxErrorPassive(void)
@@ -4281,10 +4250,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "301
 [; ;mcc_generated_files/can1.c: 301:     return C1TRECUbits.RXBP;
 [e ) -> . . _C1TRECUbits 0 3 `a ]
-[e $UE 3211  ]
+[e $UE 3207  ]
 "302
 [; ;mcc_generated_files/can1.c: 302: }
-[e :UE 3211 ]
+[e :UE 3207 ]
 }
 "304
 [; ;mcc_generated_files/can1.c: 304: _Bool CAN1_IsRxErrorWarning(void)
@@ -4297,10 +4266,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "306
 [; ;mcc_generated_files/can1.c: 306:     return C1TRECUbits.RXWARN;
 [e ) -> . . _C1TRECUbits 0 1 `a ]
-[e $UE 3212  ]
+[e $UE 3208  ]
 "307
 [; ;mcc_generated_files/can1.c: 307: }
-[e :UE 3212 ]
+[e :UE 3208 ]
 }
 "309
 [; ;mcc_generated_files/can1.c: 309: _Bool CAN1_IsRxErrorActive(void)
@@ -4313,10 +4282,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "311
 [; ;mcc_generated_files/can1.c: 311:     return !CAN1_IsRxErrorPassive();
 [e ) -> -> ! != -> ( _CAN1_IsRxErrorPassive ..  `i -> 0 `i `i `a ]
-[e $UE 3213  ]
+[e $UE 3209  ]
 "312
 [; ;mcc_generated_files/can1.c: 312: }
-[e :UE 3213 ]
+[e :UE 3209 ]
 }
 "314
 [; ;mcc_generated_files/can1.c: 314: _Bool CAN1_IsTxErrorPassive(void)
@@ -4329,10 +4298,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "316
 [; ;mcc_generated_files/can1.c: 316:     return C1TRECUbits.TXBP;
 [e ) -> . . _C1TRECUbits 0 4 `a ]
-[e $UE 3214  ]
+[e $UE 3210  ]
 "317
 [; ;mcc_generated_files/can1.c: 317: }
-[e :UE 3214 ]
+[e :UE 3210 ]
 }
 "319
 [; ;mcc_generated_files/can1.c: 319: _Bool CAN1_IsTxErrorWarning(void)
@@ -4345,10 +4314,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "321
 [; ;mcc_generated_files/can1.c: 321:     return C1TRECUbits.TXWARN;
 [e ) -> . . _C1TRECUbits 0 2 `a ]
-[e $UE 3215  ]
+[e $UE 3211  ]
 "322
 [; ;mcc_generated_files/can1.c: 322: }
-[e :UE 3215 ]
+[e :UE 3211 ]
 }
 "324
 [; ;mcc_generated_files/can1.c: 324: _Bool CAN1_IsTxErrorActive(void)
@@ -4361,10 +4330,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "326
 [; ;mcc_generated_files/can1.c: 326:     return !CAN1_IsTxErrorPassive();
 [e ) -> -> ! != -> ( _CAN1_IsTxErrorPassive ..  `i -> 0 `i `i `a ]
-[e $UE 3216  ]
+[e $UE 3212  ]
 "327
 [; ;mcc_generated_files/can1.c: 327: }
-[e :UE 3216 ]
+[e :UE 3212 ]
 }
 "329
 [; ;mcc_generated_files/can1.c: 329: void CAN1_Sleep(void)
@@ -4385,5 +4354,5 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _CAN1_OperationModeSet (1 . `E22346 1 ]
 "335
 [; ;mcc_generated_files/can1.c: 335: }
-[e :UE 3217 ]
+[e :UE 3213 ]
 }

@@ -38346,9 +38346,8 @@ void main(void)
 
 
 
-
+        DELAY_milliseconds(1000);
         __nop();
-        CANWriteMessage ( 0x158, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 );
 # 86 "main.c"
     }
 }

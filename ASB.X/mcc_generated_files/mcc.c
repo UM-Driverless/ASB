@@ -55,8 +55,8 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     TMR2_Initialize();
-    TMR1_Initialize();
     EXT_INT_Initialize();
+    TMR1_Initialize();
     TMR0_Initialize();
     PWM2_16BIT_Initialize();
     CAN1_Initialize();
@@ -65,20 +65,16 @@ void SYSTEM_Initialize(void)
 
 void OSCILLATOR_Initialize(void)
 {
-    // NOSC EXTOSC; NDIV 4; 
-    OSCCON1 = 0x72;
+    // NOSC EXTOSC; NDIV 1; 
+    OSCCON1 = 0x70;
     // CSWHOLD may proceed; SOSCPWR Low power; 
     OSCCON3 = 0x00;
-    // MFOEN disabled; LFOEN disabled; ADOEN disabled; PLLEN enabled; SOSCEN disabled; EXTOEN disabled; HFOEN disabled; 
-    OSCEN = 0x01;
+    // MFOEN disabled; LFOEN disabled; ADOEN disabled; PLLEN disabled; SOSCEN disabled; EXTOEN disabled; HFOEN disabled; 
+    OSCEN = 0x00;
     // HFFRQ 4_MHz; 
     OSCFRQ = 0x02;
     // TUN 0; 
     OSCTUNE = 0x00;
-    // Wait for PLL to stabilize
-    /*while(PLLR == 0)
-    {
-    }*/
 }
 
 void PMD_Initialize(void)

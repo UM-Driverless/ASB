@@ -38319,8 +38319,8 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     TMR2_Initialize();
-    TMR1_Initialize();
     EXT_INT_Initialize();
+    TMR1_Initialize();
     TMR0_Initialize();
     PWM2_16BIT_Initialize();
     CAN1_Initialize();
@@ -38330,19 +38330,15 @@ void SYSTEM_Initialize(void)
 void OSCILLATOR_Initialize(void)
 {
 
-    OSCCON1 = 0x72;
+    OSCCON1 = 0x70;
 
     OSCCON3 = 0x00;
 
-    OSCEN = 0x01;
+    OSCEN = 0x00;
 
     OSCFRQ = 0x02;
 
     OSCTUNE = 0x00;
-
-    while(PLLR == 0)
-    {
-    }
 }
 
 void PMD_Initialize(void)

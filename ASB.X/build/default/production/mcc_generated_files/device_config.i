@@ -15,7 +15,7 @@
 #pragma config CLKOUTEN = OFF
 #pragma config PR1WAY = ON
 #pragma config CSWEN = ON
-#pragma config JTAGEN = ON
+#pragma config JTAGEN = OFF
 #pragma config FCMEN = ON
 #pragma config FCMENP = ON
 #pragma config FCMENS = ON

@@ -37783,6 +37783,13 @@ extern void (*TMR2_InterruptHandler)(void);
 void TMR2_DefaultInterruptHandler(void);
 # 52 "mcc_generated_files/tmr2.c" 2
 
+# 1 "mcc_generated_files/pin_manager.h" 1
+# 414 "mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 426 "mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_IOC(void);
+# 53 "mcc_generated_files/tmr2.c" 2
+
 
 
 
@@ -37917,6 +37924,7 @@ void TMR2_CallBack(void)
 {
 
 
+    do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
     if(TMR2_InterruptHandler)
     {
         TMR2_InterruptHandler();

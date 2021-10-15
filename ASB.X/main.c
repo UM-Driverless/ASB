@@ -67,13 +67,13 @@ void main(void)
     while (1)
     {
         // Add your application code
-        /*LED_Toggle();
-        MOSFET1_Toggle();
-        MOSFET2_Toggle();
-        EBSLEDACT_Toggle();
-        DELAY_milliseconds(1000);*/
+        //LED_Toggle();
+        //MOSFET1_Toggle();
+        //MOSFET2_Toggle();
+        //EBSLEDACT_Toggle();
+        DELAY_milliseconds(1000);
         Nop();
-        CANWriteMessage ( 0x158, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 );
+        //CANWriteMessage ( 0x158, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 );
         //PWM1
         /*PWM1_16BIT_SetSlice1Output2DutyCycleRegister(0xAA);   //66% duty cycle
         PWM1_16BIT_LoadBufferRegisters();

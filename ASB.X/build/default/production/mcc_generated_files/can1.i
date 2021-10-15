@@ -37775,16 +37775,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
             || CAN_CONFIGURATION_MODE == requestMode)
     {
         C1CONTbits.REQOP = requestMode;
-
-        while (C1CONUbits.OPMOD != requestMode)
-        {
-
-            if (1 == C1INTHbits.SERRIF)
-            {
-                status = CAN_OP_MODE_SYS_ERROR_OCCURED;
-                break;
-            }
-        }
+# 165 "mcc_generated_files/can1.c"
     }
     else
     {
