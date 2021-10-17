@@ -1,0 +1,97 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"114 ./mcc_generated_files/pwm1_16bit.h
+[; ;./mcc_generated_files/pwm1_16bit.h: 114: void PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
+[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v ~T0 @X0 0 ef1`us ]
+"96
+[; ;./mcc_generated_files/pwm1_16bit.h: 96: void PWM1_16BIT_WritePeriodRegister(uint16_t periodCount);
+[v _PWM1_16BIT_WritePeriodRegister `(v ~T0 @X0 0 ef1`us ]
+"148
+[; ;./mcc_generated_files/pwm1_16bit.h: 148: void PWM1_16BIT_LoadBufferRegisters(void);
+[v _PWM1_16BIT_LoadBufferRegisters `(v ~T0 @X0 0 ef ]
+"114 ./mcc_generated_files/pwm2_16bit.h
+[; ;./mcc_generated_files/pwm2_16bit.h: 114: void PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
+[v _PWM2_16BIT_SetSlice1Output1DutyCycleRegister `(v ~T0 @X0 0 ef1`us ]
+"96
+[; ;./mcc_generated_files/pwm2_16bit.h: 96: void PWM2_16BIT_WritePeriodRegister(uint16_t periodCount);
+[v _PWM2_16BIT_WritePeriodRegister `(v ~T0 @X0 0 ef1`us ]
+"148
+[; ;./mcc_generated_files/pwm2_16bit.h: 148: void PWM2_16BIT_LoadBufferRegisters(void);
+[v _PWM2_16BIT_LoadBufferRegisters `(v ~T0 @X0 0 ef ]
+"20 GPIO.c
+[; ;GPIO.c: 20: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+[v _GPIO_PWM1_Control `(v ~T0 @X0 1 ef2`ui`ui ]
+"21
+[; ;GPIO.c: 21: {
+{
+[e :U _GPIO_PWM1_Control ]
+"20
+[; ;GPIO.c: 20: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+[v _uiDutyCycle `ui ~T0 @X0 1 r1 ]
+[v _uiFreq `ui ~T0 @X0 1 r2 ]
+"21
+[; ;GPIO.c: 21: {
+[f ]
+"22
+[; ;GPIO.c: 22:     unsigned int uiConvertedPeriod;
+[v _uiConvertedPeriod `ui ~T0 @X0 1 a ]
+"23
+[; ;GPIO.c: 23:     unsigned int uiConvertedDC;
+[v _uiConvertedDC `ui ~T0 @X0 1 a ]
+"26
+[; ;GPIO.c: 26:     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
+[e = _uiConvertedPeriod -> - -> / -> 39241 `l -> _uiFreq `l `d .1.1508 `ui ]
+"27
+[; ;GPIO.c: 27:     uiConvertedDC = uiDutyCycle * 4;
+[e = _uiConvertedDC * _uiDutyCycle -> -> 4 `i `ui ]
+"30
+[; ;GPIO.c: 30:     PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC);
+[e ( _PWM1_16BIT_SetSlice1Output1DutyCycleRegister (1 -> _uiConvertedDC `us ]
+"31
+[; ;GPIO.c: 31:     PWM1_16BIT_WritePeriodRegister(uiConvertedPeriod);
+[e ( _PWM1_16BIT_WritePeriodRegister (1 -> _uiConvertedPeriod `us ]
+"32
+[; ;GPIO.c: 32:     PWM1_16BIT_LoadBufferRegisters();
+[e ( _PWM1_16BIT_LoadBufferRegisters ..  ]
+"33
+[; ;GPIO.c: 33: }
+[e :UE 1 ]
+}
+"38
+[; ;GPIO.c: 38: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+[v _GPIO_PWM2_Control `(v ~T0 @X0 1 ef2`ui`ui ]
+"39
+[; ;GPIO.c: 39: {
+{
+[e :U _GPIO_PWM2_Control ]
+"38
+[; ;GPIO.c: 38: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+[v _uiDutyCycle `ui ~T0 @X0 1 r1 ]
+[v _uiFreq `ui ~T0 @X0 1 r2 ]
+"39
+[; ;GPIO.c: 39: {
+[f ]
+"40
+[; ;GPIO.c: 40:     unsigned int uiConvertedPeriod;
+[v _uiConvertedPeriod `ui ~T0 @X0 1 a ]
+"41
+[; ;GPIO.c: 41:     unsigned int uiConvertedDC;
+[v _uiConvertedDC `ui ~T0 @X0 1 a ]
+"44
+[; ;GPIO.c: 44:     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
+[e = _uiConvertedPeriod -> - -> / -> 39241 `l -> _uiFreq `l `d .1.1508 `ui ]
+"45
+[; ;GPIO.c: 45:     uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
+[e = _uiConvertedDC * * _uiDutyCycle -> -> 4 `i `ui / -> -> 100 `i `ui _uiFreq ]
+"48
+[; ;GPIO.c: 48:     PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC);
+[e ( _PWM2_16BIT_SetSlice1Output1DutyCycleRegister (1 -> _uiConvertedDC `us ]
+"49
+[; ;GPIO.c: 49:     PWM2_16BIT_WritePeriodRegister(uiConvertedPeriod);
+[e ( _PWM2_16BIT_WritePeriodRegister (1 -> _uiConvertedPeriod `us ]
+"50
+[; ;GPIO.c: 50:     PWM2_16BIT_LoadBufferRegisters();
+[e ( _PWM2_16BIT_LoadBufferRegisters ..  ]
+"51
+[; ;GPIO.c: 51: }
+[e :UE 2 ]
+}
