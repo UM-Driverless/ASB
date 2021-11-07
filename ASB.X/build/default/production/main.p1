@@ -48,12 +48,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
-"17 ./GPIO.h
-[; ;./GPIO.h: 17: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
-[v _GPIO_PWM1_Control `(v ~T0 @X0 0 ef2`ui`ui ]
-"18
-[; ;./GPIO.h: 18: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+"31 ./GPIO.h
+[; ;./GPIO.h: 31: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
 [v _GPIO_PWM2_Control `(v ~T0 @X0 0 ef2`ui`ui ]
+"40 ./ANALOG.h
+[; ;./ANALOG.h: 40: void ANALOG_RedAll (void);
+[v _ANALOG_RedAll `(v ~T0 @X0 0 ef ]
+"52 ./MESSAGES.h
+[; ;./MESSAGES.h: 52: void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
+[v _CANWriteMessage `(v ~T0 @X0 0 ef10`ul`uc`uc`uc`uc`uc`uc`uc`uc`uc ]
+"28 ./ANALOG.h
+[; ;./ANALOG.h: 28: extern unsigned int ucPICHDRPRES1;
+[v _ucPICHDRPRES1 `ui ~T0 @X0 0 e ]
+"29
+[; ;./ANALOG.h: 29: extern unsigned int ucPICHDRPRES2;
+[v _ucPICHDRPRES2 `ui ~T0 @X0 0 e ]
+"30
+[; ;./ANALOG.h: 30: extern unsigned int ucPICNPRES1;
+[v _ucPICNPRES1 `ui ~T0 @X0 0 e ]
+"31
+[; ;./ANALOG.h: 31: extern unsigned int ucPICNPRES2;
+[v _ucPICNPRES2 `ui ~T0 @X0 0 e ]
+"32
+[; ;./ANALOG.h: 32: extern unsigned int ucPICNPRES3;
+[v _ucPICNPRES3 `ui ~T0 @X0 0 e ]
+"33
+[; ;./ANALOG.h: 33: extern unsigned int ucPICNPRES4;
+[v _ucPICNPRES4 `ui ~T0 @X0 0 e ]
+"34
+[; ;./ANALOG.h: 34: extern unsigned int ucAN1;
+[v _ucAN1 `ui ~T0 @X0 0 e ]
+"35
+[; ;./ANALOG.h: 35: extern unsigned int ucAN2;
+[v _ucAN2 `ui ~T0 @X0 0 e ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3571,79 +3598,68 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h: 68860: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 "22 ./MESSAGES.h
-[; ;./MESSAGES.h: 22: CAN_MSG_OBJ msg;
-[v _msg `S3178 ~T0 @X0 1 e ]
+[; ;./MESSAGES.h: 22: CAN_MSG_OBJ msgTransmit;
+[v _msgTransmit `S3178 ~T0 @X0 1 e ]
 "23
-[; ;./MESSAGES.h: 23: uint8_t CANDATAdata[32] = "BUFFERCAN";
-[v _CANDATAdata `uc ~T0 @X0 -> 32 `i e ]
-[i _CANDATAdata
-:U ..
--> 66 `c
--> 85 `c
--> 70 `c
--> 70 `c
--> 69 `c
--> 82 `c
--> 67 `c
--> 65 `c
--> 78 `c
--> 0 `c
-..
-]
+[; ;./MESSAGES.h: 23: CAN_MSG_OBJ msgReceipt;
+[v _msgReceipt `S3178 ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"51 main.c
-[; ;main.c: 51: void main(void)
+"52 main.c
+[; ;main.c: 52: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"52
-[; ;main.c: 52: {
+"53
+[; ;main.c: 53: {
 {
 [e :U _main ]
 [f ]
-"54
-[; ;main.c: 54:     SYSTEM_Initialize();
+"55
+[; ;main.c: 55:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"61
-[; ;main.c: 61:     (INTCON0bits.GIE = 1);
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
 "62
-[; ;main.c: 62:     do { TRISBbits.TRISB5 = 0; } while(0);
+[; ;main.c: 62:     (INTCON0bits.GIE = 1);
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+"63
+[; ;main.c: 63:     do { TRISBbits.TRISB5 = 0; } while(0);
 [e :U 3182 ]
 {
 [e = . . _TRISBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 3181 ]
-"63
-[; ;main.c: 63:     do { LATBbits.LATB5 = 1; } while(0);
+"64
+[; ;main.c: 64:     do { LATBbits.LATB5 = 1; } while(0);
 [e :U 3185 ]
 {
 [e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 3184 ]
-"68
-[; ;main.c: 68:     while (1)
-[e :U 3187 ]
 "69
-[; ;main.c: 69:     {
+[; ;main.c: 69:     while (1)
+[e :U 3187 ]
+"70
+[; ;main.c: 70:     {
 {
-"75
-[; ;main.c: 75:         DELAY_milliseconds(1000);
-[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
 "76
-[; ;main.c: 76:         __nop();
+[; ;main.c: 76:         DELAY_milliseconds(1000);
+[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
+"77
+[; ;main.c: 77:         __nop();
 [e ( ___nop ..  ]
-"80
-[; ;main.c: 80:         GPIO_PWM1_Control(50, 600);
-[e ( _GPIO_PWM1_Control (2 , -> -> 50 `i `ui -> -> 600 `i `ui ]
 "82
 [; ;main.c: 82:         GPIO_PWM2_Control(25, 10);
 [e ( _GPIO_PWM2_Control (2 , -> -> 25 `i `ui -> -> 10 `i `ui ]
-"83
-[; ;main.c: 83:     }
+"85
+[; ;main.c: 85:         ANALOG_RedAll();
+[e ( _ANALOG_RedAll ..  ]
+"86
+[; ;main.c: 86:         CANWriteMessage ( 0x360, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 864 `i `l `ul -> -> 8 `i `uc -> _ucPICHDRPRES1 `uc -> _ucPICHDRPRES2 `uc -> _ucPICNPRES1 `uc -> _ucPICNPRES2 `uc -> _ucPICNPRES3 `uc -> _ucPICNPRES4 `uc -> _ucAN1 `uc -> _ucAN2 `uc ]
+"90
+[; ;main.c: 90:     }
 }
 [e :U 3186 ]
 [e $U 3187  ]
 [e :U 3188 ]
-"84
-[; ;main.c: 84: }
+"91
+[; ;main.c: 91: }
 [e :UE 3179 ]
 }

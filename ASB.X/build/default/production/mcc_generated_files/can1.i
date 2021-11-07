@@ -16,35 +16,35 @@ extern double __fpnormalize(double);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 168 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 204 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 int atoi (const char *);
@@ -97,7 +97,7 @@ uldiv_t uldiv (unsigned long, unsigned long);
 
 
 size_t __ctype_get_mb_cur_max(void);
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 2 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 2 3
 
 
 
@@ -113,21 +113,21 @@ extern void __builtin_software_breakpoint(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
 
 
 typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int32_t;
 
 
@@ -135,7 +135,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -148,7 +148,7 @@ typedef unsigned char uint8_t;
 
 
 typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uint32_t;
 
 
@@ -156,9 +156,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 
 
 typedef int8_t int_fast8_t;
@@ -191,13 +191,13 @@ typedef uint24_t uint_fast24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/stdint.h" 1 3
 typedef int16_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 # 5 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\\pic\\include\\builtins.h" 2 3
 
 
@@ -37484,12 +37484,12 @@ unsigned char __t3rd16on(void);
 # 47 "mcc_generated_files/can1.c" 2
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 1 3
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 411 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 1 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 411 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef struct __locale_struct * locale_t;
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 2 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 2 3
 
 
 void *memcpy (void *restrict, const void *restrict, size_t);
@@ -37522,7 +37522,7 @@ char *strtok (char *restrict, const char *restrict);
 size_t strlen (const char *);
 
 char *strerror (int);
-# 65 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 3
+# 65 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 3
 char *strtok_r (char *restrict, const char *restrict, char **restrict);
 int strerror_r (int, char *, size_t);
 char *stpcpy(char *restrict, const char *restrict);
@@ -37543,7 +37543,7 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
 
 # 1 "mcc_generated_files/can1.h" 1
 # 54 "mcc_generated_files/can1.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
 # 54 "mcc_generated_files/can1.h" 2
 
 
@@ -37665,30 +37665,53 @@ void CAN1_Initialize(void);
 CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
 # 181 "mcc_generated_files/can1.h"
 CAN_OP_MODES CAN1_OperationModeGet(void);
-# 241 "mcc_generated_files/can1.h"
+# 231 "mcc_generated_files/can1.h"
+_Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
+# 290 "mcc_generated_files/can1.h"
 CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
-# 297 "mcc_generated_files/can1.h"
+# 346 "mcc_generated_files/can1.h"
 _Bool CAN1_IsBusOff(void);
-# 355 "mcc_generated_files/can1.h"
+# 404 "mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorPassive(void);
-# 414 "mcc_generated_files/can1.h"
+# 463 "mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorWarning(void);
-# 473 "mcc_generated_files/can1.h"
+# 522 "mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorActive(void);
-# 521 "mcc_generated_files/can1.h"
+# 570 "mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorPassive(void);
-# 569 "mcc_generated_files/can1.h"
+# 618 "mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorWarning(void);
-# 617 "mcc_generated_files/can1.h"
+# 666 "mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorActive(void);
-# 668 "mcc_generated_files/can1.h"
+# 717 "mcc_generated_files/can1.h"
 void CAN1_Sleep(void);
-# 722 "mcc_generated_files/can1.h"
+# 771 "mcc_generated_files/can1.h"
 CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
-# 767 "mcc_generated_files/can1.h"
+# 813 "mcc_generated_files/can1.h"
+uint8_t CAN1_ReceivedMessageCountGet(void);
+# 880 "mcc_generated_files/can1.h"
+void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
+# 937 "mcc_generated_files/can1.h"
+void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
+# 1005 "mcc_generated_files/can1.h"
+void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
+# 1056 "mcc_generated_files/can1.h"
+void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
+# 1125 "mcc_generated_files/can1.h"
+void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
+# 1193 "mcc_generated_files/can1.h"
+void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
+# 1245 "mcc_generated_files/can1.h"
+void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
+# 1280 "mcc_generated_files/can1.h"
+void CAN1_SetFIFO1nullHandler(void (*handler)(void));
+# 1324 "mcc_generated_files/can1.h"
 void CAN1_SetTXQnullHandler(void (*handler)(void));
+
+
+void CAN1_ISR(void);
 # 50 "mcc_generated_files/can1.c" 2
-# 69 "mcc_generated_files/can1.c"
+# 71 "mcc_generated_files/can1.c"
 struct CAN_FIFOREG
 {
     uint8_t CONL;
@@ -37702,15 +37725,105 @@ struct CAN_FIFOREG
     uint32_t UA;
 };
 
+typedef enum
+{
+    CAN_RX_MSG_NOT_AVAILABLE = 0U,
+    CAN_RX_MSG_AVAILABLE = 1U,
+    CAN_RX_MSG_OVERFLOW = 8U
+} CAN_RX_FIFO_STATUS;
+
+typedef enum
+{
+    FIFO1 = 1
+} CAN1_RX_FIFO_CHANNELS;
+
+struct CAN1_RX_FIFO
+{
+    CAN1_RX_FIFO_CHANNELS channel;
+    volatile uint8_t fifoHead;
+};
+
+
+static uint8_t rxMsgData[(8U)];
+
+static struct CAN1_RX_FIFO rxFifos[] =
+{
+    {FIFO1, 0u}
+};
+
 static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
 static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
 
+static void (*CAN1_InvalidMessageHandler)(void);
+static void (*CAN1_BusWakeUpActivityHandler)(void);
+static void (*CAN1_BusErrorHandler)(void);
+static void (*CAN1_ModeChangeHandler)(void);
+static void (*CAN1_SystemErrorHandler)(void);
+static void (*CAN1_TxAttemptHandler)(void);
+static void (*CAN1_RxBufferOverflowHandler)(void);
 
+static void DefaultInvalidMessageHandler(void)
+{
+}
+
+static void DefaultBusWakeUpActivityHandler(void)
+{
+}
+
+static void DefaultBusErrorHandler(void)
+{
+}
+
+static void DefaultModeChangeHandler(void)
+{
+}
+
+static void DefaultSystemErrorHandler(void)
+{
+}
+
+static void DefaultTxAttemptHandler(void)
+{
+}
+
+static void DefaultRxBufferOverflowHandler(void)
+{
+}
+
+void CAN1_RX_FIFO_ResetInfo(void)
+{
+    uint8_t index;
+
+    for (index = 0; index < (1U); index++)
+    {
+        rxFifos[index].fifoHead = 0;
+    }
+}
+
+static void CAN1_RX_FIFO_Configuration(void)
+{
+
+    C1FIFOCON1L = 0x08;
+
+
+    C1FIFOCON1H = 0x04;
+
+
+    C1FIFOCON1U = 0x60;
+
+
+    C1FIFOCON1T = 0x05;
+
+}
+
+static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
+{
+}
 
 static void CAN1_TX_FIFO_Configuration(void)
 {
 
-    C1TXQCONL = 0x00;
+    C1TXQCONL = 0x10;
 
 
     C1TXQCONH = 0x04;
@@ -37739,6 +37852,31 @@ static void CAN1_BitRateConfiguration(void)
 
 }
 
+static void CAN1_ErrorNotificationInterruptEnable(void)
+{
+    CAN1_SetInvalidMessageInterruptHandler(DefaultInvalidMessageHandler);
+    CAN1_SetBusWakeUpActivityInterruptHandler(DefaultBusWakeUpActivityHandler);
+    CAN1_SetBusErrorInterruptHandler(DefaultBusErrorHandler);
+    CAN1_SetModeChangeInterruptHandler(DefaultModeChangeHandler);
+    CAN1_SetSystemErrorInterruptHandler(DefaultSystemErrorHandler);
+    CAN1_SetTxAttemptInterruptHandler(DefaultTxAttemptHandler);
+    CAN1_SetRxBufferOverFlowInterruptHandler(DefaultRxBufferOverflowHandler);
+    PIR0bits.CANIF = 0;
+
+
+    C1INTL = 0x00;
+
+
+    C1INTH = 0x00;
+
+
+    C1INTU = 0x08;
+
+
+    C1INTT = 0xFC;
+
+    PIE0bits.CANIE = 1;
+}
 
 void CAN1_Initialize(void)
 {
@@ -37748,7 +37886,7 @@ void CAN1_Initialize(void)
     if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
     {
 
-        C1FIFOBA = 0x3800;
+        C1FIFOBA = 0x2600;
 
 
         C1CONL = 0x60;
@@ -37761,6 +37899,10 @@ void CAN1_Initialize(void)
 
         CAN1_BitRateConfiguration();
         CAN1_TX_FIFO_Configuration();
+        CAN1_RX_FIFO_Configuration();
+        CAN1_RX_FIFO_FilterMaskConfiguration();
+        CAN1_RX_FIFO_ResetInfo();
+        CAN1_ErrorNotificationInterruptEnable();
         CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
     }
 }
@@ -37775,7 +37917,16 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
             || CAN_CONFIGURATION_MODE == requestMode)
     {
         C1CONTbits.REQOP = requestMode;
-# 165 "mcc_generated_files/can1.c"
+
+        while (C1CONUbits.OPMOD != requestMode)
+        {
+
+            if (1 == C1INTHbits.SERRIF)
+            {
+                status = CAN_OP_MODE_SYS_ERROR_OCCURED;
+                break;
+            }
+        }
     }
     else
     {
@@ -37790,6 +37941,131 @@ CAN_OP_MODES CAN1_OperationModeGet(void)
     return C1CONUbits.OPMOD;
 }
 
+static uint8_t GetRxFifoDepth(uint8_t validChannel)
+{
+    return 1U + (FIFO[validChannel].CONT & 0x1F);
+}
+
+static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
+{
+    return FIFO[validChannel].STAL & (CAN_RX_MSG_AVAILABLE | CAN_RX_MSG_OVERFLOW);
+}
+
+static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
+{
+    uint32_t msgId;
+    uint8_t status = rxFifoObj[4];
+    const uint8_t payloadOffsetBytes =
+              4U
+            + 1U
+            + 1U
+            + 2U;
+
+    rxCanMsg->field.dlc = status;
+    rxCanMsg->field.idType = (status & (1UL << (4U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
+    rxCanMsg->field.frameType = (status & (1UL << (5U))) ? CAN_FRAME_RTR : CAN_FRAME_DATA;
+    rxCanMsg->field.brs = (status & (1UL << (6U))) ? CAN_BRS_MODE : CAN_NON_BRS_MODE;
+    rxCanMsg->field.formatType = (status & (1UL << (7U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
+
+    msgId = rxFifoObj[1] & (0x07U);
+    msgId <<= (8U);
+    msgId |= rxFifoObj[0];
+    if (CAN_FRAME_EXT == rxCanMsg->field.idType)
+    {
+        msgId <<= (5U);
+        msgId |= (rxFifoObj[3] & (0x1FU));
+        msgId <<= (8U);
+        msgId |= rxFifoObj[2];
+        msgId <<= (5U);
+        msgId |= (rxFifoObj[1] & (0xF8U)) >> (3U);
+    }
+    rxCanMsg->msgId = msgId;
+
+    memcpy(rxMsgData, rxFifoObj + payloadOffsetBytes, (DLC_BYTES[(rxCanMsg->field.dlc)]));
+    rxCanMsg->data = rxMsgData;
+}
+
+_Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
+{
+    uint8_t index;
+    _Bool status = 0;
+
+    for (index = 0; index < (1U); index++)
+    {
+        CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
+        CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
+
+        if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+        {
+            uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
+
+            if (rxFifoObj != ((void*)0))
+            {
+                ReadMessageFromFifo(rxFifoObj, rxCanMsg);
+                FIFO[channel].CONH |= 0x1;
+
+                rxFifos[index].fifoHead += 1;
+                if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
+                {
+                    rxFifos[index].fifoHead = 0;
+                }
+
+                if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
+                {
+                    FIFO[channel].STAL &= ~0x8;
+                }
+
+                status = 1;
+            }
+
+            break;
+        }
+    }
+    return status;
+}
+
+uint8_t CAN1_ReceivedMessageCountGet(void)
+{
+    uint8_t index, totalMsgObj = 0;
+
+    for (index = 0; index < (1U); index++)
+    {
+        CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
+        CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
+
+        if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+        {
+            uint8_t numOfMsg, fifoDepth = GetRxFifoDepth(channel);
+
+            if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
+            {
+                numOfMsg = fifoDepth;
+            }
+            else
+            {
+                uint8_t fifoTail = FIFO[channel].STAH & 0x1F;
+                uint8_t fifoHead = rxFifos[index].fifoHead;
+
+                if (fifoTail < fifoHead)
+                {
+                    numOfMsg = ((fifoTail + fifoDepth) - fifoHead);
+                }
+                else if (fifoTail > fifoHead)
+                {
+                    numOfMsg = fifoTail - fifoHead;
+                }
+                else
+                {
+                    numOfMsg = fifoDepth;
+                }
+            }
+
+            totalMsgObj += numOfMsg;
+        }
+    }
+
+    return totalMsgObj;
+}
 
 static _Bool isTxChannel(uint8_t channel)
 {
@@ -37946,4 +38222,92 @@ void CAN1_Sleep(void)
     C1INTTbits.WAKIE = 1;
 
     CAN1_OperationModeSet(CAN_DISABLE_MODE);
+}
+
+void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
+{
+    CAN1_InvalidMessageHandler = handler;
+}
+
+void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
+{
+    CAN1_BusWakeUpActivityHandler = handler;
+}
+
+void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
+{
+    CAN1_BusErrorHandler = handler;
+}
+
+void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
+{
+    CAN1_ModeChangeHandler = handler;
+}
+
+void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
+{
+    CAN1_SystemErrorHandler = handler;
+}
+
+void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
+{
+    CAN1_TxAttemptHandler = handler;
+}
+
+void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void))
+{
+    CAN1_RxBufferOverflowHandler = handler;
+}
+
+void CAN1_ISR(void)
+{
+    if (1 == C1INTHbits.IVMIF)
+    {
+        CAN1_InvalidMessageHandler();
+        C1INTHbits.IVMIF = 0;
+    }
+
+    if (1 == C1INTHbits.WAKIF)
+    {
+        CAN1_BusWakeUpActivityHandler();
+        C1INTHbits.WAKIF = 0;
+    }
+
+    if (1 == C1INTHbits.CERRIF)
+    {
+        CAN1_BusErrorHandler();
+        C1INTHbits.CERRIF = 0;
+    }
+
+    if (1 == C1INTLbits.MODIF)
+    {
+        CAN1_ModeChangeHandler();
+        C1INTLbits.MODIF = 0;
+    }
+
+    if (1 == C1INTHbits.SERRIF)
+    {
+        CAN1_SystemErrorHandler();
+        C1INTHbits.SERRIF = 0;
+    }
+
+    if (1 == C1INTHbits.TXATIF)
+    {
+        CAN1_TxAttemptHandler();
+        if (1 == C1TXQSTALbits.TXATIF)
+        {
+            C1TXQSTALbits.TXATIF = 0;
+        }
+    }
+
+    if (1 == C1INTHbits.RXOVIF)
+    {
+        CAN1_RxBufferOverflowHandler();
+        if (1 == C1FIFOSTA1Lbits.RXOVIF)
+        {
+            C1FIFOSTA1Lbits.RXOVIF = 0;
+        }
+    }
+
+    PIR0bits.CANIF = 0;
 }

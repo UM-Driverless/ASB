@@ -24,6 +24,9 @@
       </logicalFolder>
       <itemPath>MESSAGES.h</itemPath>
       <itemPath>GPIO.h</itemPath>
+      <itemPath>ANALOG.h</itemPath>
+      <itemPath>SERVICEBRAKE.h</itemPath>
+      <itemPath>PARAMETERS.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -55,6 +58,9 @@
       <itemPath>main.c</itemPath>
       <itemPath>MESSAGES.c</itemPath>
       <itemPath>GPIO.c</itemPath>
+      <itemPath>ANALOG.c</itemPath>
+      <itemPath>SERVICEBRAKE.c</itemPath>
+      <itemPath>PARAMETERS.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -73,7 +79,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.32</languageToolchainVersion>
+        <languageToolchainVersion>2.31</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -98,7 +104,6 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
-        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>

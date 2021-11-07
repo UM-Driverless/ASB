@@ -16,35 +16,35 @@ extern double __fpnormalize(double);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 168 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 204 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 int atoi (const char *);
@@ -97,7 +97,7 @@ uldiv_t uldiv (unsigned long, unsigned long);
 
 
 size_t __ctype_get_mb_cur_max(void);
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 2 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 2 3
 
 
 
@@ -113,21 +113,21 @@ extern void __builtin_software_breakpoint(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
 
 
 typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int32_t;
 
 
@@ -135,7 +135,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -148,7 +148,7 @@ typedef unsigned char uint8_t;
 
 
 typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uint32_t;
 
 
@@ -156,9 +156,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 
 
 typedef int8_t int_fast8_t;
@@ -191,13 +191,13 @@ typedef uint24_t uint_fast24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/stdint.h" 1 3
 typedef int16_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 # 5 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\\pic\\include\\builtins.h" 2 3
 
 
@@ -37485,7 +37485,7 @@ unsigned char __t3rd16on(void);
 
 # 1 "mcc_generated_files/adc.h" 1
 # 58 "mcc_generated_files/adc.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
 # 58 "mcc_generated_files/adc.h" 2
 
 
@@ -37503,12 +37503,11 @@ typedef uint16_t adc_result_t;
 
 typedef enum
 {
-    channel_ANA0 = 0x0,
-    channel_ANA1 = 0x1,
-    channel_ANB0 = 0x8,
-    channel_ANC3 = 0x13,
-    channel_ANC6 = 0x16,
-    channel_ANC7 = 0x17,
+    PICHDRPRES1 = 0x0,
+    PICHDRPRES2 = 0x1,
+    AN2 = 0x14,
+    PICNPRES2 = 0x16,
+    PICNPRES1 = 0x17,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
     channel_DAC1 = 0x3D,
@@ -37524,76 +37523,79 @@ typedef enum
 typedef enum
 {
     CONTEXT_1,
+    CONTEXT_2,
+    CONTEXT_3,
+    CONTEXT_4,
 } ADC_context_t;
-# 118 "mcc_generated_files/adc.h"
+# 120 "mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 149 "mcc_generated_files/adc.h"
+# 151 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableChannelSequencer(void);
-# 171 "mcc_generated_files/adc.h"
+# 173 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableChannelSequencer(void);
-# 203 "mcc_generated_files/adc.h"
+# 205 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_StartChannelSequencer(void);
-# 226 "mcc_generated_files/adc.h"
+# 228 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
-# 248 "mcc_generated_files/adc.h"
+# 250 "mcc_generated_files/adc.h"
 void ADC_EnableChannelScan(ADC_context_t context);
-# 272 "mcc_generated_files/adc.h"
+# 274 "mcc_generated_files/adc.h"
 void ADC_DisableChannelScan(ADC_context_t context);
-# 299 "mcc_generated_files/adc.h"
+# 301 "mcc_generated_files/adc.h"
 void ADC_StartConversion(ADC_channel_t channel);
-# 325 "mcc_generated_files/adc.h"
+# 327 "mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 351 "mcc_generated_files/adc.h"
+# 353 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 377 "mcc_generated_files/adc.h"
+# 379 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-# 402 "mcc_generated_files/adc.h"
+# 404 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_StopConversion(void);
-# 426 "mcc_generated_files/adc.h"
+# 428 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SetStopOnInterrupt(void);
-# 454 "mcc_generated_files/adc.h"
+# 456 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
-# 478 "mcc_generated_files/adc.h"
+# 480 "mcc_generated_files/adc.h"
 void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
-# 502 "mcc_generated_files/adc.h"
+# 504 "mcc_generated_files/adc.h"
 void ADC_SetPrechargeTime(uint16_t prechargeTime);
-# 526 "mcc_generated_files/adc.h"
+# 528 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
-# 550 "mcc_generated_files/adc.h"
+# 552 "mcc_generated_files/adc.h"
 uint8_t ADC_GetCurrentCountofConversions(void);
-# 573 "mcc_generated_files/adc.h"
+# 575 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_ClearAccumulator(void);
-# 597 "mcc_generated_files/adc.h"
+# 599 "mcc_generated_files/adc.h"
 uint24_t ADC_GetAccumulatorValue(void);
-# 624 "mcc_generated_files/adc.h"
+# 626 "mcc_generated_files/adc.h"
 _Bool ADC_HasAccumulatorOverflowed(void);
-# 648 "mcc_generated_files/adc.h"
+# 650 "mcc_generated_files/adc.h"
 uint16_t ADC_GetFilterValue(void);
-# 672 "mcc_generated_files/adc.h"
+# 674 "mcc_generated_files/adc.h"
 uint16_t ADC_GetPreviousResult(void);
-# 696 "mcc_generated_files/adc.h"
+# 698 "mcc_generated_files/adc.h"
 void ADC_DefineSetPoint(uint16_t setPoint);
-# 720 "mcc_generated_files/adc.h"
+# 722 "mcc_generated_files/adc.h"
 void ADC_SetUpperThreshold(uint16_t upperThreshold);
-# 744 "mcc_generated_files/adc.h"
+# 746 "mcc_generated_files/adc.h"
 void ADC_SetLowerThreshold(uint16_t lowerThreshold);
-# 769 "mcc_generated_files/adc.h"
+# 771 "mcc_generated_files/adc.h"
 uint16_t ADC_GetErrorCalculation(void);
-# 793 "mcc_generated_files/adc.h"
+# 795 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableDoubleSampling(void);
-# 817 "mcc_generated_files/adc.h"
+# 819 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableContinuousConversion(void);
-# 841 "mcc_generated_files/adc.h"
+# 843 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableContinuousConversion(void);
-# 868 "mcc_generated_files/adc.h"
+# 870 "mcc_generated_files/adc.h"
 _Bool ADC_HasErrorCrossedUpperThreshold(void);
-# 895 "mcc_generated_files/adc.h"
+# 897 "mcc_generated_files/adc.h"
 _Bool ADC_HasErrorCrossedLowerThreshold(void);
-# 920 "mcc_generated_files/adc.h"
+# 922 "mcc_generated_files/adc.h"
 uint8_t ADC_GetConversionStageStatus(void);
-# 941 "mcc_generated_files/adc.h"
+# 943 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableChargePump(void);
-# 962 "mcc_generated_files/adc.h"
+# 964 "mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableChargePump(void);
 
 
@@ -37603,7 +37605,7 @@ __attribute__((inline)) void ADC_DisableChargePump(void);
 
 
 void ADC_ADI_ISR(void);
-# 998 "mcc_generated_files/adc.h"
+# 1000 "mcc_generated_files/adc.h"
 void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37613,7 +37615,7 @@ void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ACTI_ISR(void);
-# 1034 "mcc_generated_files/adc.h"
+# 1036 "mcc_generated_files/adc.h"
 void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37623,7 +37625,7 @@ void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH1_ISR(void);
-# 1070 "mcc_generated_files/adc.h"
+# 1072 "mcc_generated_files/adc.h"
 void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37633,7 +37635,7 @@ void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH2_ISR(void);
-# 1106 "mcc_generated_files/adc.h"
+# 1108 "mcc_generated_files/adc.h"
 void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37643,7 +37645,7 @@ void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH3_ISR(void);
-# 1142 "mcc_generated_files/adc.h"
+# 1144 "mcc_generated_files/adc.h"
 void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37653,7 +37655,7 @@ void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH4_ISR(void);
-# 1178 "mcc_generated_files/adc.h"
+# 1180 "mcc_generated_files/adc.h"
 void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
 # 52 "mcc_generated_files/adc.c" 2
 
@@ -37662,10 +37664,16 @@ void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 static void (*ADC_ConversionComplete_ISR)(void);
 static void (*ADC_Context1Thereshld_ISR)(void);
+static void (*ADC_Context2Thereshld_ISR)(void);
+static void (*ADC_Context3Thereshld_ISR)(void);
+static void (*ADC_Context4Thereshld_ISR)(void);
 static void (*ADC_ActiveClockTuning_ISR)(void);
 
 static void ADC_DefaultADI_ISR(void);
 static void ADC_DefaultContext1Threshold_ISR(void);
+static void ADC_DefaultContext2Threshold_ISR(void);
+static void ADC_DefaultContext3Threshold_ISR(void);
+static void ADC_DefaultContext4Threshold_ISR(void);
 static void ADC_DefaultActiveClockTuning_ISR(void);
 
 
@@ -37765,6 +37773,255 @@ void ADC_Initialize(void)
     ADCSEL1 = 0x00;
 
 
+
+
+    ADCTX = 0x1;
+
+
+    ADLTHL = 0x00;
+
+
+    ADLTHH = 0x00;
+
+
+    ADUTHL = 0x00;
+
+
+    ADUTHH = 0x00;
+
+
+    ADSTPTL = 0x00;
+
+
+    ADSTPTH = 0x00;
+
+
+    ADACCL = 0x00;
+
+
+    ADACCH = 0x00;
+
+
+    ADACCU = 0x00;
+
+
+    ADCNT = 0x00;
+
+
+    ADRPT = 0x00;
+
+
+    ADRESL = 0x00;
+
+
+    ADRESH = 0x00;
+
+
+    ADPCH = 0x01;
+
+
+    ADACQL = 0x00;
+
+
+    ADACQH = 0x00;
+
+
+    ADCAP = 0x00;
+
+
+    ADPREL = 0x00;
+
+
+    ADPREH = 0x00;
+
+
+    ADCON0 = 0x00;
+
+
+    ADCON1 = 0x00;
+
+
+    ADCON2 = 0x10;
+
+
+    ADCON3 = 0x00;
+
+
+    ADSTAT = 0x00;
+
+
+    ADREF = 0x00;
+
+
+    ADCSEL2 = 0x00;
+
+
+
+
+    ADCTX = 0x2;
+
+
+    ADLTHL = 0x00;
+
+
+    ADLTHH = 0x00;
+
+
+    ADUTHL = 0x00;
+
+
+    ADUTHH = 0x00;
+
+
+    ADSTPTL = 0x00;
+
+
+    ADSTPTH = 0x00;
+
+
+    ADACCL = 0x00;
+
+
+    ADACCH = 0x00;
+
+
+    ADACCU = 0x00;
+
+
+    ADCNT = 0x00;
+
+
+    ADRPT = 0x00;
+
+
+    ADRESL = 0x00;
+
+
+    ADRESH = 0x00;
+
+
+    ADPCH = 0x16;
+
+
+    ADACQL = 0x00;
+
+
+    ADACQH = 0x00;
+
+
+    ADCAP = 0x00;
+
+
+    ADPREL = 0x00;
+
+
+    ADPREH = 0x00;
+
+
+    ADCON0 = 0x00;
+
+
+    ADCON1 = 0x00;
+
+
+    ADCON2 = 0x10;
+
+
+    ADCON3 = 0x00;
+
+
+    ADSTAT = 0x00;
+
+
+    ADREF = 0x00;
+
+
+    ADCSEL3 = 0x00;
+
+
+
+
+    ADCTX = 0x3;
+
+
+    ADLTHL = 0x00;
+
+
+    ADLTHH = 0x00;
+
+
+    ADUTHL = 0x00;
+
+
+    ADUTHH = 0x00;
+
+
+    ADSTPTL = 0x00;
+
+
+    ADSTPTH = 0x00;
+
+
+    ADACCL = 0x00;
+
+
+    ADACCH = 0x00;
+
+
+    ADACCU = 0x00;
+
+
+    ADCNT = 0x00;
+
+
+    ADRPT = 0x00;
+
+
+    ADRESL = 0x00;
+
+
+    ADRESH = 0x00;
+
+
+    ADPCH = 0x17;
+
+
+    ADACQL = 0x00;
+
+
+    ADACQH = 0x00;
+
+
+    ADCAP = 0x00;
+
+
+    ADPREL = 0x00;
+
+
+    ADPREH = 0x00;
+
+
+    ADCON0 = 0x00;
+
+
+    ADCON1 = 0x00;
+
+
+    ADCON2 = 0x10;
+
+
+    ADCON3 = 0x00;
+
+
+    ADSTAT = 0x00;
+
+
+    ADREF = 0x00;
+
+
+    ADCSEL4 = 0x00;
+
+
     PIR1bits.ADIF = 0;
 
 
@@ -37772,11 +38029,17 @@ void ADC_Initialize(void)
 
 
     PIR2bits.ADCH1IF = 0;
+    PIR2bits.ADCH2IF = 0;
+    PIR2bits.ADCH3IF = 0;
+    PIR2bits.ADCH4IF = 0;
 
 
 
     ADC_SetADIInterruptHandler(ADC_DefaultADI_ISR);
     ADC_SetContext1ThresholdInterruptHandler(ADC_DefaultContext1Threshold_ISR);
+    ADC_SetContext2ThresholdInterruptHandler(ADC_DefaultContext2Threshold_ISR);
+    ADC_SetContext3ThresholdInterruptHandler(ADC_DefaultContext3Threshold_ISR);
+    ADC_SetContext4ThresholdInterruptHandler(ADC_DefaultContext4Threshold_ISR);
     ADC_SetActiveClockTuningInterruptHandler(ADC_DefaultActiveClockTuning_ISR);
 
 
@@ -37810,6 +38073,15 @@ void ADC_EnableChannelScan(ADC_context_t context)
     case CONTEXT_1:
         ADCSEL1bits.CHEN = 1;
         break;
+    case CONTEXT_2:
+        ADCSEL2bits.CHEN = 1;
+        break;
+    case CONTEXT_3:
+        ADCSEL3bits.CHEN = 1;
+        break;
+    case CONTEXT_4:
+        ADCSEL4bits.CHEN = 1;
+        break;
     default:
         break;
     }
@@ -37821,6 +38093,15 @@ void ADC_DisableChannelScan(ADC_context_t context)
     {
     case CONTEXT_1:
         ADCSEL1bits.CHEN = 0;
+        break;
+    case CONTEXT_2:
+        ADCSEL2bits.CHEN = 0;
+        break;
+    case CONTEXT_3:
+        ADCSEL3bits.CHEN = 0;
+        break;
+    case CONTEXT_4:
+        ADCSEL4bits.CHEN = 0;
         break;
     default:
         break;
@@ -38022,6 +38303,27 @@ void ADC_ADCH1_ISR(void)
         ADC_Context1Thereshld_ISR();
 }
 
+void ADC_ADCH2_ISR(void)
+{
+    PIR2bits.ADCH2IF = 0;
+    if (ADC_Context2Thereshld_ISR != ((void*)0))
+        ADC_Context2Thereshld_ISR();
+}
+
+void ADC_ADCH3_ISR(void)
+{
+    PIR2bits.ADCH3IF = 0;
+    if (ADC_Context3Thereshld_ISR != ((void*)0))
+        ADC_Context3Thereshld_ISR();
+}
+
+void ADC_ADCH4_ISR(void)
+{
+    PIR2bits.ADCH4IF = 0;
+    if (ADC_Context4Thereshld_ISR != ((void*)0))
+        ADC_Context4Thereshld_ISR();
+}
+
 void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void))
 {
     ADC_ConversionComplete_ISR = InterruptHandler;
@@ -38030,6 +38332,21 @@ void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void))
 void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void))
 {
     ADC_Context1Thereshld_ISR = InterruptHandler;
+}
+
+void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void))
+{
+    ADC_Context2Thereshld_ISR = InterruptHandler;
+}
+
+void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void))
+{
+    ADC_Context3Thereshld_ISR = InterruptHandler;
+}
+
+void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void))
+{
+    ADC_Context4Thereshld_ISR = InterruptHandler;
 }
 
 void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void))
@@ -38045,6 +38362,24 @@ static void ADC_DefaultADI_ISR(void)
 
 
 static void ADC_DefaultContext1Threshold_ISR(void)
+{
+
+
+}
+
+static void ADC_DefaultContext2Threshold_ISR(void)
+{
+
+
+}
+
+static void ADC_DefaultContext3Threshold_ISR(void)
+{
+
+
+}
+
+static void ADC_DefaultContext4Threshold_ISR(void)
 {
 
 

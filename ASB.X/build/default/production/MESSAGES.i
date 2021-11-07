@@ -26,35 +26,35 @@ extern double __fpnormalize(double);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 168 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 204 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 int atoi (const char *);
@@ -107,7 +107,7 @@ uldiv_t uldiv (unsigned long, unsigned long);
 
 
 size_t __ctype_get_mb_cur_max(void);
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 2 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 2 3
 
 
 
@@ -123,21 +123,21 @@ extern void __builtin_software_breakpoint(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
 
 
 typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int32_t;
 
 
@@ -145,7 +145,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -158,7 +158,7 @@ typedef unsigned char uint8_t;
 
 
 typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uint32_t;
 
 
@@ -166,9 +166,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 
 
 typedef int8_t int_fast8_t;
@@ -201,13 +201,13 @@ typedef uint24_t uint_fast24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/stdint.h" 1 3
 typedef int16_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 # 5 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\\pic\\include\\builtins.h" 2 3
 
 
@@ -37497,17 +37497,17 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 414 "./mcc_generated_files/pin_manager.h"
+# 434 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 426 "./mcc_generated_files/pin_manager.h"
+# 446 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
 # 53 "./mcc_generated_files/mcc.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
 
 
 
@@ -37515,13 +37515,13 @@ void PIN_MANAGER_IOC(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 3
 extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
 
 # 1 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
 
 
 
@@ -37556,12 +37556,11 @@ typedef uint16_t adc_result_t;
 
 typedef enum
 {
-    channel_ANA0 = 0x0,
-    channel_ANA1 = 0x1,
-    channel_ANB0 = 0x8,
-    channel_ANC3 = 0x13,
-    channel_ANC6 = 0x16,
-    channel_ANC7 = 0x17,
+    PICHDRPRES1 = 0x0,
+    PICHDRPRES2 = 0x1,
+    AN2 = 0x14,
+    PICNPRES2 = 0x16,
+    PICNPRES1 = 0x17,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
     channel_DAC1 = 0x3D,
@@ -37577,76 +37576,79 @@ typedef enum
 typedef enum
 {
     CONTEXT_1,
+    CONTEXT_2,
+    CONTEXT_3,
+    CONTEXT_4,
 } ADC_context_t;
-# 118 "./mcc_generated_files/adc.h"
+# 120 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 149 "./mcc_generated_files/adc.h"
+# 151 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableChannelSequencer(void);
-# 171 "./mcc_generated_files/adc.h"
+# 173 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableChannelSequencer(void);
-# 203 "./mcc_generated_files/adc.h"
+# 205 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_StartChannelSequencer(void);
-# 226 "./mcc_generated_files/adc.h"
+# 228 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
-# 248 "./mcc_generated_files/adc.h"
+# 250 "./mcc_generated_files/adc.h"
 void ADC_EnableChannelScan(ADC_context_t context);
-# 272 "./mcc_generated_files/adc.h"
+# 274 "./mcc_generated_files/adc.h"
 void ADC_DisableChannelScan(ADC_context_t context);
-# 299 "./mcc_generated_files/adc.h"
+# 301 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(ADC_channel_t channel);
-# 325 "./mcc_generated_files/adc.h"
+# 327 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 351 "./mcc_generated_files/adc.h"
+# 353 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 377 "./mcc_generated_files/adc.h"
+# 379 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-# 402 "./mcc_generated_files/adc.h"
+# 404 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_StopConversion(void);
-# 426 "./mcc_generated_files/adc.h"
+# 428 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SetStopOnInterrupt(void);
-# 454 "./mcc_generated_files/adc.h"
+# 456 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
-# 478 "./mcc_generated_files/adc.h"
+# 480 "./mcc_generated_files/adc.h"
 void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
-# 502 "./mcc_generated_files/adc.h"
+# 504 "./mcc_generated_files/adc.h"
 void ADC_SetPrechargeTime(uint16_t prechargeTime);
-# 526 "./mcc_generated_files/adc.h"
+# 528 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
-# 550 "./mcc_generated_files/adc.h"
+# 552 "./mcc_generated_files/adc.h"
 uint8_t ADC_GetCurrentCountofConversions(void);
-# 573 "./mcc_generated_files/adc.h"
+# 575 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_ClearAccumulator(void);
-# 597 "./mcc_generated_files/adc.h"
+# 599 "./mcc_generated_files/adc.h"
 uint24_t ADC_GetAccumulatorValue(void);
-# 624 "./mcc_generated_files/adc.h"
+# 626 "./mcc_generated_files/adc.h"
 _Bool ADC_HasAccumulatorOverflowed(void);
-# 648 "./mcc_generated_files/adc.h"
+# 650 "./mcc_generated_files/adc.h"
 uint16_t ADC_GetFilterValue(void);
-# 672 "./mcc_generated_files/adc.h"
+# 674 "./mcc_generated_files/adc.h"
 uint16_t ADC_GetPreviousResult(void);
-# 696 "./mcc_generated_files/adc.h"
+# 698 "./mcc_generated_files/adc.h"
 void ADC_DefineSetPoint(uint16_t setPoint);
-# 720 "./mcc_generated_files/adc.h"
+# 722 "./mcc_generated_files/adc.h"
 void ADC_SetUpperThreshold(uint16_t upperThreshold);
-# 744 "./mcc_generated_files/adc.h"
+# 746 "./mcc_generated_files/adc.h"
 void ADC_SetLowerThreshold(uint16_t lowerThreshold);
-# 769 "./mcc_generated_files/adc.h"
+# 771 "./mcc_generated_files/adc.h"
 uint16_t ADC_GetErrorCalculation(void);
-# 793 "./mcc_generated_files/adc.h"
+# 795 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableDoubleSampling(void);
-# 817 "./mcc_generated_files/adc.h"
+# 819 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableContinuousConversion(void);
-# 841 "./mcc_generated_files/adc.h"
+# 843 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableContinuousConversion(void);
-# 868 "./mcc_generated_files/adc.h"
+# 870 "./mcc_generated_files/adc.h"
 _Bool ADC_HasErrorCrossedUpperThreshold(void);
-# 895 "./mcc_generated_files/adc.h"
+# 897 "./mcc_generated_files/adc.h"
 _Bool ADC_HasErrorCrossedLowerThreshold(void);
-# 920 "./mcc_generated_files/adc.h"
+# 922 "./mcc_generated_files/adc.h"
 uint8_t ADC_GetConversionStageStatus(void);
-# 941 "./mcc_generated_files/adc.h"
+# 943 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableChargePump(void);
-# 962 "./mcc_generated_files/adc.h"
+# 964 "./mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableChargePump(void);
 
 
@@ -37656,7 +37658,7 @@ __attribute__((inline)) void ADC_DisableChargePump(void);
 
 
 void ADC_ADI_ISR(void);
-# 998 "./mcc_generated_files/adc.h"
+# 1000 "./mcc_generated_files/adc.h"
 void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37666,7 +37668,7 @@ void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ACTI_ISR(void);
-# 1034 "./mcc_generated_files/adc.h"
+# 1036 "./mcc_generated_files/adc.h"
 void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37676,7 +37678,7 @@ void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH1_ISR(void);
-# 1070 "./mcc_generated_files/adc.h"
+# 1072 "./mcc_generated_files/adc.h"
 void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37686,7 +37688,7 @@ void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH2_ISR(void);
-# 1106 "./mcc_generated_files/adc.h"
+# 1108 "./mcc_generated_files/adc.h"
 void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37696,7 +37698,7 @@ void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH3_ISR(void);
-# 1142 "./mcc_generated_files/adc.h"
+# 1144 "./mcc_generated_files/adc.h"
 void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -37706,7 +37708,7 @@ void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH4_ISR(void);
-# 1178 "./mcc_generated_files/adc.h"
+# 1180 "./mcc_generated_files/adc.h"
 void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
 # 56 "./mcc_generated_files/mcc.h" 2
 
@@ -38196,28 +38198,51 @@ void CAN1_Initialize(void);
 CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
 # 181 "./mcc_generated_files/can1.h"
 CAN_OP_MODES CAN1_OperationModeGet(void);
-# 241 "./mcc_generated_files/can1.h"
+# 231 "./mcc_generated_files/can1.h"
+_Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
+# 290 "./mcc_generated_files/can1.h"
 CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
-# 297 "./mcc_generated_files/can1.h"
+# 346 "./mcc_generated_files/can1.h"
 _Bool CAN1_IsBusOff(void);
-# 355 "./mcc_generated_files/can1.h"
+# 404 "./mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorPassive(void);
-# 414 "./mcc_generated_files/can1.h"
+# 463 "./mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorWarning(void);
-# 473 "./mcc_generated_files/can1.h"
+# 522 "./mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorActive(void);
-# 521 "./mcc_generated_files/can1.h"
+# 570 "./mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorPassive(void);
-# 569 "./mcc_generated_files/can1.h"
+# 618 "./mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorWarning(void);
-# 617 "./mcc_generated_files/can1.h"
+# 666 "./mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorActive(void);
-# 668 "./mcc_generated_files/can1.h"
+# 717 "./mcc_generated_files/can1.h"
 void CAN1_Sleep(void);
-# 722 "./mcc_generated_files/can1.h"
+# 771 "./mcc_generated_files/can1.h"
 CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
-# 767 "./mcc_generated_files/can1.h"
+# 813 "./mcc_generated_files/can1.h"
+uint8_t CAN1_ReceivedMessageCountGet(void);
+# 880 "./mcc_generated_files/can1.h"
+void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
+# 937 "./mcc_generated_files/can1.h"
+void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
+# 1005 "./mcc_generated_files/can1.h"
+void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
+# 1056 "./mcc_generated_files/can1.h"
+void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
+# 1125 "./mcc_generated_files/can1.h"
+void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
+# 1193 "./mcc_generated_files/can1.h"
+void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
+# 1245 "./mcc_generated_files/can1.h"
+void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
+# 1280 "./mcc_generated_files/can1.h"
+void CAN1_SetFIFO1nullHandler(void (*handler)(void));
+# 1324 "./mcc_generated_files/can1.h"
 void CAN1_SetTXQnullHandler(void (*handler)(void));
+
+
+void CAN1_ISR(void);
 # 61 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/delay.h" 1
@@ -38322,34 +38347,63 @@ void PMD_Initialize(void);
 
 
 
-CAN_MSG_OBJ msg;
-uint8_t CANDATAdata[32] = "BUFFERCAN";
+CAN_MSG_OBJ msgTransmit;
+CAN_MSG_OBJ msgReceipt;
 
 
+extern unsigned char CANDATAdata[8];
+
+extern unsigned char ucTargetAccelerator;
+extern unsigned char ucTargetClutch;
+extern unsigned char ucTargetBrake;
+extern unsigned char ucTargetDirection;
+extern unsigned char ucTargetGear;
+# 52 "./MESSAGES.h"
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
+void CANReadMessage (void);
 # 8 "MESSAGES.c" 2
 
 
+# 1 "./PARAMETERS.h" 1
+# 10 "MESSAGES.c" 2
+
+# 1 "./GPIO.h" 1
+# 24 "./GPIO.h"
+extern unsigned char ucLEDState;
+extern unsigned char ucPedalPos;
+extern unsigned char ucPICHDRPRES1min;
+extern unsigned char ucPICHDRPRES2min;
+
+
+void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+void GPIO_LED(unsigned char ucMode);
+void GPIO_BrakePedalAtRest (void);
+# 11 "MESSAGES.c" 2
+
+# 1 "./SERVICEBRAKE.h" 1
+# 17 "./SERVICEBRAKE.h"
+extern unsigned char ucDutyServomotor;
+extern unsigned char ucServoLmin;
+extern unsigned char ucServoLmax;
+
+
+void SERVICEBRAKE_Move (unsigned char ucTargetMove);
+# 12 "MESSAGES.c" 2
+
+
+
+unsigned char CANDATAdata[8] = {0,0,0,0,0,0,0,0};
+
+unsigned char ucTargetAccelerator;
+unsigned char ucTargetClutch;
+unsigned char ucTargetBrake;
+unsigned char ucTargetDirection;
+unsigned char ucTargetGear;
 
 
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8)
 {
-    unsigned int uiData1;
-    unsigned int uiData2;
-    unsigned int uiData3;
-    unsigned int uiData4;
-
-
-
-    uiData1 = ( data1 << 0x08 ) & 0xFF00;
-    uiData1 |= data2;
-    uiData2 = ( data3 << 0x08 ) & 0xFF00;
-    uiData2 |= data4;
-    uiData3 = ( data5 << 0x08 ) & 0xFF00;
-    uiData3 |= data6;
-    uiData4 = ( data7 << 0x08 ) & 0xFF00;
-    uiData4 |= data8;
-
     CANDATAdata [0] = data1;
     CANDATAdata [1] = data2;
     CANDATAdata [2] = data3;
@@ -38359,21 +38413,89 @@ void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char d
     CANDATAdata [6] = data7;
     CANDATAdata [7] = data8;
 
-    if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
-    {
-        if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
-        {
-            msg.msgId = id;
-            msg.field.formatType = CAN_2_0_FORMAT;
-            msg.field.brs = CAN_NON_BRS_MODE;
-            msg.field.frameType = CAN_FRAME_DATA;
-            msg.field.idType = CAN_FRAME_STD;
-            msg.field.dlc = dataLength;
-            msg.data = CANDATAdata;
+    msgTransmit.msgId = id;
+    msgTransmit.field.formatType = CAN_2_0_FORMAT;
+    msgTransmit.field.brs = CAN_NON_BRS_MODE;
+    msgTransmit.field.frameType = CAN_FRAME_DATA;
+    msgTransmit.field.idType = CAN_FRAME_EXT;
+    msgTransmit.field.dlc = ( dataLength & 0x0F );
+    msgTransmit.data = CANDATAdata;
 
-            if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
+    if(CAN1_IsBusOff() == 1)
+    {
+        __nop();
+        ucLEDState = 1;
+    }
+    if(CAN1_IsTxErrorPassive() == 1)
+    {
+        __nop();
+        ucLEDState = 1;
+    }
+    if(CAN1_IsTxErrorWarning() == 1)
+    {
+        __nop();
+        ucLEDState = 1;
+    }
+    if(CAN1_IsTxErrorActive() == 1)
+    {
+        __nop();
+        ucLEDState = 1;
+    }
+
+    if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
+    {
+        CAN1_Transmit(TXQ, &msgTransmit);
+        __nop();
+    }
+}
+
+
+
+void CANReadMessage (void)
+{
+    uint32_t id;
+    unsigned char idType;
+    unsigned char dlc;
+    unsigned char data1;
+    unsigned char data2;
+    unsigned char data3;
+    unsigned char data4;
+    unsigned char data5;
+    unsigned char data6;
+    unsigned char data7;
+    unsigned char data8;
+
+    if(CAN1_ReceivedMessageCountGet() > 0)
+    {
+        if(1 == CAN1_Receive(&msgReceipt))
+        {
+            __nop();
+            id = msgReceipt.msgId;
+            idType = msgReceipt.field.idType;
+            dlc = msgReceipt.field.dlc;
+            data1 = msgReceipt.data[0];
+            data2 = msgReceipt.data[1];
+            data3 = msgReceipt.data[2];
+            data4 = msgReceipt.data[3];
+            data5 = msgReceipt.data[4];
+            data6 = msgReceipt.data[5];
+            data7 = msgReceipt.data[6];
+            data8 = msgReceipt.data[7];
+
+            switch (id)
             {
-                CAN1_Transmit(TXQ, &msg);
+                case 0x320:
+                    ucTargetAccelerator = data1;
+                    ucTargetClutch = data2;
+                    ucTargetBrake = data3;
+                    ucTargetDirection = data4;
+                    ucTargetGear = data5;
+
+                    SERVICEBRAKE_Move(ucTargetBrake);
+                    break;
+                default:
+                    __nop();
+                    break;
             }
         }
     }

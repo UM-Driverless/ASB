@@ -44,6 +44,7 @@
 #include "mcc_generated_files/mcc.h"
 #include "MESSAGES.h"
 #include "GPIO.h"
+#include "ANALOG.h"
 
 /*
                          Main application
@@ -59,8 +60,8 @@ void main(void)
 
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
-    STBY_SetDigitalOutput();
-    STBY_SetHigh();
+    CANSTBY_SetDigitalOutput();
+    CANSTBY_SetHigh();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -76,10 +77,16 @@ void main(void)
         Nop();
         //CANWriteMessage ( 0x158, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 );
         
-        
-        GPIO_PWM1_Control(50, 600);
-        
+        //PWM, conseguiriamos modificar la posición modificando solo el duty
+        //GPIO_PWM1_Control(50, 600);
         GPIO_PWM2_Control(25, 10);
+        
+        //ANALOG //EJECUTAR CADA 10HZ
+        ANALOG_RedAll();
+        CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
+        
+        
+        
     }
 }
 /**

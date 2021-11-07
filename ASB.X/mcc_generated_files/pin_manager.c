@@ -66,13 +66,13 @@ void PIN_MANAGER_Initialize(void)
     */
     TRISE = 0x08;
     TRISA = 0xEF;
-    TRISB = 0xC9;
+    TRISB = 0xC8;
     TRISC = 0xDC;
 
     /**
     ANSELx registers
     */
-    ANSELC = 0xFB;
+    ANSELC = 0xF3;
     ANSELB = 0x77;
     ANSELA = 0xDF;
 
@@ -89,7 +89,7 @@ void PIN_MANAGER_Initialize(void)
     */
     ODCONA = 0x00;
     ODCONB = 0x00;
-    ODCONC = 0x10;
+    ODCONC = 0x00;
 
     /**
     SLRCONx registers
@@ -119,11 +119,6 @@ void PIN_MANAGER_Initialize(void)
     RC1PPS = 0x1A;   //RC1->PWM2_16BIT:PWM21;    
     CANRXPPS = 0x0B;   //RB3->CAN1:CANRX;    
     RB4PPS = 0x46;   //RB4->CAN1:CANTX;    
-    
-    //INICIALIZACION PIN STBY CAN
-    STBY_SetDigitalOutput();
-    STBY_SetHigh();
-    
 }
   
 void PIN_MANAGER_IOC(void)

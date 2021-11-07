@@ -1,5 +1,7 @@
-build/default/production/main.p1:  \
-main.c  \
+build/default/production/SERVICEBRAKE.p1:  \
+SERVICEBRAKE.c  \
+GPIO.h  \
+MESSAGES.h  \
 mcc_generated_files/mcc.h  \
 mcc_generated_files/device_config.h  \
 mcc_generated_files/pin_manager.h  \
@@ -13,7 +15,4 @@ mcc_generated_files/can1.h  \
 mcc_generated_files/can_types.h  \
 mcc_generated_files/delay.h  \
 mcc_generated_files/pwm2_16bit.h  \
-mcc_generated_files/pwm1_16bit.h  \
-MESSAGES.h  \
-GPIO.h  \
-ANALOG.h 
+mcc_generated_files/pwm1_16bit.h 

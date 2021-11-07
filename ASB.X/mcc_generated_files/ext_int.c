@@ -26,6 +26,7 @@
  */
 #include <xc.h>
 #include "ext_int.h"
+#include "../GPIO.h"
 
 void (*INT0_InterruptHandler)(void);
 
@@ -41,6 +42,8 @@ void INT0_ISR(void)
 void INT0_CallBack(void)
 {
     // Add your custom callback code here
+    //SI ESTO OCURRE QUIERE DECIR QUE EL VALOR DEL DUTY ACTUAL ES EL MÍNIMO
+    GPIO_BrakePedalAtRest();
     if(INT0_InterruptHandler)
     {
         INT0_InterruptHandler();

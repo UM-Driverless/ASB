@@ -71,12 +71,11 @@ typedef uint16_t adc_result_t;
  */
 typedef enum
 {
-    channel_ANA0 =  0x0,
-    channel_ANA1 =  0x1,
-    channel_ANB0 =  0x8,
-    channel_ANC3 =  0x13,
-    channel_ANC6 =  0x16,
-    channel_ANC7 =  0x17,
+    PICHDRPRES1 =  0x0,
+    PICHDRPRES2 =  0x1,
+    AN2 =  0x14,
+    PICNPRES2 =  0x16,
+    PICNPRES1 =  0x17,
     channel_VSS =  0x3B,
     channel_Temp =  0x3C,
     channel_DAC1 =  0x3D,
@@ -92,6 +91,9 @@ typedef enum
 typedef enum
 {
     CONTEXT_1,
+    CONTEXT_2,
+    CONTEXT_3,
+    CONTEXT_4,
 } ADC_context_t;
 
 /**
