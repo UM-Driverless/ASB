@@ -13,12 +13,34 @@
 
 //VARIABLES
 unsigned char CANDATAdata[8] = CAN_TX_BUFF;
-
+//TRAJECTORY_ACT
 unsigned char ucTargetAccelerator;
 unsigned char ucTargetClutch;
 unsigned char ucTargetBrake;
 unsigned char ucTargetDirection;
 unsigned char ucTargetGear;
+//DV_SYSTEM_STATUS
+unsigned char ucAS_state;
+unsigned char ucEBS_state;
+unsigned char ucAMI_state;
+unsigned char ucSteering_state;
+unsigned char ucService_brake;
+unsigned char ucLap_counter;
+unsigned char ucCones_count_actual;
+unsigned int uiCones_count_all;
+//DV_DRIVING_DYNAMICS_1
+unsigned char ucSpeed_actual;
+unsigned char ucSpeed_target;
+unsigned char ucSteering_angle_actual;
+unsigned char ucSteering_angle_target;
+unsigned char ucBrake_hydr_actual;
+unsigned char ucBrake_hydr_target;
+unsigned char ucMotor_moment_actual;
+unsigned char ucMotor_moment_target;
+//DV_DRIVING_DYNAMICS_2
+unsigned int uiAcc_longitudinal;
+unsigned int uiAcc_lateral;
+unsigned int uiYaw_rate;
 
 //FUNCIONES
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8)
@@ -111,6 +133,31 @@ void CANReadMessage (void)
                     ucTargetGear = data5;
                     //APLY ucTargetBrake TO DUTYCYCLE SERVO
                     SERVICEBRAKE_Move(ucTargetBrake);
+                    break;
+                case DV_SYSTEM_STATUS:
+                    ucAS_state = ( data1 & 0x07 );
+                    ucEBS_state = ( data1 & 0x18 );
+                    ucAMI_state = ( data1 & 0xE0 );
+                    ucSteering_state = ( data2 & 0x01 );
+                    ucService_brake = ( data2 & 0x06 );
+                    ucLap_counter = ( data2 & 0x78 );
+                    ucCones_count_actual = ( ( ( data3 & 0x7F ) << 1 ) | ( ( data2 & 0x80 ) >> 7 ) );
+                    uiCones_count_all = ( ( ( data5 & 0xFF ) << 8 ) | ( ( data4 & 0xFF ) << 1 ) | ( ( data3 & 0x80 ) >> 7 ) );
+                    break;
+                case DV_DRIVING_DYNAMICS_1:
+                    ucSpeed_actual = data1;
+                    ucSpeed_target = data2;
+                    ucSteering_angle_actual = data3;
+                    ucSteering_angle_target = data4;
+                    ucBrake_hydr_actual = data5;
+                    ucBrake_hydr_target = data6;
+                    ucMotor_moment_actual = data7;
+                    ucMotor_moment_target = data8;
+                    break;
+                case DV_DRIVING_DYNAMICS_2:
+                    uiAcc_longitudinal = ( ( data2 << 8 ) | data1 );
+                    uiAcc_lateral = ( ( data4 << 8 ) | data3 );
+                    uiYaw_rate = ( ( data6 << 8 ) | data5 );;
                     break;
                 default:
                     Nop();
