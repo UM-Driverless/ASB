@@ -45,6 +45,7 @@
 #include "MESSAGES.h"
 #include "GPIO.h"
 #include "ANALOG.h"
+#include "EBS.h"
 
 /*
                          Main application
@@ -66,6 +67,8 @@ void main(void)
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
     
+    EBS_Init();
+    
     while (1)
     {
         // Add your application code
@@ -79,14 +82,16 @@ void main(void)
         
         //PWM, conseguiriamos modificar la posición modificando solo el duty
         //GPIO_PWM1_Control(50, 600);
-        GPIO_PWM2_Control(25, 10);
+        //GPIO_PWM2_Control(25, 10);
         
         //ANALOG //EJECUTAR CADA 10HZ
-        ANALOG_RedAll();
-        CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
+        //ANALOG_RedAll();
+        //CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
         
         
         
+        
+        EBS_CheckUP_Routine();
     }
 }
 /**

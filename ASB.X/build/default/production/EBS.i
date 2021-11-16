@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/pin_manager.c"
+# 1 "EBS.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,198 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/pin_manager.c" 2
-# 49 "mcc_generated_files/pin_manager.c"
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 54 "mcc_generated_files/pin_manager.h"
+# 1 "EBS.c" 2
+
+
+
+
+
+
+
+
+# 1 "./EBS.h" 1
+# 21 "./EBS.h"
+void EBS_Init (void);
+void EBS_CheckUP_Routine (void);
+void EBS_Watchdog (unsigned char ucWDState);
+# 9 "EBS.c" 2
+
+# 1 "./GPIO.h" 1
+# 24 "./GPIO.h"
+extern unsigned char ucLEDState;
+extern unsigned char ucPedalPos;
+extern unsigned char ucPICHDRPRES1min;
+extern unsigned char ucPICHDRPRES2min;
+
+
+void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+void GPIO_LED(unsigned char ucMode);
+void GPIO_BrakePedalAtRest (void);
+# 10 "EBS.c" 2
+
+# 1 "./mcc_generated_files/pwm2_16bit.h" 1
+# 54 "./mcc_generated_files/pwm2_16bit.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+
+
+
+
+typedef __int24 int24_t;
+
+
+
+
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+
+
+
+
+typedef __uint24 uint24_t;
+
+
+
+
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 54 "./mcc_generated_files/pwm2_16bit.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 55 "./mcc_generated_files/pwm2_16bit.h" 2
+
+
+
+
+
+
+
+
+void PWM2_16BIT_Initialize(void);
+
+
+
+
+
+
+void PWM2_16BIT_Enable();
+# 79 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Disable();
+# 96 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_WritePeriodRegister(uint16_t periodCount);
+# 114 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
+# 131 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_SetSlice1Output2DutyCycleRegister(uint16_t value);
+# 148 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_LoadBufferRegisters(void);
+
+
+
+
+
+
+void PWM2_16BIT_PWMI_ISR(void);
+
+
+
+
+
+
+void PWM2_16BIT_PWMPI_ISR(void);
+# 182 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void));
+# 202 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 222 "./mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void));
+# 11 "EBS.c" 2
+
+# 1 "./mcc_generated_files/pin_manager.h" 1
+# 54 "./mcc_generated_files/pin_manager.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -23,17 +211,7 @@ extern double __fpnormalize(double);
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-
-
-
-
-
-
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
 # 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
@@ -42,10 +220,6 @@ extern double __fpnormalize(double);
 typedef long int wchar_t;
 # 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
 
 
@@ -115,92 +289,7 @@ extern void __builtin_software_breakpoint(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
 
-
-
-
-typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long int32_t;
-
-
-
-
-
-typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-# 5 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\builtins.h" 2 3
 
 
 #pragma intrinsic(__nop)
@@ -37483,80 +37572,1034 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 2 3
-# 54 "mcc_generated_files/pin_manager.h" 2
-# 434 "mcc_generated_files/pin_manager.h"
+# 54 "./mcc_generated_files/pin_manager.h" 2
+# 434 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 446 "mcc_generated_files/pin_manager.h"
+# 446 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 49 "mcc_generated_files/pin_manager.c" 2
+# 12 "EBS.c" 2
+
+# 1 "./PARAMETERS.h" 1
+# 27 "./PARAMETERS.h"
+extern unsigned char HDRPRES_min;
+extern unsigned char HDRPRES_max;
+extern unsigned char NPRES_min;
+extern unsigned char NPRES_max;
+
+
+
+void PARAMETERS_Init (void);
+# 13 "EBS.c" 2
+
+# 1 "./MESSAGES.h" 1
+# 16 "./MESSAGES.h"
+# 1 "./mcc_generated_files/mcc.h" 1
+# 50 "./mcc_generated_files/mcc.h"
+# 1 "./mcc_generated_files/device_config.h" 1
+# 50 "./mcc_generated_files/mcc.h" 2
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 1 3
 
 
 
 
 
 
-void PIN_MANAGER_Initialize(void)
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 3
+extern int errno;
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\__null.h" 1 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 54 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 87 "./mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 55 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/adc.h" 1
+# 65 "./mcc_generated_files/adc.h"
+typedef uint16_t adc_result_t;
+
+
+
+
+
+
+typedef enum
+{
+    PICHDRPRES1 = 0x0,
+    PICHDRPRES2 = 0x1,
+    AN2 = 0x14,
+    PICNPRES2 = 0x16,
+    PICNPRES1 = 0x17,
+    channel_VSS = 0x3B,
+    channel_Temp = 0x3C,
+    channel_DAC1 = 0x3D,
+    channel_FVR_Buffer1 = 0x3E,
+    channel_FVR_Buffer2 = 0x3F
+} ADC_channel_t;
+
+
+
+
+
+
+typedef enum
+{
+    CONTEXT_1,
+    CONTEXT_2,
+    CONTEXT_3,
+    CONTEXT_4,
+} ADC_context_t;
+# 120 "./mcc_generated_files/adc.h"
+void ADC_Initialize(void);
+# 151 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableChannelSequencer(void);
+# 173 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableChannelSequencer(void);
+# 205 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_StartChannelSequencer(void);
+# 228 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
+# 250 "./mcc_generated_files/adc.h"
+void ADC_EnableChannelScan(ADC_context_t context);
+# 274 "./mcc_generated_files/adc.h"
+void ADC_DisableChannelScan(ADC_context_t context);
+# 301 "./mcc_generated_files/adc.h"
+void ADC_StartConversion(ADC_channel_t channel);
+# 327 "./mcc_generated_files/adc.h"
+_Bool ADC_IsConversionDone(void);
+# 353 "./mcc_generated_files/adc.h"
+adc_result_t ADC_GetConversionResult(void);
+# 379 "./mcc_generated_files/adc.h"
+adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
+# 404 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_StopConversion(void);
+# 428 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SetStopOnInterrupt(void);
+# 456 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
+# 480 "./mcc_generated_files/adc.h"
+void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
+# 504 "./mcc_generated_files/adc.h"
+void ADC_SetPrechargeTime(uint16_t prechargeTime);
+# 528 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
+# 552 "./mcc_generated_files/adc.h"
+uint8_t ADC_GetCurrentCountofConversions(void);
+# 575 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_ClearAccumulator(void);
+# 599 "./mcc_generated_files/adc.h"
+uint24_t ADC_GetAccumulatorValue(void);
+# 626 "./mcc_generated_files/adc.h"
+_Bool ADC_HasAccumulatorOverflowed(void);
+# 650 "./mcc_generated_files/adc.h"
+uint16_t ADC_GetFilterValue(void);
+# 674 "./mcc_generated_files/adc.h"
+uint16_t ADC_GetPreviousResult(void);
+# 698 "./mcc_generated_files/adc.h"
+void ADC_DefineSetPoint(uint16_t setPoint);
+# 722 "./mcc_generated_files/adc.h"
+void ADC_SetUpperThreshold(uint16_t upperThreshold);
+# 746 "./mcc_generated_files/adc.h"
+void ADC_SetLowerThreshold(uint16_t lowerThreshold);
+# 771 "./mcc_generated_files/adc.h"
+uint16_t ADC_GetErrorCalculation(void);
+# 795 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableDoubleSampling(void);
+# 819 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableContinuousConversion(void);
+# 843 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableContinuousConversion(void);
+# 870 "./mcc_generated_files/adc.h"
+_Bool ADC_HasErrorCrossedUpperThreshold(void);
+# 897 "./mcc_generated_files/adc.h"
+_Bool ADC_HasErrorCrossedLowerThreshold(void);
+# 922 "./mcc_generated_files/adc.h"
+uint8_t ADC_GetConversionStageStatus(void);
+# 943 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableChargePump(void);
+# 964 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableChargePump(void);
+
+
+
+
+
+
+
+void ADC_ADI_ISR(void);
+# 1000 "./mcc_generated_files/adc.h"
+void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ACTI_ISR(void);
+# 1036 "./mcc_generated_files/adc.h"
+void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH1_ISR(void);
+# 1072 "./mcc_generated_files/adc.h"
+void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH2_ISR(void);
+# 1108 "./mcc_generated_files/adc.h"
+void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH3_ISR(void);
+# 1144 "./mcc_generated_files/adc.h"
+void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH4_ISR(void);
+# 1180 "./mcc_generated_files/adc.h"
+void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
+# 56 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr1.h" 1
+# 101 "./mcc_generated_files/tmr1.h"
+void TMR1_Initialize(void);
+# 130 "./mcc_generated_files/tmr1.h"
+void TMR1_StartTimer(void);
+# 162 "./mcc_generated_files/tmr1.h"
+void TMR1_StopTimer(void);
+# 197 "./mcc_generated_files/tmr1.h"
+uint16_t TMR1_ReadTimer(void);
+# 236 "./mcc_generated_files/tmr1.h"
+void TMR1_WriteTimer(uint16_t timerVal);
+# 272 "./mcc_generated_files/tmr1.h"
+void TMR1_Reload(void);
+# 311 "./mcc_generated_files/tmr1.h"
+void TMR1_StartSinglePulseAcquisition(void);
+# 350 "./mcc_generated_files/tmr1.h"
+uint8_t TMR1_CheckGateValueStatus(void);
+# 368 "./mcc_generated_files/tmr1.h"
+void TMR1_ISR(void);
+# 385 "./mcc_generated_files/tmr1.h"
+void TMR1_CallBack(void);
+# 403 "./mcc_generated_files/tmr1.h"
+ void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
+# 421 "./mcc_generated_files/tmr1.h"
+extern void (*TMR1_InterruptHandler)(void);
+# 439 "./mcc_generated_files/tmr1.h"
+void TMR1_DefaultInterruptHandler(void);
+# 57 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr2.h" 1
+# 79 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+# 89 "./mcc_generated_files/tmr2.h"
+   TMR2_ROP_STARTS_TMRON,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSHIGH,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSBOTHEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSRISINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSFALLINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSHIGH,
+# 135 "./mcc_generated_files/tmr2.h"
+   TMR2_OS_STARTS_TMRON,
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSBOTHEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTRISINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSHIGH = 0x16,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSLOW = 0x17,
+# 192 "./mcc_generated_files/tmr2.h"
+   TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
+
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
+
+} TMR2_HLT_MODE;
+# 220 "./mcc_generated_files/tmr2.h"
+typedef enum
 {
 
 
-
-    LATA = 0x00;
-    LATB = 0x00;
-    LATC = 0x00;
+    TMR2_T2INPPS,
 
 
 
-
-    TRISE = 0x08;
-    TRISA = 0xEF;
-    TRISB = 0xC8;
-    TRISC = 0xDC;
+    TMR2_RESERVED,
 
 
 
-
-    ANSELC = 0xF3;
-    ANSELB = 0x77;
-    ANSELA = 0xDF;
+    TMR2_T4POSTSCALED,
 
 
 
-
-    WPUE = 0x00;
-    WPUB = 0x00;
-    WPUA = 0x00;
-    WPUC = 0x00;
+    TMR2_T6POSTSCALED,
 
 
 
-
-    ODCONA = 0x00;
-    ODCONB = 0x00;
-    ODCONC = 0x00;
+    TMR2_CCP1_OUT,
 
 
 
-
-    SLRCONA = 0xFF;
-    SLRCONB = 0xFF;
-    SLRCONC = 0xFF;
+    TMR2_CCP2_OUT,
 
 
 
+    TMR2_CCP3_OUT,
 
-    INLVLA = 0xFF;
-    INLVLB = 0xFF;
-    INLVLC = 0xFF;
-    INLVLE = 0x08;
-# 116 "mcc_generated_files/pin_manager.c"
-    RC0PPS = 0x18;
-    ADACTPPS = 0x0F;
-    INT0PPS = 0x05;
-    RC1PPS = 0x1A;
-    CANRXPPS = 0x0B;
-    RB4PPS = 0x46;
+
+
+    TMR2_PWM1S1P1_OUT,
+
+
+
+    TMR2_PWM1S1P2_OUT,
+
+
+
+    TMR2_PWM2S1P1_OUT,
+
+
+
+    TMR2_PWM2S1P2_OUT,
+
+
+
+    TMR2_PWM3S1P1_OUT,
+
+
+
+    TMR2_PWM3S1P2_OUT,
+
+
+
+    TMR2_RESERVED_2,
+
+
+
+    TMR2_RESERVED_3,
+
+
+
+    TMR2_CMP1_OUT,
+
+
+
+    TMR2_CMP2_OUT,
+
+
+
+    TMR2_ZCD_OUTPUT,
+
+
+
+    TMR2_CLC1_OUT,
+
+
+
+    TMR2_CLC2_OUT,
+
+
+
+    TMR2_CLC3_OUT,
+
+
+
+    TMR2_CLC4_OUT,
+
+
+
+    TMR2_CLC5_OUT,
+
+
+
+    TMR2_CLC6_OUT,
+
+
+
+    TMR2_CLC7_OUT,
+
+
+
+    TMR2_CLC8_OUT,
+
+
+
+    TMR2_UART1_RX_EDGE,
+
+
+
+    TMR2_UART1_TX_EDGE,
+
+
+
+    TMR2_UART2_RX_EDGE,
+
+
+
+    TMR2_UART2_TX_EDGE,
+
+
+
+    TMR2_UART3_RX_EDGE,
+
+
+
+    TMR2_UART3_TX_EDGE,
+
+
+
+    TMR2_UART4_RX_EDGE,
+
+
+
+    TMR2_UART4_TX_EDGE,
+
+
+
+    TMR2_UART5_RX_EDGE,
+
+
+
+    TMR2_UART5_TX_EDGE,
+
+
+
+    TMR2_RESERVED_4
+
+
+} TMR2_HLT_EXT_RESET_SOURCE;
+# 414 "./mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 450 "./mcc_generated_files/tmr2.h"
+void TMR2_ModeSet(TMR2_HLT_MODE mode);
+# 485 "./mcc_generated_files/tmr2.h"
+void TMR2_ExtResetSourceSet(TMR2_HLT_EXT_RESET_SOURCE reset);
+# 514 "./mcc_generated_files/tmr2.h"
+void TMR2_Start(void);
+# 543 "./mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 575 "./mcc_generated_files/tmr2.h"
+void TMR2_Stop(void);
+# 607 "./mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 642 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_Counter8BitGet(void);
+# 677 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 716 "./mcc_generated_files/tmr2.h"
+void TMR2_Counter8BitSet(uint8_t timerVal);
+# 755 "./mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 807 "./mcc_generated_files/tmr2.h"
+void TMR2_Period8BitSet(uint8_t periodVal);
+# 859 "./mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 877 "./mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 895 "./mcc_generated_files/tmr2.h"
+ void TMR2_CallBack(void);
+# 912 "./mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 930 "./mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 948 "./mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
+# 58 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr0.h" 1
+# 106 "./mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+# 135 "./mcc_generated_files/tmr0.h"
+void TMR0_StartTimer(void);
+# 167 "./mcc_generated_files/tmr0.h"
+void TMR0_StopTimer(void);
+# 202 "./mcc_generated_files/tmr0.h"
+uint8_t TMR0_ReadTimer(void);
+# 241 "./mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint8_t timerVal);
+# 278 "./mcc_generated_files/tmr0.h"
+void TMR0_Reload(uint8_t periodVal);
+# 297 "./mcc_generated_files/tmr0.h"
+void TMR0_ISR(void);
+# 315 "./mcc_generated_files/tmr0.h"
+void TMR0_CallBack(void);
+# 333 "./mcc_generated_files/tmr0.h"
+ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 351 "./mcc_generated_files/tmr0.h"
+extern void (*TMR0_InterruptHandler)(void);
+# 369 "./mcc_generated_files/tmr0.h"
+void TMR0_DefaultInterruptHandler(void);
+# 59 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/ext_int.h" 1
+# 250 "./mcc_generated_files/ext_int.h"
+void EXT_INT_Initialize(void);
+# 272 "./mcc_generated_files/ext_int.h"
+void INT0_ISR(void);
+# 296 "./mcc_generated_files/ext_int.h"
+void INT0_CallBack(void);
+# 319 "./mcc_generated_files/ext_int.h"
+void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 343 "./mcc_generated_files/ext_int.h"
+extern void (*INT0_InterruptHandler)(void);
+# 367 "./mcc_generated_files/ext_int.h"
+void INT0_DefaultInterruptHandler(void);
+# 60 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/can1.h" 1
+# 56 "./mcc_generated_files/can1.h"
+# 1 "./mcc_generated_files/can_types.h" 1
+# 65 "./mcc_generated_files/can_types.h"
+typedef union
+{
+    uint8_t msgfields;
+    struct
+    {
+        uint8_t idType:1;
+        uint8_t frameType:1;
+        uint8_t dlc:4;
+        uint8_t formatType:1;
+        uint8_t brs:1;
+    };
+} CAN_MSG_FIELD;
+
+typedef struct
+{
+    uint32_t msgId;
+    CAN_MSG_FIELD field;
+    uint8_t *data;
+} CAN_MSG_OBJ;
+# 94 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_NON_BRS_MODE = 0,
+    CAN_BRS_MODE = 1
+} CAN_MSG_OBJ_BRS_MODE;
+# 109 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_FRAME_STD = 0,
+    CAN_FRAME_EXT = 1,
+} CAN_MSG_OBJ_ID_TYPE;
+# 124 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_FRAME_DATA = 0,
+    CAN_FRAME_RTR = 1,
+} CAN_MSG_OBJ_FRAME_TYPE;
+# 139 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_2_0_FORMAT = 0,
+    CAN_FD_FORMAT = 1
+} CAN_MSG_OBJ_TYPE;
+# 154 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_TX_MSG_REQUEST_SUCCESS = 0,
+    CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR = 1,
+    CAN_TX_MSG_REQUEST_BRS_ERROR = 2,
+    CAN_TX_MSG_REQUEST_FIFO_FULL = 3,
+} CAN_TX_MSG_REQUEST_STATUS;
+# 171 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_NORMAL_FD_MODE = 0,
+    CAN_DISABLE_MODE = 1,
+    CAN_INTERNAL_LOOPBACK_MODE = 2,
+    CAN_LISTEN_ONLY_MODE = 3,
+    CAN_CONFIGURATION_MODE = 4,
+    CAN_EXTERNAL_LOOPBACK_MODE = 5,
+    CAN_NORMAL_2_0_MODE = 6,
+    CAN_RESTRICTED_OPERATION_MODE =7,
+} CAN_OP_MODES;
+# 192 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_OP_MODE_REQUEST_SUCCESS,
+    CAN_OP_MODE_REQUEST_FAIL,
+    CAN_OP_MODE_SYS_ERROR_OCCURED
+} CAN_OP_MODE_STATUS;
+# 208 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+    CAN_TX_FIFO_FULL,
+    CAN_TX_FIFO_AVAILABLE,
+} CAN_TX_FIFO_STATUS;
+# 223 "./mcc_generated_files/can_types.h"
+typedef enum
+{
+
+    DLC_0,
+    DLC_1,
+    DLC_2,
+    DLC_3,
+    DLC_4,
+    DLC_5,
+    DLC_6,
+    DLC_7,
+    DLC_8,
+
+
+
+    DLC_12,
+    DLC_16,
+    DLC_20,
+    DLC_24,
+    DLC_32,
+    DLC_48,
+    DLC_64,
+} CAN_DLC;
+# 56 "./mcc_generated_files/can1.h" 2
+
+
+
+
+
+typedef enum
+{
+    TXQ = 0
+} CAN1_TX_FIFO_CHANNELS;
+# 102 "./mcc_generated_files/can1.h"
+void CAN1_Initialize(void);
+# 143 "./mcc_generated_files/can1.h"
+CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
+# 181 "./mcc_generated_files/can1.h"
+CAN_OP_MODES CAN1_OperationModeGet(void);
+# 231 "./mcc_generated_files/can1.h"
+_Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
+# 290 "./mcc_generated_files/can1.h"
+CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
+# 346 "./mcc_generated_files/can1.h"
+_Bool CAN1_IsBusOff(void);
+# 404 "./mcc_generated_files/can1.h"
+_Bool CAN1_IsTxErrorPassive(void);
+# 463 "./mcc_generated_files/can1.h"
+_Bool CAN1_IsTxErrorWarning(void);
+# 522 "./mcc_generated_files/can1.h"
+_Bool CAN1_IsTxErrorActive(void);
+# 570 "./mcc_generated_files/can1.h"
+_Bool CAN1_IsRxErrorPassive(void);
+# 618 "./mcc_generated_files/can1.h"
+_Bool CAN1_IsRxErrorWarning(void);
+# 666 "./mcc_generated_files/can1.h"
+_Bool CAN1_IsRxErrorActive(void);
+# 717 "./mcc_generated_files/can1.h"
+void CAN1_Sleep(void);
+# 771 "./mcc_generated_files/can1.h"
+CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
+# 813 "./mcc_generated_files/can1.h"
+uint8_t CAN1_ReceivedMessageCountGet(void);
+# 880 "./mcc_generated_files/can1.h"
+void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
+# 937 "./mcc_generated_files/can1.h"
+void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
+# 1005 "./mcc_generated_files/can1.h"
+void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
+# 1056 "./mcc_generated_files/can1.h"
+void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
+# 1125 "./mcc_generated_files/can1.h"
+void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
+# 1193 "./mcc_generated_files/can1.h"
+void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
+# 1245 "./mcc_generated_files/can1.h"
+void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
+# 1280 "./mcc_generated_files/can1.h"
+void CAN1_SetFIFO1nullHandler(void (*handler)(void));
+# 1324 "./mcc_generated_files/can1.h"
+void CAN1_SetTXQnullHandler(void (*handler)(void));
+
+
+void CAN1_ISR(void);
+# 61 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/delay.h" 1
+# 34 "./mcc_generated_files/delay.h"
+void DELAY_milliseconds(uint16_t milliseconds);
+void DELAY_microseconds(uint16_t microseconds);
+# 62 "./mcc_generated_files/mcc.h" 2
+
+
+# 1 "./mcc_generated_files/pwm1_16bit.h" 1
+# 63 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Initialize(void);
+
+
+
+
+
+
+void PWM1_16BIT_Enable();
+# 79 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Disable();
+# 96 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_WritePeriodRegister(uint16_t periodCount);
+# 114 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
+# 131 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_SetSlice1Output2DutyCycleRegister(uint16_t value);
+# 148 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_LoadBufferRegisters(void);
+
+
+
+
+
+
+void PWM1_16BIT_PWMI_ISR(void);
+
+
+
+
+
+
+void PWM1_16BIT_PWMPI_ISR(void);
+# 182 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void));
+# 202 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 222 "./mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void));
+# 64 "./mcc_generated_files/mcc.h" 2
+# 79 "./mcc_generated_files/mcc.h"
+void SYSTEM_Initialize(void);
+# 92 "./mcc_generated_files/mcc.h"
+void OSCILLATOR_Initialize(void);
+# 105 "./mcc_generated_files/mcc.h"
+void PMD_Initialize(void);
+# 16 "./MESSAGES.h" 2
+
+
+
+
+
+
+CAN_MSG_OBJ msgTransmit;
+CAN_MSG_OBJ msgReceipt;
+
+
+extern unsigned char CANDATAdata[8];
+
+extern unsigned char ucTargetAccelerator;
+extern unsigned char ucTargetClutch;
+extern unsigned char ucTargetBrake;
+extern unsigned char ucTargetDirection;
+extern unsigned char ucTargetGear;
+
+extern unsigned char ucAS_state;
+extern unsigned char ucEBS_state;
+extern unsigned char ucAMI_state;
+extern unsigned char ucSteering_state;
+extern unsigned char ucService_brake;
+extern unsigned char ucLap_counter;
+extern unsigned char ucCones_count_actual;
+extern unsigned char ucCones_count_all;
+
+extern unsigned char ucSpeed_actual;
+extern unsigned char ucSpeed_target;
+extern unsigned char ucSteering_angle_actual;
+extern unsigned char ucSteering_angle_target;
+extern unsigned char ucBrake_hydr_actual;
+extern unsigned char ucBrake_hydr_target;
+extern unsigned char ucMotor_moment_actual;
+extern unsigned char ucMotor_moment_target;
+
+extern unsigned int uiAcc_longitudinal;
+extern unsigned int uiAcc_lateral;
+extern unsigned int uiYaw_rate;
+
+extern unsigned char ucASBState;
+extern unsigned char ucASRequesState;
+# 80 "./MESSAGES.h"
+void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
+void CANReadMessage (void);
+# 14 "EBS.c" 2
+
+# 1 "./ANALOG.h" 1
+# 28 "./ANALOG.h"
+extern unsigned int ucPICHDRPRES1;
+extern unsigned int ucPICHDRPRES2;
+extern unsigned int ucPICNPRES1;
+extern unsigned int ucPICNPRES2;
+extern unsigned int ucPICNPRES3;
+extern unsigned int ucPICNPRES4;
+extern unsigned int ucAN1;
+extern unsigned int ucAN2;
+
+
+
+unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica);
+void ANALOG_RedAll (void);
+# 15 "EBS.c" 2
+
+
+
+void EBS_Init (void)
+{
+    do { LATBbits.LATB2 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
 }
 
-void PIN_MANAGER_IOC(void)
+void EBS_CheckUP_Routine (void)
 {
+    unsigned char ucCheck;
+
+
+    if ( PORTCbits.RC2 == 0 )
+    {
+        ucCheck = 1;
+    }
+
+    if ( ucCheck == 1 )
+    {
+        EBS_Watchdog(1);
+        ucCheck = 2;
+    }
+
+    if ( ucCheck == 2 )
+    {
+        while ( PORTCbits.RC2 == 0 )
+        {
+            if ( PORTCbits.RC2 == 1 )
+            {
+                ucCheck = 3;
+                break;
+            }
+        }
+    }
+
+    if ( ucCheck == 3 )
+    {
+        EBS_Watchdog(0);
+        ucCheck = 4;
+    }
+
+    if ( ucCheck == 4 )
+    {
+        while ( PORTCbits.RC2 == 1 )
+        {
+            if ( PORTCbits.RC2 == 0 )
+            {
+                ucCheck = 5;
+                break;
+            }
+        }
+    }
+
+    if ( ucCheck == 5 )
+    {
+        EBS_Watchdog(1);
+        ucCheck = 6;
+    }
+
+    if ( ucCheck == 6 )
+    {
+        if ( ( ANALOG_GetVoltage(2) >= NPRES_min ) & ( ANALOG_GetVoltage(2) >= NPRES_min ) )
+        {
+            ucCheck = 7;
+        }
+    }
+
+    if ( ucCheck == 7 )
+    {
+        if ( ( ANALOG_GetVoltage(0) <= HDRPRES_min ) & ( ANALOG_GetVoltage(0) <= HDRPRES_min ) )
+        {
+            ucCheck = 8;
+        }
+    }
+
+
+
+
+
+    if ( ucCheck == 10 )
+    {
+        do { LATBbits.LATB2 = 0; } while(0);
+        ucCheck = 11;
+    }
+
+    if ( ucCheck == 11 )
+    {
+        DELAY_milliseconds(1000);
+        if ( ( ANALOG_GetVoltage(0) <= HDRPRES_min ) & ( ANALOG_GetVoltage(0) <= HDRPRES_min ) )
+        {
+            ucCheck = 12;
+        }
+    }
+
+    if ( ucCheck == 12 )
+    {
+        do { LATBbits.LATB2 = 1; } while(0);
+        DELAY_milliseconds(1000);
+        ucCheck = 13;
+    }
+
+    if ( ucCheck == 13 )
+    {
+        do { LATBbits.LATB1 = 0; } while(0);
+        ucCheck = 14;
+    }
+
+    if ( ucCheck == 14 )
+    {
+        DELAY_milliseconds(1000);
+        if ( ( PORTAbits.RA0 >= HDRPRES_max ) & ( PORTAbits.RA1 >= HDRPRES_max ) )
+        {
+            ucCheck = 15;
+        }
+    }
+
+    if ( ucCheck == 15 )
+    {
+        do { LATBbits.LATB1 = 1; } while(0);
+        DELAY_milliseconds(1000);
+        ucCheck = 16;
+        ucASRequesState = 1;
+    }
+
+    if ( ucCheck == 16 )
+    {
+        CANWriteMessage ( 0x362, 8, ucASBState, ucASRequesState, 0, 0, 0, 0, 0, 0 );
+    }
+
+}
+
+void EBS_Watchdog (unsigned char ucWDState)
+{
+    switch ( ucWDState )
+    {
+        case 0:
+            PWM2_16BIT_Disable();
+            break;
+        case 1:
+            PWM2_16BIT_Enable();
+            GPIO_PWM2_Control(25, 10);
+            break;
+    }
 }

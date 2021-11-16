@@ -1,8 +1,13 @@
-build/default/production/main.p1:  \
-main.c  \
+build/default/production/EBS.p1:  \
+EBS.c  \
+EBS.h  \
+GPIO.h  \
+mcc_generated_files/pwm2_16bit.h  \
+mcc_generated_files/pin_manager.h  \
+PARAMETERS.h  \
+MESSAGES.h  \
 mcc_generated_files/mcc.h  \
 mcc_generated_files/device_config.h  \
-mcc_generated_files/pin_manager.h  \
 mcc_generated_files/interrupt_manager.h  \
 mcc_generated_files/adc.h  \
 mcc_generated_files/tmr1.h  \
@@ -12,9 +17,5 @@ mcc_generated_files/ext_int.h  \
 mcc_generated_files/can1.h  \
 mcc_generated_files/can_types.h  \
 mcc_generated_files/delay.h  \
-mcc_generated_files/pwm2_16bit.h  \
 mcc_generated_files/pwm1_16bit.h  \
-MESSAGES.h  \
-GPIO.h  \
-ANALOG.h  \
-EBS.h 
+ANALOG.h 

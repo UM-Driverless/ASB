@@ -41,6 +41,9 @@ unsigned char ucMotor_moment_target;
 unsigned int uiAcc_longitudinal;
 unsigned int uiAcc_lateral;
 unsigned int uiYaw_rate;
+//ASB_STATE
+unsigned char ucASBState;
+unsigned char ucASRequesState;
 
 //FUNCIONES
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8)

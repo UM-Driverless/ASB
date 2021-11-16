@@ -52,6 +52,9 @@ extern unsigned char ucMotor_moment_target;
 extern unsigned int uiAcc_longitudinal;
 extern unsigned int uiAcc_lateral;
 extern unsigned int uiYaw_rate;
+//ASB_STATE
+extern unsigned char ucASBState;
+extern unsigned char ucASRequesState;
 
 //DEFINICIONES
 #define DataLength_0        			0
