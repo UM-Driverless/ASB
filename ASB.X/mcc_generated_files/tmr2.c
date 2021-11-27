@@ -185,7 +185,6 @@ void TMR2_CallBack(void)
 {
     // Add your custom callback code here
     // this code executes every TMR2_INTERRUPT_TICKER_FACTOR periods of TMR2
-    LED_Toggle();
     if(TMR2_InterruptHandler)
     {
         TMR2_InterruptHandler();

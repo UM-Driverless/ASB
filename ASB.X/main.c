@@ -46,6 +46,7 @@
 #include "GPIO.h"
 #include "ANALOG.h"
 #include "EBS.h"
+#include "mcc_generated_files/pin_manager.h"
 
 /*
                          Main application
@@ -66,9 +67,14 @@ void main(void)
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-    
+    //DELAY_milliseconds(1000);
     EBS_Init();
-    
+    DELAY_milliseconds(4000);
+    AS_CLS_SDC_SetDigitalOutput();
+    AS_DVR_MODE_SetDigitalOutput();
+    AS_CLS_SDC_SetHigh();
+    AS_DVR_MODE_SetHigh();
+    EBS_Watchdog(WD_DISABLE);
     while (1)
     {
         // Add your application code
@@ -76,8 +82,9 @@ void main(void)
         //MOSFET1_Toggle();
         //MOSFET2_Toggle();
         //EBSLEDACT_Toggle();
-        DELAY_milliseconds(1000);
+        //DELAY_milliseconds(1000);
         Nop();
+        //EBSLEDACT_SetHigh();
         //CANWriteMessage ( 0x158, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 );
         
         //PWM, conseguiriamos modificar la posición modificando solo el duty
@@ -88,10 +95,11 @@ void main(void)
         //ANALOG_RedAll();
         //CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
         
+        //EBS_CheckUP_Routine();
         
         
         
-        EBS_CheckUP_Routine();
+        //
     }
 }
 /**
