@@ -38418,6 +38418,9 @@ void EBS_Watchdog (unsigned char ucWDState);
 
 
 
+unsigned int uiIndex;
+
+
 
 
 void main(void)
@@ -38438,12 +38441,13 @@ void main(void)
 
 
     EBS_Init();
-    DELAY_milliseconds(4000);
+    DELAY_milliseconds(3000);
     do { TRISBbits.TRISB0 = 0; } while(0);
     do { TRISCbits.TRISC3 = 0; } while(0);
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATCbits.LATC3 = 1; } while(0);
     EBS_Watchdog(0);
+GPIO_PWM1_Control(2, 50);
     while (1)
     {
 
@@ -38453,6 +38457,18 @@ void main(void)
 
 
         __nop();
-# 103 "main.c"
+# 105 "main.c"
+        DELAY_milliseconds(1000);
+
+
+
+
+
+        GPIO_PWM1_Control(12, 50);
+
+
+
+
+
     }
 }

@@ -267,13 +267,13 @@ channel_FVR_Buffer2 63
 [v _EBS_Init EBS_Init `(v  1 e 1 0 ]
 "148
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
-"28 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"29 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
-"46
+"47
 [v _GPIO_PWM2_Control GPIO_PWM2_Control `(v  1 e 1 0 ]
-"88
+"89
 [v _GPIO_BrakePedalAtRest GPIO_BrakePedalAtRest `(v  1 e 1 0 ]
-"54 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"57 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "71 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -603,7 +603,7 @@ channel_FVR_Buffer2 63
 [v _PMD2 PMD2 `VEuc  1 e 1 @98 ]
 "1474
 [v _LATA LATA `VEuc  1 e 1 @1214 ]
-[s S3015 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S3022 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -613,8 +613,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "1491
-[u S3024 . 1 `S3015 1 . 1 0 ]
-[v _LATAbits LATAbits `VES3024  1 e 1 @1214 ]
+[u S3031 . 1 `S3022 1 . 1 0 ]
+[v _LATAbits LATAbits `VES3031  1 e 1 @1214 ]
 "1514
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
@@ -687,7 +687,7 @@ channel_FVR_Buffer2 63
 [v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
 "1846
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S3036 . 1 `uc 1 RA0 1 0 :1:0 
+[s S3043 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -697,9 +697,9 @@ channel_FVR_Buffer2 63
 `uc 1 RA7 1 0 :1:7 
 ]
 "1884
-[u S3045 . 1 `S3036 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES3045  1 e 1 @1230 ]
-[s S3193 . 1 `uc 1 RC0 1 0 :1:0 
+[u S3052 . 1 `S3043 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES3052  1 e 1 @1230 ]
+[s S3199 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -709,8 +709,8 @@ channel_FVR_Buffer2 63
 `uc 1 RC7 1 0 :1:7 
 ]
 "2008
-[u S3202 . 1 `S3193 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES3202  1 e 1 @1232 ]
+[u S3208 . 1 `S3199 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES3208  1 e 1 @1232 ]
 [s S67 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -1707,10 +1707,10 @@ channel_FVR_Buffer2 63
 [v _ucDutyServomotor ucDutyServomotor `uc  1 e 1 0 ]
 "15
 [v _ucServoLmin ucServoLmin `uc  1 e 1 0 ]
-"54 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"57 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"104
+"118
 } 0
 "50 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1966,6 +1966,35 @@ channel_FVR_Buffer2 63
 [v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "721
 } 0
+"29 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+[v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
+{
+"32
+[v GPIO_PWM1_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 62 ]
+"31
+[v GPIO_PWM1_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 60 ]
+"29
+[v GPIO_PWM1_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 54 ]
+[v GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 56 ]
+"42
+} 0
+"144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+[v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 0 ]
+"148
+} 0
+"150
+[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 0 ]
+"154
+} 0
+"162
+[v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"166
+} 0
 "148 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
 {
@@ -1984,17 +2013,17 @@ channel_FVR_Buffer2 63
 {
 "142
 } 0
-"46 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"47 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_PWM2_Control GPIO_PWM2_Control `(v  1 e 1 0 ]
 {
-"49
+"50
 [v GPIO_PWM2_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 62 ]
-"48
+"49
 [v GPIO_PWM2_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 60 ]
-"46
+"47
 [v GPIO_PWM2_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 54 ]
 [v GPIO_PWM2_Control@uiFreq uiFreq `ui  1 p 2 56 ]
-"59
+"60
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -2173,10 +2202,10 @@ channel_FVR_Buffer2 63
 {
 "60
 } 0
-"88 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"89 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_BrakePedalAtRest GPIO_BrakePedalAtRest `(v  1 e 1 0 ]
 {
-"104
+"105
 } 0
 "24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
 [v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
@@ -2237,17 +2266,17 @@ channel_FVR_Buffer2 63
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3559 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3565 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3564 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3567 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3559 1 fAsBytes 4 0 `S3564 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3567  1 a 4 33 ]
+[s S3570 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3573 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3565 1 fAsBytes 4 0 `S3570 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3573  1 a 4 33 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S3635 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3641 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3638 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3635 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3638  1 a 2 37 ]
+[u S3644 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3641 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S3644  1 a 2 37 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11

@@ -25,10 +25,20 @@ void SERVICEBRAKE_Move (unsigned char ucTargetMove)
     //LIMITAR EL MOVIMIENTO ENTRE UNOS LIMITES EL VALOD DE ucDuty
     if ( ( ucDutyServomotor >= ucServoLmin ) && ( ucDutyServomotor <= ucServoLmax ) )
     {
-        GPIO_PWM1_Control(ucDutyServomotor, 600);
+        if ( ( ucDutyServomotor < 0 ) && ( ucDutyServomotor > 12 ) ) //0-180º con 50Hz
+        {
+            GPIO_PWM1_Control(ucDutyServomotor, 50);
+        }
     }
     else
     {
         //generar error de rango
     }
+}
+
+
+void SERVICEBRAKE_Init (void)
+{
+    //PONER SERVO DEL PEDAL A 0
+    GPIO_PWM1_Control(0, 50);
 }

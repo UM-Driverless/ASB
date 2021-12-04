@@ -23,7 +23,8 @@ unsigned char ucPICHDRPRES2min;
 //FUNCIONES
 
 /****GPIO_PWM1_Control****/
-//uiDutyCycle 0 - 100%
+//uiDutyCycle 0 - 100% 
+//Servomotores van a 50Hz DC:2-12% GPIO_PWM1_Control(12, 50);
 //uiFreq Hz
 void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
 {
@@ -32,7 +33,7 @@ void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
     
     //Conversiones
     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
-    uiConvertedDC = uiDutyCycle * 4;
+    uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
             
     //Funciones
     PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC); 

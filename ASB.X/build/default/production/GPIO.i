@@ -37665,6 +37665,7 @@ unsigned char ucPICHDRPRES2min;
 
 
 
+
 void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
 {
     unsigned int uiConvertedPeriod;
@@ -37672,7 +37673,7 @@ void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
 
 
     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
-    uiConvertedDC = uiDutyCycle * 4;
+    uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
 
 
     PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC);

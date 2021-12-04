@@ -48,6 +48,9 @@
 #include "EBS.h"
 #include "mcc_generated_files/pin_manager.h"
 
+
+unsigned int uiIndex;
+
 /*
                          Main application
  */
@@ -69,12 +72,14 @@ void main(void)
     //INTERRUPT_GlobalInterruptDisable();
     //DELAY_milliseconds(1000);
     EBS_Init();
-    DELAY_milliseconds(4000);
+    SERVICEBRAKE_Init();
+    DELAY_milliseconds(3000);
     AS_CLS_SDC_SetDigitalOutput();
     AS_DVR_MODE_SetDigitalOutput();
     AS_CLS_SDC_SetHigh();
     AS_DVR_MODE_SetHigh();
     EBS_Watchdog(WD_DISABLE);
+
     while (1)
     {
         // Add your application code
@@ -96,6 +101,16 @@ void main(void)
         //CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
         
         //EBS_CheckUP_Routine();
+        
+        //PRUEBA DE SERVOMOTOR
+        DELAY_milliseconds(1000);
+        /*uiIndex++;
+        if ( uiIndex < 10 )
+        {
+            GPIO_PWM1_Control(uiIndex, 50);
+        }*/
+        //GPIO_PWM1_Control(12, 50);
+        
         
         
         

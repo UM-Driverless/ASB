@@ -3575,164 +3575,164 @@ Version 4.0 HI-TECH Software Intermediate Code
 "21
 [; ;GPIO.c: 21: unsigned char ucPICHDRPRES2min;
 [v _ucPICHDRPRES2min `uc ~T0 @X0 1 e ]
-"28
-[; ;GPIO.c: 28: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
-[v _GPIO_PWM1_Control `(v ~T0 @X0 1 ef2`ui`ui ]
 "29
-[; ;GPIO.c: 29: {
+[; ;GPIO.c: 29: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+[v _GPIO_PWM1_Control `(v ~T0 @X0 1 ef2`ui`ui ]
+"30
+[; ;GPIO.c: 30: {
 {
 [e :U _GPIO_PWM1_Control ]
-"28
-[; ;GPIO.c: 28: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+"29
+[; ;GPIO.c: 29: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
 [v _uiDutyCycle `ui ~T0 @X0 1 r1 ]
 [v _uiFreq `ui ~T0 @X0 1 r2 ]
-"29
-[; ;GPIO.c: 29: {
-[f ]
 "30
-[; ;GPIO.c: 30:     unsigned int uiConvertedPeriod;
-[v _uiConvertedPeriod `ui ~T0 @X0 1 a ]
+[; ;GPIO.c: 30: {
+[f ]
 "31
-[; ;GPIO.c: 31:     unsigned int uiConvertedDC;
+[; ;GPIO.c: 31:     unsigned int uiConvertedPeriod;
+[v _uiConvertedPeriod `ui ~T0 @X0 1 a ]
+"32
+[; ;GPIO.c: 32:     unsigned int uiConvertedDC;
 [v _uiConvertedDC `ui ~T0 @X0 1 a ]
-"34
-[; ;GPIO.c: 34:     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
-[e = _uiConvertedPeriod -> - -> / -> 39241 `l -> _uiFreq `l `d .1.1508 `ui ]
 "35
-[; ;GPIO.c: 35:     uiConvertedDC = uiDutyCycle * 4;
-[e = _uiConvertedDC * _uiDutyCycle -> -> 4 `i `ui ]
-"38
-[; ;GPIO.c: 38:     PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC);
-[e ( _PWM1_16BIT_SetSlice1Output1DutyCycleRegister (1 -> _uiConvertedDC `us ]
+[; ;GPIO.c: 35:     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
+[e = _uiConvertedPeriod -> - -> / -> 39241 `l -> _uiFreq `l `d .1.1508 `ui ]
+"36
+[; ;GPIO.c: 36:     uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
+[e = _uiConvertedDC * * _uiDutyCycle -> -> 4 `i `ui / -> -> 100 `i `ui _uiFreq ]
 "39
-[; ;GPIO.c: 39:     PWM1_16BIT_WritePeriodRegister(uiConvertedPeriod);
-[e ( _PWM1_16BIT_WritePeriodRegister (1 -> _uiConvertedPeriod `us ]
+[; ;GPIO.c: 39:     PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC);
+[e ( _PWM1_16BIT_SetSlice1Output1DutyCycleRegister (1 -> _uiConvertedDC `us ]
 "40
-[; ;GPIO.c: 40:     PWM1_16BIT_LoadBufferRegisters();
-[e ( _PWM1_16BIT_LoadBufferRegisters ..  ]
+[; ;GPIO.c: 40:     PWM1_16BIT_WritePeriodRegister(uiConvertedPeriod);
+[e ( _PWM1_16BIT_WritePeriodRegister (1 -> _uiConvertedPeriod `us ]
 "41
-[; ;GPIO.c: 41: }
+[; ;GPIO.c: 41:     PWM1_16BIT_LoadBufferRegisters();
+[e ( _PWM1_16BIT_LoadBufferRegisters ..  ]
+"42
+[; ;GPIO.c: 42: }
 [e :UE 3176 ]
 }
-"46
-[; ;GPIO.c: 46: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
-[v _GPIO_PWM2_Control `(v ~T0 @X0 1 ef2`ui`ui ]
 "47
-[; ;GPIO.c: 47: {
+[; ;GPIO.c: 47: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+[v _GPIO_PWM2_Control `(v ~T0 @X0 1 ef2`ui`ui ]
+"48
+[; ;GPIO.c: 48: {
 {
 [e :U _GPIO_PWM2_Control ]
-"46
-[; ;GPIO.c: 46: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
+"47
+[; ;GPIO.c: 47: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
 [v _uiDutyCycle `ui ~T0 @X0 1 r1 ]
 [v _uiFreq `ui ~T0 @X0 1 r2 ]
-"47
-[; ;GPIO.c: 47: {
-[f ]
 "48
-[; ;GPIO.c: 48:     unsigned int uiConvertedPeriod;
-[v _uiConvertedPeriod `ui ~T0 @X0 1 a ]
+[; ;GPIO.c: 48: {
+[f ]
 "49
-[; ;GPIO.c: 49:     unsigned int uiConvertedDC;
+[; ;GPIO.c: 49:     unsigned int uiConvertedPeriod;
+[v _uiConvertedPeriod `ui ~T0 @X0 1 a ]
+"50
+[; ;GPIO.c: 50:     unsigned int uiConvertedDC;
 [v _uiConvertedDC `ui ~T0 @X0 1 a ]
-"52
-[; ;GPIO.c: 52:     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
-[e = _uiConvertedPeriod -> - -> / -> 39241 `l -> _uiFreq `l `d .1.1508 `ui ]
 "53
-[; ;GPIO.c: 53:     uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
+[; ;GPIO.c: 53:     uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
+[e = _uiConvertedPeriod -> - -> / -> 39241 `l -> _uiFreq `l `d .1.1508 `ui ]
+"54
+[; ;GPIO.c: 54:     uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
 [e = _uiConvertedDC * * _uiDutyCycle -> -> 4 `i `ui / -> -> 100 `i `ui _uiFreq ]
-"56
-[; ;GPIO.c: 56:     PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC);
-[e ( _PWM2_16BIT_SetSlice1Output1DutyCycleRegister (1 -> _uiConvertedDC `us ]
 "57
-[; ;GPIO.c: 57:     PWM2_16BIT_WritePeriodRegister(uiConvertedPeriod);
-[e ( _PWM2_16BIT_WritePeriodRegister (1 -> _uiConvertedPeriod `us ]
+[; ;GPIO.c: 57:     PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC);
+[e ( _PWM2_16BIT_SetSlice1Output1DutyCycleRegister (1 -> _uiConvertedDC `us ]
 "58
-[; ;GPIO.c: 58:     PWM2_16BIT_LoadBufferRegisters();
-[e ( _PWM2_16BIT_LoadBufferRegisters ..  ]
+[; ;GPIO.c: 58:     PWM2_16BIT_WritePeriodRegister(uiConvertedPeriod);
+[e ( _PWM2_16BIT_WritePeriodRegister (1 -> _uiConvertedPeriod `us ]
 "59
-[; ;GPIO.c: 59: }
+[; ;GPIO.c: 59:     PWM2_16BIT_LoadBufferRegisters();
+[e ( _PWM2_16BIT_LoadBufferRegisters ..  ]
+"60
+[; ;GPIO.c: 60: }
 [e :UE 3177 ]
 }
-"64
-[; ;GPIO.c: 64: void GPIO_LED(unsigned char ucMode)
-[v _GPIO_LED `(v ~T0 @X0 1 ef1`uc ]
 "65
-[; ;GPIO.c: 65: {
+[; ;GPIO.c: 65: void GPIO_LED(unsigned char ucMode)
+[v _GPIO_LED `(v ~T0 @X0 1 ef1`uc ]
+"66
+[; ;GPIO.c: 66: {
 {
 [e :U _GPIO_LED ]
-"64
-[; ;GPIO.c: 64: void GPIO_LED(unsigned char ucMode)
-[v _ucMode `uc ~T0 @X0 1 r1 ]
 "65
-[; ;GPIO.c: 65: {
-[f ]
+[; ;GPIO.c: 65: void GPIO_LED(unsigned char ucMode)
+[v _ucMode `uc ~T0 @X0 1 r1 ]
 "66
-[; ;GPIO.c: 66:     switch (ucMode)
-[e $U 3180  ]
+[; ;GPIO.c: 66: {
+[f ]
 "67
-[; ;GPIO.c: 67:     {
-{
+[; ;GPIO.c: 67:     switch (ucMode)
+[e $U 3180  ]
 "68
-[; ;GPIO.c: 68:         case 0:
-[e :U 3181 ]
-"70
-[; ;GPIO.c: 70:             if (ucLEDState == 0)
-[e $ ! == -> _ucLEDState `i -> 0 `i 3182  ]
-"71
-[; ;GPIO.c: 71:             {
+[; ;GPIO.c: 68:     {
 {
+"69
+[; ;GPIO.c: 69:         case 0:
+[e :U 3181 ]
+"71
+[; ;GPIO.c: 71:             if (ucLEDState == 0)
+[e $ ! == -> _ucLEDState `i -> 0 `i 3182  ]
 "72
-[; ;GPIO.c: 72:                 do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
+[; ;GPIO.c: 72:             {
+{
+"73
+[; ;GPIO.c: 73:                 do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
 [e :U 3185 ]
 {
 [e = . . _LATAbits 0 4 -> ~ -> . . _LATAbits 0 4 `i `uc ]
 }
 [e :U 3184 ]
-"73
-[; ;GPIO.c: 73:             }
+"74
+[; ;GPIO.c: 74:             }
 }
 [e :U 3182 ]
-"74
-[; ;GPIO.c: 74:             break;
-[e $U 3179  ]
 "75
-[; ;GPIO.c: 75:         case 1:
+[; ;GPIO.c: 75:             break;
+[e $U 3179  ]
+"76
+[; ;GPIO.c: 76:         case 1:
 [e :U 3186 ]
-"77
-[; ;GPIO.c: 77:             if (ucLEDState == 1)
-[e $ ! == -> _ucLEDState `i -> 1 `i 3187  ]
 "78
-[; ;GPIO.c: 78:             {
-{
+[; ;GPIO.c: 78:             if (ucLEDState == 1)
+[e $ ! == -> _ucLEDState `i -> 1 `i 3187  ]
 "79
-[; ;GPIO.c: 79:                 do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
+[; ;GPIO.c: 79:             {
+{
+"80
+[; ;GPIO.c: 80:                 do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
 [e :U 3190 ]
 {
 [e = . . _LATAbits 0 4 -> ~ -> . . _LATAbits 0 4 `i `uc ]
 }
 [e :U 3189 ]
-"80
-[; ;GPIO.c: 80:             }
+"81
+[; ;GPIO.c: 81:             }
 }
 [e :U 3187 ]
-"81
-[; ;GPIO.c: 81:             break;
-[e $U 3179  ]
 "82
-[; ;GPIO.c: 82:         default:
-[e :U 3191 ]
+[; ;GPIO.c: 82:             break;
+[e $U 3179  ]
 "83
-[; ;GPIO.c: 83:             do { LATAbits.LATA4 = 0; } while(0);
+[; ;GPIO.c: 83:         default:
+[e :U 3191 ]
+"84
+[; ;GPIO.c: 84:             do { LATAbits.LATA4 = 0; } while(0);
 [e :U 3194 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 3193 ]
-"84
-[; ;GPIO.c: 84:             break;
-[e $U 3179  ]
 "85
-[; ;GPIO.c: 85:     }
+[; ;GPIO.c: 85:             break;
+[e $U 3179  ]
+"86
+[; ;GPIO.c: 86:     }
 }
 [e $U 3179  ]
 [e :U 3180 ]
@@ -3740,51 +3740,51 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 1 `i 3186
  3191 ]
 [e :U 3179 ]
-"86
-[; ;GPIO.c: 86: }
+"87
+[; ;GPIO.c: 87: }
 [e :UE 3178 ]
 }
-"88
-[; ;GPIO.c: 88: void GPIO_BrakePedalAtRest (void)
-[v _GPIO_BrakePedalAtRest `(v ~T0 @X0 1 ef ]
 "89
-[; ;GPIO.c: 89: {
+[; ;GPIO.c: 89: void GPIO_BrakePedalAtRest (void)
+[v _GPIO_BrakePedalAtRest `(v ~T0 @X0 1 ef ]
+"90
+[; ;GPIO.c: 90: {
 {
 [e :U _GPIO_BrakePedalAtRest ]
 [f ]
-"90
-[; ;GPIO.c: 90:     ucPedalPos = PORTAbits.RA5;
-[e = _ucPedalPos . . _PORTAbits 0 5 ]
 "91
-[; ;GPIO.c: 91:     if ( ucPedalPos == 1 )
-[e $ ! == -> _ucPedalPos `i -> 1 `i 3196  ]
+[; ;GPIO.c: 91:     ucPedalPos = PORTAbits.RA5;
+[e = _ucPedalPos . . _PORTAbits 0 5 ]
 "92
-[; ;GPIO.c: 92:     {
+[; ;GPIO.c: 92:     if ( ucPedalPos == 1 )
+[e $ ! == -> _ucPedalPos `i -> 1 `i 3196  ]
+"93
+[; ;GPIO.c: 93:     {
 {
-"94
-[; ;GPIO.c: 94:         ucPICHDRPRES1min = ANALOG_GetVoltage(0);
-[e = _ucPICHDRPRES1min ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc ]
 "95
-[; ;GPIO.c: 95:         ucPICHDRPRES2min = ANALOG_GetVoltage(1);
+[; ;GPIO.c: 95:         ucPICHDRPRES1min = ANALOG_GetVoltage(0);
+[e = _ucPICHDRPRES1min ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc ]
+"96
+[; ;GPIO.c: 96:         ucPICHDRPRES2min = ANALOG_GetVoltage(1);
 [e = _ucPICHDRPRES2min ( _ANALOG_GetVoltage (1 -> -> 1 `i `uc ]
-"98
-[; ;GPIO.c: 98:         ucServoLmin = ucDutyServomotor;
-[e = _ucServoLmin _ucDutyServomotor ]
 "99
-[; ;GPIO.c: 99:     }
+[; ;GPIO.c: 99:         ucServoLmin = ucDutyServomotor;
+[e = _ucServoLmin _ucDutyServomotor ]
+"100
+[; ;GPIO.c: 100:     }
 }
 [e $U 3197  ]
-"100
-[; ;GPIO.c: 100:     else
-[e :U 3196 ]
 "101
-[; ;GPIO.c: 101:     {
+[; ;GPIO.c: 101:     else
+[e :U 3196 ]
+"102
+[; ;GPIO.c: 102:     {
 {
-"103
-[; ;GPIO.c: 103:     }
+"104
+[; ;GPIO.c: 104:     }
 }
 [e :U 3197 ]
-"104
-[; ;GPIO.c: 104: }
+"105
+[; ;GPIO.c: 105: }
 [e :UE 3195 ]
 }

@@ -67,6 +67,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23 ./EBS.h
 [; ;./EBS.h: 23: void EBS_Watchdog (unsigned char ucWDState);
 [v _EBS_Watchdog `(v ~T0 @X0 0 ef1`uc ]
+"30 ./GPIO.h
+[; ;./GPIO.h: 30: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+[v _GPIO_PWM1_Control `(v ~T0 @X0 0 ef2`ui`ui ]
 "8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
@@ -3592,88 +3595,100 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23
 [; ;./MESSAGES.h: 23: CAN_MSG_OBJ msgReceipt;
 [v _msgReceipt `S3178 ~T0 @X0 1 e ]
+"52 main.c
+[; ;main.c: 52: unsigned int uiIndex;
+[v _uiIndex `ui ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"54 main.c
-[; ;main.c: 54: void main(void)
+"57
+[; ;main.c: 57: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"55
-[; ;main.c: 55: {
+"58
+[; ;main.c: 58: {
 {
 [e :U _main ]
 [f ]
-"57
-[; ;main.c: 57:     SYSTEM_Initialize();
+"60
+[; ;main.c: 60:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"64
-[; ;main.c: 64:     (INTCON0bits.GIE = 1);
+"67
+[; ;main.c: 67:     (INTCON0bits.GIE = 1);
 [e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"65
-[; ;main.c: 65:     do { TRISBbits.TRISB5 = 0; } while(0);
+"68
+[; ;main.c: 68:     do { TRISBbits.TRISB5 = 0; } while(0);
 [e :U 3182 ]
 {
 [e = . . _TRISBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 3181 ]
-"66
-[; ;main.c: 66:     do { LATBbits.LATB5 = 1; } while(0);
+"69
+[; ;main.c: 69:     do { LATBbits.LATB5 = 1; } while(0);
 [e :U 3185 ]
 {
 [e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 3184 ]
-"71
-[; ;main.c: 71:     EBS_Init();
+"74
+[; ;main.c: 74:     EBS_Init();
 [e ( _EBS_Init ..  ]
-"72
-[; ;main.c: 72:     DELAY_milliseconds(4000);
-[e ( _DELAY_milliseconds (1 -> -> 4000 `i `us ]
-"73
-[; ;main.c: 73:     do { TRISBbits.TRISB0 = 0; } while(0);
+"75
+[; ;main.c: 75:     DELAY_milliseconds(3000);
+[e ( _DELAY_milliseconds (1 -> -> 3000 `i `us ]
+"76
+[; ;main.c: 76:     do { TRISBbits.TRISB0 = 0; } while(0);
 [e :U 3188 ]
 {
 [e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 3187 ]
-"74
-[; ;main.c: 74:     do { TRISCbits.TRISC3 = 0; } while(0);
+"77
+[; ;main.c: 77:     do { TRISCbits.TRISC3 = 0; } while(0);
 [e :U 3191 ]
 {
 [e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 3190 ]
-"75
-[; ;main.c: 75:     do { LATBbits.LATB0 = 1; } while(0);
+"78
+[; ;main.c: 78:     do { LATBbits.LATB0 = 1; } while(0);
 [e :U 3194 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 3193 ]
-"76
-[; ;main.c: 76:     do { LATCbits.LATC3 = 1; } while(0);
+"79
+[; ;main.c: 79:     do { LATCbits.LATC3 = 1; } while(0);
 [e :U 3197 ]
 {
 [e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 3196 ]
-"77
-[; ;main.c: 77:     EBS_Watchdog(0);
+"80
+[; ;main.c: 80:     EBS_Watchdog(0);
 [e ( _EBS_Watchdog (1 -> -> 0 `i `uc ]
-"78
-[; ;main.c: 78:     while (1)
+"81
+[; ;main.c: 81: GPIO_PWM1_Control(2, 50);
+[e ( _GPIO_PWM1_Control (2 , -> -> 2 `i `ui -> -> 50 `i `ui ]
+"82
+[; ;main.c: 82:     while (1)
 [e :U 3199 ]
-"79
-[; ;main.c: 79:     {
+"83
+[; ;main.c: 83:     {
 {
-"86
-[; ;main.c: 86:         __nop();
+"90
+[; ;main.c: 90:         __nop();
 [e ( ___nop ..  ]
-"103
-[; ;main.c: 103:     }
+"105
+[; ;main.c: 105:         DELAY_milliseconds(1000);
+[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
+"111
+[; ;main.c: 111:         GPIO_PWM1_Control(12, 50);
+[e ( _GPIO_PWM1_Control (2 , -> -> 12 `i `ui -> -> 50 `i `ui ]
+"117
+[; ;main.c: 117:     }
 }
 [e :U 3198 ]
 [e $U 3199  ]
 [e :U 3200 ]
-"104
-[; ;main.c: 104: }
+"118
+[; ;main.c: 118: }
 [e :UE 3179 ]
 }
