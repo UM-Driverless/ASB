@@ -19,7 +19,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3062 . . ]
 "1553
 [v _LATBbits `VS3062 ~T0 @X0 0 e@1215 ]
-"1997
+"23 ./EBS.h
+[; ;./EBS.h: 23: void EBS_Watchdog (unsigned char ucWDState);
+[v _EBS_Watchdog `(v ~T0 @X0 0 ef1`uc ]
+"1997 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [s S3079 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3079 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
 "1996
@@ -28,9 +31,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2008
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 2008:         unsigned MS0 :1;
 [v _PORTCbits `VS3078 ~T0 @X0 0 e@1232 ]
-"23 ./EBS.h
-[; ;./EBS.h: 23: void EBS_Watchdog (unsigned char ucWDState);
-[v _EBS_Watchdog `(v ~T0 @X0 0 ef1`uc ]
 "39 ./ANALOG.h
 [; ;./ANALOG.h: 39: unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica);
 [v _ANALOG_GetVoltage `(uc ~T0 @X0 0 ef1`uc ]
@@ -3620,409 +3620,412 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 3184 ]
 "22
-[; ;EBS.c: 22: }
+[; ;EBS.c: 22:     EBS_Watchdog(1);
+[e ( _EBS_Watchdog (1 -> -> 1 `i `uc ]
+"23
+[; ;EBS.c: 23: }
 [e :UE 3179 ]
 }
-"24
-[; ;EBS.c: 24: void EBS_CheckUP_Routine (void)
-[v _EBS_CheckUP_Routine `(v ~T0 @X0 1 ef ]
 "25
-[; ;EBS.c: 25: {
+[; ;EBS.c: 25: void EBS_CheckUP_Routine (void)
+[v _EBS_CheckUP_Routine `(v ~T0 @X0 1 ef ]
+"26
+[; ;EBS.c: 26: {
 {
 [e :U _EBS_CheckUP_Routine ]
 [f ]
-"26
-[; ;EBS.c: 26:     unsigned char ucCheck;
+"27
+[; ;EBS.c: 27:     unsigned char ucCheck;
 [v _ucCheck `uc ~T0 @X0 1 a ]
-"29
-[; ;EBS.c: 29:     if ( PORTCbits.RC2 == 0 )
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 3187  ]
 "30
-[; ;EBS.c: 30:     {
-{
+[; ;EBS.c: 30:     if ( PORTCbits.RC2 == 0 )
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 3187  ]
 "31
-[; ;EBS.c: 31:         ucCheck = 1;
-[e = _ucCheck -> -> 1 `i `uc ]
+[; ;EBS.c: 31:     {
+{
 "32
-[; ;EBS.c: 32:     }
+[; ;EBS.c: 32:         ucCheck = 1;
+[e = _ucCheck -> -> 1 `i `uc ]
+"33
+[; ;EBS.c: 33:     }
 }
 [e :U 3187 ]
-"34
-[; ;EBS.c: 34:     if ( ucCheck == 1 )
-[e $ ! == -> _ucCheck `i -> 1 `i 3188  ]
 "35
-[; ;EBS.c: 35:     {
-{
+[; ;EBS.c: 35:     if ( ucCheck == 1 )
+[e $ ! == -> _ucCheck `i -> 1 `i 3188  ]
 "36
-[; ;EBS.c: 36:         EBS_Watchdog(1);
-[e ( _EBS_Watchdog (1 -> -> 1 `i `uc ]
+[; ;EBS.c: 36:     {
+{
 "37
-[; ;EBS.c: 37:         ucCheck = 2;
-[e = _ucCheck -> -> 2 `i `uc ]
+[; ;EBS.c: 37:         EBS_Watchdog(1);
+[e ( _EBS_Watchdog (1 -> -> 1 `i `uc ]
 "38
-[; ;EBS.c: 38:     }
+[; ;EBS.c: 38:         ucCheck = 2;
+[e = _ucCheck -> -> 2 `i `uc ]
+"39
+[; ;EBS.c: 39:     }
 }
 [e :U 3188 ]
-"40
-[; ;EBS.c: 40:     if ( ucCheck == 2 )
-[e $ ! == -> _ucCheck `i -> 2 `i 3189  ]
 "41
-[; ;EBS.c: 41:     {
-{
+[; ;EBS.c: 41:     if ( ucCheck == 2 )
+[e $ ! == -> _ucCheck `i -> 2 `i 3189  ]
 "42
-[; ;EBS.c: 42:         while ( PORTCbits.RC2 == 0 )
+[; ;EBS.c: 42:     {
+{
+"43
+[; ;EBS.c: 43:         while ( PORTCbits.RC2 == 0 )
 [e $U 3190  ]
 [e :U 3191 ]
-"43
-[; ;EBS.c: 43:         {
-{
 "44
-[; ;EBS.c: 44:             if ( PORTCbits.RC2 == 1 )
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 3193  ]
-"45
-[; ;EBS.c: 45:             {
+[; ;EBS.c: 44:         {
 {
+"45
+[; ;EBS.c: 45:             if ( PORTCbits.RC2 == 1 )
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 3193  ]
 "46
-[; ;EBS.c: 46:                 ucCheck = 3;
-[e = _ucCheck -> -> 3 `i `uc ]
+[; ;EBS.c: 46:             {
+{
 "47
-[; ;EBS.c: 47:                 break;
-[e $U 3192  ]
+[; ;EBS.c: 47:                 ucCheck = 3;
+[e = _ucCheck -> -> 3 `i `uc ]
 "48
-[; ;EBS.c: 48:             }
+[; ;EBS.c: 48:                 break;
+[e $U 3192  ]
+"49
+[; ;EBS.c: 49:             }
 }
 [e :U 3193 ]
-"49
-[; ;EBS.c: 49:         }
+"50
+[; ;EBS.c: 50:         }
 }
 [e :U 3190 ]
-"42
-[; ;EBS.c: 42:         while ( PORTCbits.RC2 == 0 )
+"43
+[; ;EBS.c: 43:         while ( PORTCbits.RC2 == 0 )
 [e $ == -> . . _PORTCbits 0 2 `i -> 0 `i 3191  ]
 [e :U 3192 ]
-"50
-[; ;EBS.c: 50:     }
+"51
+[; ;EBS.c: 51:     }
 }
 [e :U 3189 ]
-"52
-[; ;EBS.c: 52:     if ( ucCheck == 3 )
-[e $ ! == -> _ucCheck `i -> 3 `i 3194  ]
 "53
-[; ;EBS.c: 53:     {
-{
+[; ;EBS.c: 53:     if ( ucCheck == 3 )
+[e $ ! == -> _ucCheck `i -> 3 `i 3194  ]
 "54
-[; ;EBS.c: 54:         EBS_Watchdog(0);
-[e ( _EBS_Watchdog (1 -> -> 0 `i `uc ]
+[; ;EBS.c: 54:     {
+{
 "55
-[; ;EBS.c: 55:         ucCheck = 4;
-[e = _ucCheck -> -> 4 `i `uc ]
+[; ;EBS.c: 55:         EBS_Watchdog(0);
+[e ( _EBS_Watchdog (1 -> -> 0 `i `uc ]
 "56
-[; ;EBS.c: 56:     }
+[; ;EBS.c: 56:         ucCheck = 4;
+[e = _ucCheck -> -> 4 `i `uc ]
+"57
+[; ;EBS.c: 57:     }
 }
 [e :U 3194 ]
-"58
-[; ;EBS.c: 58:     if ( ucCheck == 4 )
-[e $ ! == -> _ucCheck `i -> 4 `i 3195  ]
 "59
-[; ;EBS.c: 59:     {
-{
+[; ;EBS.c: 59:     if ( ucCheck == 4 )
+[e $ ! == -> _ucCheck `i -> 4 `i 3195  ]
 "60
-[; ;EBS.c: 60:         while ( PORTCbits.RC2 == 1 )
+[; ;EBS.c: 60:     {
+{
+"61
+[; ;EBS.c: 61:         while ( PORTCbits.RC2 == 1 )
 [e $U 3196  ]
 [e :U 3197 ]
-"61
-[; ;EBS.c: 61:         {
-{
 "62
-[; ;EBS.c: 62:             if ( PORTCbits.RC2 == 0 )
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 3199  ]
-"63
-[; ;EBS.c: 63:             {
+[; ;EBS.c: 62:         {
 {
+"63
+[; ;EBS.c: 63:             if ( PORTCbits.RC2 == 0 )
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 3199  ]
 "64
-[; ;EBS.c: 64:                 ucCheck = 5;
-[e = _ucCheck -> -> 5 `i `uc ]
+[; ;EBS.c: 64:             {
+{
 "65
-[; ;EBS.c: 65:                 break;
-[e $U 3198  ]
+[; ;EBS.c: 65:                 ucCheck = 5;
+[e = _ucCheck -> -> 5 `i `uc ]
 "66
-[; ;EBS.c: 66:             }
+[; ;EBS.c: 66:                 break;
+[e $U 3198  ]
+"67
+[; ;EBS.c: 67:             }
 }
 [e :U 3199 ]
-"67
-[; ;EBS.c: 67:         }
+"68
+[; ;EBS.c: 68:         }
 }
 [e :U 3196 ]
-"60
-[; ;EBS.c: 60:         while ( PORTCbits.RC2 == 1 )
+"61
+[; ;EBS.c: 61:         while ( PORTCbits.RC2 == 1 )
 [e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 3197  ]
 [e :U 3198 ]
-"68
-[; ;EBS.c: 68:     }
+"69
+[; ;EBS.c: 69:     }
 }
 [e :U 3195 ]
-"70
-[; ;EBS.c: 70:     if ( ucCheck == 5 )
-[e $ ! == -> _ucCheck `i -> 5 `i 3200  ]
 "71
-[; ;EBS.c: 71:     {
-{
+[; ;EBS.c: 71:     if ( ucCheck == 5 )
+[e $ ! == -> _ucCheck `i -> 5 `i 3200  ]
 "72
-[; ;EBS.c: 72:         EBS_Watchdog(1);
-[e ( _EBS_Watchdog (1 -> -> 1 `i `uc ]
+[; ;EBS.c: 72:     {
+{
 "73
-[; ;EBS.c: 73:         ucCheck = 6;
-[e = _ucCheck -> -> 6 `i `uc ]
+[; ;EBS.c: 73:         EBS_Watchdog(1);
+[e ( _EBS_Watchdog (1 -> -> 1 `i `uc ]
 "74
-[; ;EBS.c: 74:     }
+[; ;EBS.c: 74:         ucCheck = 6;
+[e = _ucCheck -> -> 6 `i `uc ]
+"75
+[; ;EBS.c: 75:     }
 }
 [e :U 3200 ]
-"76
-[; ;EBS.c: 76:     if ( ucCheck == 6 )
-[e $ ! == -> _ucCheck `i -> 6 `i 3201  ]
 "77
-[; ;EBS.c: 77:     {
-{
+[; ;EBS.c: 77:     if ( ucCheck == 6 )
+[e $ ! == -> _ucCheck `i -> 6 `i 3201  ]
 "78
-[; ;EBS.c: 78:         if ( ( ANALOG_GetVoltage(2) >= NPRES_min ) & ( ANALOG_GetVoltage(2) >= NPRES_min ) )
-[e $ ! & >= -> ( _ANALOG_GetVoltage (1 -> -> 2 `i `uc `i -> _NPRES_min `i >= -> ( _ANALOG_GetVoltage (1 -> -> 2 `i `uc `i -> _NPRES_min `i 3202  ]
-"79
-[; ;EBS.c: 79:         {
+[; ;EBS.c: 78:     {
 {
+"79
+[; ;EBS.c: 79:         if ( ( ANALOG_GetVoltage(2) >= NPRES_min ) & ( ANALOG_GetVoltage(2) >= NPRES_min ) )
+[e $ ! & >= -> ( _ANALOG_GetVoltage (1 -> -> 2 `i `uc `i -> _NPRES_min `i >= -> ( _ANALOG_GetVoltage (1 -> -> 2 `i `uc `i -> _NPRES_min `i 3202  ]
 "80
-[; ;EBS.c: 80:             ucCheck = 7;
-[e = _ucCheck -> -> 7 `i `uc ]
+[; ;EBS.c: 80:         {
+{
 "81
-[; ;EBS.c: 81:         }
+[; ;EBS.c: 81:             ucCheck = 7;
+[e = _ucCheck -> -> 7 `i `uc ]
+"82
+[; ;EBS.c: 82:         }
 }
 [e :U 3202 ]
-"82
-[; ;EBS.c: 82:     }
+"83
+[; ;EBS.c: 83:     }
 }
 [e :U 3201 ]
-"84
-[; ;EBS.c: 84:     if ( ucCheck == 7 )
-[e $ ! == -> _ucCheck `i -> 7 `i 3203  ]
 "85
-[; ;EBS.c: 85:     {
-{
+[; ;EBS.c: 85:     if ( ucCheck == 7 )
+[e $ ! == -> _ucCheck `i -> 7 `i 3203  ]
 "86
-[; ;EBS.c: 86:         if ( ( ANALOG_GetVoltage(0) <= HDRPRES_min ) & ( ANALOG_GetVoltage(0) <= HDRPRES_min ) )
-[e $ ! & <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i 3204  ]
-"87
-[; ;EBS.c: 87:         {
+[; ;EBS.c: 86:     {
 {
+"87
+[; ;EBS.c: 87:         if ( ( ANALOG_GetVoltage(0) <= HDRPRES_min ) & ( ANALOG_GetVoltage(0) <= HDRPRES_min ) )
+[e $ ! & <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i 3204  ]
 "88
-[; ;EBS.c: 88:             ucCheck = 8;
-[e = _ucCheck -> -> 8 `i `uc ]
+[; ;EBS.c: 88:         {
+{
 "89
-[; ;EBS.c: 89:         }
+[; ;EBS.c: 89:             ucCheck = 8;
+[e = _ucCheck -> -> 8 `i `uc ]
+"90
+[; ;EBS.c: 90:         }
 }
 [e :U 3204 ]
-"90
-[; ;EBS.c: 90:     }
+"91
+[; ;EBS.c: 91:     }
 }
 [e :U 3203 ]
-"96
-[; ;EBS.c: 96:     if ( ucCheck == 10 )
-[e $ ! == -> _ucCheck `i -> 10 `i 3205  ]
 "97
-[; ;EBS.c: 97:     {
-{
+[; ;EBS.c: 97:     if ( ucCheck == 10 )
+[e $ ! == -> _ucCheck `i -> 10 `i 3205  ]
 "98
-[; ;EBS.c: 98:         do { LATBbits.LATB2 = 0; } while(0);
+[; ;EBS.c: 98:     {
+{
+"99
+[; ;EBS.c: 99:         do { LATBbits.LATB2 = 0; } while(0);
 [e :U 3208 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 3207 ]
-"99
-[; ;EBS.c: 99:         ucCheck = 11;
-[e = _ucCheck -> -> 11 `i `uc ]
 "100
-[; ;EBS.c: 100:     }
+[; ;EBS.c: 100:         ucCheck = 11;
+[e = _ucCheck -> -> 11 `i `uc ]
+"101
+[; ;EBS.c: 101:     }
 }
 [e :U 3205 ]
-"102
-[; ;EBS.c: 102:     if ( ucCheck == 11 )
-[e $ ! == -> _ucCheck `i -> 11 `i 3209  ]
 "103
-[; ;EBS.c: 103:     {
-{
+[; ;EBS.c: 103:     if ( ucCheck == 11 )
+[e $ ! == -> _ucCheck `i -> 11 `i 3209  ]
 "104
-[; ;EBS.c: 104:         DELAY_milliseconds(1000);
-[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
-"105
-[; ;EBS.c: 105:         if ( ( ANALOG_GetVoltage(0) <= HDRPRES_min ) & ( ANALOG_GetVoltage(0) <= HDRPRES_min ) )
-[e $ ! & <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i 3210  ]
-"106
-[; ;EBS.c: 106:         {
+[; ;EBS.c: 104:     {
 {
+"105
+[; ;EBS.c: 105:         DELAY_milliseconds(1000);
+[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
+"106
+[; ;EBS.c: 106:         if ( ( ANALOG_GetVoltage(0) <= HDRPRES_min ) & ( ANALOG_GetVoltage(0) <= HDRPRES_min ) )
+[e $ ! & <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i <= -> ( _ANALOG_GetVoltage (1 -> -> 0 `i `uc `i -> _HDRPRES_min `i 3210  ]
 "107
-[; ;EBS.c: 107:             ucCheck = 12;
-[e = _ucCheck -> -> 12 `i `uc ]
+[; ;EBS.c: 107:         {
+{
 "108
-[; ;EBS.c: 108:         }
+[; ;EBS.c: 108:             ucCheck = 12;
+[e = _ucCheck -> -> 12 `i `uc ]
+"109
+[; ;EBS.c: 109:         }
 }
 [e :U 3210 ]
-"109
-[; ;EBS.c: 109:     }
+"110
+[; ;EBS.c: 110:     }
 }
 [e :U 3209 ]
-"111
-[; ;EBS.c: 111:     if ( ucCheck == 12 )
-[e $ ! == -> _ucCheck `i -> 12 `i 3211  ]
 "112
-[; ;EBS.c: 112:     {
-{
+[; ;EBS.c: 112:     if ( ucCheck == 12 )
+[e $ ! == -> _ucCheck `i -> 12 `i 3211  ]
 "113
-[; ;EBS.c: 113:         do { LATBbits.LATB2 = 1; } while(0);
+[; ;EBS.c: 113:     {
+{
+"114
+[; ;EBS.c: 114:         do { LATBbits.LATB2 = 1; } while(0);
 [e :U 3214 ]
 {
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 3213 ]
-"114
-[; ;EBS.c: 114:         DELAY_milliseconds(1000);
-[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
 "115
-[; ;EBS.c: 115:         ucCheck = 13;
-[e = _ucCheck -> -> 13 `i `uc ]
+[; ;EBS.c: 115:         DELAY_milliseconds(1000);
+[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
 "116
-[; ;EBS.c: 116:     }
+[; ;EBS.c: 116:         ucCheck = 13;
+[e = _ucCheck -> -> 13 `i `uc ]
+"117
+[; ;EBS.c: 117:     }
 }
 [e :U 3211 ]
-"118
-[; ;EBS.c: 118:     if ( ucCheck == 13 )
-[e $ ! == -> _ucCheck `i -> 13 `i 3215  ]
 "119
-[; ;EBS.c: 119:     {
-{
+[; ;EBS.c: 119:     if ( ucCheck == 13 )
+[e $ ! == -> _ucCheck `i -> 13 `i 3215  ]
 "120
-[; ;EBS.c: 120:         do { LATBbits.LATB1 = 0; } while(0);
+[; ;EBS.c: 120:     {
+{
+"121
+[; ;EBS.c: 121:         do { LATBbits.LATB1 = 0; } while(0);
 [e :U 3218 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 3217 ]
-"121
-[; ;EBS.c: 121:         ucCheck = 14;
-[e = _ucCheck -> -> 14 `i `uc ]
 "122
-[; ;EBS.c: 122:     }
+[; ;EBS.c: 122:         ucCheck = 14;
+[e = _ucCheck -> -> 14 `i `uc ]
+"123
+[; ;EBS.c: 123:     }
 }
 [e :U 3215 ]
-"124
-[; ;EBS.c: 124:     if ( ucCheck == 14 )
-[e $ ! == -> _ucCheck `i -> 14 `i 3219  ]
 "125
-[; ;EBS.c: 125:     {
-{
+[; ;EBS.c: 125:     if ( ucCheck == 14 )
+[e $ ! == -> _ucCheck `i -> 14 `i 3219  ]
 "126
-[; ;EBS.c: 126:         DELAY_milliseconds(1000);
-[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
-"127
-[; ;EBS.c: 127:         if ( ( PORTAbits.RA0 >= HDRPRES_max ) & ( PORTAbits.RA1 >= HDRPRES_max ) )
-[e $ ! & >= -> . . _PORTAbits 0 0 `i -> _HDRPRES_max `i >= -> . . _PORTAbits 0 1 `i -> _HDRPRES_max `i 3220  ]
-"128
-[; ;EBS.c: 128:         {
+[; ;EBS.c: 126:     {
 {
+"127
+[; ;EBS.c: 127:         DELAY_milliseconds(1000);
+[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
+"128
+[; ;EBS.c: 128:         if ( ( PORTAbits.RA0 >= HDRPRES_max ) & ( PORTAbits.RA1 >= HDRPRES_max ) )
+[e $ ! & >= -> . . _PORTAbits 0 0 `i -> _HDRPRES_max `i >= -> . . _PORTAbits 0 1 `i -> _HDRPRES_max `i 3220  ]
 "129
-[; ;EBS.c: 129:             ucCheck = 15;
-[e = _ucCheck -> -> 15 `i `uc ]
+[; ;EBS.c: 129:         {
+{
 "130
-[; ;EBS.c: 130:         }
+[; ;EBS.c: 130:             ucCheck = 15;
+[e = _ucCheck -> -> 15 `i `uc ]
+"131
+[; ;EBS.c: 131:         }
 }
 [e :U 3220 ]
-"131
-[; ;EBS.c: 131:     }
+"132
+[; ;EBS.c: 132:     }
 }
 [e :U 3219 ]
-"133
-[; ;EBS.c: 133:     if ( ucCheck == 15 )
-[e $ ! == -> _ucCheck `i -> 15 `i 3221  ]
 "134
-[; ;EBS.c: 134:     {
-{
+[; ;EBS.c: 134:     if ( ucCheck == 15 )
+[e $ ! == -> _ucCheck `i -> 15 `i 3221  ]
 "135
-[; ;EBS.c: 135:         do { LATBbits.LATB1 = 1; } while(0);
+[; ;EBS.c: 135:     {
+{
+"136
+[; ;EBS.c: 136:         do { LATBbits.LATB1 = 1; } while(0);
 [e :U 3224 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 3223 ]
-"136
-[; ;EBS.c: 136:         DELAY_milliseconds(1000);
-[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
 "137
-[; ;EBS.c: 137:         ucCheck = 16;
-[e = _ucCheck -> -> 16 `i `uc ]
+[; ;EBS.c: 137:         DELAY_milliseconds(1000);
+[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
 "138
-[; ;EBS.c: 138:         ucASRequesState = 1;
-[e = _ucASRequesState -> -> 1 `i `uc ]
+[; ;EBS.c: 138:         ucCheck = 16;
+[e = _ucCheck -> -> 16 `i `uc ]
 "139
-[; ;EBS.c: 139:     }
+[; ;EBS.c: 139:         ucASRequesState = 1;
+[e = _ucASRequesState -> -> 1 `i `uc ]
+"140
+[; ;EBS.c: 140:     }
 }
 [e :U 3221 ]
-"141
-[; ;EBS.c: 141:     if ( ucCheck == 16 )
-[e $ ! == -> _ucCheck `i -> 16 `i 3225  ]
 "142
-[; ;EBS.c: 142:     {
-{
+[; ;EBS.c: 142:     if ( ucCheck == 16 )
+[e $ ! == -> _ucCheck `i -> 16 `i 3225  ]
 "143
-[; ;EBS.c: 143:         CANWriteMessage ( 0x362, 8, ucASBState, ucASRequesState, 0, 0, 0, 0, 0, 0 );
-[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 866 `i `l `ul -> -> 8 `i `uc _ucASBState _ucASRequesState -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;EBS.c: 143:     {
+{
 "144
-[; ;EBS.c: 144:     }
+[; ;EBS.c: 144:         CANWriteMessage ( 0x362, 8, ucASBState, ucASRequesState, 0, 0, 0, 0, 0, 0 );
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 866 `i `l `ul -> -> 8 `i `uc _ucASBState _ucASRequesState -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"145
+[; ;EBS.c: 145:     }
 }
 [e :U 3225 ]
-"146
-[; ;EBS.c: 146: }
+"147
+[; ;EBS.c: 147: }
 [e :UE 3186 ]
 }
-"148
-[; ;EBS.c: 148: void EBS_Watchdog (unsigned char ucWDState)
-[v _EBS_Watchdog `(v ~T0 @X0 1 ef1`uc ]
 "149
-[; ;EBS.c: 149: {
+[; ;EBS.c: 149: void EBS_Watchdog (unsigned char ucWDState)
+[v _EBS_Watchdog `(v ~T0 @X0 1 ef1`uc ]
+"150
+[; ;EBS.c: 150: {
 {
 [e :U _EBS_Watchdog ]
-"148
-[; ;EBS.c: 148: void EBS_Watchdog (unsigned char ucWDState)
-[v _ucWDState `uc ~T0 @X0 1 r1 ]
 "149
-[; ;EBS.c: 149: {
-[f ]
+[; ;EBS.c: 149: void EBS_Watchdog (unsigned char ucWDState)
+[v _ucWDState `uc ~T0 @X0 1 r1 ]
 "150
-[; ;EBS.c: 150:     switch ( ucWDState )
-[e $U 3228  ]
+[; ;EBS.c: 150: {
+[f ]
 "151
-[; ;EBS.c: 151:     {
-{
+[; ;EBS.c: 151:     switch ( ucWDState )
+[e $U 3228  ]
 "152
-[; ;EBS.c: 152:         case 0:
-[e :U 3229 ]
+[; ;EBS.c: 152:     {
+{
 "153
-[; ;EBS.c: 153:             PWM2_16BIT_Disable();
-[e ( _PWM2_16BIT_Disable ..  ]
+[; ;EBS.c: 153:         case 0:
+[e :U 3229 ]
 "154
-[; ;EBS.c: 154:             break;
-[e $U 3227  ]
+[; ;EBS.c: 154:             PWM2_16BIT_Disable();
+[e ( _PWM2_16BIT_Disable ..  ]
 "155
-[; ;EBS.c: 155:         case 1:
-[e :U 3230 ]
-"156
-[; ;EBS.c: 156:             PWM2_16BIT_Enable();
-[e ( _PWM2_16BIT_Enable ..  ]
-"157
-[; ;EBS.c: 157:             GPIO_PWM2_Control(25, 10);
-[e ( _GPIO_PWM2_Control (2 , -> -> 25 `i `ui -> -> 10 `i `ui ]
-"158
-[; ;EBS.c: 158:             break;
+[; ;EBS.c: 155:             break;
 [e $U 3227  ]
+"156
+[; ;EBS.c: 156:         case 1:
+[e :U 3230 ]
+"157
+[; ;EBS.c: 157:             PWM2_16BIT_Enable();
+[e ( _PWM2_16BIT_Enable ..  ]
+"158
+[; ;EBS.c: 158:             GPIO_PWM2_Control(50, 100);
+[e ( _GPIO_PWM2_Control (2 , -> -> 50 `i `ui -> -> 100 `i `ui ]
 "159
-[; ;EBS.c: 159:     }
+[; ;EBS.c: 159:             break;
+[e $U 3227  ]
+"160
+[; ;EBS.c: 160:     }
 }
 [e $U 3227  ]
 [e :U 3228 ]
@@ -4030,7 +4033,7 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 1 `i 3230
  3227 ]
 [e :U 3227 ]
-"160
-[; ;EBS.c: 160: }
+"161
+[; ;EBS.c: 161: }
 [e :UE 3226 ]
 }

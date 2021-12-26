@@ -18,7 +18,7 @@ unsigned char NPRES_max;
 void PARAMETERS_Init (void)
 {
     HDRPRES_min = 120;
-    HDRPRES_max = 2000;
+    HDRPRES_max = 200;
     NPRES_min = 5;
     NPRES_max = 10;
 }

@@ -38416,6 +38416,17 @@ void EBS_Watchdog (unsigned char ucWDState);
 # 48 "main.c" 2
 
 
+# 1 "./SERVICEBRAKE.h" 1
+# 17 "./SERVICEBRAKE.h"
+extern unsigned char ucDutyServomotor;
+extern unsigned char ucServoLmin;
+extern unsigned char ucServoLmax;
+
+
+void SERVICEBRAKE_Move (unsigned char ucTargetMove);
+void SERVICEBRAKE_Init (void);
+# 50 "main.c" 2
+
 
 
 unsigned int uiIndex;
@@ -38441,13 +38452,15 @@ void main(void)
 
 
     EBS_Init();
+    SERVICEBRAKE_Init();
     DELAY_milliseconds(3000);
     do { TRISBbits.TRISB0 = 0; } while(0);
     do { TRISCbits.TRISC3 = 0; } while(0);
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATCbits.LATC3 = 1; } while(0);
+    DELAY_milliseconds(10000);
     EBS_Watchdog(0);
-GPIO_PWM1_Control(2, 50);
+
     while (1)
     {
 
@@ -38457,18 +38470,8 @@ GPIO_PWM1_Control(2, 50);
 
 
         __nop();
-# 105 "main.c"
+# 108 "main.c"
         DELAY_milliseconds(1000);
-
-
-
-
-
-        GPIO_PWM1_Control(12, 50);
-
-
-
-
-
+# 120 "main.c"
     }
 }

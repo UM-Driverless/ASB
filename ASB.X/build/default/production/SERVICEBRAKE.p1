@@ -3536,55 +3536,80 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23
 [; ;./MESSAGES.h: 23: CAN_MSG_OBJ msgReceipt;
 [v _msgReceipt `S3178 ~T0 @X0 1 e ]
-"14 SERVICEBRAKE.c
-[; ;SERVICEBRAKE.c: 14: unsigned char ucDutyServomotor;
+"15 SERVICEBRAKE.c
+[; ;SERVICEBRAKE.c: 15: unsigned char ucDutyServomotor;
 [v _ucDutyServomotor `uc ~T0 @X0 1 e ]
-"15
-[; ;SERVICEBRAKE.c: 15: unsigned char ucServoLmin;
-[v _ucServoLmin `uc ~T0 @X0 1 e ]
 "16
-[; ;SERVICEBRAKE.c: 16: unsigned char ucServoLmax;
+[; ;SERVICEBRAKE.c: 16: unsigned char ucServoLmin;
+[v _ucServoLmin `uc ~T0 @X0 1 e ]
+"17
+[; ;SERVICEBRAKE.c: 17: unsigned char ucServoLmax;
 [v _ucServoLmax `uc ~T0 @X0 1 e ]
-"21
-[; ;SERVICEBRAKE.c: 21: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
-[v _SERVICEBRAKE_Move `(v ~T0 @X0 1 ef1`uc ]
 "22
-[; ;SERVICEBRAKE.c: 22: {
+[; ;SERVICEBRAKE.c: 22: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
+[v _SERVICEBRAKE_Move `(v ~T0 @X0 1 ef1`uc ]
+"23
+[; ;SERVICEBRAKE.c: 23: {
 {
 [e :U _SERVICEBRAKE_Move ]
-"21
-[; ;SERVICEBRAKE.c: 21: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
-[v _ucTargetMove `uc ~T0 @X0 1 r1 ]
 "22
-[; ;SERVICEBRAKE.c: 22: {
+[; ;SERVICEBRAKE.c: 22: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
+[v _ucTargetMove `uc ~T0 @X0 1 r1 ]
+"23
+[; ;SERVICEBRAKE.c: 23: {
 [f ]
-"24
-[; ;SERVICEBRAKE.c: 24:     ucDutyServomotor = ucServoLmin + ucTargetMove;
+"25
+[; ;SERVICEBRAKE.c: 25:     ucDutyServomotor = ucServoLmin + ucTargetMove;
 [e = _ucDutyServomotor -> + -> _ucServoLmin `i -> _ucTargetMove `i `uc ]
-"26
-[; ;SERVICEBRAKE.c: 26:     if ( ( ucDutyServomotor >= ucServoLmin ) && ( ucDutyServomotor <= ucServoLmax ) )
-[e $ ! && >= -> _ucDutyServomotor `i -> _ucServoLmin `i <= -> _ucDutyServomotor `i -> _ucServoLmax `i 3180  ]
 "27
-[; ;SERVICEBRAKE.c: 27:     {
-{
+[; ;SERVICEBRAKE.c: 27:     if ( ( ucDutyServomotor >= ucServoLmin ) && ( ucDutyServomotor <= ucServoLmax ) )
+[e $ ! && >= -> _ucDutyServomotor `i -> _ucServoLmin `i <= -> _ucDutyServomotor `i -> _ucServoLmax `i 3180  ]
 "28
-[; ;SERVICEBRAKE.c: 28:         GPIO_PWM1_Control(ucDutyServomotor, 600);
-[e ( _GPIO_PWM1_Control (2 , -> _ucDutyServomotor `ui -> -> 600 `i `ui ]
-"29
-[; ;SERVICEBRAKE.c: 29:     }
-}
-[e $U 3181  ]
-"30
-[; ;SERVICEBRAKE.c: 30:     else
-[e :U 3180 ]
-"31
-[; ;SERVICEBRAKE.c: 31:     {
+[; ;SERVICEBRAKE.c: 28:     {
 {
+"29
+[; ;SERVICEBRAKE.c: 29:         if ( ( ucDutyServomotor < 0 ) && ( ucDutyServomotor > 12 ) )
+[e $ ! && < -> _ucDutyServomotor `i -> 0 `i > -> _ucDutyServomotor `i -> 12 `i 3181  ]
+"30
+[; ;SERVICEBRAKE.c: 30:         {
+{
+"31
+[; ;SERVICEBRAKE.c: 31:             GPIO_PWM1_Control(ucDutyServomotor, 50);
+[e ( _GPIO_PWM1_Control (2 , -> _ucDutyServomotor `ui -> -> 50 `i `ui ]
+"32
+[; ;SERVICEBRAKE.c: 32:         }
+}
+[e :U 3181 ]
 "33
 [; ;SERVICEBRAKE.c: 33:     }
 }
-[e :U 3181 ]
+[e $U 3182  ]
 "34
-[; ;SERVICEBRAKE.c: 34: }
+[; ;SERVICEBRAKE.c: 34:     else
+[e :U 3180 ]
+"35
+[; ;SERVICEBRAKE.c: 35:     {
+{
+"37
+[; ;SERVICEBRAKE.c: 37:     }
+}
+[e :U 3182 ]
+"38
+[; ;SERVICEBRAKE.c: 38: }
 [e :UE 3179 ]
+}
+"41
+[; ;SERVICEBRAKE.c: 41: void SERVICEBRAKE_Init (void)
+[v _SERVICEBRAKE_Init `(v ~T0 @X0 1 ef ]
+"42
+[; ;SERVICEBRAKE.c: 42: {
+{
+[e :U _SERVICEBRAKE_Init ]
+[f ]
+"44
+[; ;SERVICEBRAKE.c: 44:     GPIO_PWM1_Control(0, 50);
+[e ( _GPIO_PWM1_Control (2 , -> -> 0 `i `ui -> -> 50 `i `ui ]
+"45
+[; ;SERVICEBRAKE.c: 45: }
+[e :UE 3183 ]
 }

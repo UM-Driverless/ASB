@@ -17,4 +17,5 @@ mcc_generated_files/pwm1_16bit.h  \
 MESSAGES.h  \
 GPIO.h  \
 ANALOG.h  \
-EBS.h 
+EBS.h  \
+SERVICEBRAKE.h 

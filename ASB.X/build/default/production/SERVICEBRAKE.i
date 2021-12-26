@@ -38403,6 +38403,17 @@ void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char d
 void CANReadMessage (void);
 # 10 "SERVICEBRAKE.c" 2
 
+# 1 "./SERVICEBRAKE.h" 1
+# 17 "./SERVICEBRAKE.h"
+extern unsigned char ucDutyServomotor;
+extern unsigned char ucServoLmin;
+extern unsigned char ucServoLmax;
+
+
+void SERVICEBRAKE_Move (unsigned char ucTargetMove);
+void SERVICEBRAKE_Init (void);
+# 11 "SERVICEBRAKE.c" 2
+
 
 
 
@@ -38420,10 +38431,20 @@ void SERVICEBRAKE_Move (unsigned char ucTargetMove)
 
     if ( ( ucDutyServomotor >= ucServoLmin ) && ( ucDutyServomotor <= ucServoLmax ) )
     {
-        GPIO_PWM1_Control(ucDutyServomotor, 600);
+        if ( ( ucDutyServomotor < 0 ) && ( ucDutyServomotor > 12 ) )
+        {
+            GPIO_PWM1_Control(ucDutyServomotor, 50);
+        }
     }
     else
     {
 
     }
+}
+
+
+void SERVICEBRAKE_Init (void)
+{
+
+    GPIO_PWM1_Control(0, 50);
 }

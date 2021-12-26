@@ -20,7 +20,7 @@ extern unsigned char ucServoLmax;
 
 //FUNCIONES
 void SERVICEBRAKE_Move (unsigned char ucTargetMove);
-
+void SERVICEBRAKE_Init (void);
 
 
 #ifdef	__cplusplus

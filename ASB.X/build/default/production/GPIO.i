@@ -37651,6 +37651,7 @@ extern unsigned char ucServoLmax;
 
 
 void SERVICEBRAKE_Move (unsigned char ucTargetMove);
+void SERVICEBRAKE_Init (void);
 # 15 "GPIO.c" 2
 
 

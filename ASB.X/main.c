@@ -47,6 +47,7 @@
 #include "ANALOG.h"
 #include "EBS.h"
 #include "mcc_generated_files/pin_manager.h"
+#include "SERVICEBRAKE.h"
 
 
 unsigned int uiIndex;
@@ -78,6 +79,7 @@ void main(void)
     AS_DVR_MODE_SetDigitalOutput();
     AS_CLS_SDC_SetHigh();
     AS_DVR_MODE_SetHigh();
+    DELAY_milliseconds(10000);
     EBS_Watchdog(WD_DISABLE);
 
     while (1)

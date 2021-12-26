@@ -265,7 +265,7 @@ channel_FVR_Buffer2 63
 [v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
 "18 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
 [v _EBS_Init EBS_Init `(v  1 e 1 0 ]
-"148
+"149
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
 "29 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
@@ -273,7 +273,7 @@ channel_FVR_Buffer2 63
 [v _GPIO_PWM2_Control GPIO_PWM2_Control `(v  1 e 1 0 ]
 "89
 [v _GPIO_BrakePedalAtRest GPIO_BrakePedalAtRest `(v  1 e 1 0 ]
-"57 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"58 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "71 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -499,8 +499,10 @@ channel_FVR_Buffer2 63
 [v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "49 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
-"21 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+"22 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
 [v _SERVICEBRAKE_Move SERVICEBRAKE_Move `(v  1 e 1 0 ]
+"41
+[v _SERVICEBRAKE_Init SERVICEBRAKE_Init `(v  1 e 1 0 ]
 [s S1512 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
@@ -603,7 +605,7 @@ channel_FVR_Buffer2 63
 [v _PMD2 PMD2 `VEuc  1 e 1 @98 ]
 "1474
 [v _LATA LATA `VEuc  1 e 1 @1214 ]
-[s S3022 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S3020 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -613,8 +615,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "1491
-[u S3031 . 1 `S3022 1 . 1 0 ]
-[v _LATAbits LATAbits `VES3031  1 e 1 @1214 ]
+[u S3029 . 1 `S3020 1 . 1 0 ]
+[v _LATAbits LATAbits `VES3029  1 e 1 @1214 ]
 "1514
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
@@ -635,7 +637,7 @@ channel_FVR_Buffer2 63
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
-[s S2799 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S2803 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -645,8 +647,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1615
-[u S2808 . 1 `S2799 1 . 1 0 ]
-[v _LATCbits LATCbits `VES2808  1 e 1 @1216 ]
+[u S2812 . 1 `S2803 1 . 1 0 ]
+[v _LATCbits LATCbits `VES2812  1 e 1 @1216 ]
 "1621
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1660
@@ -671,7 +673,7 @@ channel_FVR_Buffer2 63
 [v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
 "1784
 [v _TRISC TRISC `VEuc  1 e 1 @1224 ]
-[s S2778 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S2782 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -681,13 +683,13 @@ channel_FVR_Buffer2 63
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "1801
-[u S2787 . 1 `S2778 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES2787  1 e 1 @1224 ]
+[u S2791 . 1 `S2782 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES2791  1 e 1 @1224 ]
 "1802
 [v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
 "1846
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S3043 . 1 `uc 1 RA0 1 0 :1:0 
+[s S3041 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -697,9 +699,9 @@ channel_FVR_Buffer2 63
 `uc 1 RA7 1 0 :1:7 
 ]
 "1884
-[u S3052 . 1 `S3043 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES3052  1 e 1 @1230 ]
-[s S3199 . 1 `uc 1 RC0 1 0 :1:0 
+[u S3050 . 1 `S3041 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES3050  1 e 1 @1230 ]
+[s S3200 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -709,8 +711,8 @@ channel_FVR_Buffer2 63
 `uc 1 RC7 1 0 :1:7 
 ]
 "2008
-[u S3208 . 1 `S3199 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES3208  1 e 1 @1232 ]
+[u S3209 . 1 `S3200 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES3209  1 e 1 @1232 ]
 [s S67 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -1703,14 +1705,14 @@ channel_FVR_Buffer2 63
 [v _NPRES_min NPRES_min `uc  1 e 1 0 ]
 "15
 [v _NPRES_max NPRES_max `uc  1 e 1 0 ]
-"14 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+"15 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
 [v _ucDutyServomotor ucDutyServomotor `uc  1 e 1 0 ]
-"15
+"16
 [v _ucServoLmin ucServoLmin `uc  1 e 1 0 ]
-"57 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"58 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"118
+"121
 } 0
 "50 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1966,6 +1968,11 @@ channel_FVR_Buffer2 63
 [v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "721
 } 0
+"41 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+[v _SERVICEBRAKE_Init SERVICEBRAKE_Init `(v  1 e 1 0 ]
+{
+"45
+} 0
 "29 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
 {
@@ -1995,13 +2002,18 @@ channel_FVR_Buffer2 63
 {
 "166
 } 0
-"148 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
+"18 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
+[v _EBS_Init EBS_Init `(v  1 e 1 0 ]
+{
+"23
+} 0
+"149
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
 {
 [v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
 [v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
 [v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 66 ]
-"160
+"161
 } 0
 "134 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
 [v _PWM2_16BIT_Enable PWM2_16BIT_Enable `(v  1 e 1 0 ]
@@ -2117,11 +2129,6 @@ channel_FVR_Buffer2 63
 [v _PWM2_16BIT_LoadBufferRegisters PWM2_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
 {
 "166
-} 0
-"18 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
-[v _EBS_Init EBS_Init `(v  1 e 1 0 ]
-{
-"22
 } 0
 "38 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
 [v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]

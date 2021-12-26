@@ -8,6 +8,7 @@
 //INCLUDES
 #include "GPIO.h"
 #include "MESSAGES.h"
+#include "SERVICEBRAKE.h"
 
 
 //VARIABLES

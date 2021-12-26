@@ -38464,6 +38464,7 @@ void EBS_Init (void)
 {
     do { LATBbits.LATB2 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
+    EBS_Watchdog(1);
 }
 
 void EBS_CheckUP_Routine (void)
@@ -38599,7 +38600,7 @@ void EBS_Watchdog (unsigned char ucWDState)
             break;
         case 1:
             PWM2_16BIT_Enable();
-            GPIO_PWM2_Control(25, 10);
+            GPIO_PWM2_Control(50, 100);
             break;
     }
 }

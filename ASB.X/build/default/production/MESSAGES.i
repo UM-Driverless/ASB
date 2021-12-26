@@ -38423,6 +38423,7 @@ extern unsigned char ucServoLmax;
 
 
 void SERVICEBRAKE_Move (unsigned char ucTargetMove);
+void SERVICEBRAKE_Init (void);
 # 12 "MESSAGES.c" 2
 
 
