@@ -27,8 +27,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 64:     msgTransmit.field.idType = CAN_FRAME_EXT;
 [c E22421 0 1 .. ]
 [n E22421 . CAN_FRAME_STD CAN_FRAME_EXT  ]
-"346 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 346: _Bool CAN1_IsBusOff(void);
+"390 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 390: _Bool CAN1_IsBusOff(void);
 [v _CAN1_IsBusOff `(a ~T0 @X0 0 ef ]
 "8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
@@ -36,14 +36,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24 ./GPIO.h
 [; ;./GPIO.h: 24: extern unsigned char ucLEDState;
 [v _ucLEDState `uc ~T0 @X0 0 e ]
-"404 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 404: _Bool CAN1_IsTxErrorPassive(void);
+"448 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 448: _Bool CAN1_IsTxErrorPassive(void);
 [v _CAN1_IsTxErrorPassive `(a ~T0 @X0 0 ef ]
-"463
-[; ;./mcc_generated_files/can1.h: 463: _Bool CAN1_IsTxErrorWarning(void);
+"507
+[; ;./mcc_generated_files/can1.h: 507: _Bool CAN1_IsTxErrorWarning(void);
 [v _CAN1_IsTxErrorWarning `(a ~T0 @X0 0 ef ]
-"522
-[; ;./mcc_generated_files/can1.h: 522: _Bool CAN1_IsTxErrorActive(void);
+"566
+[; ;./mcc_generated_files/can1.h: 566: _Bool CAN1_IsTxErrorActive(void);
 [v _CAN1_IsTxErrorActive `(a ~T0 @X0 0 ef ]
 "89 MESSAGES.c
 [; ;MESSAGES.c: 89:     if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
@@ -51,21 +51,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n E22454 . CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
 [c E22476 0 .. ]
 [n E22476 . TXQ  ]
-"771 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 771: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
+"815 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 815: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
 [v _CAN1_TransmitFIFOStatusGet `(E22454 ~T0 @X0 0 ef1`CE22476 ]
 "91 MESSAGES.c
 [; ;MESSAGES.c: 91:         CAN1_Transmit(TXQ, &msgTransmit);
 [c E22433 0 1 2 3 .. ]
 [n E22433 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
-"290 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 290: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
+"334 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 334: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
 [v _CAN1_Transmit `(E22433 ~T0 @X0 0 ef2`CE22476`*S3178 ]
-"813
-[; ;./mcc_generated_files/can1.h: 813: uint8_t CAN1_ReceivedMessageCountGet(void);
+"857
+[; ;./mcc_generated_files/can1.h: 857: uint8_t CAN1_ReceivedMessageCountGet(void);
 [v _CAN1_ReceivedMessageCountGet `(uc ~T0 @X0 0 ef ]
-"231
-[; ;./mcc_generated_files/can1.h: 231: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
+"235
+[; ;./mcc_generated_files/can1.h: 235: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
 [v _CAN1_Receive `(a ~T0 @X0 0 ef1`*S3178 ]
 "22 ./SERVICEBRAKE.h
 [; ;./SERVICEBRAKE.h: 22: void SERVICEBRAKE_Move (unsigned char ucTargetMove);

@@ -79,8 +79,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "506
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 506:     struct {
 [v _PIR0bits `VS3027 ~T0 @X0 0 e@1198 ]
-"1327 mcc_generated_files/can1.h
-[; ;mcc_generated_files/can1.h: 1327: void CAN1_ISR(void);
+"1371 mcc_generated_files/can1.h
+[; ;mcc_generated_files/can1.h: 1371: void CAN1_ISR(void);
 [v _CAN1_ISR `(v ~T0 @X0 0 ef ]
 "877 mcc_generated_files/tmr2.h
 [; ;mcc_generated_files/tmr2.h: 877: void TMR2_ISR(void);
