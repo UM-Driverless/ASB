@@ -64,8 +64,10 @@ void main(void)
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
 
+    GPIO_Init();
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
+    
     CANSTBY_SetDigitalOutput();
     CANSTBY_SetHigh();
 
@@ -75,10 +77,7 @@ void main(void)
     EBS_Init();
     SERVICEBRAKE_Init();
     DELAY_milliseconds(3000);
-    AS_CLS_SDC_SetDigitalOutput();
-    AS_DVR_MODE_SetDigitalOutput();
     AS_CLS_SDC_SetHigh();
-    AS_DVR_MODE_SetHigh();
     DELAY_milliseconds(10000);
     EBS_Watchdog(WD_DISABLE);
 

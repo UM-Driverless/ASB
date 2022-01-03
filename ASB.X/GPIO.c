@@ -21,6 +21,26 @@ unsigned char ucPICHDRPRES1min;
 unsigned char ucPICHDRPRES2min;
 
 //FUNCIONES
+void GPIO_Init (void)
+{
+    //ANALOGICAS
+    HDRPRES1_SetAnalogMode();
+    HDRPRES2_SetAnalogMode();
+    NPRES1_SetAnalogMode();
+    NPRES2_SetAnalogMode();
+    NPRES3_SetAnalogMode();
+    NPRES4_SetAnalogMode();
+    
+    //DIGITALES
+    LED_SetDigitalOutput();
+    AS_CLS_SDC_SetDigitalOutput();
+    MOSFET1_SetDigitalOutput();
+    MOSFET2_SetDigitalOutput();
+    CANSTBY_SetDigitalOutput();
+    SDC_IS_READY_SetDigitalInput();
+    EBSLEDACT_SetDigitalOutput();
+}
+
 
 /****GPIO_PWM1_Control****/
 //uiDutyCycle 0 - 100% 

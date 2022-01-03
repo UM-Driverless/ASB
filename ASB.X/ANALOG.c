@@ -7,6 +7,7 @@
 
 #include "ANALOG.h"
 #include "mcc_generated_files/adc.h"
+#include "mcc_generated_files/pin_manager.h"
 
 
 //VARIABLES
@@ -32,50 +33,38 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
         case AN_PICHDRPRES1:
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_1);
-            uiValorAnalog = ADC_GetSingleConversion(PICHDRPRES1);
+            uiValorAnalog = ADC_GetSingleConversion(HDRPRES1);
             ucFlag = 1;
             break;
         case AN_PICHDRPRES2:
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_2);
-            uiValorAnalog = ADC_GetSingleConversion(PICHDRPRES2);
+            uiValorAnalog = ADC_GetSingleConversion(HDRPRES2);
             ucFlag = 1;
             break;
         case AN_PICNPRES1:
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_3);
-            uiValorAnalog = ADC_GetSingleConversion(PICNPRES1);
+            uiValorAnalog = ADC_GetSingleConversion(NPRES1);
             ucFlag = 1;
             break;
         case AN_PICNPRES2:
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_3);
-            uiValorAnalog = ADC_GetSingleConversion(PICNPRES2);
+            uiValorAnalog = ADC_GetSingleConversion(NPRES2);
             ucFlag = 1;
             break;
         case AN_PICNPRES3:
             //ADC_DisableChannelSequencer();    //Disable scanner
             //ADC_SelectContext(CONTEXT_3);
-            //uiValorAnalog = ADC_GetSingleConversion(PICNPRES1);
-            ucFlag = 2;
+            uiValorAnalog = NPRES3_GetValue();
+            ucFlag = 1;
             break;
         case AN_PICNPRES4:
             //ADC_DisableChannelSequencer();    //Disable scanner
             //ADC_SelectContext(CONTEXT_3);
-            //uiValorAnalog = ADC_GetSingleConversion(PICNPRES2);
-            ucFlag = 2;
-            break;
-        case AN_A1:
-            //ADC_DisableChannelSequencer();    //Disable scanner
-            //ADC_SelectContext(CONTEXT_3);
-            //uiValorAnalog = ADC_GetSingleConversion(PICNPRES1);
-            ucFlag = 2;
-            break;
-        case AN_A2:
-            //ADC_DisableChannelSequencer();    //Disable scanner
-            //ADC_SelectContext(CONTEXT_3);
-            //uiValorAnalog = ADC_GetSingleConversion(PICNPRES2);
-            ucFlag = 2;
+            uiValorAnalog = NPRES4_GetValue();
+            ucFlag = 1;
             break;
         default:
             ucFlag = 2;
@@ -123,8 +112,8 @@ void ANALOG_RedAll (void)   //EJECUTAR CON UN TIMER
     ucPICHDRPRES2 = ANALOG_GetVoltage(AN_PICHDRPRES2);
     ucPICNPRES1 = ANALOG_GetVoltage(AN_PICNPRES1);
     ucPICNPRES2 = ANALOG_GetVoltage(AN_PICNPRES2);
-    //ucPICNPRES3 = ANALOG_GetVoltage(AN_PICNPRES3);
-    //ucPICNPRES4 = ANALOG_GetVoltage(AN_PICNPRES4);
+    ucPICNPRES3 = ANALOG_GetVoltage(AN_PICNPRES3);
+    ucPICNPRES4 = ANALOG_GetVoltage(AN_PICNPRES4);
     //ucAN1 = ANALOG_GetVoltage(AN_A1);
     //ucAN2 = ANALOG_GetVoltage(AN_A2);
     

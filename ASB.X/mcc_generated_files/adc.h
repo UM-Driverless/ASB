@@ -71,11 +71,12 @@ typedef uint16_t adc_result_t;
  */
 typedef enum
 {
-    PICHDRPRES1 =  0x0,
-    PICHDRPRES2 =  0x1,
-    AN2 =  0x14,
-    PICNPRES2 =  0x16,
-    PICNPRES1 =  0x17,
+    HDRPRES1 =  0x0,
+    HDRPRES2 =  0x1,
+    NPRES3 =  0x13,
+    NPRES4 =  0x14,
+    NPRES2 =  0x16,
+    NPRES1 =  0x17,
     channel_VSS =  0x3B,
     channel_Temp =  0x3C,
     channel_DAC1 =  0x3D,

@@ -27,6 +27,7 @@ extern unsigned char ucPICHDRPRES1min;
 extern unsigned char ucPICHDRPRES2min;
 
 //FUNCIONES
+void GPIO_Init (void);
 void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
 void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
 void GPIO_LED(unsigned char ucMode);
