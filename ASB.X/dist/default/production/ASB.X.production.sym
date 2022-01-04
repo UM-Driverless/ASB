@@ -1247,10 +1247,10 @@ text61 260E 4FC7 CODE 260E 0
 %locals
 dist/default/production\ASB.X.production.o
 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
-C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-43092 49A8 0 CODE 0
+C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
 43094 49A8 0 CODE 0
-43097 49A8 0 CODE 0
+43096 49A8 0 CODE 0
+43099 49A8 0 CODE 0
 43298 49A8 0 CODE 0
 43299 49AA 0 CODE 0
 43300 49AC 0 CODE 0

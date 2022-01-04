@@ -125,7 +125,7 @@ idataBANK5 CODE 0 4FB0 4FB0 2 1
 dataBANK5 BANK5 1 5FE 5FE 2 1
 bssCOMRAM COMRAM 1 54A 54A 16 1
 config CONFIG 4 300000 300000 24 1
-$C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+$C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 1A 1A 4 1
 reset_vec CODE 0 0 0 4 1
@@ -1467,47 +1467,47 @@ $dist/default/production\ASB.X.production.o
 4A30 text0 CODE >82:C:\UMOTORSPORT\ASB\ASB.X\main.c
 4A36 text0 CODE >92:C:\UMOTORSPORT\ASB\ASB.X\main.c
 4A38 text0 CODE >107:C:\UMOTORSPORT\ASB\ASB.X\main.c
-49A8 cinit CODE >43092:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49A8 cinit CODE >43094:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49A8 cinit CODE >43097:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49A8 cinit CODE >43298:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49AA cinit CODE >43299:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49AC cinit CODE >43300:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49AE cinit CODE >43301:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49B0 cinit CODE >43302:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49B2 cinit CODE >43303:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49B4 cinit CODE >43304:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49B6 cinit CODE >43305:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49BC cinit CODE >43306:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49BE cinit CODE >43307:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49C4 cinit CODE >43311:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49C8 cinit CODE >43312:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49CA cinit CODE >43313:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49CA cinit CODE >43314:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49CC cinit CODE >43315:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49CE cinit CODE >43316:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49D0 cinit CODE >43319:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49D4 cinit CODE >43320:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49D6 cinit CODE >43321:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49D6 cinit CODE >43322:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49D8 cinit CODE >43323:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49DA cinit CODE >43324:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49DC cinit CODE >43327:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49E0 cinit CODE >43328:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49E2 cinit CODE >43329:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49E2 cinit CODE >43330:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49E4 cinit CODE >43331:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49E6 cinit CODE >43332:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49E8 cinit CODE >43340:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49EA cinit CODE >43341:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49EC cinit CODE >43342:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49EE cinit CODE >43343:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49F0 cinit CODE >43344:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49F2 cinit CODE >43345:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49F4 cinit CODE >43346:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49F6 cinit CODE >43352:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49F6 cinit CODE >43354:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
-49F8 cinit CODE >43355:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.s
+49A8 cinit CODE >43094:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49A8 cinit CODE >43096:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49A8 cinit CODE >43099:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49A8 cinit CODE >43298:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49AA cinit CODE >43299:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49AC cinit CODE >43300:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49AE cinit CODE >43301:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49B0 cinit CODE >43302:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49B2 cinit CODE >43303:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49B4 cinit CODE >43304:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49B6 cinit CODE >43305:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49BC cinit CODE >43306:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49BE cinit CODE >43307:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49C4 cinit CODE >43311:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49C8 cinit CODE >43312:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49CA cinit CODE >43313:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49CA cinit CODE >43314:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49CC cinit CODE >43315:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49CE cinit CODE >43316:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49D0 cinit CODE >43319:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49D4 cinit CODE >43320:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49D6 cinit CODE >43321:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49D6 cinit CODE >43322:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49D8 cinit CODE >43323:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49DA cinit CODE >43324:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49DC cinit CODE >43327:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49E0 cinit CODE >43328:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49E2 cinit CODE >43329:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49E2 cinit CODE >43330:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49E4 cinit CODE >43331:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49E6 cinit CODE >43332:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49E8 cinit CODE >43340:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49EA cinit CODE >43341:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49EC cinit CODE >43342:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49EE cinit CODE >43343:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49F0 cinit CODE >43344:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49F2 cinit CODE >43345:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49F4 cinit CODE >43346:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49F6 cinit CODE >43352:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49F6 cinit CODE >43354:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
+49F8 cinit CODE >43355:C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1572,7 +1572,7 @@ _PWM2PRH 473 0 ABS 0 - dist/default/production\ASB.X.production.o
 _PWM2PRL 472 0 ABS 0 - dist/default/production\ASB.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\ASB.X.production.o
 TMR2_ISR@CountCallBack 57A 0 BANK5 1 bssBANK5 dist/default/production\ASB.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 _INT0_DefaultInterruptHandler 4FB8 0 CODE 0 text80 dist/default/production\ASB.X.production.o
 __end_of_PWM1_16BIT_SetSlice1Output1DutyCycleRegister 4E5A 0 CODE 0 text49 dist/default/production\ASB.X.production.o
 _CAN1_SetBusWakeUpActivityInterruptHandler 4F2C 0 CODE 0 text36 dist/default/production\ASB.X.production.o
@@ -1615,10 +1615,10 @@ _WPUA 401 0 ABS 0 - dist/default/production\ASB.X.production.o
 _WPUB 409 0 ABS 0 - dist/default/production\ASB.X.production.o
 _WPUC 411 0 ABS 0 - dist/default/production\ASB.X.production.o
 _WPUE 421 0 ABS 0 - dist/default/production\ASB.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+___sp 0 0 STACK 2 stack C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 _main 49FC 0 CODE 0 text0 dist/default/production\ASB.X.production.o
 _CAN1_Initialize 48F0 0 CODE 0 text22 dist/default/production\ASB.X.production.o
-start 1A 0 CODE 0 init C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+start 1A 0 CODE 0 init C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 PWM2_16BIT_WritePeriodRegister@periodCount 5AB 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
 ___flmul@aexp 520 0 COMRAM 1 cstackCOMRAM dist/default/production\ASB.X.production.o
 ___flmul@bexp 521 0 COMRAM 1 cstackCOMRAM dist/default/production\ASB.X.production.o
@@ -1663,11 +1663,11 @@ __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\ASB.X.production
 _PWM2_16BIT_Slice1Output2_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 TMR0_SetInterruptHandler@InterruptHandler 5AB 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
 _ADC_SetContext1ThresholdInterruptHandler 4F5E 0 CODE 0 text43 dist/default/production\ASB.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
-intlevel0 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
-intlevel1 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
-intlevel2 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
-intlevel3 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+__accesstop 560 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
+intlevel0 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
+intlevel1 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
+intlevel2 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
+intlevel3 0 0 CODE 0 text C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 __end_ofi2___xxtofl 3F2E 0 CODE 0 text83 dist/default/production\ASB.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ASB.X.production.o
 i2___xxtofl@arg 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\ASB.X.production.o
@@ -1733,8 +1733,8 @@ _C1FIFOCON1T 15F 0 ABS 0 - dist/default/production\ASB.X.production.o
 _C1FIFOCON1U 15E 0 ABS 0 - dist/default/production\ASB.X.production.o
 _TMR0_DefaultInterruptHandler 4FB6 0 CODE 0 text77 dist/default/production\ASB.X.production.o
 __size_of_PWM1_16BIT_Period_SetInterruptHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 PWM1_16BIT_Period_SetInterruptHandler@InterruptHandler 5AB 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
 __size_of_DefaultModeChangeHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 _C1CONH 101 0 ABS 0 - dist/default/production\ASB.X.production.o
@@ -1868,7 +1868,7 @@ _C1INTUbits 11E 0 ABS 0 - dist/default/production\ASB.X.production.o
 __size_of_CAN1_SetSystemErrorInterruptHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 __size_of_ADC_SetActiveClockTuningInterruptHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 __end_of_DefaultModeChangeHandler 4FC2 0 CODE 0 text95 dist/default/production\ASB.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+isa$xinst 0 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 TMR2_SetInterruptHandler@InterruptHandler 5AB 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
 __size_of_PWM2_16BIT_Initialize 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 _ucServoLmax 593 0 BANK5 1 bssBANK5 dist/default/production\ASB.X.production.o
@@ -1938,7 +1938,7 @@ __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ASB.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\ASB.X.production.o
 __size_of_PWM2_16BIT_Period_SetInterruptHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 _ADC_Context4Thereshld_ISR 5F2 0 BANK5 1 nvBANK5 dist/default/production\ASB.X.production.o
-__smallconst 2600 0 SMALLCONST 0 smallconst C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+__smallconst 2600 0 SMALLCONST 0 smallconst C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 _ucTargetGear 55A 0 COMRAM 1 bssCOMRAM dist/default/production\ASB.X.production.o
 ___xxtofl@arg 5C3 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
 ___xxtofl@exp 5C2 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
@@ -2386,7 +2386,7 @@ ___lwdiv@divisor 5AD 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.product
 __size_of_CAN1_SetModeChangeInterruptHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 _TMR0_SetInterruptHandler 4E96 0 CODE 0 text7 dist/default/production\ASB.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\ASB.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+isa$std 1 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 CAN1_SetRxBufferOverFlowInterruptHandler@handler 5AB 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
 ___fldiv@new_exp 520 0 COMRAM 1 cstackCOMRAM dist/default/production\ASB.X.production.o
 _DefaultRxBufferOverflowHandler 4FBE 0 CODE 0 text94 dist/default/production\ASB.X.production.o
@@ -2402,8 +2402,8 @@ _ucPICNPRES3 566 0 BANK5 1 bssBANK5 dist/default/production\ASB.X.production.o
 _ucPICNPRES4 564 0 BANK5 1 bssBANK5 dist/default/production\ASB.X.production.o
 __size_of_CAN1_SetInvalidMessageInterruptHandler 0 0 ABS 0 - dist/default/production\ASB.X.production.o
 _CAN1_ModeChangeHandler 582 0 BANK5 1 bssBANK5 dist/default/production\ASB.X.production.o
-stackhi 25FF 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
-stacklo 61C 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+stackhi 25FF 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
+stacklo 61C 0 ABS 0 - C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 ANALOG_GetVoltage@uiValorVoltage 545 0 COMRAM 1 cstackCOMRAM dist/default/production\ASB.X.production.o
 _ADC_SetContext4ThresholdInterruptHandler 4F40 0 CODE 0 text40 dist/default/production\ASB.X.production.o
 _EXT_INT_Initialize 4DEC 0 CODE 0 text20 dist/default/production\ASB.X.production.o
@@ -2594,7 +2594,7 @@ __Ltext97 0 0 ABS 0 text97 dist/default/production\ASB.X.production.o
 __Ltext98 0 0 ABS 0 text98 dist/default/production\ASB.X.production.o
 __Ltext99 0 0 ABS 0 text99 dist/default/production\ASB.X.production.o
 _ADC_DefaultContext1Threshold_ISR 0 0 ABS 0 - dist/default/production\ASB.X.production.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\DAVIDJ\AppData\Local\Temp\xcAs9a8.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\DAVIDJ\AppData\Local\Temp\xcAs77s.o
 ___aldiv@dividend 5AB 0 BANK5 1 cstackBANK5 dist/default/production\ASB.X.production.o
 __end_of_CAN1_RX_FIFO_FilterMaskConfiguration 4D9E 0 CODE 0 text25 dist/default/production\ASB.X.production.o
 __end_of_TMR0_CallBack 4CD6 0 CODE 0 text76 dist/default/production\ASB.X.production.o

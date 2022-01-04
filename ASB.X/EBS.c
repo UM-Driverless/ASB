@@ -125,7 +125,7 @@ void EBS_CheckUP_Routine (void)
     if ( ucCheck == 14 )
     {
         DELAY_milliseconds(1000);
-        if ( ( PICHDRPRES1_GetValue() >= HDRPRES_max ) & ( PICHDRPRES2_GetValue() >= HDRPRES_max ) )
+        if ( ( HDRPRES1_GetValue() >= HDRPRES_max ) & ( HDRPRES2_GetValue() >= HDRPRES_max ) )
         {
             ucCheck = 15;
         }

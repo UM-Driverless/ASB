@@ -37746,7 +37746,7 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
         case 5:
 
 
-            uiValorAnalog = PORTCbits.RC3;
+            uiValorAnalog = PORTCbits.RC4;
             ucFlag = 1;
             break;
         default:
@@ -37795,8 +37795,8 @@ void ANALOG_RedAll (void)
     ucPICHDRPRES2 = ANALOG_GetVoltage(1);
     ucPICNPRES1 = ANALOG_GetVoltage(2);
     ucPICNPRES2 = ANALOG_GetVoltage(3);
-
-
+    ucPICNPRES3 = ANALOG_GetVoltage(4);
+    ucPICNPRES4 = ANALOG_GetVoltage(5);
 
 
 

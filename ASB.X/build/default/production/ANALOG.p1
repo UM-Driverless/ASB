@@ -3683,8 +3683,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ANALOG.c: 63:         case 5:
 [e :U 3184 ]
 "66
-[; ;ANALOG.c: 66:             uiValorAnalog = PORTCbits.RC3;
-[e = _uiValorAnalog -> . . _PORTCbits 0 3 `us ]
+[; ;ANALOG.c: 66:             uiValorAnalog = PORTCbits.RC4;
+[e = _uiValorAnalog -> . . _PORTCbits 0 4 `us ]
 "67
 [; ;ANALOG.c: 67:             ucFlag = 1;
 [e = _ucFlag -> -> 1 `i `uc ]
@@ -3819,6 +3819,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "114
 [; ;ANALOG.c: 114:     ucPICNPRES2 = ANALOG_GetVoltage(3);
 [e = _ucPICNPRES2 -> ( _ANALOG_GetVoltage (1 -> -> 3 `i `uc `ui ]
+"115
+[; ;ANALOG.c: 115:     ucPICNPRES3 = ANALOG_GetVoltage(4);
+[e = _ucPICNPRES3 -> ( _ANALOG_GetVoltage (1 -> -> 4 `i `uc `ui ]
+"116
+[; ;ANALOG.c: 116:     ucPICNPRES4 = ANALOG_GetVoltage(5);
+[e = _ucPICNPRES4 -> ( _ANALOG_GetVoltage (1 -> -> 5 `i `uc `ui ]
 "120
 [; ;ANALOG.c: 120: }
 [e :UE 3194 ]

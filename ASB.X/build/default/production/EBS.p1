@@ -43,15 +43,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34 ./mcc_generated_files/delay.h
 [; ;./mcc_generated_files/delay.h: 34: void DELAY_milliseconds(uint16_t milliseconds);
 [v _DELAY_milliseconds `(v ~T0 @X0 0 ef1`us ]
-"128 EBS.c
-[; ;EBS.c: 128:         if ( ( PICHDRPRES1_GetValue() >= HDRPRES_max ) & ( PICHDRPRES2_GetValue() >= HDRPRES_max ) )
-[v _PICHDRPRES1_GetValue `(i ~T0 @X0 0 e? ]
+"1873 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1873:         unsigned OPOL :1;
+[s S3075 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3075 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"1872
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1872:         unsigned :3;
+[u S3074 `S3075 1 ]
+[n S3074 . . ]
+"1884
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1884:         unsigned MD1EN :1;
+[v _PORTAbits `VS3074 ~T0 @X0 0 e@1230 ]
 "28 ./PARAMETERS.h
 [; ;./PARAMETERS.h: 28: extern unsigned char HDRPRES_max;
 [v _HDRPRES_max `uc ~T0 @X0 0 e ]
-"128 EBS.c
-[; ;EBS.c: 128:         if ( ( PICHDRPRES1_GetValue() >= HDRPRES_max ) & ( PICHDRPRES2_GetValue() >= HDRPRES_max ) )
-[v _PICHDRPRES2_GetValue `(i ~T0 @X0 0 e? ]
 "57 ./MESSAGES.h
 [; ;./MESSAGES.h: 57: extern unsigned char ucASRequesState;
 [v _ucASRequesState `uc ~T0 @X0 0 e ]
@@ -3920,8 +3925,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;EBS.c: 127:         DELAY_milliseconds(1000);
 [e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
 "128
-[; ;EBS.c: 128:         if ( ( PICHDRPRES1_GetValue() >= HDRPRES_max ) & ( PICHDRPRES2_GetValue() >= HDRPRES_max ) )
-[e $ ! & >= ( _PICHDRPRES1_GetValue ..  -> _HDRPRES_max `i >= ( _PICHDRPRES2_GetValue ..  -> _HDRPRES_max `i 3220  ]
+[; ;EBS.c: 128:         if ( ( PORTAbits.RA0 >= HDRPRES_max ) & ( PORTAbits.RA1 >= HDRPRES_max ) )
+[e $ ! & >= -> . . _PORTAbits 0 0 `i -> _HDRPRES_max `i >= -> . . _PORTAbits 0 1 `i -> _HDRPRES_max `i 3220  ]
 "129
 [; ;EBS.c: 129:         {
 {
