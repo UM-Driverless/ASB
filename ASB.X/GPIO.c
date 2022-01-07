@@ -116,7 +116,7 @@ void GPIO_BrakePedalAtRest (void)
         ucPICHDRPRES2min = ANALOG_GetVoltage(AN_PICHDRPRES2);
         
         //Consideramos que el duty mínimo es el de esta posición
-        ucServoLmin = ucDutyServomotor;
+        ucServoLmin = uiDutyServomotor;
     }
     else    //Pedal de freno en cualquier otra posicion
     {

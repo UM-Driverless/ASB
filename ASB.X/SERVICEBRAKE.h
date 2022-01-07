@@ -14,9 +14,10 @@ extern "C" {
 
     
 //VARIABLES
-extern unsigned char ucDutyServomotor;
+extern unsigned int uiDutyServomotor;
 extern unsigned char ucServoLmin;
 extern unsigned char ucServoLmax;
+extern unsigned char ucServoLDif;
 
 //FUNCIONES
 void SERVICEBRAKE_Move (unsigned char ucTargetMove);

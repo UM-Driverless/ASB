@@ -12,23 +12,25 @@
 
 
 //VARIABLES
-unsigned char ucDutyServomotor;
+unsigned int uiDutyServomotor;
 unsigned char ucServoLmin;
 unsigned char ucServoLmax;
-
-
+unsigned char ucServoLDif;
 
 //FUNCIONES
 void SERVICEBRAKE_Move (unsigned char ucTargetMove)
 {
-    //CONSIDERAMOS QUE ucServoLmin fisico es cuando ucTargetBrake = 0
-    ucDutyServomotor = ucServoLmin + ucTargetMove;
+    ucServoLDif = ucServoLmax - ucServoLmin;
+    uiDutyServomotor = ( ucServoLDif * ucTargetMove );
+    uiDutyServomotor = ( uiDutyServomotor / 100 );
+    uiDutyServomotor += ucServoLmin;
+    
     //LIMITAR EL MOVIMIENTO ENTRE UNOS LIMITES EL VALOD DE ucDuty
-    if ( ( ucDutyServomotor >= ucServoLmin ) && ( ucDutyServomotor <= ucServoLmax ) )
+    if ( ( uiDutyServomotor >= ucServoLmin ) && ( uiDutyServomotor <= ucServoLmax ) )
     {
-        if ( ( ucDutyServomotor < 0 ) && ( ucDutyServomotor > 12 ) ) //0-180º con 50Hz
+        if ( ( uiDutyServomotor < 0 ) && ( uiDutyServomotor > 12 ) ) //0-180º con 50Hz
         {
-            GPIO_PWM1_Control(ucDutyServomotor, 50);
+            GPIO_PWM1_Control(uiDutyServomotor, 50);
         }
     }
     else
