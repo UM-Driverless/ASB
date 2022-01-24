@@ -26,6 +26,9 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
 {
     uint16_t uiValorAnalog;
     uint16_t uiValorVoltage;
+    uint16_t uiValorCalculado;
+    unsigned char ucValor;
+    
     unsigned char ucFlag;
     
     switch (ucEntradaAnalogica)
@@ -46,59 +49,68 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_3);
             uiValorAnalog = ADC_GetSingleConversion(NPRES1);
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         case AN_PICNPRES2:
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_3);
             uiValorAnalog = ADC_GetSingleConversion(NPRES2);
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         case AN_PICNPRES3:
             //ADC_DisableChannelSequencer();    //Disable scanner
             //ADC_SelectContext(CONTEXT_3);
             uiValorAnalog = NPRES3_GetValue();
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         case AN_PICNPRES4:
             //ADC_DisableChannelSequencer();    //Disable scanner
             //ADC_SelectContext(CONTEXT_3);
             uiValorAnalog = NPRES4_GetValue();
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         default:
-            ucFlag = 2;
+            ucFlag = 0xFF;
             break;
     }
     
-    if ( ucFlag == 1 )
+    if ( ucFlag == 1 ) //PRESIONES HDR
     {
-        if ( uiValorAnalog <= 6 )
-        {
-            uiValorVoltage = 0;
-        }
-        else
-        {
-            //EXTRAPOLACION LINEAL DE LA GRAFICA
-            uiValorVoltage = ((1.1444*uiValorAnalog)-5.2658);
-        }
+        //EXTRAPOLACION LINEAL DE LA GRAFICA
+        uiValorVoltage = ((1.1444*uiValorAnalog)-5.2658);
         
         if ( uiValorVoltage > 5000 )
         {
             //fallo de sobrevoltaje
             //o variable da la vuelta
         }
-        else
+        else //ANALIZAR AQUI EL VOLTAJE EN mV
         {
-            return (uiValorVoltage/19.608); //conversion a uc (5V->255)
-            //en principio deberia funcionar y convertir al otro lado o enviarlo ya como 0.1bar?
-            //10bar=10V --> 5VuC --> 255, so 10bar=255
+            uiValorCalculado = ( uiValorVoltage / 5);
+            uiValorCalculado = ( uiValorCalculado - 100 );
+            uiValorCalculado = ( uiValorCalculado * 10 );
+            uiValorCalculado = ( uiValorCalculado / 232 ); //sale el valor en bar
+            ucValor = ( uiValorCalculado & 0xFF );
+            return (ucValor); //conversion a uc (5V->255)
         }   
     }
-    else if ( ucFlag == 2 )
+    else if ( ucFlag == 2 ) //PRESIONES NEUMATICAS
     {
-        //entrada analogica no valida
-        //return (0xFFFF);
+        //EXTRAPOLACION LINEAL DE LA GRAFICA
+        uiValorVoltage = ((1.1444*uiValorAnalog)-5.2658);
+        
+        if ( uiValorVoltage > 5000 )
+        {
+            //fallo de sobrevoltaje
+            //o variable da la vuelta
+        }
+        else //ANALIZAR AQUI EL VOLTAJE EN mV
+        {
+            uiValorCalculado = ( uiValorVoltage * 2 );
+            uiValorCalculado = ( uiValorCalculado / 100 );
+            ucValor = ( uiValorCalculado & 0xFF );
+            return (ucValor); //conversion a uc (5V->255)
+        }  
     }
     else
     {

@@ -203,14 +203,14 @@ CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
 CAN_TX_MSG_REQUEST_BRS_ERROR 2
 CAN_TX_MSG_REQUEST_FIFO_FULL 3
 ]
-"35 C:\UMOTORSPORT\ASB\ASB.X\ANALOG.c
+"38 C:\UMOTORSPORT\ASB\ASB.X\ANALOG.c
 [e E22167 . `uc
 CONTEXT_1 0
 CONTEXT_2 1
 CONTEXT_3 2
 CONTEXT_4 3
 ]
-"36
+"39
 [e E22154 . `uc
 HDRPRES1 0
 HDRPRES2 1
@@ -226,7 +226,7 @@ channel_FVR_Buffer2 63
 ]
 "25
 [v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
-"111
+"123
 [v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
@@ -247,6 +247,7 @@ channel_FVR_Buffer2 63
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+[v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
@@ -260,6 +261,7 @@ channel_FVR_Buffer2 63
 [v ___flmul __flmul `(d  1 e 4 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
@@ -1818,7 +1820,7 @@ channel_FVR_Buffer2 63
 "58 C:\UMOTORSPORT\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"124
+"123
 } 0
 "93 C:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_StopTimer TMR0_StopTimer `(v  1 e 1 0 ]
@@ -2478,10 +2480,10 @@ channel_FVR_Buffer2 63
 {
 "607
 } 0
-"111 C:\UMOTORSPORT\ASB\ASB.X\ANALOG.c
+"123 C:\UMOTORSPORT\ASB\ASB.X\ANALOG.c
 [v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
 {
-"122
+"134
 } 0
 "121 C:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
@@ -2522,16 +2524,20 @@ channel_FVR_Buffer2 63
 [v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
 {
 [v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
-"27
-[v ANALOG_GetVoltage@uiValorAnalog uiValorAnalog `us  1 a 2 70 ]
-"28
-[v ANALOG_GetVoltage@uiValorVoltage uiValorVoltage `us  1 a 2 68 ]
 "29
-[v ANALOG_GetVoltage@ucFlag ucFlag `uc  1 a 1 72 ]
+[v ANALOG_GetVoltage@uiValorCalculado uiValorCalculado `us  1 a 2 74 ]
+"28
+[v ANALOG_GetVoltage@uiValorVoltage uiValorVoltage `us  1 a 2 72 ]
+"27
+[v ANALOG_GetVoltage@uiValorAnalog uiValorAnalog `us  1 a 2 69 ]
+"32
+[v ANALOG_GetVoltage@ucFlag ucFlag `uc  1 a 1 71 ]
+"30
+[v ANALOG_GetVoltage@ucValor ucValor `uc  1 a 1 68 ]
 "25
 [v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
 [v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 67 ]
-"108
+"120
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
 [v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -2547,6 +2553,28 @@ channel_FVR_Buffer2 63
 "15
 [v i2___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v i2___wmul@product product `ui  1 a 2 4 ]
+"15
+[v i2___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i2___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+[v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v i2___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v i2___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v i2___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v i2___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
 [v i2___fltol __fltol `(l  1 e 4 0 ]
@@ -2577,17 +2605,17 @@ channel_FVR_Buffer2 63
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3833 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3835 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3838 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3841 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3833 1 fAsBytes 4 0 `S3838 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3841  1 a 4 33 ]
+[s S3840 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3843 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3835 1 fAsBytes 4 0 `S3840 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3843  1 a 4 33 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S3909 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3911 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3912 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3909 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3912  1 a 2 37 ]
+[u S3914 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3911 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S3914  1 a 2 37 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
@@ -2598,26 +2626,6 @@ channel_FVR_Buffer2 63
 [v ___flmul@b b `d  1 p 4 14 ]
 [v ___flmul@a a `d  1 p 4 18 ]
 "205
-} 0
-"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-{
-"21
-[v ___fldiv@grs grs `ul  1 a 4 33 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 26 ]
-"20
-[v ___fldiv@new_exp new_exp `s  1 a 2 31 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 38 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 37 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 30 ]
-"11
-[v ___fldiv@b b `d  1 p 4 14 ]
-[v ___fldiv@a a `d  1 p 4 18 ]
-"185
 } 0
 "455 C:\UMOTORSPORT\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_SelectContext ADC_SelectContext `T(v  1 e 1 0 ]

@@ -37709,6 +37709,9 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
 {
     uint16_t uiValorAnalog;
     uint16_t uiValorVoltage;
+    uint16_t uiValorCalculado;
+    unsigned char ucValor;
+
     unsigned char ucFlag;
 
     switch (ucEntradaAnalogica)
@@ -37729,42 +37732,35 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             ADC_DisableChannelSequencer();
             ADC_SelectContext(CONTEXT_3);
             uiValorAnalog = ADC_GetSingleConversion(NPRES1);
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         case 3:
             ADC_DisableChannelSequencer();
             ADC_SelectContext(CONTEXT_3);
             uiValorAnalog = ADC_GetSingleConversion(NPRES2);
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         case 4:
 
 
             uiValorAnalog = PORTCbits.RC3;
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         case 5:
 
 
             uiValorAnalog = PORTCbits.RC4;
-            ucFlag = 1;
+            ucFlag = 2;
             break;
         default:
-            ucFlag = 2;
+            ucFlag = 0xFF;
             break;
     }
 
     if ( ucFlag == 1 )
     {
-        if ( uiValorAnalog <= 6 )
-        {
-            uiValorVoltage = 0;
-        }
-        else
-        {
 
-            uiValorVoltage = ((1.1444*uiValorAnalog)-5.2658);
-        }
+        uiValorVoltage = ((1.1444*uiValorAnalog)-5.2658);
 
         if ( uiValorVoltage > 5000 )
         {
@@ -37773,15 +37769,31 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
         }
         else
         {
-            return (uiValorVoltage/19.608);
-
-
+            uiValorCalculado = ( uiValorVoltage / 5);
+            uiValorCalculado = ( uiValorCalculado - 100 );
+            uiValorCalculado = ( uiValorCalculado * 10 );
+            uiValorCalculado = ( uiValorCalculado / 232 );
+            ucValor = ( uiValorCalculado & 0xFF );
+            return (ucValor);
         }
     }
     else if ( ucFlag == 2 )
     {
 
+        uiValorVoltage = ((1.1444*uiValorAnalog)-5.2658);
 
+        if ( uiValorVoltage > 5000 )
+        {
+
+
+        }
+        else
+        {
+            uiValorCalculado = ( uiValorVoltage * 2 );
+            uiValorCalculado = ( uiValorCalculado / 100 );
+            ucValor = ( uiValorCalculado & 0xFF );
+            return (ucValor);
+        }
     }
     else
     {
