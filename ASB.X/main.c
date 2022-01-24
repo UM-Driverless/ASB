@@ -76,10 +76,10 @@ void main(void)
     //DELAY_milliseconds(1000);
     EBS_Init();
     SERVICEBRAKE_Init();
-    DELAY_milliseconds(3000);
+    /*DELAY_milliseconds(3000);
     AS_CLS_SDC_SetHigh();
     DELAY_milliseconds(10000);
-    EBS_Watchdog(WD_DISABLE);
+    EBS_Watchdog(WD_DISABLE);*/
 
     while (1)
     {
@@ -98,13 +98,14 @@ void main(void)
         //GPIO_PWM2_Control(25, 10);
         
         //ANALOG //EJECUTAR CADA 10HZ
-        //ANALOG_RedAll();
-        //CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
+        ANALOG_RedAll();
+        CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
         
         //EBS_CheckUP_Routine();
         
         //PRUEBA DE SERVOMOTOR
         DELAY_milliseconds(1000);
+        LED_Toggle();
         /*uiIndex++;
         if ( uiIndex < 10 )
         {

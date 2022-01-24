@@ -20,13 +20,16 @@ unsigned char ucServoLDif;
 //FUNCIONES
 void SERVICEBRAKE_Move (unsigned char ucTargetMove)
 {
-    ucServoLDif = ucServoLmax - ucServoLmin;
+    /*ucServoLDif = ucServoLmax - ucServoLmin;
     uiDutyServomotor = ( ucServoLDif * ucTargetMove );
     uiDutyServomotor = ( uiDutyServomotor / 100 );
-    uiDutyServomotor += ucServoLmin;
-    
-    //LIMITAR EL MOVIMIENTO ENTRE UNOS LIMITES EL VALOD DE ucDuty
-    if ( ( uiDutyServomotor >= ucServoLmin ) && ( uiDutyServomotor <= ucServoLmax ) )
+    uiDutyServomotor += ucServoLmin;*/
+    uiDutyServomotor = ucTargetMove * 60;
+    uiDutyServomotor = uiDutyServomotor / 100;
+    uiDutyServomotor = (uiDutyServomotor & 0xFF);
+    GPIO_PWM1_Control(uiDutyServomotor, 300);
+    //LIMITAR EL MOVIMIENTO ENTRE UNOS LIMITES EL VALOR DE ucDuty
+    /*if ( ( uiDutyServomotor >= ucServoLmin ) && ( uiDutyServomotor <= ucServoLmax ) )
     {
         if ( ( uiDutyServomotor < 0 ) && ( uiDutyServomotor > 12 ) ) //0-180º con 50Hz
         {
@@ -36,7 +39,7 @@ void SERVICEBRAKE_Move (unsigned char ucTargetMove)
     else
     {
         //generar error de rango
-    }
+    }*/
 }
 
 

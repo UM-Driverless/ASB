@@ -162,6 +162,9 @@ void CANReadMessage (void)
                     uiAcc_lateral = ( ( data4 << 8 ) | data3 );
                     uiYaw_rate = ( ( data6 << 8 ) | data5 );;
                     break;
+                case STEER_WH_CONT:
+                    ucTargetBrake = data1;
+                    SERVICEBRAKE_Move(ucTargetBrake);
                 default:
                     Nop();
                     break;
