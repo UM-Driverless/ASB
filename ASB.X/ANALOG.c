@@ -91,6 +91,8 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
         else
         {
             return (uiValorVoltage/19.608); //conversion a uc (5V->255)
+            //en principio deberia funcionar y convertir al otro lado o enviarlo ya como 0.1bar?
+            //10bar=10V --> 5VuC --> 255, so 10bar=255
         }   
     }
     else if ( ucFlag == 2 )

@@ -64,18 +64,25 @@ void main(void)
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
 
-    GPIO_Init();
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
-    
-    CANSTBY_SetDigitalOutput();
-    CANSTBY_SetHigh();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-    //DELAY_milliseconds(1000);
+    
+    //INICIALIZACIONES HARD
+    GPIO_Init();
+    CANSTBY_SetHigh();
+    //Paramos Tmr0 de 1ms porque no usamos
+    TMR0_StopTimer();
+    
+    //INICIALIZACIONES SOFT
     EBS_Init();
     SERVICEBRAKE_Init();
+    
+    
+    //DELAY_milliseconds(1000);
+
     /*DELAY_milliseconds(3000);
     AS_CLS_SDC_SetHigh();
     DELAY_milliseconds(10000);
@@ -97,15 +104,10 @@ void main(void)
         //GPIO_PWM1_Control(50, 600);
         //GPIO_PWM2_Control(25, 10);
         
-        //ANALOG //EJECUTAR CADA 10HZ
-        ANALOG_RedAll();
-        CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
         
         //EBS_CheckUP_Routine();
         
         //PRUEBA DE SERVOMOTOR
-        DELAY_milliseconds(1000);
-        LED_Toggle();
         /*uiIndex++;
         if ( uiIndex < 10 )
         {

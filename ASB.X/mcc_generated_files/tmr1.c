@@ -50,6 +50,7 @@
 
 #include <xc.h>
 #include "tmr1.h"
+#include "../TEMPORIZATIONS.h"
 
 /**
   Section: Global Variables Definitions
@@ -74,11 +75,11 @@ void TMR1_Initialize(void)
     //CS FOSC/4; 
     T1CLK = 0x01;
 
-    //TMR1H 207; 
-    TMR1H = 0xCF;
+    //TMR1H 133; 
+    TMR1H = 0x85;
 
-    //TMR1L 44; 
-    TMR1L = 0x2C;
+    //TMR1L 238; 
+    TMR1L = 0xEE;
 
     // Clearing IF flag before enabling the interrupt.
     PIR3bits.TMR1IF = 0;
@@ -92,8 +93,8 @@ void TMR1_Initialize(void)
     // Set Default Interrupt Handler
     TMR1_SetInterruptHandler(TMR1_DefaultInterruptHandler);
 
-    // CKPS 1:2; NOT_SYNC synchronize; TMR1ON enabled; T1RD16 disabled; 
-    T1CON = 0x11;
+    // CKPS 1:8; NOT_SYNC synchronize; TMR1ON enabled; T1RD16 disabled; 
+    T1CON = 0x31;
 }
 
 void TMR1_StartTimer(void)
@@ -161,7 +162,7 @@ uint8_t TMR1_CheckGateValueStatus(void)
     return (T1GCONbits.T1GVAL);
 }
 
-void TMR1_ISR(void)
+void TMR1_ISR(void) //100ms
 {
 
     // Clear the TMR1 interrupt flag
@@ -171,6 +172,33 @@ void TMR1_ISR(void)
     // ticker function call;
     // ticker is 1 -> Callback function gets called everytime this ISR executes
     TMR1_CallBack();
+    
+    TEMPORIZATION_100ms();
+    if ( ucCount500ms++ == t500ms )
+    {
+        ucCount500ms = 0;
+        TEMPORIZATION_500ms();
+    }
+    if ( ucCount1s++ == t1s )
+    {
+        ucCount1s = 0;
+        TEMPORIZATION_1s();
+    }
+    if ( ucCount10s++ == t10s )
+    {
+        ucCount10s = 0;
+        TEMPORIZATION_10s();
+    }
+    if ( uiCount30s++ == t30s )
+    {
+        uiCount30s = 0;
+        TEMPORIZATION_30s();
+    }
+    if ( uiCount1min++ == t1min )
+    {
+        uiCount1min = 0;
+        TEMPORIZATION_1mins();
+    }
 }
 
 void TMR1_CallBack(void)

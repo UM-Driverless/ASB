@@ -50,7 +50,7 @@
 
 #include <xc.h>
 #include "tmr2.h"
-#include "pin_manager.h"
+#include "../TEMPORIZATIONS.h"
 
 /**
   Section: Global Variables Definitions
@@ -163,22 +163,17 @@ void TMR2_LoadPeriodRegister(uint8_t periodVal)
    TMR2_Period8BitSet(periodVal);
 }
 
-void TMR2_ISR(void)
+void TMR2_ISR(void) //10ms
 {
-    static volatile unsigned int CountCallBack = 0;
 
     // clear the TMR2 interrupt flag
     PIR3bits.TMR2IF = 0;
 
-    // callback function - called every 10th pass
-    if (++CountCallBack >= TMR2_INTERRUPT_TICKER_FACTOR)
-    {
-        // ticker function call
-        TMR2_CallBack();
-            
-        // reset ticker counter
-        CountCallBack = 0;
-    }
+    // ticker function call;
+    // ticker is 1 -> Callback function gets called everytime this ISR executes
+    TMR2_CallBack();
+    
+    TEMPORIZATION_10ms();
 }
 
 void TMR2_CallBack(void)

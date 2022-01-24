@@ -72,6 +72,7 @@ extern unsigned char ucASRequesState;
 #define DV_DRIVING_DYNAMICS_1       0x501
 #define DV_DRIVING_DYNAMICS_2       0x502
 #define TRAJECTORY_ACT              0x320
+//ASB
 #define ASB_ANALOG                  0x360
 #define ASB_SIGNALS                 0x361
 #define ASB_STATE                   0x362

@@ -374,7 +374,6 @@ typedef enum
 /**
   Section: Macro Declarations
 */
-#define TMR2_INTERRUPT_TICKER_FACTOR    10
 
 /**
   Section: TMR2 APIs
