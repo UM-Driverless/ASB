@@ -105,30 +105,6 @@
 #define HDRPRES2_SetAnalogMode()      do { ANSELAbits.ANSELA1 = 1; } while(0)
 #define HDRPRES2_SetDigitalMode()     do { ANSELAbits.ANSELA1 = 0; } while(0)
 
-// get/set RA2 procedures
-#define RA2_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
-#define RA2_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
-#define RA2_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
-#define RA2_GetValue()              PORTAbits.RA2
-#define RA2_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
-#define RA2_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
-#define RA2_SetPullup()             do { WPUAbits.WPUA2 = 1; } while(0)
-#define RA2_ResetPullup()           do { WPUAbits.WPUA2 = 0; } while(0)
-#define RA2_SetAnalogMode()         do { ANSELAbits.ANSELA2 = 1; } while(0)
-#define RA2_SetDigitalMode()        do { ANSELAbits.ANSELA2 = 0; } while(0)
-
-// get/set RA3 procedures
-#define RA3_SetHigh()            do { LATAbits.LATA3 = 1; } while(0)
-#define RA3_SetLow()             do { LATAbits.LATA3 = 0; } while(0)
-#define RA3_Toggle()             do { LATAbits.LATA3 = ~LATAbits.LATA3; } while(0)
-#define RA3_GetValue()              PORTAbits.RA3
-#define RA3_SetDigitalInput()    do { TRISAbits.TRISA3 = 1; } while(0)
-#define RA3_SetDigitalOutput()   do { TRISAbits.TRISA3 = 0; } while(0)
-#define RA3_SetPullup()             do { WPUAbits.WPUA3 = 1; } while(0)
-#define RA3_ResetPullup()           do { WPUAbits.WPUA3 = 0; } while(0)
-#define RA3_SetAnalogMode()         do { ANSELAbits.ANSELA3 = 1; } while(0)
-#define RA3_SetDigitalMode()        do { ANSELAbits.ANSELA3 = 0; } while(0)
-
 // get/set LED aliases
 #define LED_TRIS                 TRISAbits.TRISA4
 #define LED_LAT                  LATAbits.LATA4
@@ -321,45 +297,45 @@
 #define SDC_IS_READY_SetAnalogMode()      do { ANSELCbits.ANSELC2 = 1; } while(0)
 #define SDC_IS_READY_SetDigitalMode()     do { ANSELCbits.ANSELC2 = 0; } while(0)
 
-// get/set NPRES3 aliases
-#define NPRES3_TRIS                 TRISCbits.TRISC3
-#define NPRES3_LAT                  LATCbits.LATC3
-#define NPRES3_PORT                 PORTCbits.RC3
-#define NPRES3_WPU                  WPUCbits.WPUC3
-#define NPRES3_OD                   ODCONCbits.ODCC3
-#define NPRES3_ANS                  ANSELCbits.ANSELC3
-#define NPRES3_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
-#define NPRES3_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
-#define NPRES3_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
-#define NPRES3_GetValue()           PORTCbits.RC3
-#define NPRES3_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
-#define NPRES3_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
-#define NPRES3_SetPullup()          do { WPUCbits.WPUC3 = 1; } while(0)
-#define NPRES3_ResetPullup()        do { WPUCbits.WPUC3 = 0; } while(0)
-#define NPRES3_SetPushPull()        do { ODCONCbits.ODCC3 = 0; } while(0)
-#define NPRES3_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
-#define NPRES3_SetAnalogMode()      do { ANSELCbits.ANSELC3 = 1; } while(0)
-#define NPRES3_SetDigitalMode()     do { ANSELCbits.ANSELC3 = 0; } while(0)
-
 // get/set NPRES4 aliases
-#define NPRES4_TRIS                 TRISCbits.TRISC4
-#define NPRES4_LAT                  LATCbits.LATC4
-#define NPRES4_PORT                 PORTCbits.RC4
-#define NPRES4_WPU                  WPUCbits.WPUC4
-#define NPRES4_OD                   ODCONCbits.ODCC4
-#define NPRES4_ANS                  ANSELCbits.ANSELC4
-#define NPRES4_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
-#define NPRES4_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
-#define NPRES4_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
-#define NPRES4_GetValue()           PORTCbits.RC4
-#define NPRES4_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
-#define NPRES4_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
-#define NPRES4_SetPullup()          do { WPUCbits.WPUC4 = 1; } while(0)
-#define NPRES4_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
-#define NPRES4_SetPushPull()        do { ODCONCbits.ODCC4 = 0; } while(0)
-#define NPRES4_SetOpenDrain()       do { ODCONCbits.ODCC4 = 1; } while(0)
-#define NPRES4_SetAnalogMode()      do { ANSELCbits.ANSELC4 = 1; } while(0)
-#define NPRES4_SetDigitalMode()     do { ANSELCbits.ANSELC4 = 0; } while(0)
+#define NPRES4_TRIS                 TRISCbits.TRISC3
+#define NPRES4_LAT                  LATCbits.LATC3
+#define NPRES4_PORT                 PORTCbits.RC3
+#define NPRES4_WPU                  WPUCbits.WPUC3
+#define NPRES4_OD                   ODCONCbits.ODCC3
+#define NPRES4_ANS                  ANSELCbits.ANSELC3
+#define NPRES4_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
+#define NPRES4_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
+#define NPRES4_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
+#define NPRES4_GetValue()           PORTCbits.RC3
+#define NPRES4_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
+#define NPRES4_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
+#define NPRES4_SetPullup()          do { WPUCbits.WPUC3 = 1; } while(0)
+#define NPRES4_ResetPullup()        do { WPUCbits.WPUC3 = 0; } while(0)
+#define NPRES4_SetPushPull()        do { ODCONCbits.ODCC3 = 0; } while(0)
+#define NPRES4_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
+#define NPRES4_SetAnalogMode()      do { ANSELCbits.ANSELC3 = 1; } while(0)
+#define NPRES4_SetDigitalMode()     do { ANSELCbits.ANSELC3 = 0; } while(0)
+
+// get/set NPRES3 aliases
+#define NPRES3_TRIS                 TRISCbits.TRISC4
+#define NPRES3_LAT                  LATCbits.LATC4
+#define NPRES3_PORT                 PORTCbits.RC4
+#define NPRES3_WPU                  WPUCbits.WPUC4
+#define NPRES3_OD                   ODCONCbits.ODCC4
+#define NPRES3_ANS                  ANSELCbits.ANSELC4
+#define NPRES3_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
+#define NPRES3_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
+#define NPRES3_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
+#define NPRES3_GetValue()           PORTCbits.RC4
+#define NPRES3_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
+#define NPRES3_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
+#define NPRES3_SetPullup()          do { WPUCbits.WPUC4 = 1; } while(0)
+#define NPRES3_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
+#define NPRES3_SetPushPull()        do { ODCONCbits.ODCC4 = 0; } while(0)
+#define NPRES3_SetOpenDrain()       do { ODCONCbits.ODCC4 = 1; } while(0)
+#define NPRES3_SetAnalogMode()      do { ANSELCbits.ANSELC4 = 1; } while(0)
+#define NPRES3_SetDigitalMode()     do { ANSELCbits.ANSELC4 = 0; } while(0)
 
 // get/set EBSLEDACT aliases
 #define EBSLEDACT_TRIS                 TRISCbits.TRISC5

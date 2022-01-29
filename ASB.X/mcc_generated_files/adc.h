@@ -73,8 +73,8 @@ typedef enum
 {
     HDRPRES1 =  0x0,
     HDRPRES2 =  0x1,
-    NPRES3 =  0x13,
-    NPRES4 =  0x14,
+    NPRES4 =  0x13,
+    NPRES3 =  0x14,
     NPRES2 =  0x16,
     NPRES1 =  0x17,
     channel_VSS =  0x3B,

@@ -70,11 +70,11 @@ static void ADC_DefaultActiveClockTuning_ISR(void);
 
 void ADC_Initialize(void)
 {
-    //ADACT TMR2; 
-    ADACT = 0x04;
+    //ADACT disabled; 
+    ADACT = 0x00;
 
-    //ADCCS FOSC/2; 
-    ADCLK = 0x00;
+    //ADCCS FOSC/128; 
+    ADCLK = 0x3F;
     
     //ADC charge pump control
     ADCP = 0x00;
@@ -127,8 +127,8 @@ void ADC_Initialize(void)
     //ADCHS ANA0; 
     ADPCH = 0x00;
 
-    //ADACQL 0; 
-    ADACQL = 0x00;
+    //ADACQL 5; 
+    ADACQL = 0x05;
 
     //ADACQH 0; 
     ADACQH = 0x00;
@@ -157,8 +157,8 @@ void ADC_Initialize(void)
     //ADMATH registers not updated; 
     ADSTAT = 0x00;
 
-    //ADNREF external; ADPREF external; 
-    ADREF = 0x12;
+    //ADNREF VSS; ADPREF VDD; 
+    ADREF = 0x00;
     
     //CHEN channel content is not included; SSI scan sequence continues; 
     ADCSEL1 = 0x00;
@@ -210,8 +210,8 @@ void ADC_Initialize(void)
     //ADCHS ANA1; 
     ADPCH = 0x01;
 
-    //ADACQL 0; 
-    ADACQL = 0x00;
+    //ADACQL 5; 
+    ADACQL = 0x05;
 
     //ADACQH 0; 
     ADACQH = 0x00;
@@ -290,11 +290,11 @@ void ADC_Initialize(void)
     //ADRESH 0; 
     ADRESH = 0x00;
 
-    //ADCHS ANC6; 
-    ADPCH = 0x16;
+    //ADCHS ANC7; 
+    ADPCH = 0x17;
 
-    //ADACQL 0; 
-    ADACQL = 0x00;
+    //ADACQL 5; 
+    ADACQL = 0x05;
 
     //ADACQH 0; 
     ADACQH = 0x00;
@@ -373,11 +373,11 @@ void ADC_Initialize(void)
     //ADRESH 0; 
     ADRESH = 0x00;
 
-    //ADCHS ANC7; 
-    ADPCH = 0x17;
+    //ADCHS ANC6; 
+    ADPCH = 0x16;
 
-    //ADACQL 0; 
-    ADACQL = 0x00;
+    //ADACQL 5; 
+    ADACQL = 0x05;
 
     //ADACQH 0; 
     ADACQH = 0x00;

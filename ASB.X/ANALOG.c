@@ -8,6 +8,7 @@
 #include "ANALOG.h"
 #include "mcc_generated_files/adc.h"
 #include "mcc_generated_files/pin_manager.h"
+#include "mcc_generated_files/delay.h"
 
 
 //VARIABLES
@@ -37,24 +38,28 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_1);
             uiValorAnalog = ADC_GetSingleConversion(HDRPRES1);
+            ADC_StopConversion();
             ucFlag = 1;
             break;
         case AN_PICHDRPRES2:
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_2);
             uiValorAnalog = ADC_GetSingleConversion(HDRPRES2);
+            ADC_StopConversion();
             ucFlag = 1;
             break;
         case AN_PICNPRES1:
             ADC_DisableChannelSequencer();    //Disable scanner
             ADC_SelectContext(CONTEXT_3);
             uiValorAnalog = ADC_GetSingleConversion(NPRES1);
+            ADC_StopConversion();
             ucFlag = 2;
             break;
         case AN_PICNPRES2:
             ADC_DisableChannelSequencer();    //Disable scanner
-            ADC_SelectContext(CONTEXT_3);
+            ADC_SelectContext(CONTEXT_4);
             uiValorAnalog = ADC_GetSingleConversion(NPRES2);
+            ADC_StopConversion();
             ucFlag = 2;
             break;
         case AN_PICNPRES3:
@@ -74,10 +79,20 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             break;
     }
     
+    Nop();
+    
     if ( ucFlag == 1 ) //PRESIONES HDR
     {
-        //EXTRAPOLACION LINEAL DE LA GRAFICA
-        uiValorVoltage = ((1.1444*uiValorAnalog)-5.2658);
+        if ( uiValorAnalog <= 6 )
+        {
+            uiValorVoltage = 0;
+        }
+        else
+        {
+            //EXTRAPOLACION LINEAL DE LA GRAFICA
+            uiValorVoltage = (1*uiValorAnalog);
+            uiValorVoltage = uiValorVoltage - 5;
+        }
         
         if ( uiValorVoltage > 5000 )
         {
@@ -91,6 +106,7 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             uiValorCalculado = ( uiValorCalculado * 10 );
             uiValorCalculado = ( uiValorCalculado / 232 ); //sale el valor en bar
             ucValor = ( uiValorCalculado & 0xFF );
+            ucValor = ( uiValorVoltage / 100 );
             return (ucValor); //conversion a uc (5V->255)
         }   
     }
@@ -109,6 +125,7 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             uiValorCalculado = ( uiValorVoltage * 2 );
             uiValorCalculado = ( uiValorCalculado / 100 );
             ucValor = ( uiValorCalculado & 0xFF );
+            ucValor = ( uiValorVoltage / 100 );
             return (ucValor); //conversion a uc (5V->255)
         }  
     }
@@ -123,13 +140,20 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
 void ANALOG_RedAll (void)   //EJECUTAR CON UN TIMER 
 {
     ucPICHDRPRES1 = ANALOG_GetVoltage(AN_PICHDRPRES1);
+    DELAY_milliseconds(10);
     ucPICHDRPRES2 = ANALOG_GetVoltage(AN_PICHDRPRES2);
+    DELAY_milliseconds(10);
     ucPICNPRES1 = ANALOG_GetVoltage(AN_PICNPRES1);
+    DELAY_milliseconds(10);
     ucPICNPRES2 = ANALOG_GetVoltage(AN_PICNPRES2);
+    DELAY_milliseconds(10);
     ucPICNPRES3 = ANALOG_GetVoltage(AN_PICNPRES3);
+    DELAY_milliseconds(10);
     ucPICNPRES4 = ANALOG_GetVoltage(AN_PICNPRES4);
+    DELAY_milliseconds(10);
     //ucAN1 = ANALOG_GetVoltage(AN_A1);
     //ucAN2 = ANALOG_GetVoltage(AN_A2);
+    Nop();
     
 }
 
