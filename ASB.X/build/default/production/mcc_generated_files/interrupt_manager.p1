@@ -82,6 +82,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1371 mcc_generated_files/can1.h
 [; ;mcc_generated_files/can1.h: 1371: void CAN1_ISR(void);
 [v _CAN1_ISR `(v ~T0 @X0 0 ef ]
+"65302 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65302:     struct {
+[s S3004 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3004 . U1RXIE U1TXIE U1EIE U1IE CANRXIE CANTXIE PWM1PIE PWM1IE ]
+"65301
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65301: typedef union {
+[u S3003 `S3004 1 ]
+[n S3003 . . ]
+"65313
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65313: extern volatile PIE4bits_t PIE4bits __attribute__((address(0x4A2)));
+[v _PIE4bits `VS3003 ~T0 @X0 0 e@1186 ]
+"751
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 751: extern volatile unsigned char NVMADRH __attribute__((address(0x044)));
+[s S3037 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3037 . U1RXIF U1TXIF U1EIF U1IF CANRXIF CANTXIF PWM1PIF PWM1IF ]
+"750
+[u S3036 `S3037 1 ]
+[n S3036 . . ]
+"762
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 762:         unsigned NVMADR9 :1;
+[v _PIR4bits `VS3036 ~T0 @X0 0 e@1202 ]
+"1372 mcc_generated_files/can1.h
+[; ;mcc_generated_files/can1.h: 1372: void CAN1_RXI_ISR(void);
+[v _CAN1_RXI_ISR `(v ~T0 @X0 0 ef ]
 "876 mcc_generated_files/tmr2.h
 [; ;mcc_generated_files/tmr2.h: 876: void TMR2_ISR(void);
 [v _TMR2_ISR `(v ~T0 @X0 0 ef ]
@@ -3670,48 +3694,63 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 3186  ]
 "73
-[; ;mcc_generated_files/interrupt_manager.c: 73:     else if(PIE3bits.TMR2IE == 1 && PIR3bits.TMR2IF == 1)
+[; ;mcc_generated_files/interrupt_manager.c: 73:     else if(PIE4bits.CANRXIE == 1 && PIR4bits.CANRXIF == 1)
 [e :U 3185 ]
-[e $ ! && == -> . . _PIE3bits 0 3 `i -> 1 `i == -> . . _PIR3bits 0 3 `i -> 1 `i 3187  ]
+[e $ ! && == -> . . _PIE4bits 0 4 `i -> 1 `i == -> . . _PIR4bits 0 4 `i -> 1 `i 3187  ]
 "74
 [; ;mcc_generated_files/interrupt_manager.c: 74:     {
 {
 "75
-[; ;mcc_generated_files/interrupt_manager.c: 75:         TMR2_ISR();
-[e ( _TMR2_ISR ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 75:         CAN1_RXI_ISR();
+[e ( _CAN1_RXI_ISR ..  ]
 "76
 [; ;mcc_generated_files/interrupt_manager.c: 76:     }
 }
 [e $U 3188  ]
 "77
-[; ;mcc_generated_files/interrupt_manager.c: 77:     else if(PIE3bits.TMR1IE == 1 && PIR3bits.TMR1IF == 1)
+[; ;mcc_generated_files/interrupt_manager.c: 77:     else if(PIE3bits.TMR2IE == 1 && PIR3bits.TMR2IF == 1)
 [e :U 3187 ]
-[e $ ! && == -> . . _PIE3bits 0 4 `i -> 1 `i == -> . . _PIR3bits 0 4 `i -> 1 `i 3189  ]
+[e $ ! && == -> . . _PIE3bits 0 3 `i -> 1 `i == -> . . _PIR3bits 0 3 `i -> 1 `i 3189  ]
 "78
 [; ;mcc_generated_files/interrupt_manager.c: 78:     {
 {
 "79
-[; ;mcc_generated_files/interrupt_manager.c: 79:         TMR1_ISR();
-[e ( _TMR1_ISR ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 79:         TMR2_ISR();
+[e ( _TMR2_ISR ..  ]
 "80
 [; ;mcc_generated_files/interrupt_manager.c: 80:     }
 }
 [e $U 3190  ]
 "81
-[; ;mcc_generated_files/interrupt_manager.c: 81:     else
+[; ;mcc_generated_files/interrupt_manager.c: 81:     else if(PIE3bits.TMR1IE == 1 && PIR3bits.TMR1IF == 1)
 [e :U 3189 ]
+[e $ ! && == -> . . _PIE3bits 0 4 `i -> 1 `i == -> . . _PIR3bits 0 4 `i -> 1 `i 3191  ]
 "82
 [; ;mcc_generated_files/interrupt_manager.c: 82:     {
 {
+"83
+[; ;mcc_generated_files/interrupt_manager.c: 83:         TMR1_ISR();
+[e ( _TMR1_ISR ..  ]
 "84
 [; ;mcc_generated_files/interrupt_manager.c: 84:     }
 }
+[e $U 3192  ]
+"85
+[; ;mcc_generated_files/interrupt_manager.c: 85:     else
+[e :U 3191 ]
+"86
+[; ;mcc_generated_files/interrupt_manager.c: 86:     {
+{
+"88
+[; ;mcc_generated_files/interrupt_manager.c: 88:     }
+}
+[e :U 3192 ]
 [e :U 3190 ]
 [e :U 3188 ]
 [e :U 3186 ]
 [e :U 3184 ]
 [e :U 3182 ]
-"85
-[; ;mcc_generated_files/interrupt_manager.c: 85: }
+"89
+[; ;mcc_generated_files/interrupt_manager.c: 89: }
 [e :UE 3180 ]
 }

@@ -127,11 +127,11 @@ void ADC_Initialize(void)
     //ADCHS ANA0; 
     ADPCH = 0x00;
 
-    //ADACQL 5; 
-    ADACQL = 0x05;
+    //ADACQL 232; 
+    ADACQL = 0xE8;
 
-    //ADACQH 0; 
-    ADACQH = 0x00;
+    //ADACQH 3; 
+    ADACQH = 0x03;
 
     //ADCAP Additional uC disabled; 
     ADCAP = 0x00;
@@ -210,11 +210,11 @@ void ADC_Initialize(void)
     //ADCHS ANA1; 
     ADPCH = 0x01;
 
-    //ADACQL 5; 
-    ADACQL = 0x05;
+    //ADACQL 232; 
+    ADACQL = 0xE8;
 
-    //ADACQH 0; 
-    ADACQH = 0x00;
+    //ADACQH 3; 
+    ADACQH = 0x03;
 
     //ADCAP Additional uC disabled; 
     ADCAP = 0x00;
@@ -293,11 +293,11 @@ void ADC_Initialize(void)
     //ADCHS ANC7; 
     ADPCH = 0x17;
 
-    //ADACQL 5; 
-    ADACQL = 0x05;
+    //ADACQL 232; 
+    ADACQL = 0xE8;
 
-    //ADACQH 0; 
-    ADACQH = 0x00;
+    //ADACQH 3; 
+    ADACQH = 0x03;
 
     //ADCAP Additional uC disabled; 
     ADCAP = 0x00;
@@ -376,11 +376,11 @@ void ADC_Initialize(void)
     //ADCHS ANC6; 
     ADPCH = 0x16;
 
-    //ADACQL 5; 
-    ADACQL = 0x05;
+    //ADACQL 232; 
+    ADACQL = 0xE8;
 
-    //ADACQH 0; 
-    ADACQH = 0x00;
+    //ADACQH 3; 
+    ADACQH = 0x03;
 
     //ADCAP Additional uC disabled; 
     ADCAP = 0x00;

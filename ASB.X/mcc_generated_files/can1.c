@@ -184,7 +184,7 @@ static void CAN1_RX_FIFO_Configuration(void)
 
 static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
 {
-    // FLTEN0 enabled; F0BP FIFO 1; 
+        // FLTEN0 enabled; F0BP FIFO 1; 
     /*C1FLTOBJ0L = 0x01;
     C1FLTOBJ0H = 0x00;
     C1FLTOBJ0U = 0x00;
@@ -292,7 +292,7 @@ void CAN1_Initialize(void)
         CAN1_RX_FIFO_ResetInfo();
         CAN1_ErrorNotificationInterruptEnable();
         CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);   
-        
+                
         //Inicializacion driver CAN LOW = HIGH SPEED MODE
         CANSTBY_SetDigitalOutput();
         CANSTBY_SetLow();

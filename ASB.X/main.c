@@ -72,7 +72,7 @@ void main(void)
     
     //INICIALIZACIONES HARD
     GPIO_Init();
-    CANSTBY_SetHigh();
+
     //Paramos Tmr0 de 1ms porque no usamos
     TMR0_StopTimer();
     
