@@ -70,6 +70,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23 ./SERVICEBRAKE.h
 [; ;./SERVICEBRAKE.h: 23: void SERVICEBRAKE_Move (unsigned char ucTargetMove);
 [v _SERVICEBRAKE_Move `(v ~T0 @X0 0 ef1`uc ]
+"25
+[; ;./SERVICEBRAKE.h: 25: void ETC_Move (unsigned char ucTargetMove);
+[v _ETC_Move `(v ~T0 @X0 0 ef1`uc ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3953,103 +3956,100 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 138:                     SERVICEBRAKE_Move(ucTargetBrake);
 [e ( _SERVICEBRAKE_Move (1 _ucTargetBrake ]
 "139
-[; ;MESSAGES.c: 139:                     break;
-[e $U 3188  ]
+[; ;MESSAGES.c: 139:                     ETC_Move(ucTargetAccelerator);
+[e ( _ETC_Move (1 _ucTargetAccelerator ]
 "140
-[; ;MESSAGES.c: 140:                 case 0x500:
-[e :U 3191 ]
+[; ;MESSAGES.c: 140:                     break;
+[e $U 3188  ]
 "141
-[; ;MESSAGES.c: 141:                     ucAS_state = ( data1 & 0x07 );
-[e = _ucAS_state -> & -> _data1 `i -> 7 `i `uc ]
+[; ;MESSAGES.c: 141:                 case 0x500:
+[e :U 3191 ]
 "142
-[; ;MESSAGES.c: 142:                     ucEBS_state = ( data1 & 0x18 );
-[e = _ucEBS_state -> & -> _data1 `i -> 24 `i `uc ]
+[; ;MESSAGES.c: 142:                     ucAS_state = ( data1 & 0x07 );
+[e = _ucAS_state -> & -> _data1 `i -> 7 `i `uc ]
 "143
-[; ;MESSAGES.c: 143:                     ucAMI_state = ( data1 & 0xE0 );
-[e = _ucAMI_state -> & -> _data1 `i -> 224 `i `uc ]
+[; ;MESSAGES.c: 143:                     ucEBS_state = ( data1 & 0x18 );
+[e = _ucEBS_state -> & -> _data1 `i -> 24 `i `uc ]
 "144
-[; ;MESSAGES.c: 144:                     ucSteering_state = ( data2 & 0x01 );
-[e = _ucSteering_state -> & -> _data2 `i -> 1 `i `uc ]
+[; ;MESSAGES.c: 144:                     ucAMI_state = ( data1 & 0xE0 );
+[e = _ucAMI_state -> & -> _data1 `i -> 224 `i `uc ]
 "145
-[; ;MESSAGES.c: 145:                     ucService_brake = ( data2 & 0x06 );
-[e = _ucService_brake -> & -> _data2 `i -> 6 `i `uc ]
+[; ;MESSAGES.c: 145:                     ucSteering_state = ( data2 & 0x01 );
+[e = _ucSteering_state -> & -> _data2 `i -> 1 `i `uc ]
 "146
-[; ;MESSAGES.c: 146:                     ucLap_counter = ( data2 & 0x78 );
-[e = _ucLap_counter -> & -> _data2 `i -> 120 `i `uc ]
+[; ;MESSAGES.c: 146:                     ucService_brake = ( data2 & 0x06 );
+[e = _ucService_brake -> & -> _data2 `i -> 6 `i `uc ]
 "147
-[; ;MESSAGES.c: 147:                     ucCones_count_actual = ( ( ( data3 & 0x7F ) << 1 ) | ( ( data2 & 0x80 ) >> 7 ) );
-[e = _ucCones_count_actual -> | << & -> _data3 `i -> 127 `i -> 1 `i >> & -> _data2 `i -> 128 `i -> 7 `i `uc ]
+[; ;MESSAGES.c: 147:                     ucLap_counter = ( data2 & 0x78 );
+[e = _ucLap_counter -> & -> _data2 `i -> 120 `i `uc ]
 "148
-[; ;MESSAGES.c: 148:                     uiCones_count_all = ( ( ( data5 & 0xFF ) << 8 ) | ( ( data4 & 0xFF ) << 1 ) | ( ( data3 & 0x80 ) >> 7 ) );
-[e = _uiCones_count_all -> | | << & -> _data5 `i -> 255 `i -> 8 `i << & -> _data4 `i -> 255 `i -> 1 `i >> & -> _data3 `i -> 128 `i -> 7 `i `ui ]
+[; ;MESSAGES.c: 148:                     ucCones_count_actual = ( ( ( data3 & 0x7F ) << 1 ) | ( ( data2 & 0x80 ) >> 7 ) );
+[e = _ucCones_count_actual -> | << & -> _data3 `i -> 127 `i -> 1 `i >> & -> _data2 `i -> 128 `i -> 7 `i `uc ]
 "149
-[; ;MESSAGES.c: 149:                     break;
-[e $U 3188  ]
+[; ;MESSAGES.c: 149:                     uiCones_count_all = ( ( ( data5 & 0xFF ) << 8 ) | ( ( data4 & 0xFF ) << 1 ) | ( ( data3 & 0x80 ) >> 7 ) );
+[e = _uiCones_count_all -> | | << & -> _data5 `i -> 255 `i -> 8 `i << & -> _data4 `i -> 255 `i -> 1 `i >> & -> _data3 `i -> 128 `i -> 7 `i `ui ]
 "150
-[; ;MESSAGES.c: 150:                 case 0x501:
-[e :U 3192 ]
+[; ;MESSAGES.c: 150:                     break;
+[e $U 3188  ]
 "151
-[; ;MESSAGES.c: 151:                     ucSpeed_actual = data1;
-[e = _ucSpeed_actual _data1 ]
+[; ;MESSAGES.c: 151:                 case 0x501:
+[e :U 3192 ]
 "152
-[; ;MESSAGES.c: 152:                     ucSpeed_target = data2;
-[e = _ucSpeed_target _data2 ]
+[; ;MESSAGES.c: 152:                     ucSpeed_actual = data1;
+[e = _ucSpeed_actual _data1 ]
 "153
-[; ;MESSAGES.c: 153:                     ucSteering_angle_actual = data3;
-[e = _ucSteering_angle_actual _data3 ]
+[; ;MESSAGES.c: 153:                     ucSpeed_target = data2;
+[e = _ucSpeed_target _data2 ]
 "154
-[; ;MESSAGES.c: 154:                     ucSteering_angle_target = data4;
-[e = _ucSteering_angle_target _data4 ]
+[; ;MESSAGES.c: 154:                     ucSteering_angle_actual = data3;
+[e = _ucSteering_angle_actual _data3 ]
 "155
-[; ;MESSAGES.c: 155:                     ucBrake_hydr_actual = data5;
-[e = _ucBrake_hydr_actual _data5 ]
+[; ;MESSAGES.c: 155:                     ucSteering_angle_target = data4;
+[e = _ucSteering_angle_target _data4 ]
 "156
-[; ;MESSAGES.c: 156:                     ucBrake_hydr_target = data6;
-[e = _ucBrake_hydr_target _data6 ]
+[; ;MESSAGES.c: 156:                     ucBrake_hydr_actual = data5;
+[e = _ucBrake_hydr_actual _data5 ]
 "157
-[; ;MESSAGES.c: 157:                     ucMotor_moment_actual = data7;
-[e = _ucMotor_moment_actual _data7 ]
+[; ;MESSAGES.c: 157:                     ucBrake_hydr_target = data6;
+[e = _ucBrake_hydr_target _data6 ]
 "158
-[; ;MESSAGES.c: 158:                     ucMotor_moment_target = data8;
-[e = _ucMotor_moment_target _data8 ]
+[; ;MESSAGES.c: 158:                     ucMotor_moment_actual = data7;
+[e = _ucMotor_moment_actual _data7 ]
 "159
-[; ;MESSAGES.c: 159:                     break;
-[e $U 3188  ]
+[; ;MESSAGES.c: 159:                     ucMotor_moment_target = data8;
+[e = _ucMotor_moment_target _data8 ]
 "160
-[; ;MESSAGES.c: 160:                 case 0x502:
-[e :U 3193 ]
+[; ;MESSAGES.c: 160:                     break;
+[e $U 3188  ]
 "161
-[; ;MESSAGES.c: 161:                     uiAcc_longitudinal = ( ( data2 << 8 ) | data1 );
-[e = _uiAcc_longitudinal -> | << -> _data2 `i -> 8 `i -> _data1 `i `ui ]
+[; ;MESSAGES.c: 161:                 case 0x502:
+[e :U 3193 ]
 "162
-[; ;MESSAGES.c: 162:                     uiAcc_lateral = ( ( data4 << 8 ) | data3 );
-[e = _uiAcc_lateral -> | << -> _data4 `i -> 8 `i -> _data3 `i `ui ]
+[; ;MESSAGES.c: 162:                     uiAcc_longitudinal = ( ( data2 << 8 ) | data1 );
+[e = _uiAcc_longitudinal -> | << -> _data2 `i -> 8 `i -> _data1 `i `ui ]
 "163
-[; ;MESSAGES.c: 163:                     uiYaw_rate = ( ( data6 << 8 ) | data5 );;
-[e = _uiYaw_rate -> | << -> _data6 `i -> 8 `i -> _data5 `i `ui ]
+[; ;MESSAGES.c: 163:                     uiAcc_lateral = ( ( data4 << 8 ) | data3 );
+[e = _uiAcc_lateral -> | << -> _data4 `i -> 8 `i -> _data3 `i `ui ]
 "164
-[; ;MESSAGES.c: 164:                     break;
-[e $U 3188  ]
+[; ;MESSAGES.c: 164:                     uiYaw_rate = ( ( data6 << 8 ) | data5 );;
+[e = _uiYaw_rate -> | << -> _data6 `i -> 8 `i -> _data5 `i `ui ]
 "165
-[; ;MESSAGES.c: 165:                 case 0x412:
-[e :U 3194 ]
-"166
-[; ;MESSAGES.c: 166:                     ucTargetBrake = data1;
-[e = _ucTargetBrake _data1 ]
-"167
-[; ;MESSAGES.c: 167:                     SERVICEBRAKE_Move(ucTargetBrake);
-[e ( _SERVICEBRAKE_Move (1 _ucTargetBrake ]
-"168
-[; ;MESSAGES.c: 168:                 default:
-[e :U 3195 ]
-"169
-[; ;MESSAGES.c: 169:                     __nop();
-[e ( ___nop ..  ]
-"170
-[; ;MESSAGES.c: 170:                     break;
+[; ;MESSAGES.c: 165:                     break;
 [e $U 3188  ]
+"166
+[; ;MESSAGES.c: 166:                 case 0x412:
+[e :U 3194 ]
+"169
+[; ;MESSAGES.c: 169:                 default:
+[e :U 3195 ]
+"170
+[; ;MESSAGES.c: 170:                     __nop();
+[e ( ___nop ..  ]
 "171
-[; ;MESSAGES.c: 171:             }
+[; ;MESSAGES.c: 171:                     break;
+[e $U 3188  ]
+"172
+[; ;MESSAGES.c: 172:             }
 }
 [e $U 3188  ]
 [e :U 3189 ]
@@ -4060,15 +4060,15 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> -> 1042 `i `l `ul 3194
  3195 ]
 [e :U 3188 ]
-"172
-[; ;MESSAGES.c: 172:         }
+"173
+[; ;MESSAGES.c: 173:         }
 }
 [e :U 3187 ]
-"173
-[; ;MESSAGES.c: 173:     }
+"174
+[; ;MESSAGES.c: 174:     }
 }
 [e :U 3186 ]
-"174
-[; ;MESSAGES.c: 174: }
+"175
+[; ;MESSAGES.c: 175: }
 [e :UE 3185 ]
 }

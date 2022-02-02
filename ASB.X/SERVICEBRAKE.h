@@ -22,6 +22,7 @@ extern unsigned char ucServoLDif;
 //FUNCIONES
 void SERVICEBRAKE_Move (unsigned char ucTargetMove);
 void SERVICEBRAKE_Init (void);
+void ETC_Move (unsigned char ucTargetMove);
 
 
 #ifdef	__cplusplus

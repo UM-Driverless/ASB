@@ -136,6 +136,7 @@ void CANReadMessage (void)
                     ucTargetGear = data5;
                     //APLY ucTargetBrake TO DUTYCYCLE SERVO
                     SERVICEBRAKE_Move(ucTargetBrake);
+                    ETC_Move(ucTargetAccelerator);
                     break;
                 case DV_SYSTEM_STATUS:
                     ucAS_state = ( data1 & 0x07 );

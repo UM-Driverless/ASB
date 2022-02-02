@@ -42,6 +42,15 @@ void SERVICEBRAKE_Move (unsigned char ucTargetMove)
     }*/
 }
 
+void ETC_Move (unsigned char ucTargetMove)
+{
+    uiDutyServomotor = ucTargetMove * 60;
+    uiDutyServomotor = uiDutyServomotor / 100;
+    uiDutyServomotor = (uiDutyServomotor & 0xFF);
+    GPIO_PWM2_Control(uiDutyServomotor, 300);
+
+}
+
 
 void SERVICEBRAKE_Init (void)
 {

@@ -14,6 +14,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31 ./GPIO.h
 [; ;./GPIO.h: 31: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
 [v _GPIO_PWM1_Control `(v ~T0 @X0 0 ef2`ui`ui ]
+"32
+[; ;./GPIO.h: 32: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+[v _GPIO_PWM2_Control `(v ~T0 @X0 0 ef2`ui`ui ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3577,18 +3580,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;SERVICEBRAKE.c: 43: }
 [e :UE 3179 ]
 }
+"45
+[; ;SERVICEBRAKE.c: 45: void ETC_Move (unsigned char ucTargetMove)
+[v _ETC_Move `(v ~T0 @X0 1 ef1`uc ]
 "46
-[; ;SERVICEBRAKE.c: 46: void SERVICEBRAKE_Init (void)
-[v _SERVICEBRAKE_Init `(v ~T0 @X0 1 ef ]
+[; ;SERVICEBRAKE.c: 46: {
+{
+[e :U _ETC_Move ]
+"45
+[; ;SERVICEBRAKE.c: 45: void ETC_Move (unsigned char ucTargetMove)
+[v _ucTargetMove `uc ~T0 @X0 1 r1 ]
+"46
+[; ;SERVICEBRAKE.c: 46: {
+[f ]
 "47
-[; ;SERVICEBRAKE.c: 47: {
+[; ;SERVICEBRAKE.c: 47:     uiDutyServomotor = ucTargetMove * 60;
+[e = _uiDutyServomotor -> * -> _ucTargetMove `i -> 60 `i `ui ]
+"48
+[; ;SERVICEBRAKE.c: 48:     uiDutyServomotor = uiDutyServomotor / 100;
+[e = _uiDutyServomotor / _uiDutyServomotor -> -> 100 `i `ui ]
+"49
+[; ;SERVICEBRAKE.c: 49:     uiDutyServomotor = (uiDutyServomotor & 0xFF);
+[e = _uiDutyServomotor & _uiDutyServomotor -> -> 255 `i `ui ]
+"50
+[; ;SERVICEBRAKE.c: 50:     GPIO_PWM2_Control(uiDutyServomotor, 300);
+[e ( _GPIO_PWM2_Control (2 , _uiDutyServomotor -> -> 300 `i `ui ]
+"52
+[; ;SERVICEBRAKE.c: 52: }
+[e :UE 3180 ]
+}
+"55
+[; ;SERVICEBRAKE.c: 55: void SERVICEBRAKE_Init (void)
+[v _SERVICEBRAKE_Init `(v ~T0 @X0 1 ef ]
+"56
+[; ;SERVICEBRAKE.c: 56: {
 {
 [e :U _SERVICEBRAKE_Init ]
 [f ]
-"49
-[; ;SERVICEBRAKE.c: 49:     GPIO_PWM1_Control(0, 50);
+"58
+[; ;SERVICEBRAKE.c: 58:     GPIO_PWM1_Control(0, 50);
 [e ( _GPIO_PWM1_Control (2 , -> -> 0 `i `ui -> -> 50 `i `ui ]
-"50
-[; ;SERVICEBRAKE.c: 50: }
-[e :UE 3180 ]
+"59
+[; ;SERVICEBRAKE.c: 59: }
+[e :UE 3181 ]
 }

@@ -29,23 +29,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30 ./GPIO.h
 [; ;./GPIO.h: 30: void GPIO_Init (void);
 [v _GPIO_Init `(v ~T0 @X0 0 ef ]
-"1542 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
-[s S3063 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3063 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"1541
-[u S3062 `S3063 1 ]
-[n S3062 . . ]
-"1553
-[v _LATBbits `VS3062 ~T0 @X0 0 e@1215 ]
 "167 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 167: void TMR0_StopTimer(void);
 [v _TMR0_StopTimer `(v ~T0 @X0 0 ef ]
-"21 ./EBS.h
-[; ;./EBS.h: 21: void EBS_Init (void);
-[v _EBS_Init `(v ~T0 @X0 0 ef ]
-"24 ./SERVICEBRAKE.h
-[; ;./SERVICEBRAKE.h: 24: void SERVICEBRAKE_Init (void);
-[v _SERVICEBRAKE_Init `(v ~T0 @X0 0 ef ]
 "8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
@@ -3592,25 +3578,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "74
 [; ;main.c: 74:     GPIO_Init();
 [e ( _GPIO_Init ..  ]
-"75
-[; ;main.c: 75:     do { LATBbits.LATB5 = 1; } while(0);
-[e :U 3182 ]
-{
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
-}
-[e :U 3181 ]
 "77
 [; ;main.c: 77:     TMR0_StopTimer();
 [e ( _TMR0_StopTimer ..  ]
-"80
-[; ;main.c: 80:     EBS_Init();
-[e ( _EBS_Init ..  ]
-"81
-[; ;main.c: 81:     SERVICEBRAKE_Init();
-[e ( _SERVICEBRAKE_Init ..  ]
 "91
 [; ;main.c: 91:     while (1)
-[e :U 3184 ]
+[e :U 3181 ]
 "92
 [; ;main.c: 92:     {
 {
@@ -3620,9 +3593,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "122
 [; ;main.c: 122:     }
 }
-[e :U 3183 ]
-[e $U 3184  ]
-[e :U 3185 ]
+[e :U 3180 ]
+[e $U 3181  ]
+[e :U 3182 ]
 "123
 [; ;main.c: 123: }
 [e :UE 3179 ]
