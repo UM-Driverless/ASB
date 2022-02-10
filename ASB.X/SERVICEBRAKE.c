@@ -55,5 +55,6 @@ void ETC_Move (unsigned char ucTargetMove)
 void SERVICEBRAKE_Init (void)
 {
     //PONER SERVO DEL PEDAL A 0
-    GPIO_PWM1_Control(0, 50);
+    GPIO_PWM1_Control(0, 300);
+    GPIO_PWM2_Control(0, 300);
 }

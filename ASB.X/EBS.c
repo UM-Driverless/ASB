@@ -154,8 +154,8 @@ void EBS_Watchdog (unsigned char ucWDState)
             PWM2_16BIT_Disable();
             break;
         case WD_ENABLE:
-            PWM2_16BIT_Enable();
-            GPIO_PWM2_Control(50, 100);
+            //PWM2_16BIT_Enable();
+            //GPIO_PWM2_Control(50, 100);
             break;
     }
 }

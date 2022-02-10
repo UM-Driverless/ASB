@@ -164,8 +164,9 @@ void CANReadMessage (void)
                     uiYaw_rate = ( ( data6 << 8 ) | data5 );;
                     break;
                 case STEER_WH_CONT:
-                    //ucTargetBrake = data1;
-                    //SERVICEBRAKE_Move(ucTargetBrake);
+                    ucTargetBrake = data1;
+                    SERVICEBRAKE_Move(ucTargetBrake);
+                    ETC_Move(ucTargetBrake);
                 default:
                     Nop();
                     break;

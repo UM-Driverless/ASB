@@ -4039,17 +4039,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "166
 [; ;MESSAGES.c: 166:                 case 0x412:
 [e :U 3194 ]
+"167
+[; ;MESSAGES.c: 167:                     ucTargetBrake = data1;
+[e = _ucTargetBrake _data1 ]
+"168
+[; ;MESSAGES.c: 168:                     SERVICEBRAKE_Move(ucTargetBrake);
+[e ( _SERVICEBRAKE_Move (1 _ucTargetBrake ]
 "169
-[; ;MESSAGES.c: 169:                 default:
-[e :U 3195 ]
+[; ;MESSAGES.c: 169:                     ETC_Move(ucTargetBrake);
+[e ( _ETC_Move (1 _ucTargetBrake ]
 "170
-[; ;MESSAGES.c: 170:                     __nop();
-[e ( ___nop ..  ]
+[; ;MESSAGES.c: 170:                 default:
+[e :U 3195 ]
 "171
-[; ;MESSAGES.c: 171:                     break;
-[e $U 3188  ]
+[; ;MESSAGES.c: 171:                     __nop();
+[e ( ___nop ..  ]
 "172
-[; ;MESSAGES.c: 172:             }
+[; ;MESSAGES.c: 172:                     break;
+[e $U 3188  ]
+"173
+[; ;MESSAGES.c: 173:             }
 }
 [e $U 3188  ]
 [e :U 3189 ]
@@ -4060,15 +4069,15 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> -> 1042 `i `l `ul 3194
  3195 ]
 [e :U 3188 ]
-"173
-[; ;MESSAGES.c: 173:         }
+"174
+[; ;MESSAGES.c: 174:         }
 }
 [e :U 3187 ]
-"174
-[; ;MESSAGES.c: 174:     }
+"175
+[; ;MESSAGES.c: 175:     }
 }
 [e :U 3186 ]
-"175
-[; ;MESSAGES.c: 175: }
+"176
+[; ;MESSAGES.c: 176: }
 [e :UE 3185 ]
 }

@@ -52,9 +52,11 @@ void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
     unsigned int uiConvertedDC;
     
     //Conversiones
-    uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
-    uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
-            
+    uiConvertedPeriod = ( 39241/uiFreq );
+    uiConvertedPeriod = ( uiConvertedPeriod - 1.1508 );
+    uiConvertedDC = ( uiDutyCycle * 4 );
+    uiConvertedDC = ( uiConvertedDC * 100 );
+    uiConvertedDC = ( uiConvertedDC / uiFreq );     
     //Funciones
     PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC); 
     PWM1_16BIT_WritePeriodRegister(uiConvertedPeriod);
@@ -70,9 +72,11 @@ void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq)
     unsigned int uiConvertedDC;
     
     //Conversiones
-    uiConvertedPeriod = ( ( 39241/uiFreq ) - 1.1508 );
-    uiConvertedDC = ( uiDutyCycle * 4 ) * ( 100/uiFreq );
-    
+    uiConvertedPeriod = ( 39241/uiFreq );
+    uiConvertedPeriod = ( uiConvertedPeriod - 1.1508 );
+    uiConvertedDC = ( uiDutyCycle * 4 );
+    uiConvertedDC = ( uiConvertedDC * 100 );
+    uiConvertedDC = ( uiConvertedDC / uiFreq );
     //Funciones
     PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uiConvertedDC); 
     PWM2_16BIT_WritePeriodRegister(uiConvertedPeriod);
