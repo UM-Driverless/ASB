@@ -226,43 +226,41 @@ channel_FVR_Buffer2 63
 ]
 "26
 [v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
-"140
-[v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aldiv.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fleq.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fltol.c
+"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\lwdiv.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\xxtofl.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 "149 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
@@ -344,7 +342,6 @@ channel_FVR_Buffer2 63
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
 "331
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
-[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
 "336
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
 "341
@@ -519,7 +516,7 @@ channel_FVR_Buffer2 63
 [v _TEMPORIZATION_10ms TEMPORIZATION_10ms `(v  1 e 1 0 ]
 "27
 [v _TEMPORIZATION_100ms TEMPORIZATION_100ms `(v  1 e 1 0 ]
-"34
+"32
 [v _TEMPORIZATION_500ms TEMPORIZATION_500ms `(v  1 e 1 0 ]
 "39
 [v _TEMPORIZATION_1s TEMPORIZATION_1s `(v  1 e 1 0 ]
@@ -553,10 +550,6 @@ channel_FVR_Buffer2 63
 [v _ucPICNPRES3 ucPICNPRES3 `ui  1 e 2 0 ]
 "20
 [v _ucPICNPRES4 ucPICNPRES4 `ui  1 e 2 0 ]
-"21
-[v _ucAN1 ucAN1 `ui  1 e 2 0 ]
-"22
-[v _ucAN2 ucAN2 `ui  1 e 2 0 ]
 [s S1206 . 1 `uc 1 SWIF 1 0 :1:0 
 `uc 1 HLVDIF 1 0 :1:1 
 `uc 1 OSFIF 1 0 :1:2 
@@ -2133,7 +2126,7 @@ channel_FVR_Buffer2 63
 {
 "220
 } 0
-"34 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
+"32 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
 [v _TEMPORIZATION_500ms TEMPORIZATION_500ms `(v  1 e 1 0 ]
 {
 "37
@@ -2161,153 +2154,7 @@ channel_FVR_Buffer2 63
 "27
 [v _TEMPORIZATION_100ms TEMPORIZATION_100ms `(v  1 e 1 0 ]
 {
-"32
-} 0
-"51 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
-[v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
-{
-[v CANWriteMessage@id id `ul  1 p 4 29 ]
-[v CANWriteMessage@dataLength dataLength `uc  1 p 1 33 ]
-[v CANWriteMessage@data1 data1 `uc  1 p 1 34 ]
-[v CANWriteMessage@data2 data2 `uc  1 p 1 35 ]
-[v CANWriteMessage@data3 data3 `uc  1 p 1 36 ]
-[v CANWriteMessage@data4 data4 `uc  1 p 1 37 ]
-[v CANWriteMessage@data5 data5 `uc  1 p 1 38 ]
-[v CANWriteMessage@data6 data6 `uc  1 p 1 39 ]
-[v CANWriteMessage@data7 data7 `uc  1 p 1 40 ]
-[v CANWriteMessage@data8 data8 `uc  1 p 1 41 ]
-"96
-} 0
-"592 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
-[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
-{
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"594
-[v CAN1_TransmitFIFOStatusGet@status status `E22361  1 a 1 2 ]
-"592
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"594
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 3 ]
-"602
-} 0
-"570
-[v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
-{
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"579
-[v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 26 ]
-"572
-[v CAN1_Transmit@status status `E22340  1 a 1 25 ]
-"570
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-[s S1302 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
-[s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Transmit@txCanMsg txCanMsg `*.39S1311  1 p 2 23 ]
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 28 ]
-"590
-} 0
-"490
-[v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
-{
-[v isTxChannel@channel channel `uc  1 a 1 wreg ]
-[v isTxChannel@channel channel `uc  1 a 1 wreg ]
-"492
-[v isTxChannel@channel channel `uc  1 a 1 1 ]
-"493
-} 0
-"500
-[v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
-{
-"502
-[v WriteMessageToFifo@msgId msgId `ul  1 a 4 19 ]
-"503
-[v WriteMessageToFifo@status status `uc  1 a 1 18 ]
-"500
-[v WriteMessageToFifo@txFifoObj txFifoObj `*.39uc  1 p 2 11 ]
-[s S1302 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
-[s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v WriteMessageToFifo@txCanMsg txCanMsg `*.39S1311  1 p 2 13 ]
-"539
-} 0
-"541
-[v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
-{
-[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
-[s S1302 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-"544
-[u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
-[v ValidateTransmission@field field `S1308  1 a 1 9 ]
-"543
-[v ValidateTransmission@txMsgStatus txMsgStatus `E22340  1 a 1 8 ]
-"541
-[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
-[s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v ValidateTransmission@txCanMsg txCanMsg `*.39S1311  1 p 2 1 ]
-"543
-[v ValidateTransmission@validChannel validChannel `uc  1 a 1 6 ]
-"568
-} 0
-"331
-[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
-{
-"334
-} 0
-"495
-[v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
-{
-[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
-[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
-"497
-[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 0 ]
-"498
-} 0
-"629
-[v _CAN1_IsTxErrorWarning CAN1_IsTxErrorWarning `(a  1 e 1 0 ]
-{
-"632
-} 0
-"634
-[v _CAN1_IsTxErrorActive CAN1_IsTxErrorActive `(a  1 e 1 0 ]
-{
-"637
-} 0
-"624
-[v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
-{
-"627
-} 0
-"604
-[v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
-{
-"607
-} 0
-"140 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
-[v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
-{
-"158
-} 0
-"38 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
-[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
-{
-[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
-"42
+"30
 } 0
 "121 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
@@ -2363,20 +2210,20 @@ channel_FVR_Buffer2 63
 [v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 67 ]
 "137
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3850 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3839 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3855 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3858 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3850 1 fAsBytes 4 0 `S3855 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3858  1 a 4 33 ]
+[s S3844 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3847 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3839 1 fAsBytes 4 0 `S3844 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3847  1 a 4 33 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S3926 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3915 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3929 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3926 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3929  1 a 2 37 ]
+[u S3918 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3915 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S3918  1 a 2 37 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
@@ -2470,7 +2317,7 @@ channel_FVR_Buffer2 63
 [v GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 67 ]
 "64
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\xxtofl.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
 [v ___xxtofl@sign sign `uc  1 a 1 wreg ]
@@ -2485,7 +2332,7 @@ channel_FVR_Buffer2 63
 [v ___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
-"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -2495,7 +2342,7 @@ channel_FVR_Buffer2 63
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\lwdiv.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
@@ -2507,7 +2354,7 @@ channel_FVR_Buffer2 63
 [v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "30
 } 0
-"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fltol.c
+"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
@@ -2517,7 +2364,7 @@ channel_FVR_Buffer2 63
 [v ___fltol@f1 f1 `d  1 p 4 55 ]
 "70
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
@@ -2533,7 +2380,7 @@ channel_FVR_Buffer2 63
 [v ___fladd@a a `d  1 p 4 43 ]
 "237
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aldiv.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "10
@@ -2647,7 +2494,7 @@ channel_FVR_Buffer2 63
 [v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S1311  1 p 2 13 ]
 "378
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
 "8

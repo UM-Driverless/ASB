@@ -4040,7 +4040,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 169:                     ucTargetBrake = data1;
 [e = _ucTargetBrake _data1 ]
 "172
-[; ;MESSAGES.c: 172:                 case 0x345:
+[; ;MESSAGES.c: 172:                 case 0x347:
 [e :U 3195 ]
 "173
 [; ;MESSAGES.c: 173:                     ucASMode = data1;
@@ -4067,7 +4067,7 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> -> 1281 `i `l `ul 3192
  , $ -> -> -> 1282 `i `l `ul 3193
  , $ -> -> -> 1042 `i `l `ul 3194
- , $ -> -> -> 837 `i `l `ul 3195
+ , $ -> -> -> 839 `i `l `ul 3195
  3196 ]
 [e :U 3188 ]
 "179
