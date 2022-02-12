@@ -24,24 +24,28 @@ void SERVICEBRAKE_Move (unsigned char ucTargetMove)
     uiDutyServomotor = ( ucServoLDif * ucTargetMove );
     uiDutyServomotor = ( uiDutyServomotor / 100 );
     uiDutyServomotor += ucServoLmin;*/
-    uiDutyServomotor = ucTargetMove * 60;
-    uiDutyServomotor = uiDutyServomotor / 100;
-    uiDutyServomotor = (uiDutyServomotor & 0xFF);
-    GPIO_PWM1_Control(uiDutyServomotor, 300);
-    //LIMITAR EL MOVIMIENTO ENTRE UNOS LIMITES EL VALOR DE ucDuty
-    /*if ( ( uiDutyServomotor >= ucServoLmin ) && ( uiDutyServomotor <= ucServoLmax ) )
+    if ( ucASMode == ASMode )
     {
-        if ( ( uiDutyServomotor < 0 ) && ( uiDutyServomotor > 12 ) ) //0-180º con 50Hz
+        uiDutyServomotor = ucTargetMove * 60;
+        uiDutyServomotor = uiDutyServomotor / 100;
+        uiDutyServomotor = (uiDutyServomotor & 0xFF);
+        GPIO_PWM1_Control(uiDutyServomotor, 300);
+        //LIMITAR EL MOVIMIENTO ENTRE UNOS LIMITES EL VALOR DE ucDuty
+        /*if ( ( uiDutyServomotor >= ucServoLmin ) && ( uiDutyServomotor <= ucServoLmax ) )
         {
-            GPIO_PWM1_Control(uiDutyServomotor, 50);
+            if ( ( uiDutyServomotor < 0 ) && ( uiDutyServomotor > 12 ) ) //0-180º con 50Hz
+            {
+                GPIO_PWM1_Control(uiDutyServomotor, 50);
+            }
         }
+        else
+        {
+            //generar error de rango
+        }*/
     }
-    else
-    {
-        //generar error de rango
-    }*/
 }
 
+//movimiento en el caso de poner motor para mover el pedal, no compatible con WD
 void ETC_Move (unsigned char ucTargetMove)
 {
     uiDutyServomotor = ucTargetMove * 60;
@@ -56,5 +60,5 @@ void SERVICEBRAKE_Init (void)
 {
     //PONER SERVO DEL PEDAL A 0
     GPIO_PWM1_Control(0, 300);
-    GPIO_PWM2_Control(0, 300);
+    //GPIO_PWM2_Control(0, 300);
 }

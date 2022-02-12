@@ -55,6 +55,8 @@ extern unsigned int uiYaw_rate;
 //ASB_STATE
 extern unsigned char ucASBState;
 extern unsigned char ucASRequesState;
+//PMC
+extern unsigned char ucASMode;
 
 //DEFINICIONES
 #define DataLength_0        			0
@@ -67,6 +69,10 @@ extern unsigned char ucASRequesState;
 #define DataLength_7        			7
 #define DataLength_8        			8
 
+//Modos conduccion
+#define ManualMode  0
+#define ASMode      1
+
 //CAN MESSAGES
 #define DV_SYSTEM_STATUS            0x500
 #define DV_DRIVING_DYNAMICS_1       0x501
@@ -76,8 +82,13 @@ extern unsigned char ucASRequesState;
 #define ASB_ANALOG                  0x360
 #define ASB_SIGNALS                 0x361
 #define ASB_STATE                   0x362
+//PMC
+#define PMC_STATE                   0x345
 //STEERING WHEELL 
 #define STEER_WH_CONT               0x412
+//ETC
+#define ETC_SIGNAL                  0x330
+#define ETC_STATE                   0x331
     
 //DEFINICION DE FUNCIONES    
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);

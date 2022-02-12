@@ -60,8 +60,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "57 ./MESSAGES.h
 [; ;./MESSAGES.h: 57: extern unsigned char ucASRequesState;
 [v _ucASRequesState `uc ~T0 @X0 0 e ]
-"83
-[; ;./MESSAGES.h: 83: void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
+"94
+[; ;./MESSAGES.h: 94: void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
 [v _CANWriteMessage `(v ~T0 @X0 0 ef10`ul`uc`uc`uc`uc`uc`uc`uc`uc`uc ]
 "56
 [; ;./MESSAGES.h: 56: extern unsigned char ucASBState;

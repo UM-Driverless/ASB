@@ -44,6 +44,8 @@ unsigned int uiYaw_rate;
 //ASB_STATE
 unsigned char ucASBState;
 unsigned char ucASRequesState;
+//PMC
+unsigned char ucASMode;
 
 //FUNCIONES
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8)
@@ -136,7 +138,7 @@ void CANReadMessage (void)
                     ucTargetGear = data5;
                     //APLY ucTargetBrake TO DUTYCYCLE SERVO
                     SERVICEBRAKE_Move(ucTargetBrake);
-                    ETC_Move(ucTargetAccelerator);
+                    //ETC_Move(ucTargetAccelerator);
                     break;
                 case DV_SYSTEM_STATUS:
                     ucAS_state = ( data1 & 0x07 );
@@ -165,8 +167,11 @@ void CANReadMessage (void)
                     break;
                 case STEER_WH_CONT:
                     ucTargetBrake = data1;
-                    SERVICEBRAKE_Move(ucTargetBrake);
-                    ETC_Move(ucTargetBrake);
+                    //SERVICEBRAKE_Move(ucTargetBrake);
+                    //ETC_Move(ucTargetBrake);
+                case PMC_STATE:
+                    ucASMode = data1;
+                    break;
                 default:
                     Nop();
                     break;
