@@ -18,11 +18,13 @@ extern unsigned int uiDutyServomotor;
 extern unsigned char ucServoLmin;
 extern unsigned char ucServoLmax;
 extern unsigned char ucServoLDif;
-
+extern unsigned char ucASBBeatSupervisor; 
+extern unsigned char ucASBFlagSupervisor; 
 //FUNCIONES
 void SERVICEBRAKE_Move (unsigned char ucTargetMove);
 void SERVICEBRAKE_Init (void);
 void ETC_Move (unsigned char ucTargetMove);
+void ASBSupervisor(void);
 
 
 #ifdef	__cplusplus

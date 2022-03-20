@@ -137,7 +137,11 @@ void CANReadMessage (void)
                     ucTargetDirection = data4;
                     ucTargetGear = data5;
                     //APLY ucTargetBrake TO DUTYCYCLE SERVO
-                    SERVICEBRAKE_Move(ucTargetBrake);
+                    if ( ucASMode == ASMode )
+                    {
+                        SERVICEBRAKE_Move(ucTargetBrake);
+                        ucASBBeatSupervisor = TRUE;
+                    }
                     //ETC_Move(ucTargetAccelerator);
                     break;
                 case DV_SYSTEM_STATUS:
@@ -171,6 +175,10 @@ void CANReadMessage (void)
                     //ETC_Move(ucTargetBrake);
                 case PMC_STATE:
                     ucASMode = data1;
+                    if ( ucASMode == ManualMode )
+                    {
+                        GPIO_PWM1_Control(0, 300);
+                    }
                     break;
                 default:
                     Nop();

@@ -20,6 +20,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32
 [; ;./GPIO.h: 32: void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
 [v _GPIO_PWM2_Control `(v ~T0 @X0 0 ef2`ui`ui ]
+"8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3542,98 +3545,177 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23
 [; ;./MESSAGES.h: 23: CAN_MSG_OBJ msgReceipt;
 [v _msgReceipt `S3178 ~T0 @X0 1 e ]
-"15 SERVICEBRAKE.c
-[; ;SERVICEBRAKE.c: 15: unsigned int uiDutyServomotor;
+"16 SERVICEBRAKE.c
+[; ;SERVICEBRAKE.c: 16: unsigned int uiDutyServomotor;
 [v _uiDutyServomotor `ui ~T0 @X0 1 e ]
-"16
-[; ;SERVICEBRAKE.c: 16: unsigned char ucServoLmin;
-[v _ucServoLmin `uc ~T0 @X0 1 e ]
 "17
-[; ;SERVICEBRAKE.c: 17: unsigned char ucServoLmax;
-[v _ucServoLmax `uc ~T0 @X0 1 e ]
+[; ;SERVICEBRAKE.c: 17: unsigned char ucServoLmin;
+[v _ucServoLmin `uc ~T0 @X0 1 e ]
 "18
-[; ;SERVICEBRAKE.c: 18: unsigned char ucServoLDif;
+[; ;SERVICEBRAKE.c: 18: unsigned char ucServoLmax;
+[v _ucServoLmax `uc ~T0 @X0 1 e ]
+"19
+[; ;SERVICEBRAKE.c: 19: unsigned char ucServoLDif;
 [v _ucServoLDif `uc ~T0 @X0 1 e ]
+"20
+[; ;SERVICEBRAKE.c: 20: unsigned char ucASBBeatSupervisor = 0;
+[v _ucASBBeatSupervisor `uc ~T0 @X0 1 e ]
+[i _ucASBBeatSupervisor
+-> -> 0 `i `uc
+]
 "21
-[; ;SERVICEBRAKE.c: 21: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
+[; ;SERVICEBRAKE.c: 21: unsigned char ucASBFlagSupervisor = 0;
+[v _ucASBFlagSupervisor `uc ~T0 @X0 1 e ]
+[i _ucASBFlagSupervisor
+-> -> 0 `i `uc
+]
+"25
+[; ;SERVICEBRAKE.c: 25: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
 [v _SERVICEBRAKE_Move `(v ~T0 @X0 1 ef1`uc ]
-"22
-[; ;SERVICEBRAKE.c: 22: {
+"26
+[; ;SERVICEBRAKE.c: 26: {
 {
 [e :U _SERVICEBRAKE_Move ]
-"21
-[; ;SERVICEBRAKE.c: 21: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
+"25
+[; ;SERVICEBRAKE.c: 25: void SERVICEBRAKE_Move (unsigned char ucTargetMove)
 [v _ucTargetMove `uc ~T0 @X0 1 r1 ]
-"22
-[; ;SERVICEBRAKE.c: 22: {
+"26
+[; ;SERVICEBRAKE.c: 26: {
 [f ]
-"27
-[; ;SERVICEBRAKE.c: 27:     if ( ucASMode == 1 )
-[e $ ! == -> _ucASMode `i -> 1 `i 3180  ]
-"28
-[; ;SERVICEBRAKE.c: 28:     {
-{
-"29
-[; ;SERVICEBRAKE.c: 29:         uiDutyServomotor = ucTargetMove * 60;
-[e = _uiDutyServomotor -> * -> _ucTargetMove `i -> 60 `i `ui ]
-"30
-[; ;SERVICEBRAKE.c: 30:         uiDutyServomotor = uiDutyServomotor / 100;
-[e = _uiDutyServomotor / _uiDutyServomotor -> -> 100 `i `ui ]
 "31
-[; ;SERVICEBRAKE.c: 31:         uiDutyServomotor = (uiDutyServomotor & 0xFF);
-[e = _uiDutyServomotor & _uiDutyServomotor -> -> 255 `i `ui ]
+[; ;SERVICEBRAKE.c: 31:     if (ucASBFlagSupervisor==1)
+[e $ ! == -> _ucASBFlagSupervisor `i -> 1 `i 3180  ]
 "32
-[; ;SERVICEBRAKE.c: 32:         GPIO_PWM1_Control(uiDutyServomotor, 300);
+[; ;SERVICEBRAKE.c: 32:     {
+{
+"33
+[; ;SERVICEBRAKE.c: 33:         if ( ucASMode == 1 )
+[e $ ! == -> _ucASMode `i -> 1 `i 3181  ]
+"34
+[; ;SERVICEBRAKE.c: 34:         {
+{
+"35
+[; ;SERVICEBRAKE.c: 35:             uiDutyServomotor = ucTargetMove * 60;
+[e = _uiDutyServomotor -> * -> _ucTargetMove `i -> 60 `i `ui ]
+"36
+[; ;SERVICEBRAKE.c: 36:             uiDutyServomotor = uiDutyServomotor / 100;
+[e = _uiDutyServomotor / _uiDutyServomotor -> -> 100 `i `ui ]
+"37
+[; ;SERVICEBRAKE.c: 37:             uiDutyServomotor = (uiDutyServomotor & 0xFF);
+[e = _uiDutyServomotor & _uiDutyServomotor -> -> 255 `i `ui ]
+"38
+[; ;SERVICEBRAKE.c: 38:             GPIO_PWM1_Control(uiDutyServomotor, 300);
 [e ( _GPIO_PWM1_Control (2 , _uiDutyServomotor -> -> 300 `i `ui ]
-"45
-[; ;SERVICEBRAKE.c: 45:     }
+"51
+[; ;SERVICEBRAKE.c: 51:         }
 }
+[e :U 3181 ]
+"52
+[; ;SERVICEBRAKE.c: 52:     }
+}
+[e $U 3182  ]
+"54
+[; ;SERVICEBRAKE.c: 54:     else
 [e :U 3180 ]
-"46
-[; ;SERVICEBRAKE.c: 46: }
+"55
+[; ;SERVICEBRAKE.c: 55:     {
+{
+"56
+[; ;SERVICEBRAKE.c: 56:          GPIO_PWM1_Control(60, 300);
+[e ( _GPIO_PWM1_Control (2 , -> -> 60 `i `ui -> -> 300 `i `ui ]
+"57
+[; ;SERVICEBRAKE.c: 57:     }
+}
+[e :U 3182 ]
+"58
+[; ;SERVICEBRAKE.c: 58: }
 [e :UE 3179 ]
 }
-"49
-[; ;SERVICEBRAKE.c: 49: void ETC_Move (unsigned char ucTargetMove)
+"61
+[; ;SERVICEBRAKE.c: 61: void ETC_Move (unsigned char ucTargetMove)
 [v _ETC_Move `(v ~T0 @X0 1 ef1`uc ]
-"50
-[; ;SERVICEBRAKE.c: 50: {
+"62
+[; ;SERVICEBRAKE.c: 62: {
 {
 [e :U _ETC_Move ]
-"49
-[; ;SERVICEBRAKE.c: 49: void ETC_Move (unsigned char ucTargetMove)
+"61
+[; ;SERVICEBRAKE.c: 61: void ETC_Move (unsigned char ucTargetMove)
 [v _ucTargetMove `uc ~T0 @X0 1 r1 ]
-"50
-[; ;SERVICEBRAKE.c: 50: {
+"62
+[; ;SERVICEBRAKE.c: 62: {
 [f ]
-"51
-[; ;SERVICEBRAKE.c: 51:     uiDutyServomotor = ucTargetMove * 60;
+"63
+[; ;SERVICEBRAKE.c: 63:     uiDutyServomotor = ucTargetMove * 60;
 [e = _uiDutyServomotor -> * -> _ucTargetMove `i -> 60 `i `ui ]
-"52
-[; ;SERVICEBRAKE.c: 52:     uiDutyServomotor = uiDutyServomotor / 100;
+"64
+[; ;SERVICEBRAKE.c: 64:     uiDutyServomotor = uiDutyServomotor / 100;
 [e = _uiDutyServomotor / _uiDutyServomotor -> -> 100 `i `ui ]
-"53
-[; ;SERVICEBRAKE.c: 53:     uiDutyServomotor = (uiDutyServomotor & 0xFF);
+"65
+[; ;SERVICEBRAKE.c: 65:     uiDutyServomotor = (uiDutyServomotor & 0xFF);
 [e = _uiDutyServomotor & _uiDutyServomotor -> -> 255 `i `ui ]
-"54
-[; ;SERVICEBRAKE.c: 54:     GPIO_PWM2_Control(uiDutyServomotor, 300);
+"66
+[; ;SERVICEBRAKE.c: 66:     GPIO_PWM2_Control(uiDutyServomotor, 300);
 [e ( _GPIO_PWM2_Control (2 , _uiDutyServomotor -> -> 300 `i `ui ]
-"56
-[; ;SERVICEBRAKE.c: 56: }
-[e :UE 3181 ]
+"68
+[; ;SERVICEBRAKE.c: 68: }
+[e :UE 3183 ]
 }
-"59
-[; ;SERVICEBRAKE.c: 59: void SERVICEBRAKE_Init (void)
+"71
+[; ;SERVICEBRAKE.c: 71: void SERVICEBRAKE_Init (void)
 [v _SERVICEBRAKE_Init `(v ~T0 @X0 1 ef ]
-"60
-[; ;SERVICEBRAKE.c: 60: {
+"72
+[; ;SERVICEBRAKE.c: 72: {
 {
 [e :U _SERVICEBRAKE_Init ]
 [f ]
-"62
-[; ;SERVICEBRAKE.c: 62:     GPIO_PWM1_Control(0, 300);
+"74
+[; ;SERVICEBRAKE.c: 74:     GPIO_PWM1_Control(0, 300);
 [e ( _GPIO_PWM1_Control (2 , -> -> 0 `i `ui -> -> 300 `i `ui ]
-"64
-[; ;SERVICEBRAKE.c: 64: }
-[e :UE 3182 ]
+"76
+[; ;SERVICEBRAKE.c: 76: }
+[e :UE 3184 ]
+}
+"78
+[; ;SERVICEBRAKE.c: 78: void ASBSupervisor(void)
+[v _ASBSupervisor `(v ~T0 @X0 1 ef ]
+"79
+[; ;SERVICEBRAKE.c: 79: {
+{
+[e :U _ASBSupervisor ]
+[f ]
+"81
+[; ;SERVICEBRAKE.c: 81:     __nop();
+[e ( ___nop ..  ]
+"82
+[; ;SERVICEBRAKE.c: 82:     if ( ucASBBeatSupervisor == 1 )
+[e $ ! == -> _ucASBBeatSupervisor `i -> 1 `i 3186  ]
+"83
+[; ;SERVICEBRAKE.c: 83:     {
+{
+"84
+[; ;SERVICEBRAKE.c: 84:         ucASBFlagSupervisor = 1;
+[e = _ucASBFlagSupervisor -> -> 1 `i `uc ]
+"85
+[; ;SERVICEBRAKE.c: 85:     }
+}
+[e $U 3187  ]
+"86
+[; ;SERVICEBRAKE.c: 86:     else
+[e :U 3186 ]
+"87
+[; ;SERVICEBRAKE.c: 87:     {
+{
+"88
+[; ;SERVICEBRAKE.c: 88:         ucASBFlagSupervisor = 0;
+[e = _ucASBFlagSupervisor -> -> 0 `i `uc ]
+"91
+[; ;SERVICEBRAKE.c: 91:         GPIO_PWM1_Control(0, 300);
+[e ( _GPIO_PWM1_Control (2 , -> -> 0 `i `ui -> -> 300 `i `ui ]
+"92
+[; ;SERVICEBRAKE.c: 92:     }
+}
+[e :U 3187 ]
+"93
+[; ;SERVICEBRAKE.c: 93: }
+[e :UE 3185 ]
 }

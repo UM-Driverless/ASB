@@ -9,6 +9,8 @@
 #include "TEMPORIZATIONS.h"
 #include "MESSAGES.h"
 #include "ANALOG.h"
+#include "SERVICEBRAKE.h"
+#include "PARAMETERS.h"
 
 //VARIABLES
 unsigned char ucCount500ms;
@@ -31,9 +33,8 @@ void TEMPORIZATION_100ms (void)
 
 void TEMPORIZATION_500ms (void)
 {
-    //ANALOG //EJECUTAR CADA 10HZ
-    //ANALOG_RedAll();
-    //CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
+    ASBSupervisor();
+    ucASBBeatSupervisor = FALSE;
 }
 
 void TEMPORIZATION_1s (void)

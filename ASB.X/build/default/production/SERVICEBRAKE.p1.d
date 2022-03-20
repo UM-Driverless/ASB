@@ -16,4 +16,5 @@ mcc_generated_files/can_types.h  \
 mcc_generated_files/delay.h  \
 mcc_generated_files/pwm2_16bit.h  \
 mcc_generated_files/pwm1_16bit.h  \
-SERVICEBRAKE.h 
+SERVICEBRAKE.h  \
+PARAMETERS.h 

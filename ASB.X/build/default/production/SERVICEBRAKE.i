@@ -38421,12 +38421,26 @@ extern unsigned int uiDutyServomotor;
 extern unsigned char ucServoLmin;
 extern unsigned char ucServoLmax;
 extern unsigned char ucServoLDif;
-
+extern unsigned char ucASBBeatSupervisor;
+extern unsigned char ucASBFlagSupervisor;
 
 void SERVICEBRAKE_Move (unsigned char ucTargetMove);
 void SERVICEBRAKE_Init (void);
 void ETC_Move (unsigned char ucTargetMove);
+void ASBSupervisor(void);
 # 11 "SERVICEBRAKE.c" 2
+
+# 1 "./PARAMETERS.h" 1
+# 27 "./PARAMETERS.h"
+extern unsigned char HDRPRES_min;
+extern unsigned char HDRPRES_max;
+extern unsigned char NPRES_min;
+extern unsigned char NPRES_max;
+
+
+
+void PARAMETERS_Init (void);
+# 12 "SERVICEBRAKE.c" 2
 
 
 
@@ -38435,6 +38449,9 @@ unsigned int uiDutyServomotor;
 unsigned char ucServoLmin;
 unsigned char ucServoLmax;
 unsigned char ucServoLDif;
+unsigned char ucASBBeatSupervisor = 0;
+unsigned char ucASBFlagSupervisor = 0;
+
 
 
 void SERVICEBRAKE_Move (unsigned char ucTargetMove)
@@ -38443,13 +38460,21 @@ void SERVICEBRAKE_Move (unsigned char ucTargetMove)
 
 
 
-    if ( ucASMode == 1 )
+    if (ucASBFlagSupervisor==1)
     {
-        uiDutyServomotor = ucTargetMove * 60;
-        uiDutyServomotor = uiDutyServomotor / 100;
-        uiDutyServomotor = (uiDutyServomotor & 0xFF);
-        GPIO_PWM1_Control(uiDutyServomotor, 300);
-# 45 "SERVICEBRAKE.c"
+        if ( ucASMode == 1 )
+        {
+            uiDutyServomotor = ucTargetMove * 60;
+            uiDutyServomotor = uiDutyServomotor / 100;
+            uiDutyServomotor = (uiDutyServomotor & 0xFF);
+            GPIO_PWM1_Control(uiDutyServomotor, 300);
+# 51 "SERVICEBRAKE.c"
+        }
+    }
+
+    else
+    {
+         GPIO_PWM1_Control(60, 300);
     }
 }
 
@@ -38469,4 +38494,21 @@ void SERVICEBRAKE_Init (void)
 
     GPIO_PWM1_Control(0, 300);
 
+}
+
+void ASBSupervisor(void)
+{
+
+    __nop();
+    if ( ucASBBeatSupervisor == 1 )
+    {
+        ucASBFlagSupervisor = 1;
+    }
+    else
+    {
+        ucASBFlagSupervisor = 0;
+
+
+        GPIO_PWM1_Control(0, 300);
+    }
 }
