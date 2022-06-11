@@ -38480,7 +38480,7 @@ void TEMPORIZATION_10ms (void)
 
 void TEMPORIZATION_100ms (void)
 {
-
+    ANALOG_RedAll();
 }
 
 void TEMPORIZATION_500ms (void)
@@ -38492,6 +38492,7 @@ void TEMPORIZATION_500ms (void)
 void TEMPORIZATION_1s (void)
 {
     do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
+    CANWriteMessage ( 0x360, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
 }
 
 void TEMPORIZATION_10s (void)

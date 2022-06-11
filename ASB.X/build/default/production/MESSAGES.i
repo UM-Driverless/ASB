@@ -38602,7 +38602,7 @@ void CANReadMessage (void)
                     uiYaw_rate = ( ( data6 << 8 ) | data5 );;
                     break;
                 case 0x412:
-                    ucTargetBrake = data1;
+
 
 
                 case 0x347:

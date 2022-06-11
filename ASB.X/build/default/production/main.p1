@@ -3590,13 +3590,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "99
 [; ;main.c: 99:         __nop();
 [e ( ___nop ..  ]
-"122
-[; ;main.c: 122:     }
+"121
+[; ;main.c: 121:     }
 }
 [e :U 3180 ]
 [e $U 3181  ]
 [e :U 3182 ]
-"123
-[; ;main.c: 123: }
+"122
+[; ;main.c: 122: }
 [e :UE 3179 ]
 }

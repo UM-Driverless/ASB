@@ -3708,9 +3708,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "88
 [; ;SERVICEBRAKE.c: 88:         ucASBFlagSupervisor = 0;
 [e = _ucASBFlagSupervisor -> -> 0 `i `uc ]
-"91
-[; ;SERVICEBRAKE.c: 91:         GPIO_PWM1_Control(0, 300);
-[e ( _GPIO_PWM1_Control (2 , -> -> 0 `i `ui -> -> 300 `i `ui ]
+"90
+[; ;SERVICEBRAKE.c: 90:         GPIO_PWM1_Control(60, 300);
+[e ( _GPIO_PWM1_Control (2 , -> -> 60 `i `ui -> -> 300 `i `ui ]
 "92
 [; ;SERVICEBRAKE.c: 92:     }
 }

@@ -4055,9 +4055,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "172
 [; ;MESSAGES.c: 172:                 case 0x412:
 [e :U 3195 ]
-"173
-[; ;MESSAGES.c: 173:                     ucTargetBrake = data1;
-[e = _ucTargetBrake _data1 ]
 "176
 [; ;MESSAGES.c: 176:                 case 0x347:
 [e :U 3196 ]

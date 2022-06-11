@@ -38508,7 +38508,7 @@ void ASBSupervisor(void)
     {
         ucASBFlagSupervisor = 0;
 
+        GPIO_PWM1_Control(60, 300);
 
-        GPIO_PWM1_Control(0, 300);
     }
 }
