@@ -4056,38 +4056,41 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 172:                 case 0x412:
 [e :U 3195 ]
 "176
-[; ;MESSAGES.c: 176:                 case 0x347:
-[e :U 3196 ]
+[; ;MESSAGES.c: 176:                     break;
+[e $U 3188  ]
 "177
-[; ;MESSAGES.c: 177:                     ucASMode = data1;
-[e = _ucASMode _data1 ]
+[; ;MESSAGES.c: 177:                 case 0x347:
+[e :U 3196 ]
 "178
-[; ;MESSAGES.c: 178:                     if ( ucASMode == 0 )
-[e $ ! == -> _ucASMode `i -> 0 `i 3197  ]
+[; ;MESSAGES.c: 178:                     ucASMode = data1;
+[e = _ucASMode _data1 ]
 "179
-[; ;MESSAGES.c: 179:                     {
-{
+[; ;MESSAGES.c: 179:                     if ( ucASMode == 0 )
+[e $ ! == -> _ucASMode `i -> 0 `i 3197  ]
 "180
-[; ;MESSAGES.c: 180:                         GPIO_PWM1_Control(0, 300);
-[e ( _GPIO_PWM1_Control (2 , -> -> 0 `i `ui -> -> 300 `i `ui ]
+[; ;MESSAGES.c: 180:                     {
+{
 "181
-[; ;MESSAGES.c: 181:                     }
+[; ;MESSAGES.c: 181:                         GPIO_PWM1_Control(0, 300);
+[e ( _GPIO_PWM1_Control (2 , -> -> 0 `i `ui -> -> 300 `i `ui ]
+"182
+[; ;MESSAGES.c: 182:                     }
 }
 [e :U 3197 ]
-"182
-[; ;MESSAGES.c: 182:                     break;
-[e $U 3188  ]
 "183
-[; ;MESSAGES.c: 183:                 default:
-[e :U 3198 ]
-"184
-[; ;MESSAGES.c: 184:                     __nop();
-[e ( ___nop ..  ]
-"185
-[; ;MESSAGES.c: 185:                     break;
+[; ;MESSAGES.c: 183:                     break;
 [e $U 3188  ]
+"184
+[; ;MESSAGES.c: 184:                 default:
+[e :U 3198 ]
+"185
+[; ;MESSAGES.c: 185:                     __nop();
+[e ( ___nop ..  ]
 "186
-[; ;MESSAGES.c: 186:             }
+[; ;MESSAGES.c: 186:                     break;
+[e $U 3188  ]
+"187
+[; ;MESSAGES.c: 187:             }
 }
 [e $U 3188  ]
 [e :U 3189 ]
@@ -4099,15 +4102,15 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> -> 839 `i `l `ul 3196
  3198 ]
 [e :U 3188 ]
-"187
-[; ;MESSAGES.c: 187:         }
+"188
+[; ;MESSAGES.c: 188:         }
 }
 [e :U 3187 ]
-"188
-[; ;MESSAGES.c: 188:     }
+"189
+[; ;MESSAGES.c: 189:     }
 }
 [e :U 3186 ]
-"189
-[; ;MESSAGES.c: 189: }
+"190
+[; ;MESSAGES.c: 190: }
 [e :UE 3185 ]
 }

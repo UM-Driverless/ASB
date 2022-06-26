@@ -38605,6 +38605,7 @@ void CANReadMessage (void)
 
 
 
+                    break;
                 case 0x347:
                     ucASMode = data1;
                     if ( ucASMode == 0 )

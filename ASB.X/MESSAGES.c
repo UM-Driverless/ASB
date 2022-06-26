@@ -173,6 +173,7 @@ void CANReadMessage (void)
                     //ucTargetBrake = data1;
                     //SERVICEBRAKE_Move(ucTargetBrake);
                     //ETC_Move(ucTargetBrake);
+                    break;
                 case PMC_STATE:
                     ucASMode = data1;
                     if ( ucASMode == ManualMode )

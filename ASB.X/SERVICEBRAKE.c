@@ -53,7 +53,7 @@ void SERVICEBRAKE_Move (unsigned char ucTargetMove)
 
     else //no recibimos nada frenamos
     {
-         GPIO_PWM1_Control(60, 300);
+         //GPIO_PWM1_Control(60, 300);
     }
 }
 
@@ -87,7 +87,7 @@ void ASBSupervisor(void)
     {
         ucASBFlagSupervisor = FALSE; //NO PERMITO MOVER 
         //poner freno a 100
-        GPIO_PWM1_Control(60, 300); //60 ES EL PUNTO MAXIMO
+        //GPIO_PWM1_Control(60, 300); //60 ES EL PUNTO MAXIMO
         //GPIO_PWM1_Control(0, 300); //60 ES EL PUNTO MAXIMO
     }
 }
