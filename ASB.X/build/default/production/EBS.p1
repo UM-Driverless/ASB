@@ -34,11 +34,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "39 ./ANALOG.h
 [; ;./ANALOG.h: 39: unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica);
 [v _ANALOG_GetVoltage `(uc ~T0 @X0 0 ef1`uc ]
-"29 ./PARAMETERS.h
-[; ;./PARAMETERS.h: 29: extern unsigned char NPRES_min;
+"32 ./PARAMETERS.h
+[; ;./PARAMETERS.h: 32: extern unsigned char NPRES_min;
 [v _NPRES_min `uc ~T0 @X0 0 e ]
-"27
-[; ;./PARAMETERS.h: 27: extern unsigned char HDRPRES_min;
+"30
+[; ;./PARAMETERS.h: 30: extern unsigned char HDRPRES_min;
 [v _HDRPRES_min `uc ~T0 @X0 0 e ]
 "34 ./mcc_generated_files/delay.h
 [; ;./mcc_generated_files/delay.h: 34: void DELAY_milliseconds(uint16_t milliseconds);
@@ -54,8 +54,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1884
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1884:         unsigned MD1EN :1;
 [v _PORTAbits `VS3074 ~T0 @X0 0 e@1230 ]
-"28 ./PARAMETERS.h
-[; ;./PARAMETERS.h: 28: extern unsigned char HDRPRES_max;
+"31 ./PARAMETERS.h
+[; ;./PARAMETERS.h: 31: extern unsigned char HDRPRES_max;
 [v _HDRPRES_max `uc ~T0 @X0 0 e ]
 "57 ./MESSAGES.h
 [; ;./MESSAGES.h: 57: extern unsigned char ucASRequesState;

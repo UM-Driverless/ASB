@@ -48,6 +48,7 @@
 #include "EBS.h"
 #include "mcc_generated_files/pin_manager.h"
 #include "SERVICEBRAKE.h"
+#include "PARAMETERS.h"
 
 
 unsigned int uiIndex;
@@ -66,6 +67,7 @@ void main(void)
 
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
+    CANDisableErrorInterrupt(DISABLE);
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -114,7 +116,10 @@ void main(void)
         }*/
         //GPIO_PWM1_Control(12, 50);
         
-        
+        if ( ucASMode == ASMode )
+        {
+            SERVICEBRAKE_Move(ucTargetBrake);
+        }
         
         
         //

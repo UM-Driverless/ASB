@@ -45,7 +45,7 @@ CAN_NORMAL_2_0_MODE 6
 CAN_RESTRICTED_OPERATION_MODE 7
 ]
 "341
-[e E22818 . `uc
+[e E22820 . `uc
 CAN_RX_MSG_NOT_AVAILABLE 0
 CAN_RX_MSG_AVAILABLE 1
 CAN_RX_MSG_OVERFLOW 8
@@ -230,12 +230,14 @@ channel_FVR_Buffer2 63
 [v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
+[v i2___aldiv __aldiv `(l  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
 "43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
+[v i2___fltol __fltol `(l  1 e 4 0 ]
 "86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
 "54 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftdiv.c
@@ -246,10 +248,12 @@ channel_FVR_Buffer2 63
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+[v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
+[v i2___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
 "11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
@@ -258,23 +262,26 @@ channel_FVR_Buffer2 63
 [v ___flmul __flmul `(d  1 e 4 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+[v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
 "149 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
 "24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
 "49
 [v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
+[v i2_GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
 "69
 [v _GPIO_PWM2_Control GPIO_PWM2_Control `(v  1 e 1 0 ]
 "113
 [v _GPIO_BrakePedalAtRest GPIO_BrakePedalAtRest `(v  1 e 1 0 ]
-"58 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"59 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "71 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -348,7 +355,7 @@ channel_FVR_Buffer2 63
 "336
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
 "341
-[v _GetRxFifoStatus GetRxFifoStatus `(E22818  1 s 1 GetRxFifoStatus ]
+[v _GetRxFifoStatus GetRxFifoStatus `(E22820  1 s 1 GetRxFifoStatus ]
 "346
 [v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
 "380
@@ -427,10 +434,13 @@ channel_FVR_Buffer2 63
 [v _PWM1_16BIT_Initialize PWM1_16BIT_Initialize `(v  1 e 1 0 ]
 "144
 [v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
+[v i2_PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
 "150
 [v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+[v i2_PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
 "162
 [v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+[v i2_PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
 "192
 [v _PWM1_16BIT_Slice1Output1_SetInterruptHandler PWM1_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
 "197
@@ -513,6 +523,8 @@ channel_FVR_Buffer2 63
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
 "100
 [v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
+"192
+[v _CANDisableErrorInterrupt CANDisableErrorInterrupt `(v  1 e 1 0 ]
 "25 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
 [v _SERVICEBRAKE_Move SERVICEBRAKE_Move `(v  1 e 1 0 ]
 "78
@@ -641,7 +653,7 @@ channel_FVR_Buffer2 63
 [v _PMD2 PMD2 `VEuc  1 e 1 @98 ]
 "1474
 [v _LATA LATA `VEuc  1 e 1 @1214 ]
-[s S3202 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S3223 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -651,8 +663,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "1491
-[u S3211 . 1 `S3202 1 . 1 0 ]
-[v _LATAbits LATAbits `VES3211  1 e 1 @1214 ]
+[u S3232 . 1 `S3223 1 . 1 0 ]
+[v _LATAbits LATAbits `VES3232  1 e 1 @1214 ]
 "1514
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
@@ -677,7 +689,7 @@ channel_FVR_Buffer2 63
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1660
 [v _TRISA TRISA `VEuc  1 e 1 @1222 ]
-[s S3142 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S3163 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -687,8 +699,8 @@ channel_FVR_Buffer2 63
 `uc 1 TRISA7 1 0 :1:7 
 ]
 "1677
-[u S3151 . 1 `S3142 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES3151  1 e 1 @1222 ]
+[u S3172 . 1 `S3163 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES3172  1 e 1 @1222 ]
 "1678
 [v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
 "1722
@@ -709,7 +721,7 @@ channel_FVR_Buffer2 63
 [v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
 "1784
 [v _TRISC TRISC `VEuc  1 e 1 @1224 ]
-[s S3175 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S3196 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -719,13 +731,13 @@ channel_FVR_Buffer2 63
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "1801
-[u S3184 . 1 `S3175 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES3184  1 e 1 @1224 ]
+[u S3205 . 1 `S3196 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES3205  1 e 1 @1224 ]
 "1802
 [v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
 "1846
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S3223 . 1 `uc 1 RA0 1 0 :1:0 
+[s S3244 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -735,9 +747,9 @@ channel_FVR_Buffer2 63
 `uc 1 RA7 1 0 :1:7 
 ]
 "1884
-[u S3232 . 1 `S3223 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES3232  1 e 1 @1230 ]
-[s S3347 . 1 `uc 1 RC0 1 0 :1:0 
+[u S3253 . 1 `S3244 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES3253  1 e 1 @1230 ]
+[s S3368 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -747,8 +759,8 @@ channel_FVR_Buffer2 63
 `uc 1 RC7 1 0 :1:7 
 ]
 "2008
-[u S3356 . 1 `S3347 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES3356  1 e 1 @1232 ]
+[u S3377 . 1 `S3368 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES3377  1 e 1 @1232 ]
 [s S67 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -1447,7 +1459,7 @@ channel_FVR_Buffer2 63
 [v _ADCSEL4bits ADCSEL4bits `VES572  1 e 1 @1023 ]
 "58425
 [v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
-[s S3100 . 1 `uc 1 ANSELA0 1 0 :1:0 
+[s S3121 . 1 `uc 1 ANSELA0 1 0 :1:0 
 `uc 1 ANSELA1 1 0 :1:1 
 `uc 1 ANSELA2 1 0 :1:2 
 `uc 1 ANSELA3 1 0 :1:3 
@@ -1457,10 +1469,10 @@ channel_FVR_Buffer2 63
 `uc 1 ANSELA7 1 0 :1:7 
 ]
 "58442
-[u S3109 . 1 `S3100 1 . 1 0 ]
+[u S3130 . 1 `S3121 1 . 1 0 ]
 "58442
 "58442
-[v _ANSELAbits ANSELAbits `VES3109  1 e 1 @1024 ]
+[v _ANSELAbits ANSELAbits `VES3130  1 e 1 @1024 ]
 "58487
 [v _WPUA WPUA `VEuc  1 e 1 @1025 ]
 "58549
@@ -1481,7 +1493,7 @@ channel_FVR_Buffer2 63
 [v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
 "59417
 [v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
-[s S3121 . 1 `uc 1 ANSELC0 1 0 :1:0 
+[s S3142 . 1 `uc 1 ANSELC0 1 0 :1:0 
 `uc 1 ANSELC1 1 0 :1:1 
 `uc 1 ANSELC2 1 0 :1:2 
 `uc 1 ANSELC3 1 0 :1:3 
@@ -1491,10 +1503,10 @@ channel_FVR_Buffer2 63
 `uc 1 ANSELC7 1 0 :1:7 
 ]
 "59434
-[u S3130 . 1 `S3121 1 . 1 0 ]
+[u S3151 . 1 `S3142 1 . 1 0 ]
 "59434
 "59434
-[v _ANSELCbits ANSELCbits `VES3130  1 e 1 @1040 ]
+[v _ANSELCbits ANSELCbits `VES3151  1 e 1 @1040 ]
 "59479
 [v _WPUC WPUC `VEuc  1 e 1 @1041 ]
 "59541
@@ -1818,10 +1830,10 @@ channel_FVR_Buffer2 63
 [v _uiCount30s uiCount30s `ui  1 e 2 0 ]
 "20
 [v _uiCount1min uiCount1min `ui  1 e 2 0 ]
-"58 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"59 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"122
+"127
 } 0
 "93 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_StopTimer TMR0_StopTimer `(v  1 e 1 0 ]
@@ -1841,7 +1853,7 @@ channel_FVR_Buffer2 63
 "189
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "191
 } 0
 "65 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
@@ -1852,7 +1864,7 @@ channel_FVR_Buffer2 63
 "213
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "215
 } 0
 "61 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
@@ -1863,7 +1875,7 @@ channel_FVR_Buffer2 63
 "142
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "144
 } 0
 "63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
@@ -1874,19 +1886,19 @@ channel_FVR_Buffer2 63
 "197
 [v _PWM2_16BIT_Slice1Output2_SetInterruptHandler PWM2_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM2_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v PWM2_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "200
 } 0
 "192
 [v _PWM2_16BIT_Slice1Output1_SetInterruptHandler PWM2_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM2_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v PWM2_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "195
 } 0
 "202
 [v _PWM2_16BIT_Period_SetInterruptHandler PWM2_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM2_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v PWM2_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "205
 } 0
 "63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
@@ -1897,19 +1909,19 @@ channel_FVR_Buffer2 63
 "197
 [v _PWM1_16BIT_Slice1Output2_SetInterruptHandler PWM1_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v PWM1_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "200
 } 0
 "192
 [v _PWM1_16BIT_Slice1Output1_SetInterruptHandler PWM1_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v PWM1_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "195
 } 0
 "202
 [v _PWM1_16BIT_Period_SetInterruptHandler PWM1_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v PWM1_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "205
 } 0
 "80 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
@@ -1940,7 +1952,7 @@ channel_FVR_Buffer2 63
 "53
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "55
 } 0
 "269 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
@@ -1957,7 +1969,7 @@ channel_FVR_Buffer2 63
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
 {
 "155
-[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 0 ]
+[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 4 ]
 "161
 } 0
 "185
@@ -1973,7 +1985,7 @@ channel_FVR_Buffer2 63
 "735
 [v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetFIFO1NotEmptyHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetFIFO1NotEmptyHandler@handler handler `*.37(v  1 p 2 4 ]
 "738
 } 0
 "302
@@ -1981,13 +1993,13 @@ channel_FVR_Buffer2 63
 {
 [v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
 "304
-[v CAN1_OperationModeSet@status status `E22356  1 a 1 1 ]
+[v CAN1_OperationModeSet@status status `E22356  1 a 1 5 ]
 "305
-[v CAN1_OperationModeSet@opMode opMode `E22346  1 a 1 0 ]
+[v CAN1_OperationModeSet@opMode opMode `E22346  1 a 1 4 ]
 "302
 [v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
 "304
-[v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 2 ]
+[v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 6 ]
 "329
 } 0
 "331
@@ -2003,43 +2015,43 @@ channel_FVR_Buffer2 63
 "672
 [v _CAN1_SetTxAttemptInterruptHandler CAN1_SetTxAttemptInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetTxAttemptInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetTxAttemptInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
 "675
 } 0
 "667
 [v _CAN1_SetSystemErrorInterruptHandler CAN1_SetSystemErrorInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetSystemErrorInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetSystemErrorInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
 "670
 } 0
 "677
 [v _CAN1_SetRxBufferOverFlowInterruptHandler CAN1_SetRxBufferOverFlowInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetRxBufferOverFlowInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetRxBufferOverFlowInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
 "680
 } 0
 "662
 [v _CAN1_SetModeChangeInterruptHandler CAN1_SetModeChangeInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetModeChangeInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetModeChangeInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
 "665
 } 0
 "647
 [v _CAN1_SetInvalidMessageInterruptHandler CAN1_SetInvalidMessageInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetInvalidMessageInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetInvalidMessageInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
 "650
 } 0
 "652
 [v _CAN1_SetBusWakeUpActivityInterruptHandler CAN1_SetBusWakeUpActivityInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetBusWakeUpActivityInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetBusWakeUpActivityInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
 "655
 } 0
 "657
 [v _CAN1_SetBusErrorInterruptHandler CAN1_SetBusErrorInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetBusErrorInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetBusErrorInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
 "660
 } 0
 "227
@@ -2055,43 +2067,166 @@ channel_FVR_Buffer2 63
 "738
 [v _ADC_SetContext4ThresholdInterruptHandler ADC_SetContext4ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext4ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v ADC_SetContext4ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "741
 } 0
 "733
 [v _ADC_SetContext3ThresholdInterruptHandler ADC_SetContext3ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext3ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v ADC_SetContext3ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "736
 } 0
 "728
 [v _ADC_SetContext2ThresholdInterruptHandler ADC_SetContext2ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext2ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v ADC_SetContext2ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "731
 } 0
 "723
 [v _ADC_SetContext1ThresholdInterruptHandler ADC_SetContext1ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext1ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v ADC_SetContext1ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "726
 } 0
 "743
 [v _ADC_SetActiveClockTuningInterruptHandler ADC_SetActiveClockTuningInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetActiveClockTuningInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v ADC_SetActiveClockTuningInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "746
 } 0
 "718
 [v _ADC_SetADIInterruptHandler ADC_SetADIInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "721
+} 0
+"25 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+[v _SERVICEBRAKE_Move SERVICEBRAKE_Move `(v  1 e 1 0 ]
+{
+[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 wreg ]
+[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 wreg ]
+"31
+[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 0 ]
+"58
+} 0
+"49 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+[v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
+{
+"52
+[v GPIO_PWM1_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 52 ]
+"51
+[v GPIO_PWM1_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 50 ]
+"49
+[v GPIO_PWM1_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 44 ]
+[v GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 46 ]
+"64
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 14 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 13 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 4 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 12 ]
+"44
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 8 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 4 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
+"53
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+"30
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 43 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 42 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 34 ]
+"70
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 33 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 32 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 31 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 30 ]
+"10
+[v ___fladd@b b `d  1 p 4 18 ]
+[v ___fladd@a a `d  1 p 4 22 ]
+"237
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 14 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 13 ]
+[v ___aldiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+[v ___aldiv@divisor divisor `l  1 p 4 8 ]
+"41
+} 0
+"144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+[v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 4 ]
+"148
+} 0
+"150
+[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 4 ]
+"154
+} 0
+"162
+[v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"166
 } 0
 "24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
 {
 "42
+} 0
+"192 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
+[v _CANDisableErrorInterrupt CANDisableErrorInterrupt `(v  1 e 1 0 ]
+{
+[v CANDisableErrorInterrupt@ucInterruptSet ucInterruptSet `uc  1 a 1 wreg ]
+[v CANDisableErrorInterrupt@ucInterruptSet ucInterruptSet `uc  1 a 1 wreg ]
+"194
+[v CANDisableErrorInterrupt@ucInterruptSet ucInterruptSet `uc  1 a 1 4 ]
+"203
 } 0
 "58 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
@@ -2377,17 +2512,17 @@ channel_FVR_Buffer2 63
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3863 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3884 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3868 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3871 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3863 1 fAsBytes 4 0 `S3868 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3871  1 a 4 33 ]
+[s S3889 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3892 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3884 1 fAsBytes 4 0 `S3889 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3892  1 a 4 33 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S3939 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3960 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3942 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3939 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3942  1 a 2 37 ]
+[u S3963 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3960 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S3963  1 a 2 37 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
@@ -2441,136 +2576,127 @@ channel_FVR_Buffer2 63
 [v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
 {
 "102
-[v CANReadMessage@id id `ul  1 a 4 2 ]
+[v CANReadMessage@id id `ul  1 a 4 82 ]
 "106
-[v CANReadMessage@data2 data2 `uc  1 a 1 13 ]
+[v CANReadMessage@data2 data2 `uc  1 a 1 93 ]
 "105
-[v CANReadMessage@data1 data1 `uc  1 a 1 12 ]
+[v CANReadMessage@data1 data1 `uc  1 a 1 92 ]
 "107
-[v CANReadMessage@data3 data3 `uc  1 a 1 11 ]
+[v CANReadMessage@data3 data3 `uc  1 a 1 91 ]
 "109
-[v CANReadMessage@data5 data5 `uc  1 a 1 10 ]
+[v CANReadMessage@data5 data5 `uc  1 a 1 90 ]
 "108
-[v CANReadMessage@data4 data4 `uc  1 a 1 9 ]
+[v CANReadMessage@data4 data4 `uc  1 a 1 89 ]
 "110
-[v CANReadMessage@data6 data6 `uc  1 a 1 8 ]
+[v CANReadMessage@data6 data6 `uc  1 a 1 88 ]
 "112
-[v CANReadMessage@data8 data8 `uc  1 a 1 7 ]
+[v CANReadMessage@data8 data8 `uc  1 a 1 87 ]
 "111
-[v CANReadMessage@data7 data7 `uc  1 a 1 6 ]
+[v CANReadMessage@data7 data7 `uc  1 a 1 86 ]
 "190
 } 0
-"25 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
-[v _SERVICEBRAKE_Move SERVICEBRAKE_Move `(v  1 e 1 0 ]
-{
-[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 wreg ]
-[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 wreg ]
-"31
-[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 75 ]
-"58
-} 0
 "49 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
-[v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
+[v i2_GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
 {
 "52
-[v GPIO_PWM1_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 73 ]
+[v i2GPIO_PWM1_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 73 ]
 "51
-[v GPIO_PWM1_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 71 ]
+[v i2GPIO_PWM1_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 71 ]
 "49
-[v GPIO_PWM1_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 65 ]
-[v GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 67 ]
+[v i2GPIO_PWM1_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 65 ]
+[v i2GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 67 ]
 "64
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+[v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v i2___xxtofl@sign sign `uc  1 a 1 wreg ]
 "13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+[v i2___xxtofl@arg arg `ul  1 a 4 10 ]
 "12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+[v i2___xxtofl@exp exp `uc  1 a 1 9 ]
 "10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
+[v i2___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v i2___xxtofl@val val `l  1 p 4 0 ]
 "15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+[v i2___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 4 ]
+[v i2___wmul@product product `ui  1 a 2 4 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+[v i2___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i2___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+[v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+[v i2___lwdiv@quotient quotient `ui  1 a 2 4 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+[v i2___lwdiv@counter counter `uc  1 a 1 6 ]
 "7
-[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
-[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+[v i2___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v i2___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "30
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
+[v i2___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 64 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 63 ]
+[v i2___fltol@exp1 exp1 `uc  1 a 1 64 ]
+[v i2___fltol@sign1 sign1 `uc  1 a 1 63 ]
 "43
-[v ___fltol@f1 f1 `d  1 p 4 55 ]
+[v i2___fltol@f1 f1 `d  1 p 4 55 ]
 "70
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
-[v ___fladd __fladd `(d  1 e 4 0 ]
+[v i2___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
-[v ___fladd@grs grs `uc  1 a 1 54 ]
+[v i2___fladd@grs grs `uc  1 a 1 54 ]
 "15
-[v ___fladd@bexp bexp `uc  1 a 1 53 ]
+[v i2___fladd@bexp bexp `uc  1 a 1 53 ]
 "16
-[v ___fladd@aexp aexp `uc  1 a 1 52 ]
+[v i2___fladd@aexp aexp `uc  1 a 1 52 ]
 "13
-[v ___fladd@signs signs `uc  1 a 1 51 ]
+[v i2___fladd@signs signs `uc  1 a 1 51 ]
 "10
-[v ___fladd@b b `d  1 p 4 39 ]
-[v ___fladd@a a `d  1 p 4 43 ]
+[v i2___fladd@b b `d  1 p 4 39 ]
+[v i2___fladd@a a `d  1 p 4 43 ]
 "237
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
-[v ___aldiv __aldiv `(l  1 e 4 0 ]
+[v i2___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "10
-[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+[v i2___aldiv@quotient quotient `l  1 a 4 10 ]
 "11
-[v ___aldiv@sign sign `uc  1 a 1 9 ]
-[v ___aldiv@counter counter `uc  1 a 1 8 ]
+[v i2___aldiv@sign sign `uc  1 a 1 9 ]
+[v i2___aldiv@counter counter `uc  1 a 1 8 ]
 "7
-[v ___aldiv@dividend dividend `l  1 p 4 0 ]
-[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+[v i2___aldiv@dividend dividend `l  1 p 4 0 ]
+[v i2___aldiv@divisor divisor `l  1 p 4 4 ]
 "41
 } 0
 "144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
-[v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
+[v i2_PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 0 ]
+[v i2PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 0 ]
 "148
 } 0
 "150
-[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+[v i2_PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 0 ]
+[v i2PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 0 ]
 "154
 } 0
 "162
-[v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+[v i2_PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
 {
 "166
 } 0
@@ -2587,7 +2713,7 @@ channel_FVR_Buffer2 63
 "453
 [v CAN1_ReceivedMessageCountGet@channel channel `E22386  1 a 1 5 ]
 "454
-[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E22818  1 a 1 4 ]
+[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E22820  1 a 1 4 ]
 "449
 [v CAN1_ReceivedMessageCountGet@index index `uc  1 a 1 9 ]
 [v CAN1_ReceivedMessageCountGet@totalMsgObj totalMsgObj `uc  1 a 1 2 ]
@@ -2619,7 +2745,7 @@ channel_FVR_Buffer2 63
 "387
 [v Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 29 ]
 "383
-[v Receive@rxMsgStatus rxMsgStatus `E22818  1 a 1 31 ]
+[v Receive@rxMsgStatus rxMsgStatus `E22820  1 a 1 31 ]
 "382
 [v Receive@status status `a  1 a 1 28 ]
 "380
@@ -2674,7 +2800,7 @@ channel_FVR_Buffer2 63
 "18
 } 0
 "341 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
-[v _GetRxFifoStatus GetRxFifoStatus `(E22818  1 s 1 GetRxFifoStatus ]
+[v _GetRxFifoStatus GetRxFifoStatus `(E22820  1 s 1 GetRxFifoStatus ]
 {
 [v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
 [v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]

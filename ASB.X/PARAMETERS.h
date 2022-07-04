@@ -16,6 +16,9 @@ extern "C" {
 #define TRUE    1
 #define FALSE   0
     
+#define DISABLE   0x00
+#define ENABLE    0x01
+    
 //AS STATES
 #define AS_OFF          0
 #define AS_READY        1

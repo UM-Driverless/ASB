@@ -139,7 +139,7 @@ void CANReadMessage (void)
                     //APLY ucTargetBrake TO DUTYCYCLE SERVO
                     if ( ucASMode == ASMode )
                     {
-                        SERVICEBRAKE_Move(ucTargetBrake);
+                        //SERVICEBRAKE_Move(ucTargetBrake);
                         ucASBBeatSupervisor = TRUE;
                     }
                     //ETC_Move(ucTargetAccelerator);
@@ -189,3 +189,15 @@ void CANReadMessage (void)
     }
 }
 
+void CANDisableErrorInterrupt (unsigned char ucInterruptSet)
+{
+    if (ucInterruptSet == ENABLE)
+    {
+        PIE0bits.CANIE = 1;
+    }
+    else if (ucInterruptSet == DISABLE)
+    {
+        PIE0bits.CANIE = 0;
+    }
+    
+}

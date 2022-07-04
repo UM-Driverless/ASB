@@ -26,6 +26,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3082 . . . ]
 "2094
 [v _INTCON0bits `VS3082 ~T0 @X0 0 e@1238 ]
+"96 ./MESSAGES.h
+[; ;./MESSAGES.h: 96: void CANDisableErrorInterrupt (unsigned char ucInterruptSet);
+[v _CANDisableErrorInterrupt `(v ~T0 @X0 0 ef1`uc ]
 "30 ./GPIO.h
 [; ;./GPIO.h: 30: void GPIO_Init (void);
 [v _GPIO_Init `(v ~T0 @X0 0 ef ]
@@ -35,6 +38,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
+"59 ./MESSAGES.h
+[; ;./MESSAGES.h: 59: extern unsigned char ucASMode;
+[v _ucASMode `uc ~T0 @X0 0 e ]
+"24 ./SERVICEBRAKE.h
+[; ;./SERVICEBRAKE.h: 24: void SERVICEBRAKE_Move (unsigned char ucTargetMove);
+[v _SERVICEBRAKE_Move `(v ~T0 @X0 0 ef1`uc ]
+"30 ./MESSAGES.h
+[; ;./MESSAGES.h: 30: extern unsigned char ucTargetBrake;
+[v _ucTargetBrake `uc ~T0 @X0 0 e ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3557,46 +3569,62 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23
 [; ;./MESSAGES.h: 23: CAN_MSG_OBJ msgReceipt;
 [v _msgReceipt `S3178 ~T0 @X0 1 e ]
-"53 main.c
-[; ;main.c: 53: unsigned int uiIndex;
+"54 main.c
+[; ;main.c: 54: unsigned int uiIndex;
 [v _uiIndex `ui ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"58
-[; ;main.c: 58: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
 "59
-[; ;main.c: 59: {
+[; ;main.c: 59: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"60
+[; ;main.c: 60: {
 {
 [e :U _main ]
 [f ]
-"61
-[; ;main.c: 61:     SYSTEM_Initialize();
+"62
+[; ;main.c: 62:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"68
-[; ;main.c: 68:     (INTCON0bits.GIE = 1);
+"69
+[; ;main.c: 69:     (INTCON0bits.GIE = 1);
 [e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"74
-[; ;main.c: 74:     GPIO_Init();
+"70
+[; ;main.c: 70:     CANDisableErrorInterrupt(0x00);
+[e ( _CANDisableErrorInterrupt (1 -> -> 0 `i `uc ]
+"76
+[; ;main.c: 76:     GPIO_Init();
 [e ( _GPIO_Init ..  ]
-"77
-[; ;main.c: 77:     TMR0_StopTimer();
+"79
+[; ;main.c: 79:     TMR0_StopTimer();
 [e ( _TMR0_StopTimer ..  ]
-"91
-[; ;main.c: 91:     while (1)
+"93
+[; ;main.c: 93:     while (1)
 [e :U 3181 ]
-"92
-[; ;main.c: 92:     {
+"94
+[; ;main.c: 94:     {
 {
-"99
-[; ;main.c: 99:         __nop();
+"101
+[; ;main.c: 101:         __nop();
 [e ( ___nop ..  ]
+"119
+[; ;main.c: 119:         if ( ucASMode == 1 )
+[e $ ! == -> _ucASMode `i -> 1 `i 3183  ]
+"120
+[; ;main.c: 120:         {
+{
 "121
-[; ;main.c: 121:     }
+[; ;main.c: 121:             SERVICEBRAKE_Move(ucTargetBrake);
+[e ( _SERVICEBRAKE_Move (1 _ucTargetBrake ]
+"122
+[; ;main.c: 122:         }
+}
+[e :U 3183 ]
+"126
+[; ;main.c: 126:     }
 }
 [e :U 3180 ]
 [e $U 3181  ]
 [e :U 3182 ]
-"122
-[; ;main.c: 122: }
+"127
+[; ;main.c: 127: }
 [e :UE 3179 ]
 }

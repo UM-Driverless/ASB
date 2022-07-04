@@ -67,15 +67,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "235
 [; ;./mcc_generated_files/can1.h: 235: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
 [v _CAN1_Receive `(a ~T0 @X0 0 ef1`*S3178 ]
-"24 ./SERVICEBRAKE.h
-[; ;./SERVICEBRAKE.h: 24: void SERVICEBRAKE_Move (unsigned char ucTargetMove);
-[v _SERVICEBRAKE_Move `(v ~T0 @X0 0 ef1`uc ]
-"21
+"21 ./SERVICEBRAKE.h
 [; ;./SERVICEBRAKE.h: 21: extern unsigned char ucASBBeatSupervisor;
 [v _ucASBBeatSupervisor `uc ~T0 @X0 0 e ]
 "31 ./GPIO.h
 [; ;./GPIO.h: 31: void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
 [v _GPIO_PWM1_Control `(v ~T0 @X0 0 ef2`ui`ui ]
+"65046 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65046:     struct {
+[s S2995 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2995 . SWIE HLVDIE OSFIE CSWIE TU16AIE CLC1IE CANIE IOCIE ]
+"65045
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65045: typedef union {
+[u S2994 `S2995 1 ]
+[n S2994 . . ]
+"65057
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65057: extern volatile PIE0bits_t PIE0bits __attribute__((address(0x49E)));
+[v _PIE0bits `VS2994 ~T0 @X0 0 e@1182 ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3964,9 +3972,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "141
 [; ;MESSAGES.c: 141:                     {
 {
-"142
-[; ;MESSAGES.c: 142:                         SERVICEBRAKE_Move(ucTargetBrake);
-[e ( _SERVICEBRAKE_Move (1 _ucTargetBrake ]
 "143
 [; ;MESSAGES.c: 143:                         ucASBBeatSupervisor = 1;
 [e = _ucASBBeatSupervisor -> -> 1 `i `uc ]
@@ -4113,4 +4118,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 "190
 [; ;MESSAGES.c: 190: }
 [e :UE 3185 ]
+}
+"192
+[; ;MESSAGES.c: 192: void CANDisableErrorInterrupt (unsigned char ucInterruptSet)
+[v _CANDisableErrorInterrupt `(v ~T0 @X0 1 ef1`uc ]
+"193
+[; ;MESSAGES.c: 193: {
+{
+[e :U _CANDisableErrorInterrupt ]
+"192
+[; ;MESSAGES.c: 192: void CANDisableErrorInterrupt (unsigned char ucInterruptSet)
+[v _ucInterruptSet `uc ~T0 @X0 1 r1 ]
+"193
+[; ;MESSAGES.c: 193: {
+[f ]
+"194
+[; ;MESSAGES.c: 194:     if (ucInterruptSet == 0x01)
+[e $ ! == -> _ucInterruptSet `i -> 1 `i 3200  ]
+"195
+[; ;MESSAGES.c: 195:     {
+{
+"196
+[; ;MESSAGES.c: 196:         PIE0bits.CANIE = 1;
+[e = . . _PIE0bits 0 6 -> -> 1 `i `uc ]
+"197
+[; ;MESSAGES.c: 197:     }
+}
+[e $U 3201  ]
+"198
+[; ;MESSAGES.c: 198:     else if (ucInterruptSet == 0x00)
+[e :U 3200 ]
+[e $ ! == -> _ucInterruptSet `i -> 0 `i 3202  ]
+"199
+[; ;MESSAGES.c: 199:     {
+{
+"200
+[; ;MESSAGES.c: 200:         PIE0bits.CANIE = 0;
+[e = . . _PIE0bits 0 6 -> -> 0 `i `uc ]
+"201
+[; ;MESSAGES.c: 201:     }
+}
+[e :U 3202 ]
+[e :U 3201 ]
+"203
+[; ;MESSAGES.c: 203: }
+[e :UE 3199 ]
 }

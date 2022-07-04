@@ -38413,6 +38413,7 @@ extern unsigned char ucASMode;
 # 94 "./MESSAGES.h"
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
 void CANReadMessage (void);
+void CANDisableErrorInterrupt (unsigned char ucInterruptSet);
 # 10 "SERVICEBRAKE.c" 2
 
 # 1 "./SERVICEBRAKE.h" 1
@@ -38431,7 +38432,7 @@ void ASBSupervisor(void);
 # 11 "SERVICEBRAKE.c" 2
 
 # 1 "./PARAMETERS.h" 1
-# 27 "./PARAMETERS.h"
+# 30 "./PARAMETERS.h"
 extern unsigned char HDRPRES_min;
 extern unsigned char HDRPRES_max;
 extern unsigned char NPRES_min;
