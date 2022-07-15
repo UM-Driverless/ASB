@@ -11,6 +11,7 @@
 #include "ANALOG.h"
 #include "SERVICEBRAKE.h"
 #include "PARAMETERS.h"
+#include "GPIO.h"
 
 //VARIABLES
 unsigned char ucCount500ms;
@@ -35,6 +36,8 @@ void TEMPORIZATION_500ms (void)
 {
     ASBSupervisor();
     ucASBBeatSupervisor = FALSE;
+    CANWriteMessage ( ASB_SIGNALS, 0x08, 0, 0, 0, 0, 0, 0, 0, ucPedalPos );
+    
 }
 
 void TEMPORIZATION_1s (void)

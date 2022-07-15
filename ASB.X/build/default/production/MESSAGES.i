@@ -38402,7 +38402,7 @@ void CANDisableErrorInterrupt (unsigned char ucInterruptSet);
 
 
 # 1 "./PARAMETERS.h" 1
-# 30 "./PARAMETERS.h"
+# 33 "./PARAMETERS.h"
 extern unsigned char HDRPRES_min;
 extern unsigned char HDRPRES_max;
 extern unsigned char NPRES_min;

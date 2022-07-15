@@ -38453,7 +38453,7 @@ void ASBSupervisor(void);
 # 12 "TEMPORIZATIONS.c" 2
 
 # 1 "./PARAMETERS.h" 1
-# 30 "./PARAMETERS.h"
+# 33 "./PARAMETERS.h"
 extern unsigned char HDRPRES_min;
 extern unsigned char HDRPRES_max;
 extern unsigned char NPRES_min;
@@ -38463,6 +38463,21 @@ extern unsigned char NPRES_max;
 
 void PARAMETERS_Init (void);
 # 13 "TEMPORIZATIONS.c" 2
+
+# 1 "./GPIO.h" 1
+# 24 "./GPIO.h"
+extern unsigned char ucLEDState;
+extern unsigned char ucPedalPos;
+extern unsigned char ucPICHDRPRES1min;
+extern unsigned char ucPICHDRPRES2min;
+
+
+void GPIO_Init (void);
+void GPIO_PWM1_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+void GPIO_PWM2_Control (unsigned int uiDutyCycle, unsigned int uiFreq);
+void GPIO_LED(unsigned char ucMode);
+void GPIO_BrakePedalAtRest (void);
+# 14 "TEMPORIZATIONS.c" 2
 
 
 
@@ -38488,6 +38503,8 @@ void TEMPORIZATION_500ms (void)
 {
     ASBSupervisor();
     ucASBBeatSupervisor = 0;
+    CANWriteMessage ( 0x361, 0x08, 0, 0, 0, 0, 0, 0, 0, ucPedalPos );
+
 }
 
 void TEMPORIZATION_1s (void)

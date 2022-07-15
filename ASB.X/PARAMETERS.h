@@ -26,6 +26,9 @@ extern "C" {
 #define AS_EMERGENCY    3
 #define AS_FINISHED     4
     
+//ASB SIGNALS
+
+    
 //DECLARACIONES 
 extern unsigned char HDRPRES_min;
 extern unsigned char HDRPRES_max;

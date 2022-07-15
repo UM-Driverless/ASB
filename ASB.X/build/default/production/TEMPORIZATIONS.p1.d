@@ -18,4 +18,5 @@ mcc_generated_files/mcc.h  \
 ../ASB.X/mcc_generated_files/pwm1_16bit.h  \
 ANALOG.h  \
 SERVICEBRAKE.h  \
-PARAMETERS.h 
+PARAMETERS.h  \
+GPIO.h 
