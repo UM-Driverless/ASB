@@ -106,7 +106,7 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             uiValorCalculado = ( uiValorCalculado * 10 );
             uiValorCalculado = ( uiValorCalculado / 232 ); //sale el valor en bar
             ucValor = ( uiValorCalculado & 0xFF );
-            ucValor = ( uiValorVoltage / 100 );
+            //ucValor = ( uiValorVoltage / 100 );
             return (ucValor); //conversion a uc (5V->255)
         }   
     }
@@ -125,8 +125,15 @@ unsigned char ANALOG_GetVoltage (unsigned char ucEntradaAnalogica)
             uiValorCalculado = ( uiValorVoltage * 2 );
             uiValorCalculado = ( uiValorCalculado / 100 );
             ucValor = ( uiValorCalculado & 0xFF );
-            ucValor = ( uiValorVoltage / 100 );
-            return (ucValor); //conversion a uc (5V->255)
+            //ucValor = ( uiValorVoltage / 100 );
+            if ( ucValor > 110 ) //filtrar para mayor de 11 bar que es imposible
+            {
+                return (0); //conversion a uc 0.1bar
+            }
+            else
+            {
+                return (ucValor); //conversion a uc 0.1bar
+            }
         }  
     }
     else
