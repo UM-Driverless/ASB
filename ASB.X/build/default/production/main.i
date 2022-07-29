@@ -38484,6 +38484,9 @@ void main(void)
 
 
     TMR0_StopTimer();
+
+
+    EBS_Init();
 # 93 "main.c"
     while (1)
     {

@@ -14,10 +14,10 @@
 //VARIABLES
 unsigned int ucPICHDRPRES1;
 unsigned int ucPICHDRPRES2;
-unsigned int ucPICNPRES1;
-unsigned int ucPICNPRES2;
-unsigned int ucPICNPRES3;
-unsigned int ucPICNPRES4;
+unsigned int ucPICNPRES1; //0.1bar
+unsigned int ucPICNPRES2; //0.1bar
+unsigned int ucPICNPRES3; //0.1bar
+unsigned int ucPICNPRES4; //0.1bar
 unsigned int ucAN1;
 unsigned int ucAN2;
 

@@ -35,6 +35,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "167 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 167: void TMR0_StopTimer(void);
 [v _TMR0_StopTimer `(v ~T0 @X0 0 ef ]
+"21 ./EBS.h
+[; ;./EBS.h: 21: void EBS_Init (void);
+[v _EBS_Init `(v ~T0 @X0 0 ef ]
 "8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
@@ -3596,6 +3599,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "79
 [; ;main.c: 79:     TMR0_StopTimer();
 [e ( _TMR0_StopTimer ..  ]
+"82
+[; ;main.c: 82:     EBS_Init();
+[e ( _EBS_Init ..  ]
 "93
 [; ;main.c: 93:     while (1)
 [e :U 3181 ]

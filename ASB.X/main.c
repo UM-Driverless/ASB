@@ -79,7 +79,7 @@ void main(void)
     TMR0_StopTimer();
     
     //INICIALIZACIONES SOFT
-    //EBS_Init();
+    EBS_Init();
     //SERVICEBRAKE_Init();
     
     
