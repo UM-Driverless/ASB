@@ -226,7 +226,7 @@ channel_FVR_Buffer2 63
 ]
 "26
 [v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
-"140
+"147
 [v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
@@ -272,7 +272,7 @@ channel_FVR_Buffer2 63
 [v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
 "18 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
 [v _EBS_Init EBS_Init `(v  1 e 1 0 ]
-"149
+"151
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
 "24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
@@ -457,6 +457,8 @@ channel_FVR_Buffer2 63
 [v _PWM1_16BIT_Period_DefaultInterruptHandler PWM1_16BIT_Period_DefaultInterruptHandler `(v  1 s 1 PWM1_16BIT_Period_DefaultInterruptHandler ]
 "63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
 [v _PWM2_16BIT_Initialize PWM2_16BIT_Initialize `(v  1 e 1 0 ]
+"134
+[v _PWM2_16BIT_Enable PWM2_16BIT_Enable `(v  1 e 1 0 ]
 "139
 [v _PWM2_16BIT_Disable PWM2_16BIT_Disable `(v  1 e 1 0 ]
 "144
@@ -582,7 +584,7 @@ channel_FVR_Buffer2 63
 `uc 1 CANIF 1 0 :1:6 
 `uc 1 IOCIF 1 0 :1:7 
 ]
-"506 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+"506 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f26q84.h
 [u S1215 . 1 `S1206 1 . 1 0 ]
 [v _PIR0bits PIR0bits `VES1215  1 e 1 @1198 ]
 [s S35 . 1 `uc 1 INT0IF 1 0 :1:0 
@@ -687,6 +689,18 @@ channel_FVR_Buffer2 63
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
+[s S3491 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1615
+[u S3500 . 1 `S3491 1 . 1 0 ]
+[v _LATCbits LATCbits `VES3500  1 e 1 @1216 ]
 "1621
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1660
@@ -2123,6 +2137,63 @@ channel_FVR_Buffer2 63
 [v GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 46 ]
 "64
 } 0
+"144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+[v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 4 ]
+"148
+} 0
+"150
+[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 4 ]
+"154
+} 0
+"162
+[v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"166
+} 0
+"24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+[v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
+{
+"42
+} 0
+"18 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
+[v _EBS_Init EBS_Init `(v  1 e 1 0 ]
+{
+"25
+} 0
+"151
+[v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
+{
+[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
+[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
+[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 2 ]
+"163
+} 0
+"134 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
+[v _PWM2_16BIT_Enable PWM2_16BIT_Enable `(v  1 e 1 0 ]
+{
+"137
+} 0
+"139
+[v _PWM2_16BIT_Disable PWM2_16BIT_Disable `(v  1 e 1 0 ]
+{
+"142
+} 0
+"69 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+[v _GPIO_PWM2_Control GPIO_PWM2_Control `(v  1 e 1 0 ]
+{
+"72
+[v GPIO_PWM2_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 52 ]
+"71
+[v GPIO_PWM2_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 50 ]
+"69
+[v GPIO_PWM2_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 44 ]
+[v GPIO_PWM2_Control@uiFreq uiFreq `ui  1 p 2 46 ]
+"84
+} 0
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
@@ -2199,45 +2270,22 @@ channel_FVR_Buffer2 63
 [v ___aldiv@divisor divisor `l  1 p 4 8 ]
 "41
 } 0
-"144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
-[v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
+"144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
+[v _PWM2_16BIT_WritePeriodRegister PWM2_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 4 ]
+[v PWM2_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 4 ]
 "148
 } 0
 "150
-[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+[v _PWM2_16BIT_SetSlice1Output1DutyCycleRegister PWM2_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 4 ]
+[v PWM2_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 4 ]
 "154
 } 0
 "162
-[v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+[v _PWM2_16BIT_LoadBufferRegisters PWM2_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
 {
 "166
-} 0
-"24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
-[v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
-{
-"42
-} 0
-"18 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
-[v _EBS_Init EBS_Init `(v  1 e 1 0 ]
-{
-"23
-} 0
-"149
-[v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
-{
-[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
-[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
-[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 6 ]
-"161
-} 0
-"139 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
-[v _PWM2_16BIT_Disable PWM2_16BIT_Disable `(v  1 e 1 0 ]
-{
-"142
 } 0
 "192 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
 [v _CANDisableErrorInterrupt CANDisableErrorInterrupt `(v  1 e 1 0 ]
@@ -2464,10 +2512,10 @@ channel_FVR_Buffer2 63
 {
 "33
 } 0
-"140 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
+"147 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
 [v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
 {
-"158
+"165
 } 0
 "38 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
 [v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
@@ -2514,10 +2562,10 @@ channel_FVR_Buffer2 63
 [v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
 {
 [v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
-"29
-[v ANALOG_GetVoltage@uiValorVoltage uiValorVoltage `us  1 a 2 74 ]
 "30
-[v ANALOG_GetVoltage@uiValorCalculado uiValorCalculado `us  1 a 2 72 ]
+[v ANALOG_GetVoltage@uiValorCalculado uiValorCalculado `us  1 a 2 74 ]
+"29
+[v ANALOG_GetVoltage@uiValorVoltage uiValorVoltage `us  1 a 2 72 ]
 "28
 [v ANALOG_GetVoltage@uiValorAnalog uiValorAnalog `us  1 a 2 70 ]
 "33
@@ -2527,22 +2575,22 @@ channel_FVR_Buffer2 63
 "26
 [v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
 [v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 67 ]
-"137
+"144
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3889 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3921 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3894 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3897 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3889 1 fAsBytes 4 0 `S3894 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3897  1 a 4 33 ]
+[s S3926 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3929 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3921 1 fAsBytes 4 0 `S3926 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3929  1 a 4 33 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S3965 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3997 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3968 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3965 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3968  1 a 2 37 ]
+[u S4000 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3997 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S4000  1 a 2 37 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
