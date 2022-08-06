@@ -46,6 +46,7 @@ unsigned char ucASBState;
 unsigned char ucASRequesState;
 //PMC
 unsigned char ucASMode;
+unsigned char ucSDC;
 
 //FUNCIONES
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8)
@@ -180,6 +181,7 @@ void CANReadMessage (void)
                     {
                         GPIO_PWM1_Control(0, 300);
                     }
+                    ucSDC = data4;
                     break;
                 default:
                     Nop();

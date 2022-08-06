@@ -21,6 +21,7 @@ extern "C" {
 void EBS_Init (void);
 void EBS_CheckUP_Routine (void);
 void EBS_Watchdog (unsigned char ucWDState);
+void EBSLed (void);
 
 
 #ifdef	__cplusplus

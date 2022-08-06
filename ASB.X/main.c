@@ -121,6 +121,7 @@ void main(void)
             SERVICEBRAKE_Move(ucTargetBrake);
         }
         
+        EBSLed();
         
         //
     }

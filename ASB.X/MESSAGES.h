@@ -57,6 +57,7 @@ extern unsigned char ucASBState;
 extern unsigned char ucASRequesState;
 //PMC
 extern unsigned char ucASMode;
+extern unsigned char ucSDC;
 
 //DEFINICIONES
 #define DataLength_0        			0
