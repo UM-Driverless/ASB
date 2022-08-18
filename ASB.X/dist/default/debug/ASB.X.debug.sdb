@@ -3,15 +3,15 @@
 [d edition pro ]
 [d chip 18F26Q84 ]
 [d frameptr 1249 ]
-"455 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
-[e E22156 . `uc
+"455 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
+[e E22165 . `uc
 CONTEXT_1 0
 CONTEXT_2 1
 CONTEXT_3 2
 CONTEXT_4 3
 ]
 "502
-[e E22143 . `uc
+[e E22152 . `uc
 HDRPRES1 0
 HDRPRES2 1
 NPRES4 19
@@ -24,17 +24,17 @@ channel_DAC1 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"103 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
-[e E22386 . `uc
+"103 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+[e E22395 . `uc
 FIFO1 1
 ]
 "274
-[e E22356 . `uc
+[e E22365 . `uc
 CAN_OP_MODE_REQUEST_SUCCESS 0
 CAN_OP_MODE_REQUEST_FAIL 1
 CAN_OP_MODE_SYS_ERROR_OCCURED 2
 ]
-[e E22346 . `uc
+[e E22355 . `uc
 CAN_NORMAL_FD_MODE 0
 CAN_DISABLE_MODE 1
 CAN_INTERNAL_LOOPBACK_MODE 2
@@ -45,40 +45,40 @@ CAN_NORMAL_2_0_MODE 6
 CAN_RESTRICTED_OPERATION_MODE 7
 ]
 "341
-[e E22820 . `uc
+[e E23136 . `uc
 CAN_RX_MSG_NOT_AVAILABLE 0
 CAN_RX_MSG_AVAILABLE 1
 CAN_RX_MSG_OVERFLOW 8
 ]
 "357
-[e E22328 . `uc
+[e E22337 . `uc
 CAN_FRAME_STD 0
 CAN_FRAME_EXT 1
 ]
 "358
-[e E22332 . `uc
+[e E22341 . `uc
 CAN_FRAME_DATA 0
 CAN_FRAME_RTR 1
 ]
 "359
-[e E22324 . `uc
+[e E22333 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
 ]
 "495
-[e E22361 . `uc
+[e E22370 . `uc
 CAN_TX_FIFO_FULL 0
 CAN_TX_FIFO_AVAILABLE 1
 ]
 "541
-[e E22340 . `uc
+[e E22349 . `uc
 CAN_TX_MSG_REQUEST_SUCCESS 0
 CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
 CAN_TX_MSG_REQUEST_BRS_ERROR 2
 CAN_TX_MSG_REQUEST_FIFO_FULL 3
 ]
 "552
-[e E22365 . `uc
+[e E22374 . `uc
 DLC_0 0
 DLC_1 1
 DLC_2 2
@@ -96,16 +96,16 @@ DLC_32 13
 DLC_48 14
 DLC_64 15
 ]
-[e E22336 . `uc
+[e E22345 . `uc
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
 ]
 "570
-[e E22383 . `uc
+[e E22392 . `uc
 TXQ 0
 ]
-"97 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
-[e E22142 . `uc
+"97 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
+[e E22151 . `uc
 TMR2_ROP_STARTS_TMRON 0
 TMR2_ROP_STARTS_TMRON_ERSHIGH 1
 TMR2_ROP_STARTS_TMRON_ERSLOW 2
@@ -129,7 +129,7 @@ TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
 TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
 ]
 "103
-[e E22165 . `uc
+[e E22174 . `uc
 TMR2_T2INPPS 0
 TMR2_RESERVED 1
 TMR2_T4POSTSCALED 2
@@ -168,50 +168,50 @@ TMR2_UART5_RX_EDGE 34
 TMR2_UART5_TX_EDGE 35
 TMR2_RESERVED_4 36
 ]
-"63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
-[e E22430 . `uc
+"65 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\MESSAGES.c
+[e E22744 . `uc
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
 ]
-"64
-[e E22418 . `uc
+"66
+[e E22732 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
 ]
-"65
-[e E22426 . `uc
+"67
+[e E22740 . `uc
 CAN_FRAME_DATA 0
 CAN_FRAME_RTR 1
 ]
-"66
-[e E22422 . `uc
+"68
+[e E22736 . `uc
 CAN_FRAME_STD 0
 CAN_FRAME_EXT 1
 ]
-"91
-[e E22455 . `uc
+"93
+[e E22769 . `uc
 CAN_TX_FIFO_FULL 0
 CAN_TX_FIFO_AVAILABLE 1
 ]
-[e E22477 . `uc
+[e E22791 . `uc
 TXQ 0
 ]
-"93
-[e E22434 . `uc
+"95
+[e E22748 . `uc
 CAN_TX_MSG_REQUEST_SUCCESS 0
 CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
 CAN_TX_MSG_REQUEST_BRS_ERROR 2
 CAN_TX_MSG_REQUEST_FIFO_FULL 3
 ]
-"39 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
-[e E22167 . `uc
+"39 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\ANALOG.c
+[e E22176 . `uc
 CONTEXT_1 0
 CONTEXT_2 1
 CONTEXT_3 2
 CONTEXT_4 3
 ]
 "40
-[e E22154 . `uc
+[e E22163 . `uc
 HDRPRES1 0
 HDRPRES2 1
 NPRES4 19
@@ -226,53 +226,61 @@ channel_FVR_Buffer2 63
 ]
 "26
 [v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
-"140
+[v i2_ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
+"147
 [v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 [v i2___aldiv __aldiv `(l  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
+"43 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 [v i2___fltol __fltol `(l  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 [v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 [v i2___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+[v i2___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 [v i2___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 [v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
-"149 C:\Users\panze\Documents\GitHub\ASB\ASB.X\EBS.c
+"20 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\EBS.c
+[v _EBS_Init EBS_Init `(v  1 e 1 0 ]
+"31
+[v _EBS_CheckUP_Routine EBS_CheckUP_Routine `(v  1 e 1 0 ]
+"196
 [v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
-"24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"222
+[v _EBSError EBSError `(v  1 e 1 0 ]
+"24 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
 "49
 [v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
@@ -281,18 +289,22 @@ channel_FVR_Buffer2 63
 [v _GPIO_PWM2_Control GPIO_PWM2_Control `(v  1 e 1 0 ]
 "113
 [v _GPIO_BrakePedalAtRest GPIO_BrakePedalAtRest `(v  1 e 1 0 ]
-"59 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"59 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"71 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
+"71 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 "445
 [v _ADC_DisableChannelSequencer ADC_DisableChannelSequencer `T(v  1 e 1 0 ]
+[v i2_ADC_DisableChannelSequencer ADC_DisableChannelSequencer `T(v  1 e 1 0 ]
 "455
 [v _ADC_SelectContext ADC_SelectContext `T(v  1 e 1 0 ]
+[v i2_ADC_SelectContext ADC_SelectContext `T(v  1 e 1 0 ]
 "525
 [v _ADC_GetSingleConversion ADC_GetSingleConversion `(us  1 e 2 0 ]
+[v i2_ADC_GetSingleConversion ADC_GetSingleConversion `(us  1 e 2 0 ]
 "548
 [v _ADC_StopConversion ADC_StopConversion `T(v  1 e 1 0 ]
+[v i2_ADC_StopConversion ADC_StopConversion `T(v  1 e 1 0 ]
 "718
 [v _ADC_SetADIInterruptHandler ADC_SetADIInterruptHandler `(v  1 e 1 0 ]
 "723
@@ -317,7 +329,7 @@ channel_FVR_Buffer2 63
 [v _ADC_DefaultContext4Threshold_ISR ADC_DefaultContext4Threshold_ISR `(v  1 s 1 ADC_DefaultContext4Threshold_ISR ]
 "779
 [v _ADC_DefaultActiveClockTuning_ISR ADC_DefaultActiveClockTuning_ISR `(v  1 s 1 ADC_DefaultActiveClockTuning_ISR ]
-"120 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+"120 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
 [v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
 "125
 [v _DefaultInvalidMessageHandler DefaultInvalidMessageHandler `(v  1 s 1 DefaultInvalidMessageHandler ]
@@ -348,14 +360,14 @@ channel_FVR_Buffer2 63
 "269
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
 "302
-[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
+[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22365  1 e 1 0 ]
 "331
-[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
-[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
+[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22355  1 e 1 0 ]
+[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22355  1 e 1 0 ]
 "336
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
 "341
-[v _GetRxFifoStatus GetRxFifoStatus `(E22820  1 s 1 GetRxFifoStatus ]
+[v _GetRxFifoStatus GetRxFifoStatus `(E23136  1 s 1 GetRxFifoStatus ]
 "346
 [v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
 "380
@@ -367,15 +379,15 @@ channel_FVR_Buffer2 63
 "490
 [v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
 "495
-[v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
+[v _GetTxFifoStatus GetTxFifoStatus `(E22370  1 s 1 GetTxFifoStatus ]
 "500
 [v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
 "541
-[v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
+[v _ValidateTransmission ValidateTransmission `(E22349  1 s 1 ValidateTransmission ]
 "570
-[v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
+[v _CAN1_Transmit CAN1_Transmit `(E22349  1 e 1 0 ]
 "592
-[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
+[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22370  1 e 1 0 ]
 "604
 [v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
 "609
@@ -406,9 +418,10 @@ channel_FVR_Buffer2 63
 [v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
 "741
 [v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
-"38 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
+"38 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
 [v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
-"33 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
+[v i2_DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+"33 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
 [v _INT0_ISR INT0_ISR `(v  1 e 1 0 ]
 "42
 [v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
@@ -418,19 +431,19 @@ channel_FVR_Buffer2 63
 [v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
 "62
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
-"52 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
+"50 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "66
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "80
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+"63 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
 [v _PWM1_16BIT_Initialize PWM1_16BIT_Initialize `(v  1 e 1 0 ]
 "144
 [v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
@@ -453,8 +466,10 @@ channel_FVR_Buffer2 63
 [v _PWM1_16BIT_Slice1Output2_DefaultInterruptHandler PWM1_16BIT_Slice1Output2_DefaultInterruptHandler `(v  1 s 1 PWM1_16BIT_Slice1Output2_DefaultInterruptHandler ]
 "219
 [v _PWM1_16BIT_Period_DefaultInterruptHandler PWM1_16BIT_Period_DefaultInterruptHandler `(v  1 s 1 PWM1_16BIT_Period_DefaultInterruptHandler ]
-"63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
+"63 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
 [v _PWM2_16BIT_Initialize PWM2_16BIT_Initialize `(v  1 e 1 0 ]
+"134
+[v _PWM2_16BIT_Enable PWM2_16BIT_Enable `(v  1 e 1 0 ]
 "139
 [v _PWM2_16BIT_Disable PWM2_16BIT_Disable `(v  1 e 1 0 ]
 "144
@@ -475,7 +490,7 @@ channel_FVR_Buffer2 63
 [v _PWM2_16BIT_Slice1Output2_DefaultInterruptHandler PWM2_16BIT_Slice1Output2_DefaultInterruptHandler `(v  1 s 1 PWM2_16BIT_Slice1Output2_DefaultInterruptHandler ]
 "219
 [v _PWM2_16BIT_Period_DefaultInterruptHandler PWM2_16BIT_Period_DefaultInterruptHandler `(v  1 s 1 PWM2_16BIT_Period_DefaultInterruptHandler ]
-"61 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
+"61 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "93
 [v _TMR0_StopTimer TMR0_StopTimer `(v  1 e 1 0 ]
@@ -487,7 +502,7 @@ channel_FVR_Buffer2 63
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 "146
 [v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"65 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
+"65 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "128
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -499,7 +514,7 @@ channel_FVR_Buffer2 63
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 "217
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"65 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
+"65 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "109
 [v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
@@ -519,29 +534,29 @@ channel_FVR_Buffer2 63
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 "193
 [v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
-"51 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
+"53 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\MESSAGES.c
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
-"100
+"102
 [v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
-"192
+"199
 [v _CANDisableErrorInterrupt CANDisableErrorInterrupt `(v  1 e 1 0 ]
-"25 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+"25 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\SERVICEBRAKE.c
 [v _SERVICEBRAKE_Move SERVICEBRAKE_Move `(v  1 e 1 0 ]
 "78
 [v _ASBSupervisor ASBSupervisor `(v  1 e 1 0 ]
-"25 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
+"26 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
 [v _TEMPORIZATION_10ms TEMPORIZATION_10ms `(v  1 e 1 0 ]
-"30
+"31
 [v _TEMPORIZATION_100ms TEMPORIZATION_100ms `(v  1 e 1 0 ]
-"35
+"36
 [v _TEMPORIZATION_500ms TEMPORIZATION_500ms `(v  1 e 1 0 ]
-"43
+"44
 [v _TEMPORIZATION_1s TEMPORIZATION_1s `(v  1 e 1 0 ]
-"49
+"51
 [v _TEMPORIZATION_10s TEMPORIZATION_10s `(v  1 e 1 0 ]
-"54
+"56
 [v _TEMPORIZATION_30s TEMPORIZATION_30s `(v  1 e 1 0 ]
-"59
+"61
 [v _TEMPORIZATION_1mins TEMPORIZATION_1mins `(v  1 e 1 0 ]
 [s S1302 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
@@ -549,13 +564,13 @@ channel_FVR_Buffer2 63
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"22 C:\Users\panze\Documents\GitHub\ASB\ASB.X/MESSAGES.h
+"22 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X/MESSAGES.h
 [u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
 [s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v _msgTransmit msgTransmit `S1311  1 e 7 0 ]
 "23
 [v _msgReceipt msgReceipt `S1311  1 e 7 0 ]
-"15 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
+"15 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\ANALOG.c
 [v _ucPICHDRPRES1 ucPICHDRPRES1 `ui  1 e 2 0 ]
 "16
 [v _ucPICHDRPRES2 ucPICHDRPRES2 `ui  1 e 2 0 ]
@@ -580,7 +595,7 @@ channel_FVR_Buffer2 63
 `uc 1 CANIF 1 0 :1:6 
 `uc 1 IOCIF 1 0 :1:7 
 ]
-"506 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+"506 C:/Users/elena/.mchp_packs/Microchip/PIC18F-Q_DFP/1.12.193/xc8\pic\include\proc\pic18f26q84.h
 [u S1215 . 1 `S1206 1 . 1 0 ]
 [v _PIR0bits PIR0bits `VES1215  1 e 1 @1198 ]
 [s S35 . 1 `uc 1 INT0IF 1 0 :1:0 
@@ -653,7 +668,7 @@ channel_FVR_Buffer2 63
 [v _PMD2 PMD2 `VEuc  1 e 1 @98 ]
 "1474
 [v _LATA LATA `VEuc  1 e 1 @1214 ]
-[s S3223 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S3233 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -663,8 +678,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "1491
-[u S3232 . 1 `S3223 1 . 1 0 ]
-[v _LATAbits LATAbits `VES3232  1 e 1 @1214 ]
+[u S3242 . 1 `S3233 1 . 1 0 ]
+[v _LATAbits LATAbits `VES3242  1 e 1 @1214 ]
 "1514
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
@@ -685,11 +700,23 @@ channel_FVR_Buffer2 63
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
+[s S3500 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1615
+[u S3509 . 1 `S3500 1 . 1 0 ]
+[v _LATCbits LATCbits `VES3509  1 e 1 @1216 ]
 "1621
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1660
 [v _TRISA TRISA `VEuc  1 e 1 @1222 ]
-[s S3163 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S3173 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -699,8 +726,8 @@ channel_FVR_Buffer2 63
 `uc 1 TRISA7 1 0 :1:7 
 ]
 "1677
-[u S3172 . 1 `S3163 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES3172  1 e 1 @1222 ]
+[u S3182 . 1 `S3173 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES3182  1 e 1 @1222 ]
 "1678
 [v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
 "1722
@@ -721,7 +748,7 @@ channel_FVR_Buffer2 63
 [v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
 "1784
 [v _TRISC TRISC `VEuc  1 e 1 @1224 ]
-[s S3196 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S3206 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -731,13 +758,13 @@ channel_FVR_Buffer2 63
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "1801
-[u S3205 . 1 `S3196 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES3205  1 e 1 @1224 ]
+[u S3215 . 1 `S3206 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES3215  1 e 1 @1224 ]
 "1802
 [v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
 "1846
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S3244 . 1 `uc 1 RA0 1 0 :1:0 
+[s S3254 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -747,9 +774,9 @@ channel_FVR_Buffer2 63
 `uc 1 RA7 1 0 :1:7 
 ]
 "1884
-[u S3253 . 1 `S3244 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES3253  1 e 1 @1230 ]
-[s S3368 . 1 `uc 1 RC0 1 0 :1:0 
+[u S3263 . 1 `S3254 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES3263  1 e 1 @1230 ]
+[s S3378 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -759,8 +786,8 @@ channel_FVR_Buffer2 63
 `uc 1 RC7 1 0 :1:7 
 ]
 "2008
-[u S3377 . 1 `S3368 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES3377  1 e 1 @1232 ]
+[u S3387 . 1 `S3378 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES3387  1 e 1 @1232 ]
 [s S67 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -1459,7 +1486,7 @@ channel_FVR_Buffer2 63
 [v _ADCSEL4bits ADCSEL4bits `VES572  1 e 1 @1023 ]
 "58425
 [v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
-[s S3121 . 1 `uc 1 ANSELA0 1 0 :1:0 
+[s S3131 . 1 `uc 1 ANSELA0 1 0 :1:0 
 `uc 1 ANSELA1 1 0 :1:1 
 `uc 1 ANSELA2 1 0 :1:2 
 `uc 1 ANSELA3 1 0 :1:3 
@@ -1469,10 +1496,10 @@ channel_FVR_Buffer2 63
 `uc 1 ANSELA7 1 0 :1:7 
 ]
 "58442
-[u S3130 . 1 `S3121 1 . 1 0 ]
+[u S3140 . 1 `S3131 1 . 1 0 ]
 "58442
 "58442
-[v _ANSELAbits ANSELAbits `VES3130  1 e 1 @1024 ]
+[v _ANSELAbits ANSELAbits `VES3140  1 e 1 @1024 ]
 "58487
 [v _WPUA WPUA `VEuc  1 e 1 @1025 ]
 "58549
@@ -1493,7 +1520,7 @@ channel_FVR_Buffer2 63
 [v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
 "59417
 [v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
-[s S3142 . 1 `uc 1 ANSELC0 1 0 :1:0 
+[s S3152 . 1 `uc 1 ANSELC0 1 0 :1:0 
 `uc 1 ANSELC1 1 0 :1:1 
 `uc 1 ANSELC2 1 0 :1:2 
 `uc 1 ANSELC3 1 0 :1:3 
@@ -1503,10 +1530,10 @@ channel_FVR_Buffer2 63
 `uc 1 ANSELC7 1 0 :1:7 
 ]
 "59434
-[u S3151 . 1 `S3142 1 . 1 0 ]
+[u S3161 . 1 `S3152 1 . 1 0 ]
 "59434
 "59434
-[v _ANSELCbits ANSELCbits `VES3151  1 e 1 @1040 ]
+[v _ANSELCbits ANSELCbits `VES3161  1 e 1 @1040 ]
 "59479
 [v _WPUC WPUC `VEuc  1 e 1 @1041 ]
 "59541
@@ -1685,7 +1712,9 @@ channel_FVR_Buffer2 63
 "65375
 "65375
 [v _PIE5bits PIE5bits `VES2174  1 e 1 @1187 ]
-"18 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"17 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\EBS.c
+[v _ucCheckUPError ucCheckUPError `uc  1 e 1 0 ]
+"18 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\GPIO.c
 [v _ucLEDState ucLEDState `uc  1 e 1 0 ]
 "19
 [v _ucPedalPos ucPedalPos `uc  1 e 1 0 ]
@@ -1693,7 +1722,7 @@ channel_FVR_Buffer2 63
 [v _ucPICHDRPRES1min ucPICHDRPRES1min `uc  1 e 1 0 ]
 "21
 [v _ucPICHDRPRES2min ucPICHDRPRES2min `uc  1 e 1 0 ]
-"56 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
+"56 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_ConversionComplete_ISR ADC_ConversionComplete_ISR `*.37(v  1 s 2 ADC_ConversionComplete_ISR ]
 "57
 [v _ADC_Context1Thereshld_ISR ADC_Context1Thereshld_ISR `*.37(v  1 s 2 ADC_Context1Thereshld_ISR ]
@@ -1705,9 +1734,9 @@ channel_FVR_Buffer2 63
 [v _ADC_Context4Thereshld_ISR ADC_Context4Thereshld_ISR `*.37(v  1 s 2 ADC_Context4Thereshld_ISR ]
 "61
 [v _ADC_ActiveClockTuning_ISR ADC_ActiveClockTuning_ISR `*.37(v  1 s 2 ADC_ActiveClockTuning_ISR ]
-"101 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+"101 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
 [v _rxMsgData rxMsgData `VE[8]uc  1 s 8 rxMsgData ]
-[s S1317 CAN1_RX_FIFO 2 `E22386 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
+[s S1317 CAN1_RX_FIFO 2 `E22395 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
 "103
 [v _rxFifos rxFifos `VE[1]S1317  1 s 2 rxFifos ]
 "109
@@ -1728,29 +1757,29 @@ channel_FVR_Buffer2 63
 [v _CAN1_TxAttemptHandler CAN1_TxAttemptHandler `*.37(v  1 s 2 CAN1_TxAttemptHandler ]
 "118
 [v _CAN1_RxBufferOverflowHandler CAN1_RxBufferOverflowHandler `*.37(v  1 s 2 CAN1_RxBufferOverflowHandler ]
-"31 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
+"31 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
 [v _INT0_InterruptHandler INT0_InterruptHandler `*.37(v  1 e 2 0 ]
-"56 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+"56 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
 [v _PWM1_16BIT_Slice1Output1_InterruptHandler PWM1_16BIT_Slice1Output1_InterruptHandler `*.37(v  1 s 2 PWM1_16BIT_Slice1Output1_InterruptHandler ]
 "57
 [v _PWM1_16BIT_Slice1Output2_InterruptHandler PWM1_16BIT_Slice1Output2_InterruptHandler `*.37(v  1 s 2 PWM1_16BIT_Slice1Output2_InterruptHandler ]
 "58
 [v _PWM1_16BIT_Period_InterruptHandler PWM1_16BIT_Period_InterruptHandler `*.37(v  1 s 2 PWM1_16BIT_Period_InterruptHandler ]
-"56 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
+"56 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
 [v _PWM2_16BIT_Slice1Output1_InterruptHandler PWM2_16BIT_Slice1Output1_InterruptHandler `*.37(v  1 s 2 PWM2_16BIT_Slice1Output1_InterruptHandler ]
 "57
 [v _PWM2_16BIT_Slice1Output2_InterruptHandler PWM2_16BIT_Slice1Output2_InterruptHandler `*.37(v  1 s 2 PWM2_16BIT_Slice1Output2_InterruptHandler ]
 "58
 [v _PWM2_16BIT_Period_InterruptHandler PWM2_16BIT_Period_InterruptHandler `*.37(v  1 s 2 PWM2_16BIT_Period_InterruptHandler ]
-"59 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
+"59 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
-"58 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
+"58 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "59
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"59 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
+"59 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
 [v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
-"15 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
+"15 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\MESSAGES.c
 [v _CANDATAdata CANDATAdata `[8]uc  1 e 8 0 ]
 "17
 [v _ucTargetAccelerator ucTargetAccelerator `uc  1 e 1 0 ]
@@ -1800,11 +1829,17 @@ channel_FVR_Buffer2 63
 [v _uiAcc_lateral uiAcc_lateral `ui  1 e 2 0 ]
 "43
 [v _uiYaw_rate uiYaw_rate `ui  1 e 2 0 ]
+"45
+[v _ucASBState ucASBState `uc  1 e 1 0 ]
 "46
 [v _ucASRequesState ucASRequesState `uc  1 e 1 0 ]
 "48
 [v _ucASMode ucASMode `uc  1 e 1 0 ]
-"12 C:\Users\panze\Documents\GitHub\ASB\ASB.X\PARAMETERS.c
+"49
+[v _ucSDC ucSDC `uc  1 e 1 0 ]
+"50
+[v _uiRPM uiRPM `ui  1 e 2 0 ]
+"12 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\PARAMETERS.c
 [v _HDRPRES_min HDRPRES_min `uc  1 e 1 0 ]
 "13
 [v _HDRPRES_max HDRPRES_max `uc  1 e 1 0 ]
@@ -1812,7 +1847,13 @@ channel_FVR_Buffer2 63
 [v _NPRES_min NPRES_min `uc  1 e 1 0 ]
 "15
 [v _NPRES_max NPRES_max `uc  1 e 1 0 ]
-"16 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+"16
+[v _NPRES_atm NPRES_atm `uc  1 e 1 0 ]
+"17
+[v _HDRPRES_braking HDRPRES_braking `uc  1 e 1 0 ]
+"18
+[v _NPRES_braking NPRES_braking `uc  1 e 1 0 ]
+"16 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\SERVICEBRAKE.c
 [v _uiDutyServomotor uiDutyServomotor `ui  1 e 2 0 ]
 "17
 [v _ucServoLmin ucServoLmin `uc  1 e 1 0 ]
@@ -1820,32 +1861,32 @@ channel_FVR_Buffer2 63
 [v _ucASBBeatSupervisor ucASBBeatSupervisor `uc  1 e 1 0 ]
 "21
 [v _ucASBFlagSupervisor ucASBFlagSupervisor `uc  1 e 1 0 ]
-"17 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
+"18 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
 [v _ucCount500ms ucCount500ms `uc  1 e 1 0 ]
-"18
-[v _ucCount1s ucCount1s `uc  1 e 1 0 ]
 "19
-[v _ucCount10s ucCount10s `uc  1 e 1 0 ]
+[v _ucCount1s ucCount1s `uc  1 e 1 0 ]
 "20
-[v _uiCount30s uiCount30s `ui  1 e 2 0 ]
+[v _ucCount10s ucCount10s `uc  1 e 1 0 ]
 "21
+[v _uiCount30s uiCount30s `ui  1 e 2 0 ]
+"22
 [v _uiCount1min uiCount1min `ui  1 e 2 0 ]
-"59 C:\Users\panze\Documents\GitHub\ASB\ASB.X\main.c
+"59 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"127
+"128
 } 0
-"93 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
+"93 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_StopTimer TMR0_StopTimer `(v  1 e 1 0 ]
 {
 "97
 } 0
-"50 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
+"50 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "64
 } 0
-"65 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
+"65 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "95
@@ -1853,10 +1894,10 @@ channel_FVR_Buffer2 63
 "189
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "191
 } 0
-"65 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
+"65 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "98
@@ -1864,10 +1905,10 @@ channel_FVR_Buffer2 63
 "213
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "215
 } 0
-"61 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
+"61 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "85
@@ -1875,10 +1916,10 @@ channel_FVR_Buffer2 63
 "142
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "144
 } 0
-"63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
+"63 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
 [v _PWM2_16BIT_Initialize PWM2_16BIT_Initialize `(v  1 e 1 0 ]
 {
 "132
@@ -1886,22 +1927,22 @@ channel_FVR_Buffer2 63
 "197
 [v _PWM2_16BIT_Slice1Output2_SetInterruptHandler PWM2_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM2_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v PWM2_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "200
 } 0
 "192
 [v _PWM2_16BIT_Slice1Output1_SetInterruptHandler PWM2_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM2_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v PWM2_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "195
 } 0
 "202
 [v _PWM2_16BIT_Period_SetInterruptHandler PWM2_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM2_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v PWM2_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "205
 } 0
-"63 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+"63 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
 [v _PWM1_16BIT_Initialize PWM1_16BIT_Initialize `(v  1 e 1 0 ]
 {
 "132
@@ -1909,42 +1950,42 @@ channel_FVR_Buffer2 63
 "197
 [v _PWM1_16BIT_Slice1Output2_SetInterruptHandler PWM1_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v PWM1_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "200
 } 0
 "192
 [v _PWM1_16BIT_Slice1Output1_SetInterruptHandler PWM1_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v PWM1_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "195
 } 0
 "202
 [v _PWM1_16BIT_Period_SetInterruptHandler PWM1_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v PWM1_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "205
 } 0
-"80 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
+"80 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "100
 } 0
-"55 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "122
 } 0
-"66 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
+"66 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "78
 } 0
-"52 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "56
 } 0
-"62 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
+"62 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
 {
 "73
@@ -1952,10 +1993,10 @@ channel_FVR_Buffer2 63
 "53
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "55
 } 0
-"269 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+"269 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
 {
 "300
@@ -1969,7 +2010,7 @@ channel_FVR_Buffer2 63
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
 {
 "155
-[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 4 ]
+[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 6 ]
 "161
 } 0
 "185
@@ -1985,25 +2026,25 @@ channel_FVR_Buffer2 63
 "735
 [v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetFIFO1NotEmptyHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetFIFO1NotEmptyHandler@handler handler `*.37(v  1 p 2 6 ]
 "738
 } 0
 "302
-[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
+[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22365  1 e 1 0 ]
 {
-[v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
+[v CAN1_OperationModeSet@requestMode requestMode `CE22355  1 a 1 wreg ]
 "304
-[v CAN1_OperationModeSet@status status `E22356  1 a 1 5 ]
+[v CAN1_OperationModeSet@status status `E22365  1 a 1 7 ]
 "305
-[v CAN1_OperationModeSet@opMode opMode `E22346  1 a 1 4 ]
+[v CAN1_OperationModeSet@opMode opMode `E22355  1 a 1 6 ]
 "302
-[v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
+[v CAN1_OperationModeSet@requestMode requestMode `CE22355  1 a 1 wreg ]
 "304
-[v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 6 ]
+[v CAN1_OperationModeSet@requestMode requestMode `CE22355  1 a 1 8 ]
 "329
 } 0
 "331
-[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
+[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22355  1 e 1 0 ]
 {
 "334
 } 0
@@ -2015,43 +2056,43 @@ channel_FVR_Buffer2 63
 "672
 [v _CAN1_SetTxAttemptInterruptHandler CAN1_SetTxAttemptInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetTxAttemptInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetTxAttemptInterruptHandler@handler handler `*.37(v  1 p 2 6 ]
 "675
 } 0
 "667
 [v _CAN1_SetSystemErrorInterruptHandler CAN1_SetSystemErrorInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetSystemErrorInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetSystemErrorInterruptHandler@handler handler `*.37(v  1 p 2 6 ]
 "670
 } 0
 "677
 [v _CAN1_SetRxBufferOverFlowInterruptHandler CAN1_SetRxBufferOverFlowInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetRxBufferOverFlowInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetRxBufferOverFlowInterruptHandler@handler handler `*.37(v  1 p 2 6 ]
 "680
 } 0
 "662
 [v _CAN1_SetModeChangeInterruptHandler CAN1_SetModeChangeInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetModeChangeInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetModeChangeInterruptHandler@handler handler `*.37(v  1 p 2 6 ]
 "665
 } 0
 "647
 [v _CAN1_SetInvalidMessageInterruptHandler CAN1_SetInvalidMessageInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetInvalidMessageInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetInvalidMessageInterruptHandler@handler handler `*.37(v  1 p 2 6 ]
 "650
 } 0
 "652
 [v _CAN1_SetBusWakeUpActivityInterruptHandler CAN1_SetBusWakeUpActivityInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetBusWakeUpActivityInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetBusWakeUpActivityInterruptHandler@handler handler `*.37(v  1 p 2 6 ]
 "655
 } 0
 "657
 [v _CAN1_SetBusErrorInterruptHandler CAN1_SetBusErrorInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetBusErrorInterruptHandler@handler handler `*.37(v  1 p 2 4 ]
+[v CAN1_SetBusErrorInterruptHandler@handler handler `*.37(v  1 p 2 6 ]
 "660
 } 0
 "227
@@ -2059,7 +2100,7 @@ channel_FVR_Buffer2 63
 {
 "241
 } 0
-"71 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
+"71 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 {
 "438
@@ -2067,146 +2108,70 @@ channel_FVR_Buffer2 63
 "738
 [v _ADC_SetContext4ThresholdInterruptHandler ADC_SetContext4ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext4ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v ADC_SetContext4ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "741
 } 0
 "733
 [v _ADC_SetContext3ThresholdInterruptHandler ADC_SetContext3ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext3ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v ADC_SetContext3ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "736
 } 0
 "728
 [v _ADC_SetContext2ThresholdInterruptHandler ADC_SetContext2ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext2ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v ADC_SetContext2ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "731
 } 0
 "723
 [v _ADC_SetContext1ThresholdInterruptHandler ADC_SetContext1ThresholdInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetContext1ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v ADC_SetContext1ThresholdInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "726
 } 0
 "743
 [v _ADC_SetActiveClockTuningInterruptHandler ADC_SetActiveClockTuningInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetActiveClockTuningInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v ADC_SetActiveClockTuningInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "746
 } 0
 "718
 [v _ADC_SetADIInterruptHandler ADC_SetADIInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+[v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "721
 } 0
-"25 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+"25 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\SERVICEBRAKE.c
 [v _SERVICEBRAKE_Move SERVICEBRAKE_Move `(v  1 e 1 0 ]
 {
 [v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 wreg ]
 [v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 wreg ]
 "31
-[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 0 ]
+[v SERVICEBRAKE_Move@ucTargetMove ucTargetMove `uc  1 a 1 81 ]
 "58
 } 0
-"49 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"49 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
 {
 "52
-[v GPIO_PWM1_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 52 ]
+[v GPIO_PWM1_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 79 ]
 "51
-[v GPIO_PWM1_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 50 ]
+[v GPIO_PWM1_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 77 ]
 "49
-[v GPIO_PWM1_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 44 ]
-[v GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 46 ]
+[v GPIO_PWM1_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 71 ]
+[v GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 73 ]
 "64
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-{
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 14 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 13 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 4 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 12 ]
-"44
-} 0
-"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
-{
-"17
-[v ___wmul@product product `ui  1 a 2 8 ]
-"15
-[v ___wmul@multiplier multiplier `ui  1 p 2 4 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
-"53
-} 0
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-{
-"10
-[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
-"11
-[v ___lwdiv@counter counter `uc  1 a 1 8 ]
-"7
-[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
-[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
-"30
-} 0
-"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
-{
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 43 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 42 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 34 ]
-"70
-} 0
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
-[v ___fladd __fladd `(d  1 e 4 0 ]
-{
-"17
-[v ___fladd@grs grs `uc  1 a 1 33 ]
-"15
-[v ___fladd@bexp bexp `uc  1 a 1 32 ]
-"16
-[v ___fladd@aexp aexp `uc  1 a 1 31 ]
-"13
-[v ___fladd@signs signs `uc  1 a 1 30 ]
-"10
-[v ___fladd@b b `d  1 p 4 18 ]
-[v ___fladd@a a `d  1 p 4 22 ]
-"237
-} 0
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
-[v ___aldiv __aldiv `(l  1 e 4 0 ]
-{
-"10
-[v ___aldiv@quotient quotient `l  1 a 4 14 ]
-"11
-[v ___aldiv@sign sign `uc  1 a 1 13 ]
-[v ___aldiv@counter counter `uc  1 a 1 12 ]
-"7
-[v ___aldiv@dividend dividend `l  1 p 4 4 ]
-[v ___aldiv@divisor divisor `l  1 p 4 8 ]
-"41
-} 0
-"144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+"144 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
 [v _PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 4 ]
+[v PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 6 ]
 "148
 } 0
 "150
 [v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
 {
-[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 4 ]
+[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 6 ]
 "154
 } 0
 "162
@@ -2214,26 +2179,248 @@ channel_FVR_Buffer2 63
 {
 "166
 } 0
-"24 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"24 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
 {
 "42
 } 0
-"192 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
+"20 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\EBS.c
+[v _EBS_Init EBS_Init `(v  1 e 1 0 ]
+{
+"29
+} 0
+"31
+[v _EBS_CheckUP_Routine EBS_CheckUP_Routine `(v  1 e 1 0 ]
+{
+"33
+[v EBS_CheckUP_Routine@ucCheck ucCheck `uc  1 a 1 5 ]
+"194
+} 0
+"196
+[v _EBS_Watchdog EBS_Watchdog `(v  1 e 1 0 ]
+{
+[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
+[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 wreg ]
+[v EBS_Watchdog@ucWDState ucWDState `uc  1 a 1 81 ]
+"208
+} 0
+"134 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
+[v _PWM2_16BIT_Enable PWM2_16BIT_Enable `(v  1 e 1 0 ]
+{
+"137
+} 0
+"139
+[v _PWM2_16BIT_Disable PWM2_16BIT_Disable `(v  1 e 1 0 ]
+{
+"142
+} 0
+"69 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\GPIO.c
+[v _GPIO_PWM2_Control GPIO_PWM2_Control `(v  1 e 1 0 ]
+{
+"72
+[v GPIO_PWM2_Control@uiConvertedDC uiConvertedDC `ui  1 a 2 79 ]
+"71
+[v GPIO_PWM2_Control@uiConvertedPeriod uiConvertedPeriod `ui  1 a 2 77 ]
+"69
+[v GPIO_PWM2_Control@uiDutyCycle uiDutyCycle `ui  1 p 2 71 ]
+[v GPIO_PWM2_Control@uiFreq uiFreq `ui  1 p 2 73 ]
+"84
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 16 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 15 ]
+[v ___aldiv@counter counter `uc  1 a 1 14 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 6 ]
+[v ___aldiv@divisor divisor `l  1 p 4 10 ]
+"41
+} 0
+"144 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm2_16bit.c
+[v _PWM2_16BIT_WritePeriodRegister PWM2_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
+{
+[v PWM2_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 6 ]
+"148
+} 0
+"150
+[v _PWM2_16BIT_SetSlice1Output1DutyCycleRegister PWM2_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM2_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 6 ]
+"154
+} 0
+"162
+[v _PWM2_16BIT_LoadBufferRegisters PWM2_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"166
+} 0
+"222 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\EBS.c
+[v _EBSError EBSError `(v  1 e 1 0 ]
+{
+[v EBSError@Error Error `uc  1 a 1 wreg ]
+[v EBSError@Error Error `uc  1 a 1 wreg ]
+"224
+[v EBSError@Error Error `uc  1 a 1 6 ]
+"227
+} 0
+"38 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+{
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 6 ]
+"42
+} 0
+"26 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\ANALOG.c
+[v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
+{
+[v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
+"30
+[v ANALOG_GetVoltage@uiValorCalculado uiValorCalculado `us  1 a 2 80 ]
+"29
+[v ANALOG_GetVoltage@uiValorVoltage uiValorVoltage `us  1 a 2 78 ]
+"28
+[v ANALOG_GetVoltage@uiValorAnalog uiValorAnalog `us  1 a 2 76 ]
+"33
+[v ANALOG_GetVoltage@ucFlag ucFlag `uc  1 a 1 75 ]
+"31
+[v ANALOG_GetVoltage@ucValor ucValor `uc  1 a 1 74 ]
+"26
+[v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
+[v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 73 ]
+"144
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 16 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 15 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 6 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 14 ]
+"44
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 10 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 6 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 8 ]
+"53
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 10 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 6 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 8 ]
+"30
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 70 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 69 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 61 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S3947 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S3952 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3955 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3947 1 fAsBytes 4 0 `S3952 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3955  1 a 4 39 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 34 ]
+[s S4023 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S4026 . 2 `s 1 i 2 0 `us 1 n 2 0 `S4023 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S4026  1 a 2 43 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 38 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 33 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 32 ]
+"8
+[v ___flmul@b b `d  1 p 4 20 ]
+[v ___flmul@a a `d  1 p 4 24 ]
+"205
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 60 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 59 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 58 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 57 ]
+"10
+[v ___fladd@b b `d  1 p 4 45 ]
+[v ___fladd@a a `d  1 p 4 49 ]
+"237
+} 0
+"548 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
+[v _ADC_StopConversion ADC_StopConversion `T(v  1 e 1 0 ]
+{
+"552
+} 0
+"455
+[v _ADC_SelectContext ADC_SelectContext `T(v  1 e 1 0 ]
+{
+[v ADC_SelectContext@context context `E22165  1 a 1 wreg ]
+[v ADC_SelectContext@context context `E22165  1 a 1 wreg ]
+"457
+[v ADC_SelectContext@context context `E22165  1 a 1 6 ]
+"458
+} 0
+"525
+[v _ADC_GetSingleConversion ADC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetSingleConversion@channel channel `E22152  1 a 1 wreg ]
+[v ADC_GetSingleConversion@channel channel `E22152  1 a 1 wreg ]
+"528
+[v ADC_GetSingleConversion@channel channel `E22152  1 a 1 10 ]
+"546
+} 0
+"445
+[v _ADC_DisableChannelSequencer ADC_DisableChannelSequencer `T(v  1 e 1 0 ]
+{
+"448
+} 0
+"199 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\MESSAGES.c
 [v _CANDisableErrorInterrupt CANDisableErrorInterrupt `(v  1 e 1 0 ]
 {
 [v CANDisableErrorInterrupt@ucInterruptSet ucInterruptSet `uc  1 a 1 wreg ]
 [v CANDisableErrorInterrupt@ucInterruptSet ucInterruptSet `uc  1 a 1 wreg ]
-"194
-[v CANDisableErrorInterrupt@ucInterruptSet ucInterruptSet `uc  1 a 1 4 ]
-"203
+"201
+[v CANDisableErrorInterrupt@ucInterruptSet ucInterruptSet `uc  1 a 1 6 ]
+"210
 } 0
-"58 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
+"58 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
 "89
 } 0
-"166 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
+"166 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr2.c
 [v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
 {
 "177
@@ -2248,12 +2435,12 @@ channel_FVR_Buffer2 63
 {
 "196
 } 0
-"25 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
+"26 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
 [v _TEMPORIZATION_10ms TEMPORIZATION_10ms `(v  1 e 1 0 ]
 {
-"28
+"29
 } 0
-"165 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
+"165 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "202
@@ -2274,63 +2461,63 @@ channel_FVR_Buffer2 63
 {
 "220
 } 0
-"35 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
+"36 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
 [v _TEMPORIZATION_500ms TEMPORIZATION_500ms `(v  1 e 1 0 ]
 {
-"41
+"42
 } 0
-"78 C:\Users\panze\Documents\GitHub\ASB\ASB.X\SERVICEBRAKE.c
+"78 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\SERVICEBRAKE.c
 [v _ASBSupervisor ASBSupervisor `(v  1 e 1 0 ]
 {
 "93
 } 0
-"54 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
+"56 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
 [v _TEMPORIZATION_30s TEMPORIZATION_30s `(v  1 e 1 0 ]
 {
-"57
+"59
 } 0
-"43
+"44
 [v _TEMPORIZATION_1s TEMPORIZATION_1s `(v  1 e 1 0 ]
 {
-"47
+"49
 } 0
-"51 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
+"53 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\MESSAGES.c
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
 {
-[v CANWriteMessage@id id `ul  1 p 4 29 ]
-[v CANWriteMessage@dataLength dataLength `uc  1 p 1 33 ]
-[v CANWriteMessage@data1 data1 `uc  1 p 1 34 ]
-[v CANWriteMessage@data2 data2 `uc  1 p 1 35 ]
-[v CANWriteMessage@data3 data3 `uc  1 p 1 36 ]
-[v CANWriteMessage@data4 data4 `uc  1 p 1 37 ]
-[v CANWriteMessage@data5 data5 `uc  1 p 1 38 ]
-[v CANWriteMessage@data6 data6 `uc  1 p 1 39 ]
-[v CANWriteMessage@data7 data7 `uc  1 p 1 40 ]
-[v CANWriteMessage@data8 data8 `uc  1 p 1 41 ]
-"96
+[v CANWriteMessage@id id `ul  1 p 4 28 ]
+[v CANWriteMessage@dataLength dataLength `uc  1 p 1 32 ]
+[v CANWriteMessage@data1 data1 `uc  1 p 1 33 ]
+[v CANWriteMessage@data2 data2 `uc  1 p 1 34 ]
+[v CANWriteMessage@data3 data3 `uc  1 p 1 35 ]
+[v CANWriteMessage@data4 data4 `uc  1 p 1 36 ]
+[v CANWriteMessage@data5 data5 `uc  1 p 1 37 ]
+[v CANWriteMessage@data6 data6 `uc  1 p 1 38 ]
+[v CANWriteMessage@data7 data7 `uc  1 p 1 39 ]
+[v CANWriteMessage@data8 data8 `uc  1 p 1 40 ]
+"98
 } 0
-"592 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
-[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
+"592 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22370  1 e 1 0 ]
 {
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22392  1 a 1 wreg ]
 "594
-[v CAN1_TransmitFIFOStatusGet@status status `E22361  1 a 1 2 ]
+[v CAN1_TransmitFIFOStatusGet@status status `E22370  1 a 1 2 ]
 "592
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22392  1 a 1 wreg ]
 "594
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 3 ]
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22392  1 a 1 3 ]
 "602
 } 0
 "570
-[v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
+[v _CAN1_Transmit CAN1_Transmit `(E22349  1 e 1 0 ]
 {
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22392  1 a 1 wreg ]
 "579
-[v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 26 ]
+[v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 25 ]
 "572
-[v CAN1_Transmit@status status `E22340  1 a 1 25 ]
+[v CAN1_Transmit@status status `E22349  1 a 1 24 ]
 "570
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22392  1 a 1 wreg ]
 [s S1302 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
@@ -2339,8 +2526,8 @@ channel_FVR_Buffer2 63
 ]
 [u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
 [s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Transmit@txCanMsg txCanMsg `*.39S1311  1 p 2 23 ]
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 28 ]
+[v CAN1_Transmit@txCanMsg txCanMsg `*.39S1311  1 p 2 22 ]
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22392  1 a 1 27 ]
 "590
 } 0
 "490
@@ -2356,9 +2543,9 @@ channel_FVR_Buffer2 63
 [v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
 {
 "502
-[v WriteMessageToFifo@msgId msgId `ul  1 a 4 19 ]
+[v WriteMessageToFifo@msgId msgId `ul  1 a 4 18 ]
 "503
-[v WriteMessageToFifo@status status `uc  1 a 1 18 ]
+[v WriteMessageToFifo@status status `uc  1 a 1 17 ]
 "500
 [v WriteMessageToFifo@txFifoObj txFifoObj `*.39uc  1 p 2 11 ]
 [s S1302 . 1 `uc 1 idType 1 0 :1:0 
@@ -2373,7 +2560,7 @@ channel_FVR_Buffer2 63
 "539
 } 0
 "541
-[v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
+[v _ValidateTransmission ValidateTransmission `(E22349  1 s 1 ValidateTransmission ]
 {
 [v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
 [s S1302 . 1 `uc 1 idType 1 0 :1:0 
@@ -2384,9 +2571,9 @@ channel_FVR_Buffer2 63
 ]
 "544
 [u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
-[v ValidateTransmission@field field `S1308  1 a 1 9 ]
+[v ValidateTransmission@field field `S1308  1 a 1 8 ]
 "543
-[v ValidateTransmission@txMsgStatus txMsgStatus `E22340  1 a 1 8 ]
+[v ValidateTransmission@txMsgStatus txMsgStatus `E22349  1 a 1 7 ]
 "541
 [v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
 [s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
@@ -2396,12 +2583,12 @@ channel_FVR_Buffer2 63
 "568
 } 0
 "331
-[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
+[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22355  1 e 1 0 ]
 {
 "334
 } 0
 "495
-[v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
+[v _GetTxFifoStatus GetTxFifoStatus `(E22370  1 s 1 GetTxFifoStatus ]
 {
 [v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
 [v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
@@ -2429,33 +2616,33 @@ channel_FVR_Buffer2 63
 {
 "607
 } 0
-"59 C:\Users\panze\Documents\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
+"61 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\TEMPORIZATIONS.c
 [v _TEMPORIZATION_1mins TEMPORIZATION_1mins `(v  1 e 1 0 ]
 {
-"62
+"64
 } 0
-"49
+"51
 [v _TEMPORIZATION_10s TEMPORIZATION_10s `(v  1 e 1 0 ]
 {
-"52
+"54
 } 0
-"30
+"31
 [v _TEMPORIZATION_100ms TEMPORIZATION_100ms `(v  1 e 1 0 ]
 {
-"33
+"34
 } 0
-"140 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
+"147 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\ANALOG.c
 [v _ANALOG_RedAll ANALOG_RedAll `(v  1 e 1 0 ]
 {
-"158
+"165
 } 0
-"38 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
-[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+"38 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/delay.c
+[v i2_DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
 {
-[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
+[v i2DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
 "42
 } 0
-"121 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
+"121 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
 "130
@@ -2470,7 +2657,7 @@ channel_FVR_Buffer2 63
 {
 "149
 } 0
-"33 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
+"33 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/ext_int.c
 [v _INT0_ISR INT0_ISR `(v  1 e 1 0 ]
 {
 "39
@@ -2485,84 +2672,84 @@ channel_FVR_Buffer2 63
 {
 "60
 } 0
-"113 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"113 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\GPIO.c
 [v _GPIO_BrakePedalAtRest GPIO_BrakePedalAtRest `(v  1 e 1 0 ]
 {
 "129
 } 0
-"26 C:\Users\panze\Documents\GitHub\ASB\ASB.X\ANALOG.c
-[v _ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
+"26 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\ANALOG.c
+[v i2_ANALOG_GetVoltage ANALOG_GetVoltage `(uc  1 e 1 0 ]
 {
-[v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
-"29
-[v ANALOG_GetVoltage@uiValorVoltage uiValorVoltage `us  1 a 2 74 ]
+[v i2ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
 "30
-[v ANALOG_GetVoltage@uiValorCalculado uiValorCalculado `us  1 a 2 72 ]
+[v i2ANALOG_GetVoltage@uiValorCalculado uiValorCalculado `us  1 a 2 74 ]
+"29
+[v i2ANALOG_GetVoltage@uiValorVoltage uiValorVoltage `us  1 a 2 72 ]
 "28
-[v ANALOG_GetVoltage@uiValorAnalog uiValorAnalog `us  1 a 2 70 ]
+[v i2ANALOG_GetVoltage@uiValorAnalog uiValorAnalog `us  1 a 2 70 ]
 "33
-[v ANALOG_GetVoltage@ucFlag ucFlag `uc  1 a 1 69 ]
+[v i2ANALOG_GetVoltage@ucFlag ucFlag `uc  1 a 1 69 ]
 "31
-[v ANALOG_GetVoltage@ucValor ucValor `uc  1 a 1 68 ]
+[v i2ANALOG_GetVoltage@ucValor ucValor `uc  1 a 1 68 ]
 "26
-[v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
-[v ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 67 ]
-"137
+[v i2ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 wreg ]
+[v i2ANALOG_GetVoltage@ucEntradaAnalogica ucEntradaAnalogica `uc  1 a 1 67 ]
+"144
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v i2___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3885 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3947 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3890 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3893 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3885 1 fAsBytes 4 0 `S3890 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3893  1 a 4 33 ]
+[s S3952 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3955 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3947 1 fAsBytes 4 0 `S3952 1 fAsWords 4 0 ]
+[v i2___flmul@prod prod `S3955  1 a 4 33 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S3961 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[v i2___flmul@grs grs `ul  1 a 4 27 ]
+[s S4023 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3964 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3961 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3964  1 a 2 37 ]
+[u S4026 . 2 `s 1 i 2 0 `us 1 n 2 0 `S4023 1 nAsBytes 2 0 ]
+[v i2___flmul@temp temp `S4026  1 a 2 37 ]
 "10
-[v ___flmul@bexp bexp `uc  1 a 1 32 ]
+[v i2___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 31 ]
+[v i2___flmul@aexp aexp `uc  1 a 1 31 ]
 "9
-[v ___flmul@sign sign `uc  1 a 1 26 ]
+[v i2___flmul@sign sign `uc  1 a 1 26 ]
 "8
-[v ___flmul@b b `d  1 p 4 14 ]
-[v ___flmul@a a `d  1 p 4 18 ]
+[v i2___flmul@b b `d  1 p 4 14 ]
+[v i2___flmul@a a `d  1 p 4 18 ]
 "205
 } 0
-"548 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
-[v _ADC_StopConversion ADC_StopConversion `T(v  1 e 1 0 ]
+"548 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/adc.c
+[v i2_ADC_StopConversion ADC_StopConversion `T(v  1 e 1 0 ]
 {
 "552
 } 0
 "455
-[v _ADC_SelectContext ADC_SelectContext `T(v  1 e 1 0 ]
+[v i2_ADC_SelectContext ADC_SelectContext `T(v  1 e 1 0 ]
 {
-[v ADC_SelectContext@context context `E22156  1 a 1 wreg ]
-[v ADC_SelectContext@context context `E22156  1 a 1 wreg ]
+[v i2ADC_SelectContext@context context `E22165  1 a 1 wreg ]
+[v i2ADC_SelectContext@context context `E22165  1 a 1 wreg ]
 "457
-[v ADC_SelectContext@context context `E22156  1 a 1 0 ]
+[v i2ADC_SelectContext@context context `E22165  1 a 1 0 ]
 "458
 } 0
 "525
-[v _ADC_GetSingleConversion ADC_GetSingleConversion `(us  1 e 2 0 ]
+[v i2_ADC_GetSingleConversion ADC_GetSingleConversion `(us  1 e 2 0 ]
 {
-[v ADC_GetSingleConversion@channel channel `E22143  1 a 1 wreg ]
-[v ADC_GetSingleConversion@channel channel `E22143  1 a 1 wreg ]
+[v i2ADC_GetSingleConversion@channel channel `E22152  1 a 1 wreg ]
+[v i2ADC_GetSingleConversion@channel channel `E22152  1 a 1 wreg ]
 "528
-[v ADC_GetSingleConversion@channel channel `E22143  1 a 1 4 ]
+[v i2ADC_GetSingleConversion@channel channel `E22152  1 a 1 4 ]
 "546
 } 0
 "445
-[v _ADC_DisableChannelSequencer ADC_DisableChannelSequencer `T(v  1 e 1 0 ]
+[v i2_ADC_DisableChannelSequencer ADC_DisableChannelSequencer `T(v  1 e 1 0 ]
 {
 "448
 } 0
-"741 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+"741 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
 [v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
 {
 "749
@@ -2572,30 +2759,30 @@ channel_FVR_Buffer2 63
 {
 "123
 } 0
-"100 C:\Users\panze\Documents\GitHub\ASB\ASB.X\MESSAGES.c
+"102 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\MESSAGES.c
 [v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
 {
-"102
-[v CANReadMessage@id id `ul  1 a 4 82 ]
-"106
-[v CANReadMessage@data2 data2 `uc  1 a 1 93 ]
-"105
-[v CANReadMessage@data1 data1 `uc  1 a 1 92 ]
-"107
-[v CANReadMessage@data3 data3 `uc  1 a 1 91 ]
-"109
-[v CANReadMessage@data5 data5 `uc  1 a 1 90 ]
+"104
+[v CANReadMessage@id id `ul  1 a 4 80 ]
 "108
-[v CANReadMessage@data4 data4 `uc  1 a 1 89 ]
+[v CANReadMessage@data2 data2 `uc  1 a 1 91 ]
+"107
+[v CANReadMessage@data1 data1 `uc  1 a 1 90 ]
 "110
-[v CANReadMessage@data6 data6 `uc  1 a 1 88 ]
-"112
-[v CANReadMessage@data8 data8 `uc  1 a 1 87 ]
+[v CANReadMessage@data4 data4 `uc  1 a 1 89 ]
+"109
+[v CANReadMessage@data3 data3 `uc  1 a 1 88 ]
 "111
-[v CANReadMessage@data7 data7 `uc  1 a 1 86 ]
-"190
+[v CANReadMessage@data5 data5 `uc  1 a 1 87 ]
+"112
+[v CANReadMessage@data6 data6 `uc  1 a 1 86 ]
+"114
+[v CANReadMessage@data8 data8 `uc  1 a 1 85 ]
+"113
+[v CANReadMessage@data7 data7 `uc  1 a 1 84 ]
+"197
 } 0
-"49 C:\Users\panze\Documents\GitHub\ASB\ASB.X\GPIO.c
+"49 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\GPIO.c
 [v i2_GPIO_PWM1_Control GPIO_PWM1_Control `(v  1 e 1 0 ]
 {
 "52
@@ -2607,7 +2794,7 @@ channel_FVR_Buffer2 63
 [v i2GPIO_PWM1_Control@uiFreq uiFreq `ui  1 p 2 67 ]
 "64
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
 [v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
 [v i2___xxtofl@sign sign `uc  1 a 1 wreg ]
@@ -2622,7 +2809,7 @@ channel_FVR_Buffer2 63
 [v i2___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
-"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
 [v i2___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -2632,7 +2819,7 @@ channel_FVR_Buffer2 63
 [v i2___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwdiv.c
 [v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
@@ -2644,7 +2831,7 @@ channel_FVR_Buffer2 63
 [v i2___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "30
 } 0
-"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
+"43 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
 [v i2___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
@@ -2654,7 +2841,7 @@ channel_FVR_Buffer2 63
 [v i2___fltol@f1 f1 `d  1 p 4 55 ]
 "70
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
 [v i2___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
@@ -2670,7 +2857,7 @@ channel_FVR_Buffer2 63
 [v i2___fladd@a a `d  1 p 4 43 ]
 "237
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\aldiv.c
 [v i2___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "10
@@ -2683,7 +2870,7 @@ channel_FVR_Buffer2 63
 [v i2___aldiv@divisor divisor `l  1 p 4 4 ]
 "41
 } 0
-"144 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
+"144 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/pwm1_16bit.c
 [v i2_PWM1_16BIT_WritePeriodRegister PWM1_16BIT_WritePeriodRegister `(v  1 e 1 0 ]
 {
 [v i2PWM1_16BIT_WritePeriodRegister@periodCount periodCount `us  1 p 2 0 ]
@@ -2700,7 +2887,7 @@ channel_FVR_Buffer2 63
 {
 "166
 } 0
-"447 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+"447 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
 [v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
 {
 "467
@@ -2711,9 +2898,9 @@ channel_FVR_Buffer2 63
 [v CAN1_ReceivedMessageCountGet@fifoDepth fifoDepth `uc  1 a 1 6 ]
 [v CAN1_ReceivedMessageCountGet@numOfMsg numOfMsg `uc  1 a 1 3 ]
 "453
-[v CAN1_ReceivedMessageCountGet@channel channel `E22386  1 a 1 5 ]
+[v CAN1_ReceivedMessageCountGet@channel channel `E22395  1 a 1 5 ]
 "454
-[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E22820  1 a 1 4 ]
+[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E23136  1 a 1 4 ]
 "449
 [v CAN1_ReceivedMessageCountGet@index index `uc  1 a 1 9 ]
 [v CAN1_ReceivedMessageCountGet@totalMsgObj totalMsgObj `uc  1 a 1 2 ]
@@ -2723,9 +2910,9 @@ channel_FVR_Buffer2 63
 [v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
 {
 "414
-[v CAN1_Receive@index index `uc  1 a 1 36 ]
+[v CAN1_Receive@index index `uc  1 a 1 35 ]
 "415
-[v CAN1_Receive@status status `a  1 a 1 35 ]
+[v CAN1_Receive@status status `a  1 a 1 34 ]
 [s S1302 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
@@ -2735,7 +2922,7 @@ channel_FVR_Buffer2 63
 "412
 [u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
 [s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Receive@rxCanMsg rxCanMsg `*.39S1311  1 p 2 33 ]
+[v CAN1_Receive@rxCanMsg rxCanMsg `*.39S1311  1 p 2 32 ]
 "428
 } 0
 "380
@@ -2743,14 +2930,14 @@ channel_FVR_Buffer2 63
 {
 [v Receive@index index `uc  1 a 1 wreg ]
 "387
-[v Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 29 ]
+[v Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 28 ]
 "383
-[v Receive@rxMsgStatus rxMsgStatus `E22820  1 a 1 31 ]
+[v Receive@rxMsgStatus rxMsgStatus `E23136  1 a 1 30 ]
 "382
-[v Receive@status status `a  1 a 1 28 ]
+[v Receive@status status `a  1 a 1 27 ]
 "380
 [v Receive@index index `uc  1 a 1 wreg ]
-[v Receive@channel channel `E22386  1 p 1 23 ]
+[v Receive@channel channel `E22395  1 p 1 22 ]
 [s S1302 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
@@ -2759,18 +2946,18 @@ channel_FVR_Buffer2 63
 ]
 [u S1308 . 1 `uc 1 msgfields 1 0 `S1302 1 . 1 0 ]
 [s S1311 . 7 `ul 1 msgId 4 0 `S1308 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v Receive@rxCanMsg rxCanMsg `*.39S1311  1 p 2 24 ]
+[v Receive@rxCanMsg rxCanMsg `*.39S1311  1 p 2 23 ]
 "382
-[v Receive@index index `uc  1 a 1 32 ]
+[v Receive@index index `uc  1 a 1 31 ]
 "410
 } 0
 "346
 [v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
 {
 "348
-[v ReadMessageFromFifo@msgId msgId `ul  1 a 4 18 ]
+[v ReadMessageFromFifo@msgId msgId `ul  1 a 4 17 ]
 "349
-[v ReadMessageFromFifo@status status `uc  1 a 1 22 ]
+[v ReadMessageFromFifo@status status `uc  1 a 1 21 ]
 "346
 [v ReadMessageFromFifo@rxFifoObj rxFifoObj `*.39uc  1 p 2 11 ]
 [s S1302 . 1 `uc 1 idType 1 0 :1:0 
@@ -2784,7 +2971,7 @@ channel_FVR_Buffer2 63
 [v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S1311  1 p 2 13 ]
 "378
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
 "8
@@ -2799,8 +2986,8 @@ channel_FVR_Buffer2 63
 [v memcpy@n n `ui  1 p 2 4 ]
 "18
 } 0
-"341 C:\Users\panze\Documents\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
-[v _GetRxFifoStatus GetRxFifoStatus `(E22820  1 s 1 GetRxFifoStatus ]
+"341 C:\Users\elena\OneDrive\Documentos\GitHub\ASB\ASB.X\mcc_generated_files/can1.c
+[v _GetRxFifoStatus GetRxFifoStatus `(E23136  1 s 1 GetRxFifoStatus ]
 {
 [v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
 [v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]

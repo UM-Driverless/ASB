@@ -12,6 +12,7 @@
 #include "SERVICEBRAKE.h"
 #include "PARAMETERS.h"
 #include "GPIO.h"
+#include "EBS.h"
 
 //VARIABLES
 unsigned char ucCount500ms;
@@ -43,7 +44,8 @@ void TEMPORIZATION_500ms (void)
 void TEMPORIZATION_1s (void)
 {
     LED_Toggle();
-    CANWriteMessage ( ASB_ANALOG, 0x08, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
+    CANWriteMessage ( ASB_STATE, DataLength_8, ucASBState, ucASRequesState, ucCheckUPError, 0, 0, 0, 0, 0 );
+    CANWriteMessage ( ASB_ANALOG, DataLength_8, ucPICHDRPRES1, ucPICHDRPRES2, ucPICNPRES1, ucPICNPRES2, ucPICNPRES3, ucPICNPRES4, ucAN1, ucAN2 );
 }
 
 void TEMPORIZATION_10s (void)

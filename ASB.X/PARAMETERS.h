@@ -33,7 +33,10 @@ extern "C" {
 extern unsigned char HDRPRES_min;
 extern unsigned char HDRPRES_max;
 extern unsigned char NPRES_min;
+extern unsigned char NPRES_atm;
 extern unsigned char NPRES_max;
+extern unsigned char HDRPRES_braking;
+extern unsigned char NPRES_braking;
 
 
 //FUNCIONES

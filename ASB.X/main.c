@@ -89,7 +89,7 @@ void main(void)
     AS_CLS_SDC_SetHigh();
     DELAY_milliseconds(10000);
     EBS_Watchdog(WD_DISABLE);*/
-
+EBS_CheckUP_Routine();
     while (1)
     {
         // Add your application code
@@ -106,7 +106,7 @@ void main(void)
         //GPIO_PWM2_Control(25, 10);
         
         
-        //EBS_CheckUP_Routine();
+        
         
         //PRUEBA DE SERVOMOTOR
         /*uiIndex++;
@@ -121,7 +121,7 @@ void main(void)
             SERVICEBRAKE_Move(ucTargetBrake);
         }
         
-        EBSLed();
+        //EBSLed();
         
         //
     }

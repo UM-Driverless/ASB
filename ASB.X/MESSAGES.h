@@ -59,6 +59,8 @@ extern unsigned char ucASRequesState;
 extern unsigned char ucASMode;
 extern unsigned char ucSDC;
 
+extern unsigned int  uiRPM;
+
 //DEFINICIONES
 #define DataLength_0        			0
 #define DataLength_1        			1
@@ -85,6 +87,7 @@ extern unsigned char ucSDC;
 #define ASB_STATE                   0x362
 //PMC
 #define PMC_STATE                   0x347
+#define PMC_ECU1                    0x345
 //STEERING WHEELL 
 #define STEER_WH_CONT               0x412
 //ETC

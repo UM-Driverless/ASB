@@ -13,6 +13,9 @@ unsigned char HDRPRES_min;
 unsigned char HDRPRES_max;
 unsigned char NPRES_min;
 unsigned char NPRES_max;
+unsigned char NPRES_atm;
+unsigned char HDRPRES_braking;
+unsigned char NPRES_braking;
 
 //FUNCIONES
 void PARAMETERS_Init (void)
@@ -21,4 +24,7 @@ void PARAMETERS_Init (void)
     HDRPRES_max = 200;
     NPRES_min = 5;
     NPRES_max = 10;
+    NPRES_atm = 1;
+    HDRPRES_braking = 30;
+    NPRES_braking = 6;
 }

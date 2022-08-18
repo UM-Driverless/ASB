@@ -19,4 +19,5 @@ mcc_generated_files/mcc.h  \
 ANALOG.h  \
 SERVICEBRAKE.h  \
 PARAMETERS.h  \
-GPIO.h 
+GPIO.h  \
+EBS.h 
