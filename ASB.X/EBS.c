@@ -67,7 +67,7 @@ void EBS_CheckUP_Routine (void)
     {
         if ( SDC_IS_READY_GetValue() == FALSE )
         {
-         ucCheck = 5;
+            ucCheck = 5;
         }
         else
         {
@@ -78,7 +78,7 @@ void EBS_CheckUP_Routine (void)
     if ( ucCheck == 5 )
     {
         EBS_Watchdog(WD_ENABLE);
-        ucCheck++;
+        ucCheck = 6;
     }
     //6.Check EBS neumatic storage sensors
     if ( ucCheck == 6 )
@@ -94,16 +94,18 @@ void EBS_CheckUP_Routine (void)
     }
     
     //7 Check EBS neumatic storage sensors 3 y 4
+    //NO TENEMOS ESTOS SENSORES AL FINAL
     if ( ucCheck == 7 )
     {
-        if ( ( ANALOG_GetVoltage(AN_PICNPRES3) <= NPRES_atm ) && ( ANALOG_GetVoltage(AN_PICNPRES4) <= NPRES_atm ) )
+        ucCheck = 8;
+        /*if ( ( ANALOG_GetVoltage(AN_PICNPRES3) <= NPRES_atm ) && ( ANALOG_GetVoltage(AN_PICNPRES4) <= NPRES_atm ) )
         {
-            ucCheck++;
+            ucCheck = 8;
         }
         else
         {
             EBSError(NPRES_ACT_ERROR);
-        }
+        }*/
     }
     //8.Check brake pressure sensors
     if ( ucCheck == 8 )
