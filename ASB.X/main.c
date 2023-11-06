@@ -89,7 +89,7 @@ void main(void)
     AS_CLS_SDC_SetHigh();
     DELAY_milliseconds(10000);
     EBS_Watchdog(WD_DISABLE);*/
-EBS_CheckUP_Routine();
+    //EBS_CheckUP_Routine();
     while (1)
     {
         // Add your application code
@@ -104,10 +104,7 @@ EBS_CheckUP_Routine();
         //PWM, conseguiriamos modificar la posición modificando solo el duty
         //GPIO_PWM1_Control(50, 600);
         //GPIO_PWM2_Control(25, 10);
-        
-        
-        
-        
+
         //PRUEBA DE SERVOMOTOR
         /*uiIndex++;
         if ( uiIndex < 10 )
@@ -119,6 +116,13 @@ EBS_CheckUP_Routine();
         if ( ucASMode == ASMode )
         {
             SERVICEBRAKE_Move(ucTargetBrake);
+            MOSFET1_SetLow();
+            MOSFET2_SetLow();
+        }
+        else
+        {
+            MOSFET1_SetHigh();
+            MOSFET2_SetHigh();
         }
         
         //EBSLed();
